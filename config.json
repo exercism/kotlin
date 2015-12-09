@@ -1,0 +1,20 @@
+{
+  "slug": "kotlin",
+  "language": "Kotlin",
+  "repository": "https://github.com/exercism/xkotlin",
+  "active": false,
+  "test_pattern": "TODO",
+  "problems": [
+
+  ],
+  "deprecated": [
+
+  ],
+  "ignored": [
+    "bin",
+    "docs"
+  ],
+  "foregone": [
+
+  ]
+}
