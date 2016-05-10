@@ -3,3 +3,7 @@
 bin/configlet
 bin/configlet.exe
 CHECKLIST
+build
+.gradle
+.idea
+*.iml
