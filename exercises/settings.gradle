@@ -1,4 +1,5 @@
 include 'hello-world'
 include 'accumulate'
 include 'acronym'
+include 'binary'
 include 'nth-prime'
