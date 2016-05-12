@@ -9,7 +9,8 @@
     "accumulate",
     "acronym",
     "binary",
-    "nth-prime"
+    "nth-prime",
+    "word-count"
   ],
   "deprecated": [
 
