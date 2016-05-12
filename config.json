@@ -6,6 +6,7 @@
   "test_pattern": "TODO",
   "problems": [
     "hello-world",
+    "accumulate",
     "acronym",
     "nth-prime"
   ],
