@@ -5,12 +5,14 @@
   "active": false,
   "test_pattern": "TODO",
   "problems": [
-    "hello-world"
+    "hello-world",
+    "nth-prime"
   ],
   "deprecated": [
 
   ],
   "ignored": [
+    "_template",
     "bin",
     "docs"
   ],
