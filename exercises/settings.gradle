@@ -1,2 +1,3 @@
 include 'hello-world'
+include 'acronym'
 include 'nth-prime'
