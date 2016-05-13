@@ -22,12 +22,13 @@ class BinaryTest(val input: String, val expectedOutput: Int) {
                 arrayOf("9", 0),
                 arrayOf("134678", 0),
                 arrayOf("abc10z", 0),
-                arrayOf("011", 3)
+                arrayOf("011", 3),
+                arrayOf("g1", 0)
         )
     }
 
     @Test
     fun binaryStringToInt() {
-        assertEquals(expectedOutput, Binary(input).toDecimal);
+        assertEquals(expectedOutput, Binary.toDecimal(input));
     }
 }
