@@ -23,7 +23,7 @@ operable program or batch file.
 
 You'll need to install the JDK — it contains both a Java Runtime and development tools.
 
-1. Go to [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest version of the JDK (at the time of writing, [JDK 8u45](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
+1. Go to [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest version of the JDK (at the time of writing, [JDK 8u91](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
 2. Run the installer, using all the defaults.
 
 Verify that the install worked.
@@ -105,7 +105,7 @@ Or any version that is prior to 1.8, you need to install the 1.8 JDK...
 
 1. Go to [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 and download the latest version of the JDK (at the time of writing,
-[JDK 8u71](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
+[JDK 8u91](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
 2. Run the installer, using all the defaults.
 
 #### Verify JDK Install
@@ -137,7 +137,7 @@ Download, install and configure IntelliJ with the JDK you have installed:
 1. Download [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/) and
 run the installer; accept all the defaults.
 
-2. Run IntelliJ (`/Applications/IntelliJ IDEA 14 CE.app`)
+2. Run IntelliJ (`/Applications/IntelliJ IDEA CE.app`)
     * The first time you do, IntelliJ walks you through some initial setup.  We recommend
       selecting a UI Theme and then just clicking "Skip All and Set Defaults".
 
