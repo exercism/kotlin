@@ -1,0 +1,13 @@
+data class PhoneNumber(private val rawNumber: String) {
+    companion object {
+        private val validationRegex = Regex("^1?(\\d{10})$")
+    }
+    private val cleanedNumber = rawNumber.replace(Regex("[^\\d]"), "")
+
+    val number = validationRegex.matchEntire(cleanedNumber)?.groupValues?.last() ?: "0000000000"
+    val areaCode = number.substring(0, 3)
+    val exchangeCode = number.substring(3, 6)
+    val subscriberNumber = number.substring(6, 10)
+
+    override fun toString() = "($areaCode) $exchangeCode-$subscriberNumber"
+}
