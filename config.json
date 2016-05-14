@@ -16,6 +16,7 @@
     "hexadecimal",
     "nth-prime",
     "phone-number",
+    "scrabble-score",
     "word-count"
   ],
   "deprecated": [
