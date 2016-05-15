@@ -20,6 +20,7 @@
     "phone-number",
     "roman-numerals",
     "scrabble-score",
+    "simple-cipher",
     "word-count"
   ],
   "deprecated": [
