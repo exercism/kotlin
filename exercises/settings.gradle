@@ -1,6 +1,7 @@
 include 'hello-world'
 include 'accumulate'
 include 'acronym'
+include 'anagram'
 include 'atbash-cipher'
 include 'binary'
 include 'etl'
