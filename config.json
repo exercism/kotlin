@@ -3,7 +3,6 @@
   "language": "Kotlin",
   "repository": "https://github.com/exercism/xkotlin",
   "active": false,
-  "test_pattern": "TODO",
   "problems": [
     "hello-world",
     "accumulate",
@@ -14,6 +13,7 @@
     "gigasecond",
     "grade-school",
     "hexadecimal",
+    "linked-list",
     "nth-prime",
     "phone-number",
     "roman-numerals",
