@@ -1,4 +1,4 @@
-# xKotlin
+# xKotlin [![Build Status](https://travis-ci.org/exercism/xkotlin.svg?branch=master)](https://travis-ci.org/exercism/xkotlin)
 
 Exercism problems in Kotlin.
 
