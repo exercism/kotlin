@@ -21,24 +21,24 @@ class Deque<T> {
     }
 
     fun unshift(value: T) {
-        push(value);
-        head = head?.prev;
+        push(value)
+        head = head?.prev
     }
 
     fun shift(): T? {
-        val value = head?.value;
-        val newHead = head?.next;
-        val newTail = head?.prev;
+        val value = head?.value
+        val newHead = head?.next
+        val newTail = head?.prev
 
         if (newHead == head) {
-            head = null;
+            head = null
         } else {
-            newHead?.prev = newTail;
-            newTail?.next = newHead;
-            head = newHead;
+            newHead?.prev = newTail
+            newTail?.next = newHead
+            head = newHead
         }
 
-        return value;
+        return value
     }
 
     private data class Element<T>(val value: T, var prev: Element<T>? = null, var next: Element<T>? = null)

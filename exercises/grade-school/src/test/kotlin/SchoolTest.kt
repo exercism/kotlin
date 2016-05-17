@@ -19,7 +19,7 @@ class SchoolTest {
 
     @Test
     fun addsStudents() {
-        school.add("Aimee", 2);
+        school.add("Aimee", 2)
 
         val expected = mapOf(2 to listOf("Aimee"))
         assertEquals(expected, school.db())
@@ -27,10 +27,10 @@ class SchoolTest {
 
     @Test
     fun addsMoreStudentsInSameGrade() {
-        val grade = 2;
-        school.add("James", grade);
-        school.add("Blair", grade);
-        school.add("Paul", grade);
+        val grade = 2
+        school.add("James", grade)
+        school.add("Blair", grade)
+        school.add("Paul", grade)
 
         val expected = mapOf(2 to listOf("James", "Blair", "Paul"))
         assertEquals(expected, school.db())
@@ -38,8 +38,8 @@ class SchoolTest {
 
     @Test
     fun addsStudentsInMultipleGrades() {
-        school.add("Chelsea", 3);
-        school.add("Logan", 7);
+        school.add("Chelsea", 3)
+        school.add("Logan", 7)
 
         val expected = mapOf(3 to listOf("Chelsea"), 7 to listOf("Logan"))
         assertEquals(expected, school.db())
@@ -47,9 +47,9 @@ class SchoolTest {
 
     @Test
     fun getsStudentsInAGrade() {
-        school.add("Franklin", 5);
-        school.add("Bradley", 5);
-        school.add("Jeff", 1);
+        school.add("Franklin", 5)
+        school.add("Bradley", 5)
+        school.add("Jeff", 1)
 
         val expected = mapOf(5 to listOf("Franklin", "Bradley"), 1 to listOf("Jeff"))
         assertEquals(expected, school.db())
@@ -62,10 +62,10 @@ class SchoolTest {
 
     @Test
     fun sortsSchool() {
-        school.add("Jennifer", 4);
-        school.add("Kareem", 6);
-        school.add("Christopher", 4);
-        school.add("Kyle", 3);
+        school.add("Jennifer", 4)
+        school.add("Kareem", 6)
+        school.add("Christopher", 4)
+        school.add("Kyle", 3)
 
         val expected = mapOf(6 to listOf("Kareem"), 4 to listOf("Christopher", "Jennifer"), 3 to listOf("Kyle"))
         val sortedClasses = school.sort()

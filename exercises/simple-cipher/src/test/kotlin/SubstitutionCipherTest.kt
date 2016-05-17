@@ -4,66 +4,66 @@ import kotlin.test.assertEquals
 
 class SubstitutionCipherTest {
 
-    private val KEY = "abcdefghij";
-    private lateinit var cipher: Cipher;
+    private val KEY = "abcdefghij"
+    private lateinit var cipher: Cipher
 
     @Before
     fun setup() {
-        this.cipher = Cipher(KEY);
+        this.cipher = Cipher(KEY)
     }
 
     @Test
     fun cipherKeepsTheSubmittedKey() {
-        assertEquals(KEY, cipher.key);
+        assertEquals(KEY, cipher.key)
     }
 
     @Test
     fun cipherCanEncodeWithGivenKey() {
-        val expectedOutput = "abcdefghij";
+        val expectedOutput = "abcdefghij"
 
-        assertEquals(expectedOutput, cipher.encode("aaaaaaaaaa"));
+        assertEquals(expectedOutput, cipher.encode("aaaaaaaaaa"))
     }
 
     @Test
     fun cipherCanDecodeWithGivenKey() {
-        val expectedOutput = "aaaaaaaaaa";
+        val expectedOutput = "aaaaaaaaaa"
 
-        assertEquals(expectedOutput, cipher.decode("abcdefghij"));
+        assertEquals(expectedOutput, cipher.decode("abcdefghij"))
     }
 
     @Test
     fun cipherIsReversibleGivenKey() {
-        val plainText = "abcdefghij";
+        val plainText = "abcdefghij"
 
-        assertEquals(plainText, cipher.decode(cipher.encode("abcdefghij")));
+        assertEquals(plainText, cipher.decode(cipher.encode("abcdefghij")))
     }
 
     @Test
     fun cipherCanDoubleShiftEncode() {
-        val plainText = "iamapandabear";
-        val expectedOutput = "qayaeaagaciai";
+        val plainText = "iamapandabear"
+        val expectedOutput = "qayaeaagaciai"
 
-        assertEquals(expectedOutput, Cipher(plainText).encode(plainText));
+        assertEquals(expectedOutput, Cipher(plainText).encode(plainText))
     }
 
     @Test
     fun cipherCanWrapEncode() {
-        val expectedOutput = "zabcdefghi";
+        val expectedOutput = "zabcdefghi"
 
-        assertEquals(expectedOutput, cipher.encode("zzzzzzzzzz"));
+        assertEquals(expectedOutput, cipher.encode("zzzzzzzzzz"))
     }
 
     @Test
     fun cipherCanEncodeMessageThatIsShorterThanTheKey() {
-        val expectedOutput = "abcde";
+        val expectedOutput = "abcde"
 
-        assertEquals(expectedOutput, cipher.encode("aaaaa"));
+        assertEquals(expectedOutput, cipher.encode("aaaaa"))
     }
 
     @Test
     fun cipherCanDecodeMessageThatIsShorterThanTheKey() {
-        val expectedOutput = "aaaaa";
+        val expectedOutput = "aaaaa"
 
-        assertEquals(expectedOutput, cipher.decode("abcde"));
+        assertEquals(expectedOutput, cipher.decode("abcde"))
     }
 }

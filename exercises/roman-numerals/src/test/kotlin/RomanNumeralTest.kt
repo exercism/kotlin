@@ -35,6 +35,6 @@ class RomanNumeralsTest(val input: Int, val expectedOutput: String) {
 
     @Test
     fun test() {
-        assertEquals(expectedOutput, RomanNumeral.value(input));
+        assertEquals(expectedOutput, RomanNumeral.value(input))
     }
 }

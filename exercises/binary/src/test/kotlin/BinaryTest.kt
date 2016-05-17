@@ -29,6 +29,6 @@ class BinaryTest(val input: String, val expectedOutput: Int) {
 
     @Test
     fun binaryStringToInt() {
-        assertEquals(expectedOutput, Binary.toDecimal(input));
+        assertEquals(expectedOutput, Binary.toDecimal(input))
     }
 }

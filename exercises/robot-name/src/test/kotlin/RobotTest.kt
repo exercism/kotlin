@@ -24,7 +24,7 @@ class RobotTest {
     @Test
     fun resetName() {
         val name = robot.name
-        robot.reset();
+        robot.reset()
 
         val name2 = robot.name
         assertNotEquals(name, name2)

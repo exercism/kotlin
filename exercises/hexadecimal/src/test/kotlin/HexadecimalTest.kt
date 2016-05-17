@@ -30,6 +30,6 @@ class HexadecimalTest(val input: String, val expectedOutput: Int) {
 
     @Test
     fun hexStringToInt() {
-        assertEquals(expectedOutput, Hexadecimal.toDecimal(input));
+        assertEquals(expectedOutput, Hexadecimal.toDecimal(input))
     }
 }

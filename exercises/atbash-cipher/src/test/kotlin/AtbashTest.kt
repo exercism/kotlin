@@ -26,7 +26,7 @@ class AtbashTest {
 
         @Test
         fun test() {
-            assertEquals(expectedOutput, Atbash.encode(input));
+            assertEquals(expectedOutput, Atbash.encode(input))
         }
     }
 
@@ -45,7 +45,7 @@ class AtbashTest {
 
         @Test
         fun test() {
-            assertEquals(expectedOutput, Atbash.decode(input));
+            assertEquals(expectedOutput, Atbash.decode(input))
         }
     }
 }

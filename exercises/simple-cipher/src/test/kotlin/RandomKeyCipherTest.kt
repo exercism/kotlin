@@ -6,11 +6,11 @@ import kotlin.test.assertTrue
 
 class RandomKeyCipherTest {
 
-    private lateinit var cipher: Cipher;
+    private lateinit var cipher: Cipher
 
     @Before
     fun setup() {
-        cipher = Cipher();
+        cipher = Cipher()
     }
 
     @Test
@@ -20,7 +20,7 @@ class RandomKeyCipherTest {
 
     @Test
     fun defaultCipherKeyIs100Characters() {
-        assertEquals(100, cipher.key.length);
+        assertEquals(100, cipher.key.length)
     }
 
     @Test
@@ -34,22 +34,22 @@ class RandomKeyCipherTest {
      */
     @Test
     fun cipherCanEncode() {
-        val expectedOutput = cipher.key.substring(0, 10);
+        val expectedOutput = cipher.key.substring(0, 10)
 
-        assertEquals(expectedOutput, cipher.encode("aaaaaaaaaa"));
+        assertEquals(expectedOutput, cipher.encode("aaaaaaaaaa"))
     }
 
     @Test
     fun cipherCanDecode() {
-        val expectedOutput = "aaaaaaaaaa";
+        val expectedOutput = "aaaaaaaaaa"
 
-        assertEquals(expectedOutput, cipher.decode(cipher.key.substring(0, 10)));
+        assertEquals(expectedOutput, cipher.decode(cipher.key.substring(0, 10)))
     }
 
     @Test
     fun cipherIsReversible() {
-        val plainText = "abcdefghij";
+        val plainText = "abcdefghij"
 
-        assertEquals(plainText, cipher.decode(cipher.encode(plainText)));
+        assertEquals(plainText, cipher.decode(cipher.encode(plainText)))
     }
 }

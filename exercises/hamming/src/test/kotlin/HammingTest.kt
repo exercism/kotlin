@@ -30,12 +30,12 @@ class HammingTest {
 
     @Test(expected = IllegalArgumentException::class)
     fun validatesFirstStrandNotLonger() {
-        Hamming.compute("AAAG", "AAA");
+        Hamming.compute("AAAG", "AAA")
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun validatesOtherStrandNotLonger() {
-        Hamming.compute("AAA", "AAAG");
+        Hamming.compute("AAA", "AAAG")
     }
 
     @Test

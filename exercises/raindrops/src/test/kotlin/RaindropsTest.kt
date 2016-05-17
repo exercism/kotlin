@@ -40,6 +40,6 @@ class RaindropsTest(val input: Int, val expectedOutput: String) {
 
     @Test
     fun test() {
-        assertEquals(expectedOutput, Raindrops.convert(input));
+        assertEquals(expectedOutput, Raindrops.convert(input))
     }
 }
