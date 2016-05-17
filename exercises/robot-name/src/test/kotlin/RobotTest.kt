@@ -1,0 +1,34 @@
+import org.junit.Test
+import kotlin.test.assertNotEquals
+import kotlin.test.assertTrue
+
+class RobotTest {
+
+    companion object {
+        val EXPECTED_ROBOT_NAME_PATTERN = Regex("[A-Z]{2}\\d{3}")
+        private fun isValidName(name: String) = EXPECTED_ROBOT_NAME_PATTERN.matches(name)
+    }
+
+    val robot = Robot()
+
+    @Test
+    fun hasName() {
+        assertTrue(isValidName(robot.name), "Robot name didn't match expected pattern.")
+    }
+
+    @Test
+    fun differentRobotsHaveDifferentNames() {
+        assertNotEquals(robot.name, Robot().name)
+    }
+
+    @Test
+    fun resetName() {
+        val name = robot.name
+        robot.reset();
+
+        val name2 = robot.name
+        assertNotEquals(name, name2)
+        assertTrue(isValidName(name2), "Robot name didn't match expected pattern.")
+    }
+
+}
