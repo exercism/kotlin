@@ -1,6 +1,7 @@
 ---
-language: bash
+language: java
+jdk:
+  - oraclejdk8
 script:
-- bin/fetch-configlet
-- bin/configlet .
+  - bin/build.sh
 sudo: false
