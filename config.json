@@ -38,6 +38,7 @@
   "ignored": [
     "_template",
     "bin",
+    ".gradle",
     "docs"
   ],
   "foregone": [
