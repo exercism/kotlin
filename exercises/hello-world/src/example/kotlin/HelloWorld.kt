@@ -26,7 +26,6 @@
  */
 object HelloWorld {
     fun hello(name: String? = null): String {
-        val output = if (name == null || name.isBlank()) "World" else name
-        return "Hello, $output!"
+        return "Hello, ${if (name.isNullOrBlank()) "World" else name}!"
     }
 }
