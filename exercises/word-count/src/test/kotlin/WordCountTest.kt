@@ -46,4 +46,11 @@ class WordCountTest {
         assertEquals(expectedWordCount, WordCount.phrase("go Go GO"))
     }
 
+    @Test
+    fun allowApostrophes() {
+        val expectedWordCount = mapOf("first" to 1, "don't" to 2, "laugh" to 1, "then" to 1, "cry" to 1)
+
+        assertEquals(expectedWordCount, WordCount.phrase("First: don't laugh. Then: don't cry."))
+    }
+
 }
