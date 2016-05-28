@@ -2,7 +2,7 @@
   "slug": "kotlin",
   "language": "Kotlin",
   "repository": "https://github.com/exercism/xkotlin",
-  "active": false,
+  "active": true,
   "problems": [
     "hello-world",
     "gigasecond",
