@@ -28,6 +28,22 @@ class BeerSongTest {
     }
 
     @Test
+    fun verse99() {
+        val expected = "99 bottles of beer on the wall, 99 bottles of beer.\nTake one down and pass it around, 98 bottles of beer on the wall.\n"
+        assertEquals(expected, BeerSong.verse(99))
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun verseMinus1() {
+        BeerSong.verse(-1)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun verse100() {
+        BeerSong.verse(100)
+    }
+
+    @Test
     fun songVerse8To6() {
         val expected = "8 bottles of beer on the wall, 8 bottles of beer.\nTake one down and pass it around, 7 bottles of beer on the wall.\n\n7 bottles of beer on the wall, 7 bottles of beer.\nTake one down and pass it around, 6 bottles of beer on the wall.\n\n6 bottles of beer on the wall, 6 bottles of beer.\nTake one down and pass it around, 5 bottles of beer on the wall.\n"
         assertEquals(expected, BeerSong.verses(8, 6))
@@ -39,10 +55,20 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(3, 0))
     }
 
+    @Test(expected = IllegalArgumentException::class)
+    fun songVerse100To98() {
+        BeerSong.verses(100, 98)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun songVerse3ToMinus1() {
+        BeerSong.verses(3, -1)
+    }
+
     @Test
     fun entireSong() {
         val expected =
-"""99 bottles of beer on the wall, 99 bottles of beer.
+                """99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
