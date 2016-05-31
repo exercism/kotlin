@@ -1,5 +1,6 @@
 import org.junit.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
 
 class BeerSongTest {
 
@@ -33,14 +34,14 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verse(99))
     }
 
-    @Test(expected = IllegalArgumentException::class)
+    @Test
     fun verseMinus1() {
-        BeerSong.verse(-1)
+        assertFailsWith(IllegalArgumentException::class, "Beer song verse can't be negative", { BeerSong.verse(-1) })
     }
 
-    @Test(expected = IllegalArgumentException::class)
+    @Test
     fun verse100() {
-        BeerSong.verse(100)
+        assertFailsWith(IllegalArgumentException::class, "Beer song only goes up to verse 99", { BeerSong.verse(100) })
     }
 
     @Test
@@ -55,14 +56,14 @@ class BeerSongTest {
         assertEquals(expected, BeerSong.verses(3, 0))
     }
 
-    @Test(expected = IllegalArgumentException::class)
+    @Test
     fun songVerse100To98() {
-        BeerSong.verses(100, 98)
+        assertFailsWith(IllegalArgumentException::class, "Beer song only goes up to verse 99", { BeerSong.verses(100, 98) })
     }
 
-    @Test(expected = IllegalArgumentException::class)
+    @Test
     fun songVerse3ToMinus1() {
-        BeerSong.verses(3, -1)
+        assertFailsWith(IllegalArgumentException::class, "Beer song can't go down into a negative verse", { BeerSong.verses(3, -1) })
     }
 
     @Test
