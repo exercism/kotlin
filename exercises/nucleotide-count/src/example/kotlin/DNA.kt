@@ -1,8 +1,6 @@
 class DNA(strand: String) {
     init {
-        if (!strand.matches(Regex("^[$nucleotides]*$"))) {
-            throw IllegalArgumentException("DNA sequence contains invalid nucleotides sequence.")
-        }
+        require(strand.matches(Regex("^[$nucleotides]*$")), { "DNA sequence contains invalid nucleotides sequence." })
     }
 
     companion object DNA {
@@ -15,9 +13,7 @@ class DNA(strand: String) {
     }
 
     fun count(nucleotide: Char): Int {
-        if (!nucleotides.contains(nucleotide)) {
-            throw IllegalArgumentException("$nucleotide is not a nucleotide");
-        }
+        require(nucleotides.contains(nucleotide), { "$nucleotide is not a nucleotide" })
 
         return nucleotideCounts[nucleotide] ?: 0
     }
