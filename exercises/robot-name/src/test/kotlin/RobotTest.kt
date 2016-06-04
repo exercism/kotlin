@@ -13,7 +13,7 @@ class RobotTest {
 
     @Test
     fun hasName() {
-        assertTrue(isValidName(robot.name), "Robot name didn't match expected pattern.")
+        assertTrue(isValidName(robot.name), "Robot name ${robot.name} didn't match expected pattern.")
     }
 
     @Test
@@ -28,7 +28,7 @@ class RobotTest {
 
         val name2 = robot.name
         assertNotEquals(name, name2)
-        assertTrue(isValidName(name2), "Robot name didn't match expected pattern.")
+        assertTrue(isValidName(name2), "Robot name $name2 didn't match expected pattern.")
     }
 
 }
