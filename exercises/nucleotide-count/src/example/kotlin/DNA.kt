@@ -5,15 +5,15 @@ class DNA(strand: String) {
 
     companion object DNA {
         val nucleotides = "ATCG"
-        val emptyNucleotideCounts = nucleotides.map { Pair(it, 0) }.toMap()
+        val emptyNucleotideCounts = nucleotides.map { it to 0 }.toMap()
     }
 
     val nucleotideCounts: Map<Char, Int> by lazy {
-        emptyNucleotideCounts + strand.toCharArray().groupBy { it }.mapValues { it.value.size }
+        emptyNucleotideCounts + strand.groupBy { it }.mapValues { it.value.size }
     }
 
     fun count(nucleotide: Char): Int {
-        require(nucleotides.contains(nucleotide), { "$nucleotide is not a nucleotide" })
+        require(nucleotide in nucleotides, { "$nucleotide is not a nucleotide" })
 
         return nucleotideCounts[nucleotide] ?: 0
     }
