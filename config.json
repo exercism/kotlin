@@ -12,6 +12,7 @@
     "accumulate",
     "pangram",
     "anagram",
+    "isogram",
     "hamming",
     "bob",
     "leap",
