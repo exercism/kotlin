@@ -43,6 +43,11 @@ class PangramTest {
     fun mixedCaseAndPunctuation() {
         assertTrue(Pangrams.isPangram("\"Five quacking Zephyrs jolt my wax bed.\""))
     }
+    
+    @Test
+    fun mixedCaseDuplicatedCharacters() {
+        assertFalse(Pangrams.isPangram("the quick brown fox jumps over the lazy FOX"))
+    }
 
     @Test
     fun nonAsciiCharacters() {
