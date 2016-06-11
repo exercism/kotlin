@@ -10,16 +10,16 @@ class SeriesInvalidInputTest {
 
     @Test(expected = IllegalArgumentException::class)
     fun negativeSpan() {
-        Series("12345").calculate(-1)
+        Series("12345").getLargestProduct(-1)
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun spanLargerThanStringSize() {
-        Series("123").calculate(4)
+        Series("123").getLargestProduct(4)
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun spanLargerThanStringSizeUsingEmptyString() {
-        Series("").calculate(1)
+        Series("").getLargestProduct(1)
     }
 }

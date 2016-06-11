@@ -6,7 +6,7 @@ class Series(val digits: String) {
         require(digits.all { it.isDigit() })
     }
 
-    fun calculate(span: Int): Long {
+    fun getLargestProduct(span: Int): Long {
         require(span >= 0)
         require(digits.length >= span)
 

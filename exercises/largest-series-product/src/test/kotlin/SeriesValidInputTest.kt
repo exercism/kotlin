@@ -27,6 +27,6 @@ class SeriesValidInputTest(val input: String, val span: Int, val expectedOutput:
 
     @Test
     fun validInputTest() {
-        assertEquals(expectedOutput, Series(input).calculate(span))
+        assertEquals(expectedOutput, Series(input).getLargestProduct(span))
     }
 }
