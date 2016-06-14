@@ -42,7 +42,8 @@
     "linked-list",
     "nth-prime",
     "bracket-push",
-    "pascals-triangle"
+    "pascals-triangle",
+    "change"
   ],
   "deprecated": [
 
