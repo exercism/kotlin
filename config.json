@@ -52,7 +52,8 @@
     "_template",
     "bin",
     ".gradle",
-    "docs"
+    "docs",
+    "img"
   ],
   "foregone": [
 
