@@ -16,3 +16,5 @@ The MIT License (MIT)
 
 Copyright (c) 2015 Katrina Owen, _@kytrinyx.com
 
+### Kotlin icon
+The Kotlin icon was designed by JetBrains and may be used in its original form.
