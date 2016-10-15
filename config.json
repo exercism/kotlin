@@ -3,49 +3,6 @@
   "language": "Kotlin",
   "repository": "https://github.com/exercism/xkotlin",
   "active": true,
-  "problems": [
-    "hello-world",
-    "gigasecond",
-    "rna-transcription",
-    "etl",
-    "word-count",
-    "accumulate",
-    "pangram",
-    "anagram",
-    "isogram",
-    "hamming",
-    "bob",
-    "leap",
-    "robot-name",
-    "phone-number",
-    "grade-school",
-    "space-age",
-    "beer-song",
-    "nucleotide-count",
-    "difference-of-squares",
-    "acronym",
-    "scrabble-score",
-    "largest-series-product",
-    "roman-numerals",
-    "binary",
-    "raindrops",
-    "allergies",
-    "strain",
-    "flatten-array",
-    "atbash-cipher",
-    "hexadecimal",
-    "series",
-    "sieve",
-    "simple-cipher",
-    "luhn",
-    "pig-latin",
-    "linked-list",
-    "binary-search",
-    "nth-prime",
-    "bracket-push",
-    "pascals-triangle",
-    "change"
-  ],
   "deprecated": [
 
   ],
@@ -58,5 +15,212 @@
   ],
   "foregone": [
 
+  ],
+  "exercises": [
+    {
+      "difficulty": 1,
+      "slug": "hello-world",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "gigasecond",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "rna-transcription",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "etl",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "word-count",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "accumulate",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "pangram",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "anagram",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "isogram",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "hamming",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "bob",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "leap",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "robot-name",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "phone-number",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "grade-school",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "space-age",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "beer-song",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "nucleotide-count",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "difference-of-squares",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "acronym",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "scrabble-score",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "largest-series-product",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "roman-numerals",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "binary",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "raindrops",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "allergies",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "strain",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "flatten-array",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "atbash-cipher",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "hexadecimal",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "series",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "sieve",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "simple-cipher",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "luhn",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "pig-latin",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "linked-list",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "binary-search",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "nth-prime",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "bracket-push",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "pascals-triangle",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "change",
+      "topics": []
+    }
   ]
 }
