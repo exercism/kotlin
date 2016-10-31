@@ -98,7 +98,7 @@ In the terminal window, get the first exercise:
 
 The Exercism exercises for Kotlin can be built and tested from the command line using [Gradle](https://gradle.org).
 
-After installing Gradle, you can run the tests for any exercise by running `gradle test`, as long as you're in the same directory as the `build.gradle` file:
+After [installing Gradle](https://www.jayway.com/2013/05/12/getting-started-with-gradle), you can run the tests for any exercise by running `gradle test`, as long as you're in the same directory as the `build.gradle` file:
 
 ```
 $ pwd
