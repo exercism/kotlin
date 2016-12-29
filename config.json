@@ -221,6 +221,11 @@
       "difficulty": 1,
       "slug": "change",
       "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "triangle",
+      "topics": []
     }
   ]
 }
