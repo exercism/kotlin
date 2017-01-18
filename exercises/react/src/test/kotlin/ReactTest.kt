@@ -1,4 +1,6 @@
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
 
 class ReactTest {
@@ -161,5 +163,46 @@ class ReactTest {
         }
 
         assertEquals(listOf<Int>(), vals)
+    }
+}
+
+@RunWith(Parameterized::class)
+// This is a digital logic circuit called an adder:
+// https://en.wikipedia.org/wiki/Adder_(electronics)
+class ReactAdderTest(val aval: Boolean, val bval: Boolean, val cin: Boolean, val expectedCout: Boolean, val expectedSum: Boolean) {
+    companion object {
+        @JvmStatic
+        @Parameterized.Parameters(name = "{index}: {0} + {1} + {2} = {3} {4}")
+        fun data() = listOf(
+                arrayOf(false, false, false, false, false),
+                arrayOf(false, false, true, false, true),
+                arrayOf(false, true, false, false, true),
+                arrayOf(false, true, true, true, false),
+                arrayOf(true, false, false, false, true),
+                arrayOf(true, false, true, true, false),
+                arrayOf(true, true, false, true, false),
+                arrayOf(true, true, true, true, true)
+        )
+    }
+
+    @Test
+    fun test() {
+        val reactor = Reactor<Boolean>()
+        val a = reactor.InputCell(aval)
+        val b = reactor.InputCell(bval)
+        val carryIn = reactor.InputCell(cin)
+
+        val aXorB = reactor.ComputeCell(a, b) { a, b -> a.xor(b) }
+        val sum = reactor.ComputeCell(aXorB, carryIn) { axorb, cin -> axorb.xor(cin) }
+
+        val aXorBAndCin = reactor.ComputeCell(aXorB, carryIn) { axorb, cin -> axorb && cin }
+        val aAndB = reactor.ComputeCell(a, b) { a, b -> a && b }
+        val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { a, b -> a || b }
+
+        // Test them both at once so if they fail we get to see both values.
+        assertEquals(
+                listOf(expectedSum, expectedCout),
+                listOf(sum.value, carryOut.value)
+        )
     }
 }
