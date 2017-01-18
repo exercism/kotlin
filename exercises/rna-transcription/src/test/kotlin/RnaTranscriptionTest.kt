@@ -3,33 +3,42 @@ import org.junit.Test;
 
 class RnaTranscriptionTest {
 
+    /*
+      In Kotlin functions can be declared at top level in a file, meaning
+      you do not need to create a class to hold a function, like languages
+      such as Java, C# or Scala.
+
+      http://kotlinlang.org/docs/reference/functions.html#function-scope
+
+     */
+
     @Test
     fun emptyDnaIsEmptyRna() {
-        Assert.assertEquals("", RnaTranscription.ofDna(""));
+        Assert.assertEquals("", transcribeToRna(""));
     }
 
     @Test
     fun cytosineIsGuanine() {
-        Assert.assertEquals("G", RnaTranscription.ofDna("C"));
+        Assert.assertEquals("G", transcribeToRna("C"));
     }
 
     @Test
     fun guanineIsCytosine() {
-        Assert.assertEquals("C", RnaTranscription.ofDna("G"));
+        Assert.assertEquals("C", transcribeToRna("G"));
     }
 
     @Test
     fun thymineIsAdenine() {
-        Assert.assertEquals("A", RnaTranscription.ofDna("T"));
+        Assert.assertEquals("A", transcribeToRna("T"));
     }
 
     @Test
     fun adenineIsUracil() {
-        Assert.assertEquals("U", RnaTranscription.ofDna("A"));
+        Assert.assertEquals("U", transcribeToRna("A"));
     }
 
     @Test
     fun rnaTranscription() {
-        Assert.assertEquals("UGCACCAGAAUU", RnaTranscription.ofDna("ACGTGGTCTTAA"));
+        Assert.assertEquals("UGCACCAGAAUU", transcribeToRna("ACGTGGTCTTAA"));
     }
 }
