@@ -1,7 +1,9 @@
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class SeriesTest {
+
 
     @Test
     fun slicesOfOne() {
@@ -12,6 +14,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfTwo() {
         assertEquals(listOf<List<Int>>(), Series.slices(2, ""))
@@ -22,6 +25,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfThree() {
         assertEquals(listOf<List<Int>>(), Series.slices(3, ""))

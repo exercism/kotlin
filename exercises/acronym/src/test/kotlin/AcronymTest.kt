@@ -1,7 +1,9 @@
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class AcronymTest {
+
 
     @Test
     fun fromTitleCasedPhrases() {
@@ -10,6 +12,7 @@ class AcronymTest {
         assertEquals(expected, Acronym.generate(phrase))
     }
 
+    @Ignore
     @Test
     fun fromOtherTitleCasedPhrases() {
         val phrase = "Ruby on Rails"
@@ -17,6 +20,7 @@ class AcronymTest {
         assertEquals(expected, Acronym.generate(phrase))
     }
 
+    @Ignore
     @Test
     fun fromInconsistentlyCasedPhrases() {
         val phrase = "HyperText Markup Language"
@@ -24,6 +28,7 @@ class AcronymTest {
         assertEquals(expected, Acronym.generate(phrase))
     }
 
+    @Ignore
     @Test
     fun fromPhrasesWithPunctuation() {
         val phrase = "First In, First Out"
@@ -31,6 +36,7 @@ class AcronymTest {
         assertEquals(expected, Acronym.generate(phrase))
     }
 
+    @Ignore
     @Test
     fun fromOtherPhrasesWithPunctuation() {
         val phrase = "PHP: Hypertext Preprocessor"
@@ -38,6 +44,7 @@ class AcronymTest {
         assertEquals(expected, Acronym.generate(phrase))
     }
 
+    @Ignore
     @Test
     fun fromPhrasesWithPunctuationAndSentenceCasing() {
         val phrase = "Complementary metal-oxide semiconductor"

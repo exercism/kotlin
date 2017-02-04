@@ -1,7 +1,9 @@
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class PascalsTriangleTest {
+
 
     @Test
     fun triangleWithFourRows() {
@@ -15,6 +17,7 @@ class PascalsTriangleTest {
         assertEquals(expectedOutput, PascalsTriangle.computeTriangle(4))
     }
 
+    @Ignore
     @Test
     fun triangleWithSixRows() {
         val expectedOutput = listOf(
@@ -29,6 +32,7 @@ class PascalsTriangleTest {
         assertEquals(expectedOutput, PascalsTriangle.computeTriangle(6))
     }
 
+    @Ignore
     @Test
     fun expectEmptyTriangle() {
         val expectedOutput = emptyList<List<Int>>()
@@ -36,6 +40,7 @@ class PascalsTriangleTest {
         assertEquals(expectedOutput, PascalsTriangle.computeTriangle(0))
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun validatesNotNegativeRows() {
         PascalsTriangle.computeTriangle(-1)

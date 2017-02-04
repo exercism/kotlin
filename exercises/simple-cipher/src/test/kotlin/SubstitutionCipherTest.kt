@@ -1,5 +1,6 @@
 import org.junit.Before
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class SubstitutionCipherTest {
@@ -12,11 +13,13 @@ class SubstitutionCipherTest {
         this.cipher = Cipher(KEY)
     }
 
+
     @Test
     fun cipherKeepsTheSubmittedKey() {
         assertEquals(KEY, cipher.key)
     }
 
+    @Ignore
     @Test
     fun cipherCanEncodeWithGivenKey() {
         val expectedOutput = "abcdefghij"
@@ -24,6 +27,7 @@ class SubstitutionCipherTest {
         assertEquals(expectedOutput, cipher.encode("aaaaaaaaaa"))
     }
 
+    @Ignore
     @Test
     fun cipherCanDecodeWithGivenKey() {
         val expectedOutput = "aaaaaaaaaa"
@@ -31,6 +35,7 @@ class SubstitutionCipherTest {
         assertEquals(expectedOutput, cipher.decode("abcdefghij"))
     }
 
+    @Ignore
     @Test
     fun cipherIsReversibleGivenKey() {
         val plainText = "abcdefghij"
@@ -38,6 +43,7 @@ class SubstitutionCipherTest {
         assertEquals(plainText, cipher.decode(cipher.encode("abcdefghij")))
     }
 
+    @Ignore
     @Test
     fun cipherCanDoubleShiftEncode() {
         val plainText = "iamapandabear"
@@ -46,6 +52,7 @@ class SubstitutionCipherTest {
         assertEquals(expectedOutput, Cipher(plainText).encode(plainText))
     }
 
+    @Ignore
     @Test
     fun cipherCanWrapEncode() {
         val expectedOutput = "zabcdefghi"
@@ -53,6 +60,7 @@ class SubstitutionCipherTest {
         assertEquals(expectedOutput, cipher.encode("zzzzzzzzzz"))
     }
 
+    @Ignore
     @Test
     fun cipherCanEncodeMessageThatIsShorterThanTheKey() {
         val expectedOutput = "abcde"
@@ -60,6 +68,7 @@ class SubstitutionCipherTest {
         assertEquals(expectedOutput, cipher.encode("aaaaa"))
     }
 
+    @Ignore
     @Test
     fun cipherCanDecodeMessageThatIsShorterThanTheKey() {
         val expectedOutput = "aaaaa"

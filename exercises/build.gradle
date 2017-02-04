@@ -1,4 +1,3 @@
-
 subprojects {
   afterEvaluate { Project project ->
     sourceSets {
@@ -18,6 +17,23 @@ subprojects {
       project["compileStarterSourceKotlin"].doFirst { compileTask ->
         println "  (source = " + compileTask.source.asPath + ")"
       }
+
+      // In lieu of being able to disable @Ignore in JUnit tests, we filter
+      // those annotations, placing the edited tests in the path named here.
+      test {
+        kotlin.srcDirs = ["build/gen/test/kotlin"]
+      }
+      project["compileTestKotlin"].doFirst { compileTask ->
+        println "  (test source = " + compileTask.source.asPath + ")"
+      }
     }
+
+    task copyTestsFilteringIgnores(type: Copy) {
+      from "src/test/kotlin"
+      into "build/gen/test/kotlin"
+      filter { line -> line.contains("@Ignore") ? "" : line }
+    }
+
+    test.dependsOn(copyTestsFilteringIgnores)
   }
 }

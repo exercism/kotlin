@@ -1,7 +1,9 @@
-import org.junit.Test;
+import org.junit.Test
+import org.junit.Ignore;
 import kotlin.test.assertEquals
 
 class NucleotideTest {
+
 
     @Test
     fun emptyDnaStringHasNoAdenosine() {
@@ -10,6 +12,7 @@ class NucleotideTest {
         assertEquals(0, dna.count('A'))
     }
 
+    @Ignore
     @Test
     fun emptyDnaStringHasNoNucleotides() {
         val dna = DNA("");
@@ -18,12 +21,14 @@ class NucleotideTest {
         assertEquals(expected, dna.nucleotideCounts)
     }
 
+    @Ignore
     @Test
     fun repetitiveCytidineGetsCounted() {
         val dna = DNA("CCCCC");
         assertEquals(5, dna.count('C'))
     }
 
+    @Ignore
     @Test
     fun repetitiveSequenceWithOnlyGuanosine() {
         val dna = DNA("GGGGGGGG");
@@ -32,6 +37,7 @@ class NucleotideTest {
         assertEquals(expected, dna.nucleotideCounts)
     }
 
+    @Ignore
     @Test
     fun countsOnlyThymidine() {
         val dna = DNA("GGGGGTAACCCGG");
@@ -39,6 +45,7 @@ class NucleotideTest {
         assertEquals(1, dna.count('T'))
     }
 
+    @Ignore
     @Test
     fun countsANucleotideOnlyOnce() {
         val dna = DNA("CGATTGGG");
@@ -47,6 +54,7 @@ class NucleotideTest {
         assertEquals(2, dna.count('T'))
     }
 
+    @Ignore
     @Test
     fun dnaCountsDoNotChangeAfterCountingAdenosine() {
         val dna = DNA("GATTACA");
@@ -56,16 +64,19 @@ class NucleotideTest {
         assertEquals(expected, dna.nucleotideCounts)
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun validatesNucleotides() {
         DNA("GX")
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun validatesNucleotidesCountInput() {
         DNA("GACT").count('X');
     }
 
+    @Ignore
     @Test
     fun countsAllNucleotides() {
         val dna = DNA("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
