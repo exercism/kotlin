@@ -1,7 +1,9 @@
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class AccumulateTest {
+
 
     @Test
     fun emptyAccumulateProducesEmptyAccumulation() {
@@ -10,6 +12,7 @@ class AccumulateTest {
         assertEquals(expectedOutput, Accumulate.accumulate(input, { x -> x * x }))
     }
 
+    @Ignore
     @Test
     fun accumulateSquares() {
         val input = listOf(1, 2, 3)
@@ -17,6 +20,7 @@ class AccumulateTest {
         assertEquals(expectedOutput, Accumulate.accumulate(input, { x -> x * x }))
     }
 
+    @Ignore
     @Test
     fun accumulateUpperCases() {
         val input = listOf("hello", "world")
@@ -24,6 +28,7 @@ class AccumulateTest {
         assertEquals(expectedOutput, Accumulate.accumulate(input, { it.toUpperCase() }))
     }
 
+    @Ignore
     @Test
     fun accumulateReversedStrings() {
         val input = "the quick brown fox etc".split(" ")
@@ -31,6 +36,7 @@ class AccumulateTest {
         assertEquals(expectedOutput, Accumulate.accumulate(input, { it.reversed() }))
     }
 
+    @Ignore
     @Test
     fun accumulateWithinAccumulate() {
         val input1 = listOf("a", "b", "c")
@@ -41,6 +47,7 @@ class AccumulateTest {
         ))
     }
 
+    @Ignore
     @Test
     fun accumulateToDifferentType() {
         val input = listOf(1, 2, 3)

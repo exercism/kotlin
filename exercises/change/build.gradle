@@ -22,3 +22,9 @@ dependencies {
   testCompile "org.assertj:assertj-core:2.4.1"
 
 }
+test {
+  testLogging {
+    exceptionFormat = 'full'
+    events = ["passed", "failed", "skipped"]
+  }
+}

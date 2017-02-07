@@ -1,5 +1,6 @@
 
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -23,6 +24,7 @@ class IsogramTest(val input: String, val expectedOutput: Boolean) {
                 arrayOf("éléphant", false)
         )
     }
+
 
     @Test
     fun test() {

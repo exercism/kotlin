@@ -1,7 +1,9 @@
 import org.junit.Test
+import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class PhoneNumberTest {
+
 
     @Test
     fun cleansNumber() {
@@ -11,6 +13,7 @@ class PhoneNumberTest {
         assertEquals(expectedNumber, actualNumber)
     }
 
+    @Ignore
     @Test
     fun cleansNumberWithDots() {
         val expectedNumber = "1234567890"
@@ -19,6 +22,7 @@ class PhoneNumberTest {
         assertEquals(expectedNumber, actualNumber)
     }
 
+    @Ignore
     @Test
     fun validWhen11DigitsAndFirstIs1() {
         val expectedNumber = "1234567890"
@@ -27,6 +31,7 @@ class PhoneNumberTest {
         assertEquals(expectedNumber, actualNumber)
     }
 
+    @Ignore
     @Test
     fun invalidWhenOnly11Digits() {
         val expectedNumber = "0000000000"
@@ -35,6 +40,7 @@ class PhoneNumberTest {
         assertEquals(expectedNumber, actualNumber)
     }
 
+    @Ignore
     @Test
     fun invalidWhen9Digits() {
         val expectedNumber = "0000000000"
@@ -43,6 +49,7 @@ class PhoneNumberTest {
         assertEquals(expectedNumber, actualNumber)
     }
 
+    @Ignore
     @Test
     fun areaCode() {
         val expectedAreaCode = "123"
@@ -51,6 +58,7 @@ class PhoneNumberTest {
         assertEquals(expectedAreaCode, actualAreaCode)
     }
 
+    @Ignore
     @Test
     fun toStringPrint() {
         val expectedtoStringNumber = "(123) 456-7890"
@@ -59,6 +67,7 @@ class PhoneNumberTest {
         assertEquals(expectedtoStringNumber, actualtoStringNumber)
     }
 
+    @Ignore
     @Test
     fun toStringPrintWithFullUSPhoneNumber() {
         val expectedtoStringNumber = "(123) 456-7890"

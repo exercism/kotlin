@@ -1,4 +1,5 @@
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -20,6 +21,7 @@ class ScrabbleScoreTest(val input: String, val expectedOutput: Int) {
                 arrayOf("alacrity", 13)
         )
     }
+
 
     @Test
     fun test() {
