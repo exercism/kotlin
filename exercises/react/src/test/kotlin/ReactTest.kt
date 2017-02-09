@@ -169,28 +169,32 @@ class ReactTest {
 @RunWith(Parameterized::class)
 // This is a digital logic circuit called an adder:
 // https://en.wikipedia.org/wiki/Adder_(electronics)
-class ReactAdderTest(val aval: Boolean, val bval: Boolean, val cin: Boolean, val expectedCout: Boolean, val expectedSum: Boolean) {
+class ReactAdderTest(val input: Input, val expected: Expected) {
+
     companion object {
+        data class Input(val a: Boolean, val b: Boolean, val carryIn: Boolean)
+        data class Expected(val carryOut: Boolean, val sum: Boolean)
+
         @JvmStatic
-        @Parameterized.Parameters(name = "{index}: {0} + {1} + {2} = {3} {4}")
+        @Parameterized.Parameters(name = "{index}: {0} = {1}")
         fun data() = listOf(
-                arrayOf(false, false, false, false, false),
-                arrayOf(false, false, true, false, true),
-                arrayOf(false, true, false, false, true),
-                arrayOf(false, true, true, true, false),
-                arrayOf(true, false, false, false, true),
-                arrayOf(true, false, true, true, false),
-                arrayOf(true, true, false, true, false),
-                arrayOf(true, true, true, true, true)
+                arrayOf(Input(a=false, b=false, carryIn=false), Expected(carryOut=false, sum=false)),
+                arrayOf(Input(a=false, b=false, carryIn=true),  Expected(carryOut=false, sum=true)),
+                arrayOf(Input(a=false, b=true,  carryIn=false), Expected(carryOut=false, sum=true)),
+                arrayOf(Input(a=false, b=true,  carryIn=true),  Expected(carryOut=true,  sum=false)),
+                arrayOf(Input(a=true,  b=false, carryIn=false), Expected(carryOut=false, sum=true)),
+                arrayOf(Input(a=true,  b=false, carryIn=true),  Expected(carryOut=true,  sum=false)),
+                arrayOf(Input(a=true,  b=true,  carryIn=false), Expected(carryOut=true,  sum=false)),
+                arrayOf(Input(a=true,  b=true,  carryIn=true),  Expected(carryOut=true,  sum=true))
         )
     }
 
     @Test
     fun test() {
         val reactor = Reactor<Boolean>()
-        val a = reactor.InputCell(aval)
-        val b = reactor.InputCell(bval)
-        val carryIn = reactor.InputCell(cin)
+        val a = reactor.InputCell(input.a)
+        val b = reactor.InputCell(input.b)
+        val carryIn = reactor.InputCell(input.carryIn)
 
         val aXorB = reactor.ComputeCell(a, b) { a, b -> a.xor(b) }
         val sum = reactor.ComputeCell(aXorB, carryIn) { axorb, cin -> axorb.xor(cin) }
@@ -199,10 +203,6 @@ class ReactAdderTest(val aval: Boolean, val bval: Boolean, val cin: Boolean, val
         val aAndB = reactor.ComputeCell(a, b) { a, b -> a && b }
         val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { a, b -> a || b }
 
-        // Test them both at once so if they fail we get to see both values.
-        assertEquals(
-                listOf(expectedSum, expectedCout),
-                listOf(sum.value, carryOut.value)
-        )
+        assertEquals(expected, Expected(sum=sum.value, carryOut=carryOut.value))
     }
 }
