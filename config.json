@@ -75,6 +75,11 @@
     },
     {
       "difficulty": 1,
+      "slug": "perfect-numbers",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
       "slug": "leap",
       "topics": []
     },
