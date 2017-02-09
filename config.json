@@ -226,7 +226,12 @@
     {
       "difficulty": 10,
       "slug": "react",
-      "topics": []
+      "topics": [
+        "Reactive programming",
+        "Generics",
+        "Nested classes",
+        "Higher-order functions"
+      ]
     }
   ]
 }
