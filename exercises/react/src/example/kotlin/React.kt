@@ -2,11 +2,6 @@ class Reactor<T>() {
     abstract inner class Cell {
         abstract val value: T
         internal val dependents = mutableListOf<ComputeCell>()
-        internal fun eachDependent(f: (ComputeCell) -> Any) {
-            for (dep in dependents) {
-                f(dep)
-            }
-        }
     }
 
     interface Subscription {
@@ -17,8 +12,8 @@ class Reactor<T>() {
         override var value: T = initialValue
             set(newValue) {
                 field = newValue
-                eachDependent { it.propagate() }
-                eachDependent { it.fireCallbacks() }
+                dependents.forEach { it.propagate() }
+                dependents.forEach { it.fireCallbacks() }
             }
     }
 
@@ -55,7 +50,7 @@ class Reactor<T>() {
                 return
             }
             value = nv
-            eachDependent { it.propagate() }
+            dependents.forEach { it.propagate() }
         }
 
         internal fun fireCallbacks() {
@@ -66,7 +61,7 @@ class Reactor<T>() {
             for (cb in activeCallbacks.values) {
                 cb(value)
             }
-            eachDependent { it.fireCallbacks() }
+            dependents.forEach { it.fireCallbacks() }
         }
     }
 }
