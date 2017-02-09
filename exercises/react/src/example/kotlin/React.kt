@@ -25,12 +25,10 @@ class Reactor<T>() {
         private var callbacksIssued = 0
         private val activeCallbacks = mutableMapOf<Int, (T) -> Any>()
 
-        constructor(c: Cell, f: (T) -> T) : this({ f(c.value) }) {
-            c.dependents.add(this)
-        }
-        constructor(c1: Cell, c2: Cell, f: (T, T) -> T) : this({ f(c1.value, c2.value) }) {
-            c1.dependents.add(this)
-            c2.dependents.add(this)
+        constructor(vararg cells: Cell, f: (List<T>) -> T) : this({ f(cells.map { it.value }) }) {
+            for (cell in cells) {
+                cell.dependents.add(this)
+            }
         }
 
         fun addCallback(f: (T) -> Any): Subscription {

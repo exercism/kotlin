@@ -26,7 +26,7 @@ class ReactTest {
     fun computeCellsCalculateInitialValue() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val output = reactor.ComputeCell(input) { it + 1 }
+        val output = reactor.ComputeCell(input) { it[0] + 1 }
         assertEquals(2, output.value)
     }
 
@@ -36,7 +36,7 @@ class ReactTest {
         val reactor = Reactor<Int>()
         val one = reactor.InputCell(1)
         val two = reactor.InputCell(2)
-        val output = reactor.ComputeCell(one, two) { x, y -> x + y * 10 }
+        val output = reactor.ComputeCell(one, two) { it[0] + it[1] * 10 }
         assertEquals(21, output.value)
     }
 
@@ -45,7 +45,7 @@ class ReactTest {
     fun computeCellsUpdateValueWhenDependenciesAreChanged() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val output = reactor.ComputeCell(input) { it + 1 }
+        val output = reactor.ComputeCell(input) { it[0] + 1 }
         input.value = 3
         assertEquals(4, output.value)
     }
@@ -55,9 +55,9 @@ class ReactTest {
     fun computeCellsCanDependOnOtherComputeCells() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val timesTwo = reactor.ComputeCell(input) { it * 2 }
-        val timesThirty = reactor.ComputeCell(input) { it * 30 }
-        val output = reactor.ComputeCell(timesTwo, timesThirty) { x, y -> x + y }
+        val timesTwo = reactor.ComputeCell(input) { it[0] * 2 }
+        val timesThirty = reactor.ComputeCell(input) { it[0] * 30 }
+        val output = reactor.ComputeCell(timesTwo, timesThirty) { it[0] + it[1] }
 
         assertEquals(32, output.value)
         input.value = 3
@@ -69,7 +69,7 @@ class ReactTest {
     fun computeCellsFireCallbacks() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val output = reactor.ComputeCell(input) { it + 1 }
+        val output = reactor.ComputeCell(input) { it[0] + 1 }
 
         val vals = mutableListOf<Int>()
         output.addCallback { vals.add(it) }
@@ -83,7 +83,7 @@ class ReactTest {
     fun callbacksOnlyFireOnChange() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val output = reactor.ComputeCell(input) { if (it < 3) 111 else 222 }
+        val output = reactor.ComputeCell(input) { if (it[0] < 3) 111 else 222 }
 
         val vals = mutableListOf<Int>()
         output.addCallback { vals.add(it) }
@@ -100,7 +100,7 @@ class ReactTest {
     fun callbacksCanBeAddedAndRemoved() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(11)
-        val output = reactor.ComputeCell(input) { it + 1 }
+        val output = reactor.ComputeCell(input) { it[0] + 1 }
 
         val vals1 = mutableListOf<Int>()
         val sub1 = output.addCallback { vals1.add(it) }
@@ -125,7 +125,7 @@ class ReactTest {
     fun removingACallbackMultipleTimesDoesntInterfereWithOtherCallbacks() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val output = reactor.ComputeCell(input) { it + 1 }
+        val output = reactor.ComputeCell(input) { it[0] + 1 }
 
         val vals1 = mutableListOf<Int>()
         val sub1 = output.addCallback { vals1.add(it) }
@@ -146,10 +146,10 @@ class ReactTest {
     fun callbacksShouldOnlyBeCalledOnceEvenIfMultipleDependenciesChange() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val plusOne = reactor.ComputeCell(input) { it + 1 }
-        val minusOne1 = reactor.ComputeCell(input) { it - 1 }
-        val minusOne2 = reactor.ComputeCell(minusOne1) { it - 1 }
-        val output = reactor.ComputeCell(plusOne, minusOne2) { x, y -> x * y }
+        val plusOne = reactor.ComputeCell(input) { it[0] + 1 }
+        val minusOne1 = reactor.ComputeCell(input) { it[0] - 1 }
+        val minusOne2 = reactor.ComputeCell(minusOne1) { it[0] - 1 }
+        val output = reactor.ComputeCell(plusOne, minusOne2) { it[0] * it[1] }
 
         val vals = mutableListOf<Int>()
         output.addCallback { vals.add(it) }
@@ -163,9 +163,9 @@ class ReactTest {
     fun callbacksShouldNotBeCalledIfDependenciesChangeButOutputValueDoesntChange() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(1)
-        val plusOne = reactor.ComputeCell(input) { it + 1 }
-        val minusOne = reactor.ComputeCell(input) { it - 1 }
-        val alwaysTwo = reactor.ComputeCell(plusOne, minusOne) { x, y -> x - y }
+        val plusOne = reactor.ComputeCell(input) { it[0] + 1 }
+        val minusOne = reactor.ComputeCell(input) { it[0] - 1 }
+        val alwaysTwo = reactor.ComputeCell(plusOne, minusOne) { it[0] - it[1] }
 
         val vals = mutableListOf<Int>()
         alwaysTwo.addCallback { vals.add(it) }
@@ -209,12 +209,12 @@ class ReactAdderTest(val input: Input, val expected: Expected) {
         val b = reactor.InputCell(input.b)
         val carryIn = reactor.InputCell(input.carryIn)
 
-        val aXorB = reactor.ComputeCell(a, b) { a, b -> a.xor(b) }
-        val sum = reactor.ComputeCell(aXorB, carryIn) { axorb, cin -> axorb.xor(cin) }
+        val aXorB = reactor.ComputeCell(a, b) { it[0].xor(it[1]) }
+        val sum = reactor.ComputeCell(aXorB, carryIn) { it[0].xor(it[1]) }
 
-        val aXorBAndCin = reactor.ComputeCell(aXorB, carryIn) { axorb, cin -> axorb && cin }
-        val aAndB = reactor.ComputeCell(a, b) { a, b -> a && b }
-        val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { a, b -> a || b }
+        val aXorBAndCin = reactor.ComputeCell(aXorB, carryIn) { it[0] && it[1] }
+        val aAndB = reactor.ComputeCell(a, b) { it[0] && it[1] }
+        val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { it[0] || it[1] }
 
         assertEquals(expected, Expected(sum=sum.value, carryOut=carryOut.value))
     }
