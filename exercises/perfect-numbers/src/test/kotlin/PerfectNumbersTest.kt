@@ -58,4 +58,10 @@ class NaturalNumberTest {
         assertEquals(Classification.DEFICIENT, classify(33550337))
     }
 
+    @Ignore
+    @Test(expected = RuntimeException::class)
+    fun mustProvideNaturalNumber() {
+        assertEquals(Classification.DEFICIENT, classify(-1))
+    }
+
 }
