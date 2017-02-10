@@ -3,6 +3,6 @@ enum class Classification {
     DEFICIENT, PERFECT, ABUNDANT
 }
 
-fun getClassification(naturalNumber: Int): Classification {
+fun classify(naturalNumber: Int): Classification {
     return
 }
