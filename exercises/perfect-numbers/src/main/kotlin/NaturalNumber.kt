@@ -4,5 +4,5 @@ enum class Classification {
 }
 
 fun classify(naturalNumber: Int): Classification {
-    return
+    return Classification.DEFICIENT
 }
