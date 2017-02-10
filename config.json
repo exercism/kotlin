@@ -222,6 +222,16 @@
       "difficulty": 1,
       "slug": "change",
       "topics": []
+    },
+    {
+      "difficulty": 10,
+      "slug": "react",
+      "topics": [
+        "Reactive programming",
+        "Generics",
+        "Nested classes",
+        "Higher-order functions"
+      ]
     }
   ]
 }
