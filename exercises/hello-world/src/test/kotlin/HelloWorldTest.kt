@@ -1,32 +1,30 @@
-import kotlin.test.assertEquals
+import org.junit.Ignore
 import org.junit.Test
+import org.junit.Assert.assertEquals
+
 
 class HelloWorldTest {
 
     @Test
     fun helloNoName() {
-        assertEquals("Hello, World!", HelloWorld.hello())
+        assertEquals("Hello, World!", hello())
     }
 
     @Test
-    fun helloBlankName() {
-        assertEquals("Hello, World!", HelloWorld.hello(""))
-        assertEquals("Hello, World!", HelloWorld.hello("    "))
-    }
-
-    @Test
-    fun helloNullName() {
-        //This isn't advised in Kotlin but demonstrates the null safety in Kotlin
-        assertEquals("Hello, World!", HelloWorld.hello(null))
-    }
-
-    @Test
+    @Ignore
     fun helloSampleName() {
-        assertEquals("Hello, Alice!", HelloWorld.hello("Alice"))
+        assertEquals("Hello, Alice!", hello("Alice"))
     }
 
     @Test
+    @Ignore
+    fun helloBlankName() {
+        assertEquals("Hello, World!", hello("    "))
+    }
+
+    @Test
+    @Ignore
     fun helloAnotherSampleName() {
-        assertEquals("Hello, Bob!", HelloWorld.hello("Bob"))
+        assertEquals("Hello, Bob!", hello("Bob"))
     }
 }

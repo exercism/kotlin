@@ -1,175 +1,110 @@
-## Windows
+# Running the Tests
 
-1) In the Command Prompt window, get the first exercise...
+Choose your operating system:
 
-```
-C:\Users\johndoe> exercism fetch kotlin
+* [Windows](#windows)
+* [Mac OS X](#mac-os-x)
+* [Linux](#linux)
 
-New:
-Kotlin (Etl)      C:\Users\johndoe\exercism\kotlin\etl
+----
 
-unchanged: 0, updated: 0, new: 1
-```
+# Windows
 
-2) In the "Welcome to IntelliJ IDEA" window, click the "Open" option.
+1. Open a Command Prompt.
+2. Get the first exercise:
 
-3) Navigate to the "C:\Users\johndoe\exercism\kotlin\etl" folder.  Make sure you've selected the "etl" folder. Click "OK".
+   ```batchfile
+   C:\Users\JohnDoe>exercism fetch kotlin
+   ﻿
+   Not Submitted:     1 problem
+   Kotlin (Hello World) C:\Users\JohnDoe\exercism\kotlin\hello-world
 
-4) In the "Import Project from Gradle" dialog, check the "auto-import" and "create directories" checkboxes and select "Use customizable gradle wrapper".
+   New:               1 problem
+   Kotlin (Hello World) C:\Users\JohnDoe\exercism\kotlin\hello-world
 
-```
-Gradle project:    [C:\Users\johndoe\exercism\kotlin\etl\build.gradle   ](...)
+   unchanged: 0, updated: 0, new: 1
 
-[X] Use auto-import
-[X] Create directories for empty content roots automatically
+   ```
+3. Change directory into the exercism:
 
-( ) Use default gradle wrapper (not configured for the current project)
-(o) Use customizable gradle wrapper
-( ) Use local gradle distribution
+   ```batchfile
+   C:\Users\JohnDoe>cd C:\Users\JohnDoe\exercism\kotlin\hello-world
+   ```
 
-...
-```
+4. Run the tests:
 
-5) Click "OK".  IntelliJ will automatically create its project artifacts based on the Gradle project file.
+   ```batchfile
+   C:\Users\JohnDoe>gradle test
+   ```
+   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
+5. Solve the exercise.  Find and work through the `GETTING_STARTED.md` guide ([view on GitHub](https://github.com/exercism/xkotlin/blob/master/exercises/hello-world/GETTING_STARTED.md)).
 
-* After the project has loaded and you've dismissed the "Tip of the Day" dialog, you may see a notice (in the top-right-hand corner), saying, "Unindex remote maven repositories found." you can safely dismiss this notice.
 
-6) Open the `README.md` file and carefully read the background for the assignment.
+Good luck!  Have fun!
 
-7) Start by running the test suite: In the "Project" view, right-click on the test file (`etl\src\test\kotlin\EtlTest`), select "Run", then pick the "EtlTest" that has a JUnit icon to the left of it (red and green arrows), NOT the Gradle icon (circular green).
+If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
 
-* When you first start an exercise, you should expect compilation errors because the test is setting expectations on a class that you need to write.  By trying to run the tests, you get a nice list of what needs to be fixed in the "Messages Make" view.
+----
 
-... and away you go!!!
+# Mac OS X
 
-## Mac OS X
+1. In the terminal window, get the first exercise:
 
-### Get started with the first exercise
+   ```
+   $ exercism fetch kotlin
 
-In the terminal window, get the first exercise:
+   New:                 1 problem
+   Kotlin (Etl) /Users/johndoe/exercism/kotlin/hello-world
 
-    $ exercism fetch kotlin
+   unchanged: 0, updated: 0, new: 1
 
-    Not Submitted:       1 problem
-    Kotlin (Etl) /Users/johndoe/exercism/kotlin/etl
+  ```
+2. Change directory into the exercise:
 
-    New:                 1 problem
-    Kotlin (Etl) /Users/johndoe/exercism/kotlin/etl
+   ```
+   $ cd /Users/johndoe/exercism/kotlin/hello-world
+   ```
+3. Run the tests:
 
-    unchanged: 0, updated: 0, new: 1
+  ```
+  $ gradle test
+  ```
+   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
+4. Solve the exercise.  Find and work through the `GETTING_STARTED.md` guide ([view on GitHub](https://github.com/exercism/xkotlin/blob/master/exercises/hello-world/GETTING_STARTED.md)).
 
-### Running the Tests
+Good luck!  Have fun!
 
-#### Option 1: IntelliJ
+If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
 
-1. In the "Welcome to IntelliJ IDEA" window, click the "Open" option.
+----
 
-2. Navigate to the `/Users/johndoe/exercism/kotlin/etl` folder.  Make sure you've selected the
-   "etl" folder. Click "OK".
+# Linux
 
-3. In the "Import Project from Gradle" dialog, check the "auto-import" and "create directories"
-   checkboxes and select "Use customizable gradle wrapper".
+1. In the terminal window, get the first exercise:
 
-    ![IntelliJ 14 CE -- Gradle import dialog](http://x.exercism.io/v3/tracks/kotlin/docs/img/mac-osx--idea-ce-gradle-import-dialog.png)
+   ```
+   $ exercism fetch kotlin
 
-4. Click "OK".  IntelliJ will automatically create its project artifacts based on the Gradle project file.
+   New:                 1 problem
+   Kotlin (Etl) /home/johndoe/exercism/kotlin/hello-world
 
- * After the project has loaded and you've dismissed the "Tip of the Day" dialog, you may see a
-   notice (in the top-right-hand corner), saying, "Unindex remote maven repositories found." you can
-   safely dismiss this notice.
+   unchanged: 0, updated: 0, new: 1
 
-5. Open the `README.md` file and carefully read the background for the assignment.
+  ```
+2. Change directory into the exercise:
 
-6. Start by running the test suite: In the "Project" view, right-click on the test file
-   (`etl\src\test\kotlin\EtlTest`), select "Run", then pick the "EtlTest" that has a JUnit icon to the
-   left of it (red and green arrows), NOT the Gradle icon (circular green).
-   ![Run tests through IDEA JUnit Runner, NOT Gradle](http://x.exercism.io/v3/tracks/kotlin/docs/img/mac-osx--idea-ce-run-unit-tests.png)
+   ```
+   $ cd /home/johndoe/exercism/kotlin/hello-world
+   ```
+3. Run the tests:
 
- * If these menu options don't appear at first, wait for a few seconds and try again; IntelliJ is still
-   configuring the project with a Kotlin nature.
+  ```
+  $ gradle test
+  ```
+   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
+4. Solve the exercise.  Find and work through the `GETTING_STARTED.md` guide ([view on GitHub](https://github.com/exercism/xkotlin/blob/master/exercises/hello-world/GETTING_STARTED.md)).
 
- * When you first start an exercise, you should expect compilation errors because the test is
-   setting expectations on a class that you need to write.  By trying to run the tests, you get a
-   nice list of what needs to be fixed in the "Messages Make" view.
+Good luck!  Have fun!
 
-... and away you go!!!
+If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
 
-#### Option 2: Command Line
-
-The Exercism exercises for Kotlin can be built and tested from the command line using [Gradle](https://gradle.org).
-
-After [installing Gradle](https://www.jayway.com/2013/05/12/getting-started-with-gradle), you can run the tests for any exercise by running `gradle test`, as long as you're in the same directory as the `build.gradle` file:
-
-```
-$ pwd
-/Users/johndoe/Code/exercism/kotlin/hello-world
-
-$ gradle test
-...
-
-:test
-
-HelloWorldTest > helloSampleName FAILED
-    org.junit.ComparisonFailure at HelloWorldTest.kt:25
-
-HelloWorldTest > helloNullName FAILED
-    org.junit.ComparisonFailure at HelloWorldTest.kt:20
-
-HelloWorldTest > helloBlankName FAILED
-    org.junit.ComparisonFailure at HelloWorldTest.kt:13
-
-HelloWorldTest > helloNoName FAILED
-    org.junit.ComparisonFailure at HelloWorldTest.kt:8
-
-HelloWorldTest > helloAnotherSampleName FAILED
-    org.junit.ComparisonFailure at HelloWorldTest.kt:30
-
-5 tests completed, 5 failed
-:test FAILED
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':test'.
-> There were failing tests. See the report at: file:///Users/johndoe/Code/exercism/kotlin/hello-world/build/reports/tests/test/index.html
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
-
-BUILD FAILED
-
-Total time: 1.141 secs
-```
-
-When test cases are failing, you can get more information about the failing tests by including the `test` task's `--info` option:
-
-```
-$ gradle test --info
-...
-
-:test
-
-...
-
-HelloWorldTest > helloSampleName FAILED
-    org.junit.ComparisonFailure: expected:<Hell[o], Alice!> but was:<Hell[ooo], Alice!>
-        at org.junit.Assert.assertEquals(Assert.java:115)
-        at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:23)
-        at kotlin.test.AssertionsKt__TestAssertionsKt.assertEquals(TestAssertions.kt:29)
-        at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
-        at kotlin.test.AssertionsKt__TestAssertionsKt.assertEquals$default(TestAssertions.kt:28)
-        at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
-        at HelloWorldTest.helloSampleName(HelloWorldTest.kt:25)
-
-...
-
-5 tests completed, 5 failed
-
-...
-
-BUILD FAILED
-
-Total time: 1.162 secs
-
-...
-```

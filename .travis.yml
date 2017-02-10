@@ -2,6 +2,17 @@
 language: java
 jdk:
   - oraclejdk8
-script:
-  - bin/build.sh
+
 sudo: false
+cache: bundler
+addons:
+  apt:
+    packages:
+      - tree
+before_install:
+  - rvm install 2.2.5
+  - rvm use 2.2.5
+
+script:
+  - bin/unit-tests.sh
+  - bin/journey-test.sh

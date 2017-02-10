@@ -1,5 +1,6 @@
 
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -25,6 +26,7 @@ class BracketPushTest(val input: String, val expectedOutput: Boolean) {
                 arrayOf("\\\\left(\\\\begin{array}{cc} \\\\frac{1}{3} & x\\\\\\\\ \\\\mathrm{e}^{x} &... x^2 \\\\end{array}\\\\right)", true)
         )
     }
+
 
     @Test
     fun test() {

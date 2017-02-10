@@ -1,5 +1,6 @@
 
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -24,6 +25,7 @@ class SeriesValidInputTest(val input: String, val span: Int, val expectedOutput:
                 arrayOf("", 0, 1)
         )
     }
+
 
     @Test
     fun validInputTest() {

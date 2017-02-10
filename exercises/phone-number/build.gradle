@@ -1,5 +1,5 @@
 buildscript {
-  ext.kotlin_version = '1.0.2'
+  ext.kotlin_version = '1.0.6'
   repositories {
     mavenCentral()
   }
@@ -19,4 +19,10 @@ dependencies {
 
   testCompile 'junit:junit:4.12'
   testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+}
+test {
+  testLogging {
+    exceptionFormat = 'full'
+    events = ["passed", "failed", "skipped"]
+  }
 }
