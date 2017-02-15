@@ -1,5 +1,14 @@
 subprojects {
   afterEvaluate { Project project ->
+
+    configurations {
+      starterSourceCompile.extendsFrom compile
+      starterSourceRuntime.extendsFrom runtime
+
+      exerciseTestsCompile.extendsFrom testCompile
+      exerciseTestsRuntime.extendsFrom testRuntime
+    }
+
     sourceSets {
       // Verify that the tests are working by running them against the example code.
       // By replacing the "main" sourceSet with the example code we avoid any collisions
@@ -16,6 +25,14 @@ subprojects {
       }
       project["compileStarterSourceKotlin"].doFirst { compileTask ->
         println "  (source = " + compileTask.source.asPath + ")"
+      }
+
+      exerciseTests {
+        kotlin {
+          srcDirs = ["src/test/kotlin"]
+          compileClasspath += main.output
+          runtimeClasspath += main.output
+        }
       }
 
       // In lieu of being able to disable @Ignore in JUnit tests, we filter
