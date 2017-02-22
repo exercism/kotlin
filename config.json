@@ -229,6 +229,11 @@
       "topics": []
     },
     {
+      "difficulty": 1,
+      "slug": "triangle",
+      "topics": []
+    },
+    {
       "difficulty": 10,
       "slug": "react",
       "topics": [
