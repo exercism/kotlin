@@ -234,6 +234,11 @@
       "topics": []
     },
     {
+      "difficulty": 2,
+      "slug": "bank-account",
+      "topics": ["Concurrency"]
+    },
+    {
       "difficulty": 10,
       "slug": "react",
       "topics": [
