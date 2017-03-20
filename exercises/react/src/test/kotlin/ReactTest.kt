@@ -36,7 +36,7 @@ class ReactTest {
         val reactor = Reactor<Int>()
         val one = reactor.InputCell(1)
         val two = reactor.InputCell(2)
-        val output = reactor.ComputeCell(one, two) { it[0] + it[1] * 10 }
+        val output = reactor.ComputeCell(one, two) { (x, y) -> x + y * 10 }
         assertEquals(21, output.value)
     }
 
@@ -57,7 +57,7 @@ class ReactTest {
         val input = reactor.InputCell(1)
         val timesTwo = reactor.ComputeCell(input) { it[0] * 2 }
         val timesThirty = reactor.ComputeCell(input) { it[0] * 30 }
-        val output = reactor.ComputeCell(timesTwo, timesThirty) { it[0] + it[1] }
+        val output = reactor.ComputeCell(timesTwo, timesThirty) { (x, y) -> x + y }
 
         assertEquals(32, output.value)
         input.value = 3
@@ -149,7 +149,7 @@ class ReactTest {
         val plusOne = reactor.ComputeCell(input) { it[0] + 1 }
         val minusOne1 = reactor.ComputeCell(input) { it[0] - 1 }
         val minusOne2 = reactor.ComputeCell(minusOne1) { it[0] - 1 }
-        val output = reactor.ComputeCell(plusOne, minusOne2) { it[0] * it[1] }
+        val output = reactor.ComputeCell(plusOne, minusOne2) { (x, y) -> x * y }
 
         val vals = mutableListOf<Int>()
         output.addCallback { vals.add(it) }
@@ -165,7 +165,7 @@ class ReactTest {
         val input = reactor.InputCell(1)
         val plusOne = reactor.ComputeCell(input) { it[0] + 1 }
         val minusOne = reactor.ComputeCell(input) { it[0] - 1 }
-        val alwaysTwo = reactor.ComputeCell(plusOne, minusOne) { it[0] - it[1] }
+        val alwaysTwo = reactor.ComputeCell(plusOne, minusOne) { (x, y) -> x - y }
 
         val vals = mutableListOf<Int>()
         alwaysTwo.addCallback { vals.add(it) }
@@ -209,12 +209,12 @@ class ReactAdderTest(val input: Input, val expected: Expected) {
         val b = reactor.InputCell(input.b)
         val carryIn = reactor.InputCell(input.carryIn)
 
-        val aXorB = reactor.ComputeCell(a, b) { it[0].xor(it[1]) }
-        val sum = reactor.ComputeCell(aXorB, carryIn) { it[0].xor(it[1]) }
+        val aXorB = reactor.ComputeCell(a, b) { (x, y) -> x.xor(y) }
+        val sum = reactor.ComputeCell(aXorB, carryIn) { (x, y) -> x.xor(y) }
 
-        val aXorBAndCin = reactor.ComputeCell(aXorB, carryIn) { it[0] && it[1] }
-        val aAndB = reactor.ComputeCell(a, b) { it[0] && it[1] }
-        val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { it[0] || it[1] }
+        val aXorBAndCin = reactor.ComputeCell(aXorB, carryIn) { (x, y) -> x && y }
+        val aAndB = reactor.ComputeCell(a, b) { (x, y) -> x && y }
+        val carryOut = reactor.ComputeCell(aXorBAndCin, aAndB) { (x, y) -> x || y }
 
         assertEquals(expected, Expected(sum=sum.value, carryOut=carryOut.value))
     }
