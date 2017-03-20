@@ -1,86 +1,88 @@
 import org.junit.Test
 import org.junit.Ignore
-import kotlin.test.assertEquals
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
 
 class LuhnTest {
 
 
     @Test
-    fun checkDigitIsRightMostDigit() {
-        val expectedOutput = 7
-
-        assertEquals(expectedOutput, Luhn(34567).checkDigit)
+    fun singleDigitStringsCannotBeValid() {
+        assertFalse(Luhn.isValid("1"))
     }
 
     @Ignore
     @Test
-    fun addendsDoublesEveryOtherNumberFromRight() {
-        val expectedOutput = listOf(1, 4, 1, 4, 1)
-
-        assertEquals(expectedOutput, Luhn(12121).addends)
+    fun singleZeroIsInvalid() {
+        assertFalse(Luhn.isValid("0"))
     }
 
     @Ignore
     @Test
-    fun addendsSubtracts9WhenDoubledNumberIsMoreThan9() {
-        val expectedOutput = listOf(7, 6, 6, 1)
-
-        assertEquals(expectedOutput, Luhn(8631).addends)
+    fun simpleValidSINThatRemainsValidIfReversed() {
+        assertTrue(Luhn.isValid("059"))
+        assertTrue(Luhn.isValid("950"))
     }
 
     @Ignore
     @Test
-    fun checkSumAddsAddendsTogether1() {
-        val expectedOutput = 22
-
-        assertEquals(expectedOutput, Luhn(4913).checksum)
+    fun simpleValidSINThatBecomesInvalidIfReversed() {
+        assertTrue(Luhn.isValid("59"))
+        assertFalse(Luhn.isValid("95"))
     }
 
     @Ignore
     @Test
-    fun checkSumAddsAddendsTogether2() {
-        val expectedOutput = 21
-
-        assertEquals(expectedOutput, Luhn(201773).checksum)
+    fun validCanadianSIN() {
+        assertTrue(Luhn.isValid("055 444 285"))
     }
 
     @Ignore
     @Test
-    fun numberIsValidWhenChecksumMod10IsZero1() {
-        val expectedOutput = false
-
-        assertEquals(expectedOutput, Luhn(738).isValid)
+    fun invalidCanadianSIN() {
+        assertFalse(Luhn.isValid("055 444 286"))
     }
 
     @Ignore
     @Test
-    fun numberIsValidWhenChecksumMod10IsZero2() {
-        val expectedOutput = true
-
-        assertEquals(expectedOutput, Luhn(8739567).isValid)
+    fun invalidCreditCard() {
+        assertFalse(Luhn.isValid("8273 1232 7352 0569"))
     }
 
     @Ignore
     @Test
-    fun luhnCanCreateSimpleNumbersWithValidCheckDigit() {
-        val expectedOutput = 1230L
-
-        assertEquals(expectedOutput, Luhn(123).create)
+    fun validStringsWithNonDigitIncludedBecomeInvalid() {
+        assertFalse(Luhn.isValid("055a 444 285"))
     }
 
     @Ignore
     @Test
-    fun luhnCanCreateLargeNumbersWithValidCheckDigit() {
-        val expectedOutput = 8739567L
-
-        assertEquals(expectedOutput, Luhn(873956).create)
+    fun validStringsWithPunctuationIncludedBecomeInvalid() {
+        assertFalse(Luhn.isValid("055-444-285"))
     }
 
     @Ignore
     @Test
-    fun luhnCanCreateHugeNumbersWithValidCheckDigit() {
-        val expectedOutput = 8372637564L
-
-        assertEquals(expectedOutput, Luhn(837263756).create)
+    fun validStringsWithSymbolsIncludedBecomeInvalid() {
+        assertFalse(Luhn.isValid("055£ 444$ 285"))
     }
+
+    @Ignore
+    @Test
+    fun singleZeroWithSpaceIsInvalid() {
+        assertFalse(Luhn.isValid(" 0"))
+    }
+
+    @Ignore
+    @Test
+    fun moreThanSingleZeroIsValid() {
+        assertTrue(Luhn.isValid("0000 0"))
+    }
+
+    @Ignore
+    @Test
+    fun inputDigit9IsCorrectlyConvertedToOutputDigit9() {
+        assertTrue(Luhn.isValid("091"))
+    }
+
 }
