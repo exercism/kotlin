@@ -1,5 +1,6 @@
 import org.junit.Ignore
 import org.junit.Test
+import java.util.*
 import java.util.concurrent.CountDownLatch
 import kotlin.concurrent.thread
 import kotlin.test.assertEquals
@@ -50,6 +51,7 @@ class BankAccountTest {
         val iterations = 500
         val startLatch = CountDownLatch(1)
         val endLatch = CountDownLatch(threads)
+        val random = Random()
 
         val account = BankAccount()
 
@@ -58,6 +60,7 @@ class BankAccountTest {
                 startLatch.await()
                 repeat(iterations) {
                     account.adjustBalance(1)
+                    if (random.nextBoolean()) Thread.yield()
                     account.adjustBalance(-1)
                 }
                 endLatch.countDown()
