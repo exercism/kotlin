@@ -1,27 +1,27 @@
 class BankAccount {
     var balance: Long = 0
         get() {
-             synchronized(this) {
-                 if (!isOpen) throw IllegalStateException("Account is closed")
-                 return field
-             }
+            synchronized(lock) {
+                if (!isOpen) throw IllegalStateException("Account is closed")
+                return field
+            }
         }
-
         private set
 
     var isOpen = true
         private set
 
     fun adjustBalance(amount: Long) {
-        synchronized(this) {
+        synchronized(lock) {
             balance += amount
         }
     }
 
     fun close() {
-        synchronized(this) {
+        synchronized(lock) {
             isOpen = false
         }
     }
 
+    private val lock = Any()
 }
