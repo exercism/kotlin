@@ -1,10 +1,9 @@
 import org.junit.Ignore
 import org.junit.Test
 import java.util.*
-import java.util.concurrent.CountDownLatch
-import kotlin.concurrent.thread
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
+import kotlinx.coroutines.experimental.*
 
 class BankAccountTest {
 
@@ -32,7 +31,7 @@ class BankAccountTest {
         val account = BankAccount()
         account.close()
 
-        assertFailsWith(IllegalStateException::class, {account.balance})
+        assertFailsWith(IllegalStateException::class, { account.balance })
     }
 
     @Ignore
@@ -41,34 +40,31 @@ class BankAccountTest {
         val account = BankAccount()
         account.close()
 
-        assertFailsWith(IllegalStateException::class, {account.adjustBalance(1000)})
+        assertFailsWith(IllegalStateException::class, { account.adjustBalance(1000) })
     }
 
     @Ignore
     @Test
     fun concurrentBalanceAdjustments() {
-        val threads = 100
+        val threads = 1000
         val iterations = 500
-        val startLatch = CountDownLatch(1)
-        val endLatch = CountDownLatch(threads)
         val random = Random()
 
         val account = BankAccount()
 
-        repeat (threads) {
-            thread {
-                startLatch.await()
+        val jobs = List(threads) {
+            launch(CommonPool) {
                 repeat(iterations) {
                     account.adjustBalance(1)
-                    if (random.nextBoolean()) Thread.yield()
+                    delay(random.nextInt(10).toLong())
                     account.adjustBalance(-1)
                 }
-                endLatch.countDown()
             }
         }
 
-        startLatch.countDown()
-        endLatch.await()
+        runBlocking {
+            jobs.forEach { it.join() }
+        }
 
         assertEquals(0, account.balance)
     }
