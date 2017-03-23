@@ -22,7 +22,7 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-    testCompile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.12'
+    testCompile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.13'
 }
 test {
     testLogging {
