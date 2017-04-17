@@ -234,6 +234,15 @@
       "topics": []
     },
     {
+      "difficulty": 1,
+      "slug": "sum-of-multiples",
+      "topics": [
+        "Ranges",
+        "Collections",
+        "Lambdas"
+      ]
+    },
+    {
       "difficulty": 2,
       "slug": "bank-account",
       "topics": ["Concurrency"]
