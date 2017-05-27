@@ -230,6 +230,11 @@
     },
     {
       "difficulty": 1,
+      "slug": "clock",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
       "slug": "triangle",
       "topics": []
     },
