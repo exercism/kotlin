@@ -214,6 +214,8 @@ solve_all_exercises() {
     cp -R -H ${track_root}/exercises/${exercise}/src/example/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
 
     pushd ${exercism_exercises_dir}/${TRACK}/${exercise}
+    # Check that tests compile before we strip @Ignore annotations
+    gradle compileTestJava
     # Ensure we run all the tests (as delivered, all but the first is @Ignore'd)
     for testfile in `find . -name "*Test.${TRACK_SRC_EXT}"`; do
       sed 's/@Ignore//' ${testfile} > "${tempfile}" && mv "${tempfile}" "${testfile}"
