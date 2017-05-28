@@ -12,7 +12,7 @@ Choose your operating system:
 * [Linux](#linux)
 
 ... or ...
-* if you prefer to not use a package maanger, you can [install manually](#install-manually).
+* if you prefer to not use a package manager, you can [install manually](#install-manually).
 
 Optionally, you can also use a [Java IDE](#java-ides).
 
