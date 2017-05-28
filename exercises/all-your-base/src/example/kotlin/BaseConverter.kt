@@ -8,12 +8,17 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
     private val numeral: Int
 
     init {
-        validateInputs(originalBase, originalDigits)
+        require(originalBase >= MINIMUM_VALID_BASE) { INVALID_BASE_ERROR_MESSAGE }
+        require(originalDigits.isNotEmpty()) { "You must supply at least one digit." }
+        require(originalDigits.size == 1 || originalDigits[0] != 0) { "Digits may not contain leading zeros." }
+        require(originalDigits.min()!! >= 0) { "Digits may not be negative." }
+        require(originalDigits.max()!! < originalBase) { "All digits must be strictly less than the base." }
+
         this.numeral = computeNumeral(originalBase, originalDigits)
     }
 
     fun convertToBase(newBase: Int): IntArray {
-        if (newBase < MINIMUM_VALID_BASE) throw IllegalArgumentException(INVALID_BASE_ERROR_MESSAGE)
+        require(newBase >= MINIMUM_VALID_BASE) { INVALID_BASE_ERROR_MESSAGE }
 
         val largestExponent = computeLargestExponentForBase(newBase)
         val result = IntArray(largestExponent + 1)
@@ -28,28 +33,6 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
         }
 
         return result
-    }
-
-    private fun validateInputs(originalBase: Int, originalDigits: IntArray) {
-        if (originalBase < MINIMUM_VALID_BASE) {
-            throw IllegalArgumentException(INVALID_BASE_ERROR_MESSAGE)
-        }
-
-        if (originalDigits.isEmpty()) {
-            throw IllegalArgumentException("You must supply at least one digit.")
-        }
-
-        if (originalDigits.size > 1 && originalDigits[0] == 0) {
-            throw IllegalArgumentException("Digits may not contain leading zeros.")
-        }
-
-        if (originalDigits.min()!! < 0) {
-            throw IllegalArgumentException("Digits may not be negative.")
-        }
-
-        if (originalDigits.max()!! >= originalBase) {
-            throw IllegalArgumentException("All digits must be strictly less than the base.")
-        }
     }
 
     private fun computeNumeral(originalBase: Int, originalDigits: IntArray): Int {
