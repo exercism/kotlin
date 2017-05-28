@@ -1,4 +1,4 @@
-class Clock(private var hours: Int, private var minutes: Int) {
+data class Clock(private var hours: Int, private var minutes: Int) {
 
     companion object {
         private val MINUTES_IN_AN_HOUR = 60
@@ -7,12 +7,6 @@ class Clock(private var hours: Int, private var minutes: Int) {
 
     init {
         sanitiseTime()
-    }
-
-    override fun equals(other: Any?): Boolean {
-        if (other !is Clock) return false
-
-        return hours == other.hours && minutes == other.minutes
     }
 
     override fun toString(): String {
