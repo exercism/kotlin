@@ -234,6 +234,11 @@
       "topics": []
     },
     {
+      "difficulty": 1,
+      "slug": "all-your-base",
+      "topics": []
+    },
+    {
       "difficulty": 2,
       "slug": "bank-account",
       "topics": ["Concurrency"]
