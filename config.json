@@ -253,6 +253,11 @@
       "topics": []
     },
     {
+      "difficulty": 1,
+      "slug": "collatz-conjecture",
+      "topics": []
+    },
+    {
       "difficulty": 2,
       "slug": "bank-account",
       "topics": ["Concurrency"]
