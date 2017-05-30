@@ -35,7 +35,7 @@ class PhoneNumberTest {
     @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun invalidWhenOnly11Digits() {
-        val actualNumber = PhoneNumber("21234567890").number
+        val actualNumber = PhoneNumber("21234567890")
 
         fail("IllegalArgumentException should have been thrown")
     }
@@ -43,7 +43,7 @@ class PhoneNumberTest {
     @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun invalidWhen9Digits() {
-        val actualNumber = PhoneNumber("123456789").number
+        val actualNumber = PhoneNumber("123456789")
 
         fail("IllegalArgumentException should have been thrown")
     }
