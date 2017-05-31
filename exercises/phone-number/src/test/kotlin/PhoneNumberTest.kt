@@ -1,6 +1,7 @@
 import org.junit.Test
 import org.junit.Ignore
 import kotlin.test.assertEquals
+import kotlin.test.fail
 
 class PhoneNumberTest {
 
@@ -32,21 +33,19 @@ class PhoneNumberTest {
     }
 
     @Ignore
-    @Test
+    @Test(expected = IllegalArgumentException::class)
     fun invalidWhenOnly11Digits() {
-        val expectedNumber = "0000000000"
-        val actualNumber = PhoneNumber("21234567890").number
+        val actualNumber = PhoneNumber("21234567890")
 
-        assertEquals(expectedNumber, actualNumber)
+        fail("IllegalArgumentException should have been thrown")
     }
 
     @Ignore
-    @Test
+    @Test(expected = IllegalArgumentException::class)
     fun invalidWhen9Digits() {
-        val expectedNumber = "0000000000"
-        val actualNumber = PhoneNumber("123456789").number
+        val actualNumber = PhoneNumber("123456789")
 
-        assertEquals(expectedNumber, actualNumber)
+        fail("IllegalArgumentException should have been thrown")
     }
 
     @Ignore
