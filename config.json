@@ -258,6 +258,11 @@
       "topics": []
     },
     {
+      "difficulty": 1,
+      "slug": "diamond",
+      "topics": []
+    },
+    {
       "difficulty": 2,
       "slug": "bank-account",
       "topics": ["Concurrency"]
