@@ -17,7 +17,7 @@ fun <T> List<T>.customFilter(predicate: (T) -> Boolean): List<T> {
     return result
 }
 
-val <T> List<T>.customSize: Int
+val List<Any>.customSize: Int
     get() = size
 
 fun <T, U> List<T>.customMap(transform: (T) -> U): List<U> {
@@ -26,14 +26,14 @@ fun <T, U> List<T>.customMap(transform: (T) -> U): List<U> {
     return result
 }
 
-fun <T> List<T>.customFoldLeft(initial: T, accumulator: (T, T) -> T): T {
+fun <T, U> List<T>.customFoldLeft(initial: U, f: (U, T) -> U): U {
     if (isEmpty()) return initial
-    return accumulator(dropLast(1).customFoldLeft(initial, accumulator), last())
+    return drop(1).customFoldLeft(f(initial, first()), f)
 }
 
-fun <T> List<T>.customFoldRight(initial: T, accumulator: (T, T) -> T): T {
+fun <T, U> List<T>.customFoldRight(initial: U, f: (T, U) -> U): U {
     if (isEmpty()) return initial
-    return accumulator(drop(1).customFoldRight(initial, accumulator), first())
+    return f(first(), drop(1).customFoldRight(initial, f))
 }
 
 fun <T> List<T>.customReverse(): List<T> {

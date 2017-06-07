@@ -18,16 +18,16 @@ class ListExtensionsTest {
     @Test
     fun testAppendingNonEmptyListOnEmptyList() {
         assertEquals(
-                listOf(1, 2, 3, 4),
-                emptyList<Int>().customAppend(listOf(1, 2, 3, 4)))
+                listOf('1', '2', '3', '4'),
+                emptyList<Char>().customAppend(listOf('1', '2', '3', '4')))
     }
 
     @Ignore
     @Test
     fun testAppendingNonEmptyListOnNonEmptyList() {
         assertEquals(
-                listOf(1, 2, 2, 3, 4, 5),
-                listOf(1, 2).customAppend(listOf(2, 3, 4, 5)))
+                listOf("1", "2", "2", "3", "4", "5"),
+                listOf("1", "2").customAppend(listOf("2", "3", "4", "5")))
     }
 
     @Ignore
@@ -42,8 +42,8 @@ class ListExtensionsTest {
     @Test
     fun testConcatOnNonEmptyListOfLists() {
         assertEquals(
-                listOf(1, 2, 3, 4, 5, 6),
-                listOf(listOf(1, 2), listOf(3), emptyList(), listOf(4, 5, 6)).customConcat())
+                listOf('1', '2', '3', '4', '5', '6'),
+                listOf(listOf('1', '2'), listOf('3'), emptyList(), listOf('4', '5', '6')).customConcat())
     }
 
     @Ignore
@@ -71,7 +71,7 @@ class ListExtensionsTest {
     @Ignore
     @Test
     fun testSizeOfNonEmptyList() {
-        assertEquals(4, listOf(1, 2, 3, 4).customSize)
+        assertEquals(4, listOf("one", "two", "three", "four").customSize)
     }
 
     @Ignore
@@ -95,15 +95,23 @@ class ListExtensionsTest {
     fun testFoldLeftOnEmptyList() {
         assertEquals(
                 2.0,
-                emptyList<Double>().customFoldLeft(2.0) { acc, current -> current / acc })
+                emptyList<Int>().customFoldLeft(2.0, Double::times))
     }
 
     @Ignore
     @Test
-    fun testFoldLeftOnNonEmptyList() {
+    fun testFoldLeftWithDirectionIndependentOperationOnNonEmptyList() {
         assertEquals(
-                64.0,
-                listOf(1.0, 2.0, 3.0, 4.0).customFoldLeft(24.0) { acc, current -> current / acc })
+                15,
+                listOf(1, 2, 3, 4).customFoldLeft(5, Int::plus))
+    }
+
+    @Ignore
+    @Test
+    fun testFoldLeftWithDirectionDependentOperationOnNonEmptyList() {
+        assertEquals(
+                0,
+                listOf(2, 5).customFoldLeft(5, Int::div))
     }
 
     @Ignore
@@ -111,15 +119,23 @@ class ListExtensionsTest {
     fun testFoldRightOnEmptyList() {
         assertEquals(
                 2.0,
-                emptyList<Double>().customFoldRight(2.0) { acc, current -> current / acc })
+                emptyList<Double>().customFoldRight(2.0, Double::times))
     }
 
     @Ignore
     @Test
-    fun testFoldRightOnNonEmptyList() {
+    fun testFoldRightWithDirectionIndependentOperationOnNonEmptyList() {
         assertEquals(
-                9.0,
-                listOf(1.0, 2.0, 3.0, 4.0).customFoldRight(24.0) { acc, current -> current / acc })
+                15,
+                listOf(1, 2, 3, 4).customFoldRight(5, Int::plus))
+    }
+
+    @Ignore
+    @Test
+    fun testFoldRightWithDirectionDependentOperationOnNonEmptyList() {
+        assertEquals(
+                2,
+                listOf(2, 5).customFoldRight(5, Int::div))
     }
 
     @Ignore
@@ -134,8 +150,8 @@ class ListExtensionsTest {
     @Test
     fun testReversingNonEmptyList() {
         assertEquals(
-                listOf(7, 5, 3, 1),
-                listOf(1, 3, 5, 7).customReverse())
+                listOf('7', '5', '3', '1'),
+                listOf('1', '3', '5', '7').customReverse())
     }
 
 }
