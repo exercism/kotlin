@@ -5,7 +5,7 @@ import org.junit.rules.ExpectedException
 import kotlin.test.assertEquals
 
 /*
- * version: 1.0.0
+ * version: 1.1.0
  */
 class CollatzCalculatorTest {
 
@@ -28,6 +28,12 @@ class CollatzCalculatorTest {
     @Test
     fun testCorrectNumberOfStepsWhenBothStepTypesAreNeeded() {
         assertEquals(9, CollatzCalculator.computeStepCount(12))
+    }
+
+    @Ignore
+    @Test
+    fun testAVeryLargeInput() {
+        assertEquals(152, CollatzCalculator.computeStepCount(1000000))
     }
 
     @Ignore
