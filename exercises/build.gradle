@@ -45,6 +45,9 @@ subprojects {
       }
     }
 
+    // Note that journey-test.sh also strips @Ignore annotations using sed. The
+    // stripping implementations here and in journey-test.sh should be kept
+    // consistent.
     task copyTestsFilteringIgnores(type: Copy) {
       from "src/test/kotlin"
       into "build/gen/test/kotlin"

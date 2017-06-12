@@ -234,7 +234,9 @@ solve_all_exercises() {
     pushd ${exercism_exercises_dir}/${TRACK}/${exercise}
     # Check that tests compile before we strip @Ignore annotations
     "$EXECPATH"/gradlew compileTestKotlin
-    # Ensure we run all the tests (as delivered, all but the first is @Ignore'd)
+    # Strip @Ignore annotations to ensure we run the tests (as delivered, all but the first is @Ignore'd).
+    # Note that unit-test.sh also strips @Ignore annotations via the Gradle task copyTestsFilteringIgnores.
+    # The stripping implementations here and in copyTestsFilteringIgnores should be kept consistent.
     for testfile in `find . -name "*Test.${TRACK_SRC_EXT}"`; do
       sed 's/@Ignore\(\(.*\)\)\{0,1\}//' ${testfile} > "${tempfile}" && mv "${tempfile}" "${testfile}"
     done
