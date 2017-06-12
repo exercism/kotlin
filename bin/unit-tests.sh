@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-gradle --version
+./gradlew --version
 
 echo ""
 echo ">>> Running configlet..."
@@ -10,6 +10,6 @@ bin/configlet .
 pushd exercises
 echo ""
 echo ">>> Running tests..."
-TERM=dumb gradle check compileStarterSourceKotlin --continue
+TERM=dumb ../gradlew check compileStarterSourceKotlin --parallel --continue
 popd
 
