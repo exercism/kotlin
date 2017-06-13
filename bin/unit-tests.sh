@@ -10,6 +10,6 @@ bin/configlet .
 pushd exercises
 echo ""
 echo ">>> Running tests..."
-TERM=dumb ../gradlew check compileStarterSourceKotlin --parallel --continue
+TERM=dumb ../gradlew check compileStarterSourceKotlin --continue
 popd
 
