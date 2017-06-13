@@ -6,14 +6,6 @@
   "deprecated": [
 
   ],
-  "ignored": [
-    "_template",
-    "bin",
-    ".gradle",
-    "docs",
-    "img",
-    "build"
-  ],
   "foregone": [
 
   ],
