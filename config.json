@@ -4,7 +4,10 @@
   "repository": "https://github.com/exercism/xkotlin",
   "active": true,
   "deprecated": [
-
+    "accumulate",
+    "binary",
+    "hexadecimal",
+    "strain"
   ],
   "foregone": [
 
@@ -18,80 +21,309 @@
       ]
     },
     {
-      "difficulty": 1,
-      "slug": "gigasecond",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
+      "difficulty": 2,
       "slug": "rna-transcription",
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
-      "slug": "etl",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "word-count",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "accumulate",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
+      "difficulty": 3,
       "slug": "pangram",
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
-      "slug": "anagram",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "isogram",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
+      "difficulty": 3,
       "slug": "hamming",
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "difficulty": 3,
+      "slug": "gigasecond",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "space-age",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "acronym",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "scrabble-score",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "raindrops",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "difference-of-squares",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
+      "slug": "perfect-numbers",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "sum-of-multiples",
+      "topics": [
+        "Ranges",
+        "Collections",
+        "Lambdas"
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "luhn",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "triangle",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "largest-series-product",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "sieve",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "collatz-conjecture",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "nth-prime",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "diamond",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
+      "slug": "isogram",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "flatten-array",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "pig-latin",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "phone-number",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "nucleotide-count",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "word-count",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "robot-name",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "allergies",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
       "slug": "bob",
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
-      "slug": "perfect-numbers",
+      "difficulty": 5,
+      "slug": "pascals-triangle",
       "topics": [
 
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "bracket-push",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "series",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 5,
+      "slug": "atbash-cipher",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "roman-numerals",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "beer-song",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "etl",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "linked-list",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "grade-school",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "binary-search",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
+      "slug": "all-your-base",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 7,
+      "slug": "anagram",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 7,
+      "slug": "clock",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 8,
+      "slug": "simple-cipher",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 8,
+      "slug": "change",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 10,
+      "slug": "react",
+      "topics": [
+        "Reactive programming",
+        "Generics",
+        "Nested classes",
+        "Higher-order functions"
       ]
     },
     {
@@ -103,266 +335,9 @@
     },
     {
       "difficulty": 1,
-      "slug": "robot-name",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "phone-number",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "grade-school",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "space-age",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "beer-song",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "nucleotide-count",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "difference-of-squares",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "acronym",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "scrabble-score",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "largest-series-product",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "roman-numerals",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "binary",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "raindrops",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "allergies",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "strain",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "flatten-array",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "atbash-cipher",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "hexadecimal",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "series",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "sieve",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "simple-cipher",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "luhn",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "pig-latin",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "linked-list",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "binary-search",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "nth-prime",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "bracket-push",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "pascals-triangle",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "change",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "clock",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "triangle",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "sum-of-multiples",
-      "topics": [
-        "Ranges",
-        "Collections",
-        "Lambdas"
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "all-your-base",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "collatz-conjecture",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 1,
-      "slug": "diamond",
-      "topics": [
-
-      ]
-    },
-    {
-      "difficulty": 2,
       "slug": "bank-account",
       "topics": [
         "Concurrency"
-      ]
-    },
-    {
-      "difficulty": 10,
-      "slug": "react",
-      "topics": [
-        "Reactive programming",
-        "Generics",
-        "Nested classes",
-        "Higher-order functions"
       ]
     }
   ]
