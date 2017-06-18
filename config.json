@@ -1,7 +1,7 @@
 {
   "slug": "kotlin",
   "language": "Kotlin",
-  "repository": "https://github.com/exercism/xkotlin",
+  "repository": "https://github.com/exercism/kotlin",
   "active": true,
   "deprecated": [
     "accumulate",
