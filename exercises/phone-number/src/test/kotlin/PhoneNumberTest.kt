@@ -8,8 +8,8 @@ class PhoneNumberTest {
 
     @Test
     fun cleansNumber() {
-        val expectedNumber = "1234567890"
-        val actualNumber = PhoneNumber("(123) 456-7890").number
+        val expectedNumber = "2234567890"
+        val actualNumber = PhoneNumber("(223) 456-7890").number
 
         assertEquals(expectedNumber, actualNumber)
     }
@@ -17,8 +17,8 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun cleansNumberWithDots() {
-        val expectedNumber = "1234567890"
-        val actualNumber = PhoneNumber("123.456.7890").number
+        val expectedNumber = "2234567890"
+        val actualNumber = PhoneNumber("223.456.7890").number
 
         assertEquals(expectedNumber, actualNumber)
     }
@@ -26,10 +26,18 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun validWhen11DigitsAndFirstIs1() {
-        val expectedNumber = "1234567890"
-        val actualNumber = PhoneNumber("11234567890").number
+        val expectedNumber = "2234567890"
+        val actualNumber = PhoneNumber("12234567890").number
 
         assertEquals(expectedNumber, actualNumber)
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException::class)
+    fun invalidWhen10DigitsAndFirstIs1() {
+        val actualNumber = PhoneNumber("1234567890")
+
+        fail("IllegalArgumentException should have been thrown")
     }
 
     @Ignore
@@ -43,7 +51,7 @@ class PhoneNumberTest {
     @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun invalidWhen9Digits() {
-        val actualNumber = PhoneNumber("123456789")
+        val actualNumber = PhoneNumber("223456789")
 
         fail("IllegalArgumentException should have been thrown")
     }
@@ -51,8 +59,8 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun areaCode() {
-        val expectedAreaCode = "123"
-        val actualAreaCode = PhoneNumber("1234567890").areaCode
+        val expectedAreaCode = "223"
+        val actualAreaCode = PhoneNumber("2234567890").areaCode
 
         assertEquals(expectedAreaCode, actualAreaCode)
     }
@@ -60,8 +68,8 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun toStringPrint() {
-        val expectedtoStringNumber = "(123) 456-7890"
-        val actualtoStringNumber = PhoneNumber("1234567890").toString()
+        val expectedtoStringNumber = "(223) 456-7890"
+        val actualtoStringNumber = PhoneNumber("2234567890").toString()
 
         assertEquals(expectedtoStringNumber, actualtoStringNumber)
     }
@@ -69,8 +77,8 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun toStringPrintWithFullUSPhoneNumber() {
-        val expectedtoStringNumber = "(123) 456-7890"
-        val actualtoStringNumber = PhoneNumber("11234567890").toString()
+        val expectedtoStringNumber = "(223) 456-7890"
+        val actualtoStringNumber = PhoneNumber("12234567890").toString()
 
         assertEquals(expectedtoStringNumber, actualtoStringNumber)
     }
