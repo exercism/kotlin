@@ -52,7 +52,7 @@ Use those instructions (in conjunction with the [Git basics doc](https://github.
    $ git push
    ```
 
-   [Git Basics :: Commit Messages](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md#commit-messages) provides practical advice on crafting meaningful commit messages.
+   The Git Basics doc has a section on [commit messages](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md#commit-messages) that provides practical advice on crafting meaningful commit messages.
 -  **Verify that your work passes all tests.**  When you create a pull request (PR), GitHub triggers a build on Travis CI.  Your PR will not be merged unless those tests pass.
 
 ## Getting Familiar With the Codebase
