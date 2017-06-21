@@ -679,8 +679,7 @@ than 100 maintainers and many more contributors.
 
 A starting point to jumping in can be found here:
 
-https://github.com/exercism/x-common/blob/master/CONTRIBUTING.md
-
+https://github.com/exercism/problem-specifications/blob/master/CONTRIBUTING.md
 
 ----
 
