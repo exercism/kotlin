@@ -34,7 +34,7 @@ To submit a fix for an existing exercise or port an exercise to Kotlin with the 
    (see [exercism.io: Installing Kotlin](http://exercism.io/languages/kotlin/installing))
 -  **Setup a branch on a fork of [exercism/kotlin](https://github.com/exercism/kotlin) on your computer.**
 
-Use those instructions (in conjunction with the [Git basics doc](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md)) to:
+Use those instructions (in conjunction with the [Git Basics doc](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md)) to:
    * "fork" a repository on GitHub;
    - install `git`;
    - "clone" a copy of your fork;
@@ -68,15 +68,15 @@ This repo is a multi-project gradle build.
 
 This is the top-level module, contained in the `exercises` directory.  It is a container for the problem sub-modules.
 
-  * it's `build.gradle` points the "main" sourceset to the example code.
-  * it's `settings.gradle` names each of the subprojects, one for each problem in the set.
+  * its `build.gradle` points the "main" sourceset to the example code.
+  * its `settings.gradle` names each of the subprojects, one for each problem in the set.
 
 ### The Problem Submodules
 
 The `exercises` subdirectory contains all of the problem submodules.
 Each problem/submodule is a subdirectory of the same name as its slug.
 
-  * it's `build.gradle` names dependencies required to work that problem.
+  * its `build.gradle` names dependencies required to work that problem.
 
 Each problem/submodule has three source sets:
 
