@@ -85,6 +85,13 @@
     },
     {
       "difficulty": 3,
+      "slug": "secret-handshake",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 3,
       "slug": "perfect-numbers",
       "topics": [
 
