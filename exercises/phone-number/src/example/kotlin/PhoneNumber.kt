@@ -1,6 +1,6 @@
 data class PhoneNumber(private val rawNumber: String) {
     companion object {
-        private val validationRegex = Regex("^1?(\\d{10})$")
+        private val validationRegex = Regex("^1?([2-9]\\d{2}[2-9]\\d{6})$")
     }
     private val cleanedNumber = rawNumber.replace(Regex("[^\\d]"), "")
 
