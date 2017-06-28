@@ -1,7 +1,10 @@
-import org.junit.Assert;
 import org.junit.Test
-import org.junit.Ignore;
+import org.junit.Ignore
+import kotlin.test.assertEquals
 
+/*
+ * version: 1.0.1
+ */
 class RnaTranscriptionTest {
 
     /*
@@ -13,39 +16,33 @@ class RnaTranscriptionTest {
 
      */
 
-
     @Test
-    fun emptyDnaIsEmptyRna() {
-        Assert.assertEquals("", transcribeToRna(""))
+    fun cytosineComplementIsGuanine() {
+        assertEquals("G", transcribeToRna("C"))
     }
 
     @Ignore
     @Test
-    fun cytosineIsGuanine() {
-        Assert.assertEquals("G", transcribeToRna("C"))
+    fun guanineComplementIsCytosine() {
+        assertEquals("C", transcribeToRna("G"))
     }
 
     @Ignore
     @Test
-    fun guanineIsCytosine() {
-        Assert.assertEquals("C", transcribeToRna("G"))
+    fun thymineComplementIsAdenine() {
+        assertEquals("A", transcribeToRna("T"))
     }
 
     @Ignore
     @Test
-    fun thymineIsAdenine() {
-        Assert.assertEquals("A", transcribeToRna("T"))
-    }
-
-    @Ignore
-    @Test
-    fun adenineIsUracil() {
-        Assert.assertEquals("U", transcribeToRna("A"))
+    fun adenineComplementIsUracil() {
+        assertEquals("U", transcribeToRna("A"))
     }
 
     @Ignore
     @Test
     fun rnaTranscription() {
-        Assert.assertEquals("UGCACCAGAAUU", transcribeToRna("ACGTGGTCTTAA"))
+        assertEquals("UGCACCAGAAUU", transcribeToRna("ACGTGGTCTTAA"))
     }
+
 }
