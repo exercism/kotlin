@@ -3,8 +3,10 @@ import org.junit.Ignore
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
+/*
+ * version: 1.1.0
+ */
 class PangramTest {
-
 
     @Test
     fun emptySentence() {
@@ -52,17 +54,11 @@ class PangramTest {
     fun mixedCaseAndPunctuation() {
         assertTrue(Pangrams.isPangram("\"Five quacking Zephyrs jolt my wax bed.\""))
     }
-    
-    @Ignore
-    @Test
-    fun mixedCaseDuplicatedCharacters() {
-        assertFalse(Pangrams.isPangram("the quick brown fox jumps over the lazy FOX"))
-    }
 
     @Ignore
     @Test
-    fun nonAsciiCharacters() {
-        assertTrue(Pangrams.isPangram("Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich."))
+    fun mixedCaseDuplicatedCharacters() {
+        assertFalse(Pangrams.isPangram("the quick brown fox jumps over with lazy FX"))
     }
 
 }
