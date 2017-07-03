@@ -325,6 +325,13 @@
     },
     {
       "difficulty": 8,
+      "slug": "complex-numbers",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 8,
       "slug": "change",
       "topics": [
 
