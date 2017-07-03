@@ -304,6 +304,13 @@
     },
     {
       "difficulty": 6,
+      "slug": "robot-simulator",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
       "slug": "binary-search",
       "topics": [
 
