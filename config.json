@@ -297,6 +297,13 @@
     },
     {
       "difficulty": 6,
+      "slug": "minesweeper",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 6,
       "slug": "all-your-base",
       "topics": [
 
