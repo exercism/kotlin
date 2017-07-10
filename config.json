@@ -150,6 +150,13 @@
     },
     {
       "difficulty": 4,
+      "slug": "atbash-cipher",
+      "topics": [
+
+      ]
+    },
+    {
+      "difficulty": 4,
       "slug": "nth-prime",
       "topics": [
 
@@ -269,7 +276,7 @@
     },
     {
       "difficulty": 5,
-      "slug": "atbash-cipher",
+      "slug": "rotational-cipher",
       "topics": [
 
       ]
