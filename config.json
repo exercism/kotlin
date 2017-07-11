@@ -550,6 +550,16 @@
       ]
     },
     {
+      "uuid": "eecd4f8b-eedc-49a3-adad-49747521ef66",
+   	  "slug": "forth",
+   	  "core": false,
+   	  "unlocked_by": null,
+      "difficulty": 9,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "240788cd-afa5-4fd6-8df0-a158239c0610",
       "slug": "react",
       "core": false,
