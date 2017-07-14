@@ -153,7 +153,7 @@ In your favorite text editor, open `src/test/kotlin/HelloWorldTest.kt`
 and go to line 10.
 
 ```kotlin
-assertEquals("Hello, World!", hello(""));
+assertEquals("Hello, World!", hello(""))
 ```
 
 The test is expecting that `hello()`, when given an empty string (`""`),
@@ -551,7 +551,7 @@ fun hello(name: String = ""): String {
 }
 
 private fun whom(name: String):String {
-   return if(name.isBlank()) "World" else name;
+   return if(name.isBlank()) "World" else name
 }
 ```
 
