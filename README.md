@@ -34,7 +34,7 @@ To submit a fix for an existing exercise or port an exercise to Kotlin with the 
    (see [exercism.io: Installing Kotlin](http://exercism.io/languages/kotlin/installing))
 -  **Setup a branch on a fork of [exercism/kotlin](https://github.com/exercism/kotlin) on your computer.**
 
-Use those instructions (in conjunction with the [Git Basics doc](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md)) to:
+Use those instructions (in conjunction with the [Git Basics doc](https://github.com/exercism/docs/blob/master/contributing/git-basics.md)) to:
    * "fork" a repository on GitHub;
    - install `git`;
    - "clone" a copy of your fork;
@@ -52,7 +52,7 @@ Use those instructions (in conjunction with the [Git Basics doc](https://github.
    $ git push
    ```
 
-   The Git Basics doc has a section on [commit messages](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md#commit-messages) that provides practical advice on crafting meaningful commit messages.
+   The Git Basics doc has a section on [commit messages](https://github.com/exercism/docs/blob/master/contributing/git-basics.md#commit-messages) that provides practical advice on crafting meaningful commit messages.
 -  **Verify that your work passes all tests.**  When you create a pull request (PR), GitHub triggers a build on Travis CI.  Your PR will not be merged unless those tests pass.
 
 ## Getting Familiar With the Codebase
