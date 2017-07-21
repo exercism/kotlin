@@ -500,6 +500,16 @@
       ]
     },
     {
+      "uuid": "d617987e-64b8-4c21-89a9-66a932c4668d",
+      "slug": "meetup",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 7,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "1dcefdea-5447-4622-a064-079aad781398",
       "slug": "clock",
       "core": false,
