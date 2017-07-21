@@ -1,7 +1,5 @@
 {
-  "slug": "kotlin",
   "language": "Kotlin",
-  "repository": "https://github.com/exercism/kotlin",
   "active": true,
   "foregone": [
 
