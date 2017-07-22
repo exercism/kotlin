@@ -478,6 +478,16 @@
       ]
     },
     {
+      "uuid": "5607dae5-13aa-4cd4-8b4c-d270516182d7",
+      "slug": "say",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 6,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a",
       "slug": "anagram",
       "core": false,
