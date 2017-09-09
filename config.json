@@ -630,5 +630,6 @@
       "slug": "strain",
       "deprecated": true
     }
-  ]
+  ],
+  "solution_pattern": "reference"
 }

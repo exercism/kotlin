@@ -236,7 +236,7 @@ solve_all_exercises() {
     echo "=================================================="
 
     ${exercism_cli} fetch ${TRACK} $exercise
-    cp -R -H ${track_root}/exercises/${exercise}/src/example/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
+    cp -R -H ${track_root}/exercises/${exercise}/.meta/src/reference/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
 
     pushd ${exercism_exercises_dir}/${TRACK}/${exercise}
     # Check that tests compile before we strip @Ignore annotations

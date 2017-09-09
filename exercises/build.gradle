@@ -10,11 +10,11 @@ subprojects {
     }
 
     sourceSets {
-      // Verify that the tests are working by running them against the example code.
-      // By replacing the "main" sourceSet with the example code we avoid any collisions
-      //   with solution code that may have been included as a "starter" (e.g. etl).
+      // Verify that the tests are working by running them against the reference solution.
+      // By replacing the "main" sourceSet with the reference solution we avoid any collisions
+      // with solution code that may have been included as a "starter" (e.g. etl).
       main {
-        kotlin.srcDirs = ["src/example/kotlin"]
+        kotlin.srcDirs = [".meta/src/reference/kotlin"]
       }
       project["compileKotlin"].doFirst { compileTask ->
         println "  (source = " + compileTask.source.asPath + ")"
