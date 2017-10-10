@@ -16,6 +16,16 @@
       ]
     },
     {
+      "uuid": "fa4194c5-084d-f780-4db6-707ef7bcc30c00e9ee5",
+      "slug": "two-fer",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+
+      ]
+    },
+    {
       "uuid": "9772c916-c619-445c-834d-af7dbf1ad2d9",
       "slug": "rna-transcription",
       "core": false,
@@ -633,3 +643,4 @@
   ],
   "solution_pattern": "reference"
 }
+
