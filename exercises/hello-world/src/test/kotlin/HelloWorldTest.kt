@@ -1,30 +1,11 @@
-import org.junit.Ignore
 import org.junit.Test
-import org.junit.Assert.assertEquals
+import kotlin.test.assertEquals
 
 
 class HelloWorldTest {
 
     @Test
-    fun helloNoName() {
+    fun helloWorldTest() {
         assertEquals("Hello, World!", hello())
-    }
-
-    @Test
-    @Ignore
-    fun helloSampleName() {
-        assertEquals("Hello, Alice!", hello("Alice"))
-    }
-
-    @Test
-    @Ignore
-    fun helloBlankName() {
-        assertEquals("Hello, World!", hello("    "))
-    }
-
-    @Test
-    @Ignore
-    fun helloAnotherSampleName() {
-        assertEquals("Hello, Bob!", hello("Bob"))
     }
 }
