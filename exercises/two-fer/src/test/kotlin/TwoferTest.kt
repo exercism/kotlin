@@ -12,8 +12,8 @@ class TwoferTest {
 
     @Test
     @Ignore
-    fun emptyStringGiven() {
-        assertEquals("One for you, one for me.", twofer(""))
+    fun aNameGiven() {
+        assertEquals("One for Alice, one for me.", twofer("Alice"))
     }
 
     @Test
@@ -24,8 +24,8 @@ class TwoferTest {
 
     @Test
     @Ignore
-    fun aNameGiven() {
-        assertEquals("One for Alice, one for me.", twofer("Alice"))
+    fun emptyStringGiven() {
+        assertEquals("One for , one for me.", twofer(""))
     }
 
 }
