@@ -20,7 +20,7 @@ that the sum of the coins' value would equal the correct amount of change.
 
 ## Source
 
-Software Craftsmanship - Kata-logue [http://craftsmanship.sv.cmu.edu/exercises/coin-change-kata](http://craftsmanship.sv.cmu.edu/exercises/coin-change-kata)
+Software Craftsmanship - Coin Change Kata [https://web.archive.org/web/20130115115225/http://craftsmanship.sv.cmu.edu:80/exercises/coin-change-kata](https://web.archive.org/web/20130115115225/http://craftsmanship.sv.cmu.edu:80/exercises/coin-change-kata)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.

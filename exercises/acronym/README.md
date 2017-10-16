@@ -9,7 +9,6 @@ like Portable Network Graphics to its acronym (PNG).
 
 
 
-
 ## Source
 
 Julien Vanier [https://github.com/monkbroc](https://github.com/monkbroc)
