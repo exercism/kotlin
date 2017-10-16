@@ -1,18 +1,15 @@
 NOTE: You can also view the HTML version of this file here:
 https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md
 
+* [Introduction](#introduction)
+* [Exercise Structure](#exercise-structure)
 * [Solving "Hello, World!"](#solving-hello-world)
- * [Reading Gradle output](#reading-gradle-output)
- * [Fixing the failing test](#fixing-the-failing-test)
 * [Submitting your first iteration](#submitting-your-first-iteration)
 * [Next Steps](#next-steps)
- * [Review (and comment on) others' submissions to this exercise](#review-and-comment-on-others-submissions-to-this-exercise)
- * [Extend an exercise](#extend-an-exercise)
- * [Contribute to Exercism](#contribute-to-exercism)
 
 ----
 
-# Solving "Hello, World!"
+# Introduction
 
 Welcome to the first exercise on the Kotlin track!
 
@@ -31,7 +28,22 @@ left off.  If you haven't reviewed those instructions, do so now.
 
 The following instructions work equally well on Windows, Mac OS X and Linux.
 
-## Reading Gradle output
+# Exercise Structure
+
+When you fetch a new Kotlin exercise, you will receive:
+
+* __one or more test files__ (always). These live in the `src/test/kotlin`
+directory and define a set of tests that our solution must satisfy before we
+can safely declare that it is working.
+* __one or more starter files__ (initially). If provided, these live in the
+`src/main/kotlin` directory and define shells of the classes you will need
+in order to solve the current problem.
+
+
+
+# Solving "Hello World!"
+
+## Step 1: Run the tests against the starter solution
 
 Use Gradle to run the tests:
 
@@ -136,7 +148,7 @@ Knowing these two facts,
 
 we can turn this failure into success.
 
-## Fixing the first failing test
+## Step 2: Fix the Test!
 
 In your favorite text editor, open `src/test/kotlin/HelloWorldTest.kt`
 and go to line 10.
