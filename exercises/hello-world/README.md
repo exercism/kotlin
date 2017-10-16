@@ -14,6 +14,12 @@ The objectives are simple:
 
 If everything goes well, you will be ready to fetch your first real exercise.
 
+Since this is your first Kotlin exercise, we've included a detailed TUTORIAL.md
+file that guides you through your solution. Check it out for tips and
+assistance!
+
+
+
 
 
 ## Source
