@@ -3,7 +3,7 @@ import org.junit.Test
 import kotlin.test.assertEquals
 
 /*
- * version: 1.1.0
+ * version: 1.1.1
  */
 class HandshakeCalculatorTest {
 
@@ -66,7 +66,7 @@ class HandshakeCalculatorTest {
     @Test
     fun testReversingNoActionsYieldsNoActions() {
         assertEquals(
-            emptyList(),
+            emptyList<Signal>(),
             HandshakeCalculator.calculateHandshake(16))
     }
 
@@ -90,7 +90,7 @@ class HandshakeCalculatorTest {
     @Test
     fun testThatInput0YieldsNoActions() {
         assertEquals(
-            emptyList(),
+            emptyList<Signal>(),
             HandshakeCalculator.calculateHandshake(0))
     }
 
@@ -98,7 +98,7 @@ class HandshakeCalculatorTest {
     @Test
     fun testThatInputWithLower5BitsNotSetYieldsNoActions() {
         assertEquals(
-            emptyList(),
+            emptyList<Signal>(),
             HandshakeCalculator.calculateHandshake(32))
     }
 
