@@ -7,7 +7,6 @@ import kotlin.test.assertEquals
 
 class GigasecondTest {
 
-
     @Test
     fun modernTime() {
         val gigaSecond = Gigasecond(LocalDate.of(2011, Month.APRIL, 25))
@@ -46,4 +45,5 @@ class GigasecondTest {
 
         assertEquals(LocalDateTime.of(2046, Month.OCTOBER, 3, 1, 46, 39), gigaSecond.date)
     }
+
 }
