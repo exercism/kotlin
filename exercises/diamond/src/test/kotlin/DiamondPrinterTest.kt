@@ -4,9 +4,6 @@ import org.junit.Before
 import org.junit.Ignore
 import org.junit.Test
 
-/*
- * version: 1.0.0
- */
 class DiamondPrinterTest {
 
     private lateinit var diamondPrinter: DiamondPrinter

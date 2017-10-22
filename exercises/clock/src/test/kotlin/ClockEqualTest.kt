@@ -3,9 +3,6 @@ import org.junit.Test
 import kotlin.test.assertNotEquals
 import kotlin.test.assertEquals
 
-/*
- * version: 1.0.1
- */
 class ClockEqualTest {
 
     @Ignore

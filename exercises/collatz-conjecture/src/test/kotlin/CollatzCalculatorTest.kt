@@ -4,9 +4,6 @@ import org.junit.Test
 import org.junit.rules.ExpectedException
 import kotlin.test.assertEquals
 
-/*
- * version: 1.1.0
- */
 class CollatzCalculatorTest {
 
     @Rule

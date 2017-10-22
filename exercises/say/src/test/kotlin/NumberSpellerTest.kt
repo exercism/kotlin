@@ -5,9 +5,6 @@ import org.junit.rules.ExpectedException
 import java.math.BigInteger
 import kotlin.test.assertEquals
 
-/*
- * version: 1.0.0
- */
 class NumberSpellerTest {
 
     @Rule

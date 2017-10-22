@@ -4,9 +4,6 @@ import java.time.DayOfWeek
 import java.time.LocalDate
 import kotlin.test.assertEquals
 
-/*
- * version: 1.0.0
- */
 class MeetupTest {
 
     @Test

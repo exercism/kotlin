@@ -3,9 +3,6 @@ import org.junit.Test
 import java.util.Collections.emptySet
 import kotlin.test.assertEquals
 
-/*
- * version: 1.1.0
- */
 class MatrixTest {
 
     @Test

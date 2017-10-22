@@ -2,9 +2,6 @@ import org.junit.Ignore
 import org.junit.Test
 import kotlin.test.assertEquals
 
-/*
- * version: 1.1.0
- */
 class HandshakeCalculatorTest {
 
     @Test

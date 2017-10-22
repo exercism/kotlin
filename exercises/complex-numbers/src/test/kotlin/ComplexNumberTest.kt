@@ -2,9 +2,6 @@ import org.junit.Assert.assertEquals
 import org.junit.Ignore
 import org.junit.Test
 
-/*
- * version: 1.0.0
- */
 class ComplexNumberTest {
 
     // Test helpers

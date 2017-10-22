@@ -2,9 +2,6 @@ import org.junit.Test
 import org.junit.Ignore
 import kotlin.test.assertEquals
 
-/*
- * version: 1.0.1
- */
 class RnaTranscriptionTest {
 
     /*
