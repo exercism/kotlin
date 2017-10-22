@@ -12,7 +12,6 @@ class RomanNumeralsTest(val input: Int, val expectedOutput: String) {
         @JvmStatic
         @Parameterized.Parameters(name = "{index}: romanNumeral({0})={1}")
         fun data() = listOf(
-                arrayOf(0, ""),
                 arrayOf(1, "I"),
                 arrayOf(2, "II"),
                 arrayOf(3, "III"),
@@ -34,9 +33,9 @@ class RomanNumeralsTest(val input: Int, val expectedOutput: String) {
         )
     }
 
-
     @Test
     fun test() {
         assertEquals(expectedOutput, RomanNumeral.value(input))
     }
+
 }
