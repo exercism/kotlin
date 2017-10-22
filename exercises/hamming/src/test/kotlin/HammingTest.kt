@@ -60,13 +60,13 @@ class HammingTest {
     @Ignore
     @Test
     fun nonUniqueCharacterInFirstStrand() {
-        assertEquals(1, Hamming.compute("AGA", "AGG"))
+        assertEquals(1, Hamming.compute("AAG", "AAA"))
     }
 
     @Ignore
     @Test
     fun nonUniqueCharacterInSecondStrand() {
-        assertEquals(1, Hamming.compute("AGG", "AGA"))
+        assertEquals(1, Hamming.compute("AAA", "AAG"))
     }
 
     @Ignore
@@ -91,7 +91,7 @@ class HammingTest {
     @Test
     fun validatesFirstStrandNotLonger() {
         expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("leftStrand and rightStrand must be of equal length.")
+        expectedException.expectMessage("left and right strands must be of equal length.")
 
         Hamming.compute("AATG", "AAA")
     }
@@ -100,7 +100,7 @@ class HammingTest {
     @Test
     fun validatesSecondStrandNotLonger() {
         expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("leftStrand and rightStrand must be of equal length.")
+        expectedException.expectMessage("left and right strands must be of equal length.")
 
         Hamming.compute("ATA", "AGTG")
     }
