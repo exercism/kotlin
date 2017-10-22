@@ -17,14 +17,14 @@ class SumOfMultiplesTest {
 
     @Test
     @Ignore
-    fun `multiples of 3 or 5 up to 10`() {
-        assertEquals(23, SumOfMultiples.sum(setOf(3, 5), 10))
+    fun `multiples of 3 up to 7`() {
+        assertEquals(9, SumOfMultiples.sum(setOf(3), 7))
     }
 
     @Test
     @Ignore
-    fun `multiples of 3 or 5 up to 20`() {
-        assertEquals(78, SumOfMultiples.sum(setOf(3, 5), 20))
+    fun `multiples of 3 or 5 up to 10`() {
+        assertEquals(23, SumOfMultiples.sum(setOf(3, 5), 10))
     }
 
     @Test
@@ -36,7 +36,7 @@ class SumOfMultiplesTest {
     @Test
     @Ignore
     fun `multiples of 3 or 5 up to 1000`() {
-        assertEquals(233_168, SumOfMultiples.sum(setOf(3, 5), 1000))
+        assertEquals(233168, SumOfMultiples.sum(setOf(3, 5), 1000))
     }
 
     @Test
@@ -66,7 +66,7 @@ class SumOfMultiplesTest {
     @Test
     @Ignore
     fun `multiples of 43 or 47 up to 10000`() {
-        assertEquals(2_203_160, SumOfMultiples.sum(setOf(43, 47), 10_000))
+        assertEquals(2203160, SumOfMultiples.sum(setOf(43, 47), 10000))
     }
 
     @Test
@@ -78,7 +78,7 @@ class SumOfMultiplesTest {
     @Test
     @Ignore
     fun `multiples of an empty set up to 10000`() {
-        assertEquals(0, SumOfMultiples.sum(emptySet(), 10_000))
+        assertEquals(0, SumOfMultiples.sum(emptySet(), 10000))
     }
 
 }
