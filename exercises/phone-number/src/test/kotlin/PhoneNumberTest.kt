@@ -1,10 +1,9 @@
-import org.junit.Test
 import org.junit.Ignore
+import org.junit.Test
 import kotlin.test.assertEquals
-import kotlin.test.fail
+import kotlin.test.assertNull
 
 class PhoneNumberTest {
-
 
     @Test
     fun cleansNumber() {
@@ -25,6 +24,27 @@ class PhoneNumberTest {
 
     @Ignore
     @Test
+    fun cleansNumberWithMultipleSpaces() {
+        val expectedNumber = "2234567890"
+        val actualNumber = PhoneNumber("223 456   7890   ").number
+
+        assertEquals(expectedNumber, actualNumber)
+    }
+
+    @Ignore
+    @Test
+    fun invalidWhen9Digits() {
+        assertNull(PhoneNumber("123456789").number)
+    }
+
+    @Ignore
+    @Test
+    fun invalidWhen11DigitsAndFirstIsNot1() {
+        assertNull(PhoneNumber("22234567890").number)
+    }
+
+    @Ignore
+    @Test
     fun validWhen11DigitsAndFirstIs1() {
         val expectedNumber = "2234567890"
         val actualNumber = PhoneNumber("12234567890").number
@@ -33,54 +53,51 @@ class PhoneNumberTest {
     }
 
     @Ignore
-    @Test(expected = IllegalArgumentException::class)
-    fun invalidWhen10DigitsAndFirstIs1() {
-        val actualNumber = PhoneNumber("1234567890")
+    @Test
+    fun validWhen11DigitsAndFirstIs1WithPunctuation() {
+        val expectedNumber = "2234567890"
+        val actualNumber = PhoneNumber("+1 (223) 456-7890").number
 
-        fail("IllegalArgumentException should have been thrown")
-    }
-
-    @Ignore
-    @Test(expected = IllegalArgumentException::class)
-    fun invalidWhenOnly11Digits() {
-        val actualNumber = PhoneNumber("21234567890")
-
-        fail("IllegalArgumentException should have been thrown")
-    }
-
-    @Ignore
-    @Test(expected = IllegalArgumentException::class)
-    fun invalidWhen9Digits() {
-        val actualNumber = PhoneNumber("223456789")
-
-        fail("IllegalArgumentException should have been thrown")
+        assertEquals(expectedNumber, actualNumber)
     }
 
     @Ignore
     @Test
-    fun areaCode() {
-        val expectedAreaCode = "223"
-        val actualAreaCode = PhoneNumber("2234567890").areaCode
+    fun invalidWhenMoreThan11Digits() {
+        val expectedNumber = null
+        val actualNumber = PhoneNumber("321234567890").number
 
-        assertEquals(expectedAreaCode, actualAreaCode)
+        assertEquals(expectedNumber, actualNumber)
     }
 
     @Ignore
     @Test
-    fun toStringPrint() {
-        val expectedtoStringNumber = "(223) 456-7890"
-        val actualtoStringNumber = PhoneNumber("2234567890").toString()
+    fun invalidWithLetters() {
+        val expectedNumber = null
+        val actualNumber = PhoneNumber("123-abc-7890").number
 
-        assertEquals(expectedtoStringNumber, actualtoStringNumber)
+        assertEquals(expectedNumber, actualNumber)
     }
 
     @Ignore
     @Test
-    fun toStringPrintWithFullUSPhoneNumber() {
-        val expectedtoStringNumber = "(223) 456-7890"
-        val actualtoStringNumber = PhoneNumber("12234567890").toString()
+    fun invalidWithInvalidPunctuation() {
+        val expectedNumber = null
+        val actualNumber = PhoneNumber("123-@:!-7890").number
 
-        assertEquals(expectedtoStringNumber, actualtoStringNumber)
+        assertEquals(expectedNumber, actualNumber)
+    }
+
+    @Ignore
+    @Test
+    fun invalidWhenAreaCodeStartsWith0or1() {
+        assertNull(PhoneNumber("(123) 456-7890").number)
+    }
+
+    @Ignore
+    @Test
+    fun invalidWhenExchangeCodeStartsWith0or1() {
+        assertNull(PhoneNumber("(223) 056-7890").number)
     }
 
 }
