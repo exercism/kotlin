@@ -3,9 +3,6 @@ import org.junit.Ignore
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-/*
- * version: 1.1.0
- */
 class PangramTest {
 
     @Test

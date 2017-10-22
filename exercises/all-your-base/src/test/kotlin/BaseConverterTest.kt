@@ -5,9 +5,6 @@ import org.junit.Test
 import org.junit.rules.ExpectedException
 import java.util.*
 
-/*
- * version: 1.0.0
- */
 class BaseConverterTest {
 
     /*
