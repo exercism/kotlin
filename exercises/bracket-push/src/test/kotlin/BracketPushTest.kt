@@ -16,10 +16,12 @@ class BracketPushTest(val input: String, val expectedOutput: Boolean) {
                 arrayOf("", true),
                 arrayOf("[[", false),
                 arrayOf("}{", false),
+                arrayOf("{]", false),
                 arrayOf("{ }", true),
                 arrayOf("{[]}", true),
                 arrayOf("{}[]", true),
                 arrayOf("([{}({}[])])", true),
+                arrayOf("{[)][]}", false),
                 arrayOf("([{])", false),
                 arrayOf("[({]})", false),
                 arrayOf("(((185 + 223.85) * 15) - 543)/2", true),
@@ -27,9 +29,9 @@ class BracketPushTest(val input: String, val expectedOutput: Boolean) {
         )
     }
 
-
     @Test
     fun test() {
         assertEquals(expectedOutput, BracketPush.isValid(input))
     }
+
 }
