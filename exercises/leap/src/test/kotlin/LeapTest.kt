@@ -5,45 +5,27 @@ import kotlin.test.assertTrue
 
 class LeapTest {
 
-
     @Test
-    fun leapYear() {
-        assertTrue(Year(1996).isLeap)
+    fun yearNotDivisibleBy4() {
+        assertFalse(Year(2015).isLeap)
     }
 
     @Ignore
     @Test
-    fun standardOddYear() {
-        assertFalse(Year(1997).isLeap)
+    fun yearDivisibleBy4NotDivisibleBy100() {
+        assertTrue(Year(2020).isLeap)
     }
 
     @Ignore
     @Test
-    fun standardEvenYear() {
-        assertFalse(Year(1998).isLeap)
+    fun yearDivisibleBy100NotDivisibleBy400() {
+        assertFalse(Year(2100).isLeap)
     }
 
     @Ignore
     @Test
-    fun standardNineteenthCentury() {
-        assertFalse(Year(1900).isLeap)
-    }
-
-    @Ignore
-    @Test
-    fun standardEighteenthCentury() {
-        assertFalse(Year(1800).isLeap)
-    }
-
-    @Ignore
-    @Test
-    fun leapTwentyFourthCentury() {
-        assertTrue(Year(2400).isLeap)
-    }
-
-    @Ignore
-    @Test
-    fun leapY2K() {
+    fun yearDivisibleBy400() {
         assertTrue(Year(2000).isLeap)
     }
+
 }
