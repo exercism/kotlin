@@ -4,10 +4,9 @@ import kotlin.test.assertEquals
 
 class ETLTest {
 
-
     @Test
-    fun transformOneValue() {
-        val old = mapOf(1 to listOf('a'))
+    fun aSingleLetter() {
+        val old = mapOf(1 to listOf('A'))
         val expected = mapOf('a' to 1)
 
         assertEquals(expected, ETL.transform(old))
@@ -15,25 +14,25 @@ class ETLTest {
 
     @Ignore
     @Test
-    fun transformMoreValues() {
-        val old = mapOf(1 to listOf('A', 'E', 'I'))
-        val expected = mapOf('a' to 1, 'e' to 1, 'i' to 1)
+    fun singleScoreWithMultipleLetters() {
+        val old = mapOf(1 to listOf('A', 'E', 'I', 'O', 'U'))
+        val expected = mapOf('a' to 1, 'e' to 1, 'i' to 1, 'o' to 1, 'u' to 1)
 
         assertEquals(expected, ETL.transform(old))
     }
 
     @Ignore
     @Test
-    fun moreKeys() {
-        val old = mapOf(1 to listOf('A', 'E', 'I'), 2 to listOf('D', 'G'))
-        val expected = mapOf('a' to 1, 'e' to 1, 'i' to 1, 'd' to 2, 'g' to 2)
+    fun multipleScoresWithMultipleLetters() {
+        val old = mapOf(1 to listOf('A', 'E'), 2 to listOf('D', 'G'))
+        val expected = mapOf('a' to 1, 'd' to 2, 'e' to 1, 'g' to 2)
 
         assertEquals(expected, ETL.transform(old))
     }
 
     @Ignore
     @Test
-    fun fullDataset() {
+    fun multipleScoresWithDifferingNumbersOfLetters() {
         val old = mapOf(
                 1 to listOf('A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'),
                 2 to listOf('D', 'G'),
@@ -54,4 +53,5 @@ class ETLTest {
 
         assertEquals(expected, ETL.transform(old))
     }
+
 }
