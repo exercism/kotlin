@@ -1,8 +1,11 @@
-class Anagram(val word: String) {
-    fun match(anagrams: Collection<String>) =
-            anagrams.filter({ doesMatch(it) }).filterNot({ it.equals(word, ignoreCase = true) })
+class Anagram(private val word: String) {
 
-    private fun doesMatch(anagram: String) =
-            anagram.toLowerCase().toCharArray().sorted() == word.toLowerCase().toCharArray().sorted()
+    fun match(anagrams: Collection<String>) =
+            anagrams.filter { containSameChars(it.toLowerCase()) }
+                    .filterNot { it.equals(word, ignoreCase = true) }
+                    .toSet()
+
+    private fun containSameChars(candidate: String) =
+            candidate.toLowerCase().toCharArray().sorted() == word.toLowerCase().toCharArray().sorted()
 
 }
