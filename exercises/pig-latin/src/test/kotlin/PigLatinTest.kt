@@ -23,7 +23,6 @@ class PigLatinTest(val input: String, val expectedOutput: String) {
                 // First letter and ay are moved to the end of words that start with consonants
                 arrayOf("pig",    "igpay"),
                 arrayOf("koala",  "oalakay"),
-                arrayOf("yellow", "ellowyay"),
                 arrayOf("xenon",  "enonxay"),
                 arrayOf("qat",    "atqay"),
 
@@ -50,6 +49,15 @@ class PigLatinTest(val input: String, val expectedOutput: String) {
 
                 // Xr is treated like a single vowel
                 arrayOf("xray", "xrayay"),
+
+                // Y is treated like a consonant at the beginning of a word
+                arrayOf("yellow", "ellowyay"),
+
+                // Y is treated like a vowel at the end of a consonant cluster
+                arrayOf("rhythm", "ythmrhay"),
+
+                // Y as second letter in two letter word
+                arrayOf("my",     "ymay"),
 
                 // Phrases are translated
                 arrayOf("quick fast run", "ickquay astfay unray")
