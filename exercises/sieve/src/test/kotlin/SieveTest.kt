@@ -4,7 +4,14 @@ import kotlin.test.assertEquals
 
 class SieveTest {
 
+    @Test
+    fun noPrimesUnder2() {
+        val expectedOutput = emptyList<Int>()
 
+        assertEquals(expectedOutput, Sieve.primesUpTo(1))
+    }
+
+    @Ignore
     @Test
     fun findFirstPrime() {
         val expectedOutput = listOf(2)
@@ -35,4 +42,5 @@ class SieveTest {
 
         assertEquals(expectedOutput, Sieve.primesUpTo(1000))
     }
+
 }
