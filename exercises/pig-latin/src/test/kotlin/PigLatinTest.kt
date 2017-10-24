@@ -1,5 +1,4 @@
 import org.junit.Test
-import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -12,17 +11,21 @@ class PigLatinTest(val input: String, val expectedOutput: String) {
         @Parameterized.Parameters(name = "{index}: translate({0})={1}")
         fun data() = arrayOf(
                 // Ay is added to words that start with vowels
-                arrayOf("apple", "appleay"),
-                arrayOf("ear", "earay"),
-                arrayOf("igloo", "iglooay"),
+                arrayOf("apple",  "appleay"),
+                arrayOf("ear",    "earay"),
+                arrayOf("igloo",  "iglooay"),
                 arrayOf("object", "objectay"),
-                arrayOf("under", "underay"),
+                arrayOf("under",  "underay"),
+
+                // Ay is added to words that start with vowels followed by qu
+                arrayOf("equal",  "equalay"),
 
                 // First letter and ay are moved to the end of words that start with consonants
-                arrayOf("pig", "igpay"),
-                arrayOf("koala", "oalakay"),
+                arrayOf("pig",    "igpay"),
+                arrayOf("koala",  "oalakay"),
                 arrayOf("yellow", "ellowyay"),
-                arrayOf("xenon", "enonxay"),
+                arrayOf("xenon",  "enonxay"),
+                arrayOf("qat",    "atqay"),
 
                 // Ch is treated like a single consonant
                 arrayOf("chair", "airchay"),
@@ -53,9 +56,9 @@ class PigLatinTest(val input: String, val expectedOutput: String) {
         )
     }
 
-
     @Test
     fun test() {
         assertEquals(expectedOutput, PigLatin.translate(input))
     }
+
 }
