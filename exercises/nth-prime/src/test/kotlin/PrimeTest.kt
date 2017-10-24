@@ -1,10 +1,8 @@
 import org.junit.Test
 import org.junit.Ignore
 import kotlin.test.assertEquals
-import kotlin.test.fail
 
 class PrimeTest {
-
 
     @Test
     fun firstPrime() {
