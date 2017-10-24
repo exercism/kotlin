@@ -5,6 +5,7 @@ import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
 
 class ReactTest {
+
     @Test
     fun inputCellsHaveValue() {
         val reactor = Reactor<Int>()
@@ -132,7 +133,7 @@ class ReactTest {
         val vals2 = mutableListOf<Int>()
         output.addCallback { vals2.add(it) }
 
-        for (i in 1..10) {
+        for (i in 1..3) {
             sub1.cancel()
         }
 
@@ -170,17 +171,22 @@ class ReactTest {
         val vals = mutableListOf<Int>()
         alwaysTwo.addCallback { vals.add(it) }
 
-        for (i in 1..10) {
+        for (i in 2..5) {
             input.value = i
         }
 
         assertEquals(listOf<Int>(), vals)
     }
+
 }
 
+/*
+ * Extension
+ *
+ * This is a digital logic circuit called an adder:
+ * https://en.wikipedia.org/wiki/Adder_(electronics)
+ */
 @RunWith(Parameterized::class)
-// This is a digital logic circuit called an adder:
-// https://en.wikipedia.org/wiki/Adder_(electronics)
 class ReactAdderTest(val input: Input, val expected: Expected) {
 
     companion object {
@@ -218,4 +224,5 @@ class ReactAdderTest(val input: Input, val expected: Expected) {
 
         assertEquals(expected, Expected(sum=sum.value, carryOut=carryOut.value))
     }
+
 }
