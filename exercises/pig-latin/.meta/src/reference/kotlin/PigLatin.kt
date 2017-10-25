@@ -15,7 +15,7 @@ object PigLatin {
         return word
     }
 
-    private val consonant = Regex("^([^aeiou]?qu|[^aeiou]+)([a-z]*)", RegexOption.IGNORE_CASE)
+    private val consonant = Regex("^([^aeiou]?qu|[^aeiouy]+|[^aeiou]+)([a-z]*)", RegexOption.IGNORE_CASE)
     private fun splitInitialConsonantSound(word: String) = consonant.matchEntire(word)?.groupValues?.drop(1)
 
     private val vowels = Regex("^([aeiou]|y[^aeiou]|xr)[a-z]*", RegexOption.IGNORE_CASE)

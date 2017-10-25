@@ -1,55 +1,66 @@
-
-import org.junit.Test
 import org.junit.Ignore
+import org.junit.Test
 import kotlin.test.assertEquals
 
 class BinarySearchTest {
 
-
-    @Test(expected = IllegalArgumentException::class)
-    fun unsortedListCannotBeSearched() {
-        BinarySearch.search(listOf(1, 2, 4, 3), 1)
+    @Test
+    fun findsTheItemInASingleElementList() {
+        assertEquals(0, BinarySearch.search(listOf(6), 6))
     }
 
     @Ignore
     @Test
-    fun shouldReturnMinus1ForAValueNotPresentInTheList() {
-        assertEquals(-1, BinarySearch.search(listOf(1, 2, 3, 4), 5))
+    fun findsTheItemInTheMiddleOfAList() {
+        assertEquals(3, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 6))
     }
 
     @Ignore
     @Test
-    fun shouldFindTheItemInASingleElementList() {
-        assertEquals(0, BinarySearch.search(listOf(3), 3))
+    fun findsTheItemAtTheBeginningOfAList() {
+        assertEquals(0, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 1))
     }
 
     @Ignore
     @Test
-    fun shouldFindTheFirstItemInATwoElementList() {
-        assertEquals(0, BinarySearch.search(listOf(4, 11), 4))
+    fun findsTheItemAtTheEndOfAList() {
+        assertEquals(6, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 11))
     }
 
     @Ignore
     @Test
-    fun shouldFindTheLastItemInATwoElementList() {
-        assertEquals(1, BinarySearch.search(listOf(4, 11), 11))
+    fun findsValueInAListOfOddLength() {
+        assertEquals(9, BinarySearch.search(listOf(1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 634), 144))
     }
 
     @Ignore
     @Test
-    fun shouldFindTheMidItemInAnOddLengthList() {
-        assertEquals(2, BinarySearch.search(listOf(4, 4, 7, 9, 11), 7))
+    fun findsValueInAListOfEvenLength() {
+        assertEquals(5, BinarySearch.search(listOf(1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377), 21))
     }
 
     @Ignore
     @Test
-    fun shouldFindThePreMidItemInAnEvenLengthList() {
-        assertEquals(1, BinarySearch.search(listOf(4, 5, 9, 11), 5))
+    fun identifiesThatAValueIsNotInTheList() {
+        assertEquals(-1, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 7))
     }
 
     @Ignore
     @Test
-    fun shouldFindThePostMidItemInAnEvenLengthList() {
-        assertEquals(2, BinarySearch.search(listOf(4, 5, 17, 29), 17))
+    fun identifiesThatAValueSmallerThanTheSmallestListElementIsNotInTheList() {
+        assertEquals(-1, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 0))
     }
+
+    @Ignore
+    @Test
+    fun identifiesThatAValueLargerThanTheLargestListElementIsNotInTheList() {
+        assertEquals(-1, BinarySearch.search(listOf(1, 3, 4, 6, 8, 9, 11), 13))
+    }
+
+    @Ignore
+    @Test
+    fun identifiesThatNothingCanBeFoundInAnEmptyList() {
+        assertEquals(-1, BinarySearch.search(emptyList(), 1))
+    }
+
 }

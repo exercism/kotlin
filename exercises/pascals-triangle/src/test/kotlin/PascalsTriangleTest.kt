@@ -4,9 +4,49 @@ import kotlin.test.assertEquals
 
 class PascalsTriangleTest {
 
-
     @Test
-    fun triangleWithFourRows() {
+    fun zeroRows() {
+        val expectedOutput = emptyList<List<Int>>()
+
+        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(0))
+    }
+
+    @Ignore
+    @Test
+    fun oneRow() {
+        val expectedOutput = listOf(
+                listOf(1)
+        )
+
+        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(1))
+    }
+
+    @Ignore
+    @Test
+    fun twoRows() {
+        val expectedOutput = listOf(
+                listOf(1),
+                listOf(1, 1)
+        )
+
+        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(2))
+    }
+
+    @Ignore
+    @Test
+    fun threeRows() {
+        val expectedOutput = listOf(
+                listOf(1),
+                listOf(1, 1),
+                listOf(1, 2, 1)
+        )
+
+        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(3))
+    }
+
+    @Ignore
+    @Test
+    fun fourRows() {
         val expectedOutput = listOf(
                 listOf(1),
                 listOf(1, 1),
@@ -18,31 +58,9 @@ class PascalsTriangleTest {
     }
 
     @Ignore
-    @Test
-    fun triangleWithSixRows() {
-        val expectedOutput = listOf(
-                listOf(1),
-                listOf(1, 1),
-                listOf(1, 2, 1),
-                listOf(1, 3, 3, 1),
-                listOf(1, 4, 6, 4, 1),
-                listOf(1, 5, 10, 10, 5, 1)
-        )
-
-        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(6))
-    }
-
-    @Ignore
-    @Test
-    fun expectEmptyTriangle() {
-        val expectedOutput = emptyList<List<Int>>()
-
-        assertEquals(expectedOutput, PascalsTriangle.computeTriangle(0))
-    }
-
-    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun validatesNotNegativeRows() {
         PascalsTriangle.computeTriangle(-1)
     }
+
 }

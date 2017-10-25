@@ -5,6 +5,13 @@ import kotlin.test.assertEquals
 class RotationalCipherTest {
 
     @Test
+    fun testRotateLowercaseABy0() {
+        val cipher = RotationalCipher(0)
+        assertEquals("a", cipher.encode("a"))
+    }
+
+    @Ignore
+    @Test
     fun testRotateLowercaseABy1NoWrapAround() {
         val cipher = RotationalCipher(1)
         assertEquals("b", cipher.encode("a"))
@@ -14,13 +21,6 @@ class RotationalCipherTest {
     @Test
     fun testRotateLowercaseABy26SingleWrapAround() {
         val cipher = RotationalCipher(26)
-        assertEquals("a", cipher.encode("a"))
-    }
-
-    @Ignore
-    @Test
-    fun testRotateLowercaseABy0() {
-        val cipher = RotationalCipher(0)
         assertEquals("a", cipher.encode("a"))
     }
 

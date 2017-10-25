@@ -4,16 +4,15 @@ import kotlin.test.assertEquals
 
 class SquaresTest {
 
-
     @Test
-    fun squareOfSum5() {
-        assertEquals(225, Squares(5).squareOfSum())
+    fun squareOfSum1() {
+        assertEquals(1, Squares(1).squareOfSum())
     }
 
     @Ignore
     @Test
-    fun squareOfSum10() {
-        assertEquals(3025, Squares(10).squareOfSum())
+    fun squareOfSum5() {
+        assertEquals(225, Squares(5).squareOfSum())
     }
 
     @Ignore
@@ -24,14 +23,14 @@ class SquaresTest {
 
     @Ignore
     @Test
-    fun sumOfSquares5() {
-        assertEquals(55, Squares(5).sumOfSquares())
+    fun sumOfSquares1() {
+        assertEquals(1, Squares(1).sumOfSquares())
     }
 
     @Ignore
     @Test
-    fun sumOfSquares10() {
-        assertEquals(385, Squares(10).sumOfSquares())
+    fun sumOfSquares5() {
+        assertEquals(55, Squares(5).sumOfSquares())
     }
 
     @Ignore
@@ -42,8 +41,8 @@ class SquaresTest {
 
     @Ignore
     @Test
-    fun differenceOfSquares0() {
-        assertEquals(0, Squares(0).difference())
+    fun differenceOfSquares1() {
+        assertEquals(0, Squares(1).difference())
     }
 
     @Ignore
@@ -54,20 +53,8 @@ class SquaresTest {
 
     @Ignore
     @Test
-    fun differenceOfSquares10() {
-        assertEquals(2640, Squares(10).difference())
-    }
-
-    @Ignore
-    @Test
     fun differenceOfSquares100() {
         assertEquals(25164150, Squares(100).difference())
-    }
-
-    @Ignore
-    @Test
-    fun consistentDifference() {
-        assertEquals(Squares(0).difference(), Squares(0).difference())
     }
 
 }

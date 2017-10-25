@@ -168,6 +168,33 @@ class BaseConverterTest {
 
     @Ignore
     @Test
+    fun testFirstBaseIsOne() {
+        expectedException.expect(IllegalArgumentException::class.java)
+        expectedException.expectMessage("Bases must be at least 2.")
+
+        BaseConverter(1, intArrayOf())
+    }
+
+    @Ignore
+    @Test
+    fun testFirstBaseIsZero() {
+        expectedException.expect(IllegalArgumentException::class.java)
+        expectedException.expectMessage("Bases must be at least 2.")
+
+        BaseConverter(0, intArrayOf())
+    }
+
+    @Ignore
+    @Test
+    fun testFirstBaseIsNegative() {
+        expectedException.expect(IllegalArgumentException::class.java)
+        expectedException.expectMessage("Bases must be at least 2.")
+
+        BaseConverter(-2, intArrayOf())
+    }
+
+    @Ignore
+    @Test
     fun testNegativeDigit() {
         expectedException.expect(IllegalArgumentException::class.java)
         expectedException.expectMessage("Digits may not be negative.")
@@ -186,15 +213,6 @@ class BaseConverterTest {
 
     @Ignore
     @Test
-    fun testFirstBaseIsOne() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(1, intArrayOf())
-    }
-
-    @Ignore
-    @Test
     fun testSecondBaseIsOne() {
         val baseConverter = BaseConverter(2, intArrayOf(1, 0, 1, 0, 1, 0))
 
@@ -206,15 +224,6 @@ class BaseConverterTest {
 
     @Ignore
     @Test
-    fun testFirstBaseIsZero() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(0, intArrayOf())
-    }
-
-    @Ignore
-    @Test
     fun testSecondBaseIsZero() {
         val baseConverter = BaseConverter(2, intArrayOf(1, 0, 1, 0, 1, 0))
 
@@ -222,15 +231,6 @@ class BaseConverterTest {
         expectedException.expectMessage("Bases must be at least 2.")
 
         baseConverter.convertToBase(0)
-    }
-
-    @Ignore
-    @Test
-    fun testFirstBaseIsNegative() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(-2, intArrayOf())
     }
 
     @Ignore

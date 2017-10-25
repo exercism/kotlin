@@ -4,7 +4,6 @@ import kotlin.test.assertEquals
 
 class AcronymTest {
 
-
     @Test
     fun fromTitleCasedPhrases() {
         val phrase = "Portable Network Graphics"
@@ -22,14 +21,6 @@ class AcronymTest {
 
     @Ignore
     @Test
-    fun fromInconsistentlyCasedPhrases() {
-        val phrase = "HyperText Markup Language"
-        val expected = "HTML"
-        assertEquals(expected, Acronym.generate(phrase))
-    }
-
-    @Ignore
-    @Test
     fun fromPhrasesWithPunctuation() {
         val phrase = "First In, First Out"
         val expected = "FIFO"
@@ -38,9 +29,17 @@ class AcronymTest {
 
     @Ignore
     @Test
-    fun fromOtherPhrasesWithPunctuation() {
+    fun fromAllCapsWord() {
         val phrase = "PHP: Hypertext Preprocessor"
         val expected = "PHP"
+        assertEquals(expected, Acronym.generate(phrase))
+    }
+
+    @Ignore
+    @Test
+    fun fromNonAcronymAllCapsWord() {
+        val phrase = "GNU Image Manipulation Program"
+        val expected = "GIMP"
         assertEquals(expected, Acronym.generate(phrase))
     }
 

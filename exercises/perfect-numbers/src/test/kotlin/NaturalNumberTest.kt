@@ -31,7 +31,7 @@ class NaturalNumberTest {
     @Ignore
     @Test
     fun mediumAbundantNumberIsClassifiedCorrectly() {
-        assertEquals(Classification.ABUNDANT, classify(24))
+        assertEquals(Classification.ABUNDANT, classify(30))
     }
 
     @Ignore
@@ -42,14 +42,20 @@ class NaturalNumberTest {
 
     @Ignore
     @Test
-    fun smallDeficientNumberIsClassifiedCorrectly() {
-        assertEquals(Classification.DEFICIENT, classify(8))
+    fun smallestPrimeDeficientNumberIsClassifiedCorrectly() {
+        assertEquals(Classification.DEFICIENT, classify(2))
+    }
+
+    @Ignore
+    @Test
+    fun smallestNonPrimeDeficientNumberIsClassifiedCorrectly() {
+        assertEquals(Classification.DEFICIENT, classify(4))
     }
 
     @Ignore
     @Test
     fun mediumNumberIsClassifiedCorrectly() {
-        assertEquals(Classification.DEFICIENT, classify(31))
+        assertEquals(Classification.DEFICIENT, classify(32))
     }
 
     @Ignore
@@ -59,9 +65,21 @@ class NaturalNumberTest {
     }
 
     @Ignore
+    @Test
+    fun edgeCaseWithNoFactorsOtherThanItselfIsClassifiedCorrectly() {
+        assertEquals(Classification.DEFICIENT, classify(1))
+    }
+
+    @Ignore
     @Test(expected = RuntimeException::class)
-    fun mustProvideNaturalNumber() {
-        assertEquals(Classification.DEFICIENT, classify(-1))
+    fun zeroIsNotANaturalNumber() {
+        classify(0)
+    }
+
+    @Ignore
+    @Test(expected = RuntimeException::class)
+    fun negativeNumberIsNotANaturalNumber() {
+        classify(-1)
     }
 
 }

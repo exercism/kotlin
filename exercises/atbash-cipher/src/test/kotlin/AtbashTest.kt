@@ -15,21 +15,22 @@ class AtbashTest {
             @JvmStatic
             @Parameterized.Parameters
             fun data() = listOf(
-                    arrayOf("no", "ml"),
                     arrayOf("yes", "bvh"),
+                    arrayOf("no", "ml"),
                     arrayOf("OMG", "lnt"),
+                    arrayOf("O M G", "lnt"),
                     arrayOf("mindblowingly", "nrmwy oldrm tob"),
-                    arrayOf("Testing, 1 2 3, testing.", "gvhgr mt123 gvhgr mt"),
+                    arrayOf("Testing,1 2 3, testing.", "gvhgr mt123 gvhgr mt"),
                     arrayOf("Truth is fiction.", "gifgs rhurx grlm"),
                     arrayOf("The quick brown fox jumps over the lazy dog.", "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt")
             )
         }
 
-
         @Test
         fun test() {
             assertEquals(expectedOutput, Atbash.encode(input))
         }
+
     }
 
     @RunWith(Parameterized::class)
@@ -50,5 +51,7 @@ class AtbashTest {
         fun test() {
             assertEquals(expectedOutput, Atbash.decode(input))
         }
+
     }
+
 }

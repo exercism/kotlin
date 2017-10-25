@@ -1,6 +1,6 @@
 import java.lang.Math.max
 
-class Series(val digits: String) {
+class Series(private val digits: String) {
 
     init {
         require(digits.all { it.isDigit() })
@@ -13,7 +13,6 @@ class Series(val digits: String) {
         if(digits.isEmpty()) {
             return 1
         }
-
 
         return calculateRec(digits.map { it.intValue() }, span, 0)
     }

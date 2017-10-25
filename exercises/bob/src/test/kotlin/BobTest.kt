@@ -4,7 +4,6 @@ import kotlin.test.assertEquals
 
 class BobTest {
 
-
     @Test
     fun saySomething() {
         assertEquals("Whatever.", Bob.hey("Tom-ay-to, tom-aaaah-to."))
@@ -14,6 +13,12 @@ class BobTest {
     @Test
     fun shouting() {
         assertEquals("Whoa, chill out!", Bob.hey("WATCH OUT!"))
+    }
+
+    @Ignore
+    @Test
+    fun shoutingGibberish() {
+        assertEquals("Whoa, chill out!", Bob.hey("FCECDFCAAB"))
     }
 
     @Ignore
@@ -30,6 +35,12 @@ class BobTest {
 
     @Ignore
     @Test
+    fun askingGibberish() {
+        assertEquals("Sure.", Bob.hey("fffbbcbeab?"))
+    }
+
+    @Ignore
+    @Test
     fun talkingForcefully() {
         assertEquals("Whatever.", Bob.hey("Let's go make out behind the gym!"))
     }
@@ -42,7 +53,7 @@ class BobTest {
 
     @Ignore
     @Test
-    fun forcefulQuestions() {
+    fun forcefulQuestion() {
         assertEquals("Whoa, chill out!", Bob.hey("WHAT THE HELL WERE YOU THINKING?"))
     }
 
@@ -72,18 +83,6 @@ class BobTest {
 
     @Ignore
     @Test
-    fun shoutingWithUmlauts() {
-        assertEquals("Whoa, chill out!", Bob.hey("\u00dcML\u00c4\u00dcTS!"))
-    }
-
-    @Ignore
-    @Test
-    fun calmlySpeakingWithUmlauts() {
-        assertEquals("Whatever.", Bob.hey("\u00dcML\u00e4\u00dcTS!"))
-    }
-
-    @Ignore
-    @Test
     fun shoutingWithNoExclamationMark() {
         assertEquals("Whoa, chill out!", Bob.hey("I HATE YOU"))
     }
@@ -92,6 +91,12 @@ class BobTest {
     @Test
     fun statementContainingQuestionMark() {
         assertEquals("Whatever.", Bob.hey("Ending with ? means a question."))
+    }
+
+    @Ignore
+    @Test
+    fun nonLettersWithQuestion() {
+        assertEquals("Sure.", Bob.hey(":) ?"))
     }
 
     @Ignore
@@ -109,6 +114,43 @@ class BobTest {
     @Ignore
     @Test
     fun prolongedSilence() {
-        assertEquals("Fine. Be that way!", Bob.hey("    "))
+        assertEquals("Fine. Be that way!", Bob.hey("          "))
     }
+
+    @Ignore
+    @Test
+    fun alternateSilence() {
+        assertEquals("Fine. Be that way!", Bob.hey("\t\t\t\t\t\t\t\t\t\t"))
+    }
+
+    @Ignore
+    @Test
+    fun multipleLineQuestion() {
+        assertEquals("Whatever.", Bob.hey("\nDoes this cryogenic chamber make me look fat?\nno"))
+    }
+
+    @Ignore
+    @Test
+    fun startingWithWhitespace() {
+        assertEquals("Whatever.", Bob.hey("         hmmmmmmm..."))
+    }
+
+    @Ignore
+    @Test
+    fun endingWithWhitespace() {
+        assertEquals("Sure.", Bob.hey("Okay if like my  spacebar  quite a bit?   "))
+    }
+
+    @Ignore
+    @Test
+    fun otherWhitespace() {
+        assertEquals("Fine. Be that way!", Bob.hey("\n\r \t"))
+    }
+
+    @Ignore
+    @Test
+    fun nonQuestionEndingWithWhitespace() {
+        assertEquals("Whatever.", Bob.hey("This is a statement ending with whitespace      "))
+    }
+
 }

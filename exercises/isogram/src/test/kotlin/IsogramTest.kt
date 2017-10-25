@@ -1,6 +1,4 @@
-
 import org.junit.Test
-import org.junit.Ignore
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
@@ -12,22 +10,21 @@ class IsogramTest(val input: String, val expectedOutput: Boolean) {
         @JvmStatic
         @Parameterized.Parameters(name = "{index}: isogram({0})={1}")
         fun data() = listOf(
-                arrayOf("duplicates", true),
+                arrayOf("", true),
+                arrayOf("isogram", true),
                 arrayOf("eleven", false),
                 arrayOf("subdermatoglyphic", true),
                 arrayOf("Alphabet", false),
                 arrayOf("thumbscrew-japingly", true),
-                arrayOf("Hjelmqvist-Gryb-Zock-Pfund-Wax", true),
-                arrayOf("Heizölrückstoßabdämpfung", true),
-                arrayOf("the quick brown fox", false),
+                arrayOf("six-year-old", true),
                 arrayOf("Emily Jung Schwartzkopf", true),
-                arrayOf("éléphant", false)
+                arrayOf("accentor", false)
         )
     }
-
 
     @Test
     fun test() {
         assertEquals(expectedOutput, Isogram.isIsogram(input))
     }
+
 }
