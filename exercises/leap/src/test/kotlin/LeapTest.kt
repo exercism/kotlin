@@ -13,7 +13,7 @@ class LeapTest {
     @Ignore
     @Test
     fun yearDivisibleBy4NotDivisibleBy100() {
-        assertTrue(Year(2020).isLeap)
+        assertTrue(Year(1996).isLeap)
     }
 
     @Ignore
