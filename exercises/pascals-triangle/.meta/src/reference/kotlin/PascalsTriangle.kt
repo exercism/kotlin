@@ -9,7 +9,7 @@ object PascalsTriangle {
 
     private fun buildTriangleRow(row: Int): List<Int> {
         var m = 1
-        return listOf(1) + (1..row - 1).map { col ->
+        return listOf(1) + (1 until row).map { col ->
             m = m * (row - col) / col
             return@map m
         }

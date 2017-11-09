@@ -7,35 +7,35 @@ class BeerSongTest {
     @Test
     fun firstGenericVerse() {
         val expected = "99 bottles of beer on the wall, 99 bottles of beer.\nTake one down and pass it around, 98 bottles of beer on the wall.\n"
-        assertEquals(expected, BeerSong.verse(99))
+        assertEquals(expected, BeerSong.verses(99, 99))
     }
 
     @Ignore
     @Test
     fun lastGenericVerse() {
         val expected = "3 bottles of beer on the wall, 3 bottles of beer.\nTake one down and pass it around, 2 bottles of beer on the wall.\n"
-        assertEquals(expected, BeerSong.verse(3))
+        assertEquals(expected, BeerSong.verses(3, 3))
     }
 
     @Ignore
     @Test
     fun verse2() {
         val expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
-        assertEquals(expected, BeerSong.verse(2))
+        assertEquals(expected, BeerSong.verses(2, 2))
     }
 
     @Ignore
     @Test
     fun verse1() {
         val expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n"
-        assertEquals(expected, BeerSong.verse(1))
+        assertEquals(expected, BeerSong.verses(1, 1))
     }
 
     @Ignore
     @Test
     fun verse0() {
         val expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n"
-        assertEquals(expected, BeerSong.verse(0))
+        assertEquals(expected, BeerSong.verses(0, 0))
     }
 
     @Ignore
@@ -356,7 +356,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 """
-        assertEquals(expected, BeerSong.lyrics)
+        assertEquals(expected, BeerSong.verses(99, 0))
     }
 
 }

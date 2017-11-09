@@ -18,13 +18,6 @@ class ForthEvaluatorTest {
         forthEvaluator = ForthEvaluator()
     }
 
-    @Test
-    fun testEmptyProgramResultsInEmptyStack() {
-        assertEquals(
-                emptyList(),
-                forthEvaluator.evaluateProgram(emptyList()))
-    }
-
     @Ignore
     @Test
     fun testNumbersAreJustPushedOntoTheStack() {
