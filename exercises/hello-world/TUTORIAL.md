@@ -19,7 +19,7 @@ Each exercise comes with a set of tests.  The first pass through the
 exercise is about getting all of the tests to pass, one at a time.
 
 If you have not installed the Java Development Kit and Gradle, you must do
-so now.  For help with this, see: http://exercism.io/languages/kotlin/installing
+so now.  For help with this, see: http://exercism.io/languages/kotlin/installation
 
 ----
 
@@ -260,7 +260,7 @@ use the capitalized form on the person's name, regardless of the case they
 used.
 
 In that situation, you'd:
- 
+
 1. add a new test setting up that new expectation,
 2. implement that in the code (the same process we just went through
    together, above).
