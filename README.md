@@ -31,7 +31,7 @@ To submit a fix for an existing exercise or port an exercise to Kotlin with the 
 
 1. **Ensure you have the basic Java tooling installed:**  JDK 1.8+, an editor and Gradle 2.x.
 
-   (see [exercism.io: Installing Kotlin](http://exercism.io/languages/kotlin/installing))
+   (see [exercism.io: Installing Kotlin](http://exercism.io/languages/kotlin/installation))
 -  **Setup a branch on a fork of [exercism/kotlin](https://github.com/exercism/kotlin) on your computer.**
 
 Use those instructions (in conjunction with the [Git Basics doc](https://github.com/exercism/docs/blob/master/contributing/git-basics.md)) to:
