@@ -24,7 +24,7 @@ Some good test cases for this program are:
 ### Extension
 
 If you're on a Mac, shell out to Mac OS X's `say` program to talk out
-loud.
+loud. If you're on Linux or Windows, eSpeakNG may be available with the command `espeak`.
 
 ## Step 2
 
@@ -61,9 +61,6 @@ Use _and_ (correctly) when spelling out the number in English:
 - 120 becomes "one hundred and twenty".
 - 1002 becomes "one thousand and two".
 - 1323 becomes "one thousand three hundred and twenty-three".
-
-
-
 ## Source
 
 A variation on JavaRanch CattleDrive, exercise 4a [http://www.javaranch.com/say.jsp](http://www.javaranch.com/say.jsp)

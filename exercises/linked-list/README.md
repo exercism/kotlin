@@ -26,9 +26,6 @@ conditions. Specifically: `pop` or `shift` will never be called on an
 empty list.
 
 If you want to know more about linked lists, check [Wikipedia](https://en.wikipedia.org/wiki/Linked_list).
-
-
-
 ## Source
 
 Classic computer science topic
