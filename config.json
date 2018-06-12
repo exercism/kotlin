@@ -14,7 +14,7 @@
       "topics": [
         "strings"
       ],
-      "auto-approve": true
+      "auto_approve": true
     },
     {
       "slug": "two-fer",
