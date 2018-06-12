@@ -2,528 +2,542 @@
   "language": "Kotlin",
   "active": true,
   "blurb": "Kotlin is a pragmatic programming language for JVM and Android that combines OO and functional features and is focused on interoperability, safety, clarity and tooling support.",
+  "solution_pattern": "reference",
   "exercises": [
     {
-      "core": false,
-      "difficulty": 1,
       "slug": "hello-world",
-      "topics": null,
+      "uuid": "58c16459-348a-4536-8228-43379174735e",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "58c16459-348a-4536-8228-43379174735e"
+      "difficulty": 1,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 2,
       "slug": "two-fer",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "40f85461-c256-4b96-8d5b-0509f42fab17"
-    },
-    {
+      "uuid": "40f85461-c256-4b96-8d5b-0509f42fab17",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 2,
+      "topics": null
+    },
+    {
       "slug": "rna-transcription",
-      "topics": null,
+      "uuid": "9772c916-c619-445c-834d-af7dbf1ad2d9",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "9772c916-c619-445c-834d-af7dbf1ad2d9"
+      "difficulty": 2,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "pangram",
-      "topics": null,
+      "uuid": "0e9ca09d-c32e-4fed-930f-1b7c10b67dc2",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "0e9ca09d-c32e-4fed-930f-1b7c10b67dc2"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "hamming",
-      "topics": null,
+      "uuid": "7151ff23-ebc6-43d7-86b6-81cf0dd45309",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "7151ff23-ebc6-43d7-86b6-81cf0dd45309"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "gigasecond",
-      "topics": null,
+      "uuid": "1eb4c9d3-0085-4ca3-b1bb-9a20b88a1e7f",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "1eb4c9d3-0085-4ca3-b1bb-9a20b88a1e7f"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "space-age",
-      "topics": null,
+      "uuid": "a91ce7e9-9a2a-44de-b10c-cc1be63df2a1",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "a91ce7e9-9a2a-44de-b10c-cc1be63df2a1"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "acronym",
-      "topics": null,
+      "uuid": "d8288e46-2e8c-42e4-8e14-20b1efd0f574",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "d8288e46-2e8c-42e4-8e14-20b1efd0f574"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "scrabble-score",
-      "topics": null,
+      "uuid": "4d8a68eb-eee9-4c51-97b8-57f3b69f5970",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "4d8a68eb-eee9-4c51-97b8-57f3b69f5970"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "raindrops",
-      "topics": null,
+      "uuid": "93ee76ba-d19f-4c72-b011-676f40dcda5e",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "93ee76ba-d19f-4c72-b011-676f40dcda5e"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "difference-of-squares",
-      "topics": null,
+      "uuid": "d54a68fc-02dd-45ee-8c6f-3efb781ed0d2",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "d54a68fc-02dd-45ee-8c6f-3efb781ed0d2"
+      "difficulty": 3,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 3,
       "slug": "secret-handshake",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "feee3ee9-81d5-4a4f-ad98-e1ecf21757ed"
-    },
-    {
+      "uuid": "feee3ee9-81d5-4a4f-ad98-e1ecf21757ed",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 3,
-      "slug": "perfect-numbers",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "ad7c8fd8-acf0-40d0-8a30-d959c4b0252a"
+      "topics": null
     },
     {
+      "slug": "perfect-numbers",
+      "uuid": "ad7c8fd8-acf0-40d0-8a30-d959c4b0252a",
       "core": false,
-      "difficulty": 4,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": null
+    },
+    {
       "slug": "sum-of-multiples",
+      "uuid": "d3f960e5-cf19-4308-a1bc-897777f62689",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 4,
       "topics": [
         "collections",
         "lambdas",
         "ranges"
-      ],
-      "unlocked_by": null,
-      "uuid": "d3f960e5-cf19-4308-a1bc-897777f62689"
+      ]
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "luhn",
-      "topics": null,
+      "uuid": "3cf8a650-6a25-416e-a0af-036f41c11cca",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "3cf8a650-6a25-416e-a0af-036f41c11cca"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "triangle",
-      "topics": null,
+      "uuid": "e282536b-267f-490c-a453-758135051a54",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "e282536b-267f-490c-a453-758135051a54"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "largest-series-product",
-      "topics": null,
+      "uuid": "aa11e242-77b9-4ba7-97a2-d9b36e454a9d",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "aa11e242-77b9-4ba7-97a2-d9b36e454a9d"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "grains",
-      "topics": null,
+      "uuid": "1fa1e0f9-6410-4197-8778-debeb274e6d4",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "1fa1e0f9-6410-4197-8778-debeb274e6d4"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "sieve",
-      "topics": null,
+      "uuid": "87ca4323-8a19-4529-962d-0f2ee63ebb2f",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "87ca4323-8a19-4529-962d-0f2ee63ebb2f"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "collatz-conjecture",
-      "topics": null,
+      "uuid": "ab52d0f4-a001-4d44-951e-0cfc396374f3",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "ab52d0f4-a001-4d44-951e-0cfc396374f3"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "atbash-cipher",
-      "topics": null,
+      "uuid": "b325401a-c8f0-49da-9f1a-a83318e780c9",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "b325401a-c8f0-49da-9f1a-a83318e780c9"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "nth-prime",
-      "topics": null,
+      "uuid": "6e2bbe8d-b6ab-4675-9c31-5b437cefd0c4",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "6e2bbe8d-b6ab-4675-9c31-5b437cefd0c4"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "saddle-points",
-      "topics": null,
+      "uuid": "371901d4-0728-4abd-8374-1905d7d70329",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "371901d4-0728-4abd-8374-1905d7d70329"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 4,
       "slug": "diamond",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "03c71e34-ecaf-47a4-9854-48600e1bf0d4"
-    },
-    {
+      "uuid": "03c71e34-ecaf-47a4-9854-48600e1bf0d4",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 4,
+      "topics": null
+    },
+    {
       "slug": "isogram",
-      "topics": null,
+      "uuid": "e5338be9-6f51-4448-9b10-20de7b1338b9",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "e5338be9-6f51-4448-9b10-20de7b1338b9"
+      "difficulty": 4,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "flatten-array",
-      "topics": null,
+      "uuid": "c67907b6-0d8b-4b12-9c41-6069845952a3",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "c67907b6-0d8b-4b12-9c41-6069845952a3"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "pig-latin",
-      "topics": null,
+      "uuid": "cb2ce8e5-f143-4423-a3bc-959f4222c186",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "cb2ce8e5-f143-4423-a3bc-959f4222c186"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "phone-number",
-      "topics": null,
+      "uuid": "2c8c1c16-bbb8-49e5-a248-f7a473c2bc86",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "2c8c1c16-bbb8-49e5-a248-f7a473c2bc86"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "nucleotide-count",
-      "topics": null,
+      "uuid": "62bd648a-e959-4ec4-8a5f-09e08fa0b2c8",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "62bd648a-e959-4ec4-8a5f-09e08fa0b2c8"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "word-count",
-      "topics": null,
+      "uuid": "3b8b77ef-da2d-499d-9513-8fe771e86b3e",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "3b8b77ef-da2d-499d-9513-8fe771e86b3e"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "spiral-matrix",
-      "topics": null,
+      "uuid": "e3407da5-0524-4565-b724-9778bba1033f",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "e3407da5-0524-4565-b724-9778bba1033f"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "robot-name",
-      "topics": null,
+      "uuid": "ce475b23-5dfc-4049-90c5-0c387926686f",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "ce475b23-5dfc-4049-90c5-0c387926686f"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "prime-factors",
-      "topics": null,
+      "uuid": "0e92ba19-2727-4a5e-be38-e88878322c53",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "0e92ba19-2727-4a5e-be38-e88878322c53"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "allergies",
-      "topics": null,
+      "uuid": "a826af04-b7f3-426e-9bce-42375d0d928b",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "a826af04-b7f3-426e-9bce-42375d0d928b"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "bob",
-      "topics": null,
+      "uuid": "f3713067-7f37-4dd6-a189-c80f46dab8ec",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "f3713067-7f37-4dd6-a189-c80f46dab8ec"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "pascals-triangle",
-      "topics": null,
+      "uuid": "67db30e4-b4d8-4224-b0f8-19a00af40387",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "67db30e4-b4d8-4224-b0f8-19a00af40387"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "bracket-push",
-      "topics": null,
+      "uuid": "cbbbd7db-224f-45ca-a108-4dc6bc98e4a0",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "cbbbd7db-224f-45ca-a108-4dc6bc98e4a0"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 5,
       "slug": "series",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "9caa5fd9-a774-4d4c-951d-053a4f3f2726"
-    },
-    {
+      "uuid": "9caa5fd9-a774-4d4c-951d-053a4f3f2726",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 5,
+      "topics": null
+    },
+    {
       "slug": "rotational-cipher",
-      "topics": null,
+      "uuid": "7c24087a-ca61-48d3-9cb9-c3fde2edba86",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "7c24087a-ca61-48d3-9cb9-c3fde2edba86"
+      "difficulty": 5,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "roman-numerals",
-      "topics": null,
+      "uuid": "da466ad5-6837-47d8-af39-2c0563d35a3c",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "da466ad5-6837-47d8-af39-2c0563d35a3c"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "beer-song",
-      "topics": null,
+      "uuid": "34f0e7d0-29df-44e5-a7a7-4a12584af62e",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "34f0e7d0-29df-44e5-a7a7-4a12584af62e"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "etl",
-      "topics": null,
+      "uuid": "f0f297f2-429f-4626-8b7f-0706a1e8f255",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "f0f297f2-429f-4626-8b7f-0706a1e8f255"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "linked-list",
-      "topics": null,
+      "uuid": "fc977979-c8a4-44b6-a685-c8a32bd12bc3",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "fc977979-c8a4-44b6-a685-c8a32bd12bc3"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "grade-school",
-      "topics": null,
+      "uuid": "62eb71dd-18ba-427f-a27a-86e993b4055a",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "62eb71dd-18ba-427f-a27a-86e993b4055a"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "robot-simulator",
-      "topics": null,
+      "uuid": "6e3b294b-16a3-4ebb-a78b-4bf7f6b96736",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "6e3b294b-16a3-4ebb-a78b-4bf7f6b96736"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "binary-search",
-      "topics": null,
+      "uuid": "c8815b6c-19b8-4f4d-9be4-6717e933591a",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "c8815b6c-19b8-4f4d-9be4-6717e933591a"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "minesweeper",
-      "topics": null,
+      "uuid": "8eb6f225-fa3d-4a33-b476-2cae45053c82",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "8eb6f225-fa3d-4a33-b476-2cae45053c82"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 6,
       "slug": "all-your-base",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "19d00436-f26a-47ad-b13e-128181dc09f3"
-    },
-    {
+      "uuid": "19d00436-f26a-47ad-b13e-128181dc09f3",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 6,
+      "topics": null
+    },
+    {
       "slug": "say",
-      "topics": null,
+      "uuid": "5607dae5-13aa-4cd4-8b4c-d270516182d7",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "5607dae5-13aa-4cd4-8b4c-d270516182d7"
+      "difficulty": 6,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 7,
       "slug": "anagram",
-      "topics": null,
+      "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a"
+      "difficulty": 7,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 7,
       "slug": "sublist",
-      "topics": null,
+      "uuid": "ebfdf40a-1fde-4c88-aa93-95e3190f5261",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "ebfdf40a-1fde-4c88-aa93-95e3190f5261"
+      "difficulty": 7,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 7,
       "slug": "meetup",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "d617987e-64b8-4c21-89a9-66a932c4668d"
-    },
-    {
+      "uuid": "d617987e-64b8-4c21-89a9-66a932c4668d",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 7,
+      "topics": null
+    },
+    {
       "slug": "clock",
-      "topics": null,
+      "uuid": "1dcefdea-5447-4622-a064-079aad781398",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "1dcefdea-5447-4622-a064-079aad781398"
+      "difficulty": 7,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 8,
       "slug": "simple-cipher",
-      "topics": null,
+      "uuid": "e23b06de-bd91-482f-9783-b0334b75b489",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "e23b06de-bd91-482f-9783-b0334b75b489"
+      "difficulty": 8,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 8,
       "slug": "complex-numbers",
-      "topics": null,
-      "unlocked_by": null,
-      "uuid": "83dec96f-9cdf-4b9b-abc4-cbd2066d919a"
-    },
-    {
+      "uuid": "83dec96f-9cdf-4b9b-abc4-cbd2066d919a",
       "core": false,
+      "unlocked_by": null,
       "difficulty": 8,
+      "topics": null
+    },
+    {
       "slug": "change",
-      "topics": null,
+      "uuid": "0d69c1cd-f190-4b3b-8472-bf78c02acbc5",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "0d69c1cd-f190-4b3b-8472-bf78c02acbc5"
+      "difficulty": 8,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 9,
       "slug": "forth",
-      "topics": null,
+      "uuid": "eecd4f8b-eedc-49a3-adad-49747521ef66",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "eecd4f8b-eedc-49a3-adad-49747521ef66"
+      "difficulty": 9,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 10,
       "slug": "react",
+      "uuid": "240788cd-afa5-4fd6-8df0-a158239c0610",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 10,
       "topics": [
         "generics",
         "higher_order_functions",
         "nested_classes",
         "reactive_programming"
-      ],
-      "unlocked_by": null,
-      "uuid": "240788cd-afa5-4fd6-8df0-a158239c0610"
+      ]
     },
     {
-      "core": false,
-      "difficulty": 1,
       "slug": "leap",
-      "topics": null,
+      "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "639e59b6-84aa-4f13-9718-537606703c43"
+      "difficulty": 1,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 1,
       "slug": "list-ops",
-      "topics": null,
+      "uuid": "34f1d5bf-f31f-415e-9905-4d48e6205d28",
+      "core": false,
       "unlocked_by": null,
-      "uuid": "34f1d5bf-f31f-415e-9905-4d48e6205d28"
+      "difficulty": 1,
+      "topics": null
     },
     {
-      "core": false,
-      "difficulty": 1,
       "slug": "bank-account",
+      "uuid": "12e1d685-32be-4b2c-a40b-c68e5b60de1d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
         "concurrency"
-      ],
-      "unlocked_by": null,
-      "uuid": "12e1d685-32be-4b2c-a40b-c68e5b60de1d"
+      ]
     },
     {
-      "deprecated": true,
       "slug": "accumulate",
-      "uuid": "86015770-603b-44cf-aedf-f2a7cf79c841"
+      "uuid": "86015770-603b-44cf-aedf-f2a7cf79c841",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 0,
+      "topics": null,
+      "deprecated": true
     },
     {
-      "deprecated": true,
       "slug": "binary",
-      "uuid": "def44955-c048-4b74-8777-2fb7d779b09e"
+      "uuid": "def44955-c048-4b74-8777-2fb7d779b09e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 0,
+      "topics": null,
+      "deprecated": true
     },
     {
-      "deprecated": true,
       "slug": "hexadecimal",
-      "uuid": "13b1a62e-8e0e-4d57-b8c9-341b41f25cf5"
+      "uuid": "13b1a62e-8e0e-4d57-b8c9-341b41f25cf5",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 0,
+      "topics": null,
+      "deprecated": true
     },
     {
-      "deprecated": true,
       "slug": "strain",
-      "uuid": "8ae8492d-620c-4446-9928-5b4d78d496d9"
+      "uuid": "8ae8492d-620c-4446-9928-5b4d78d496d9",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 0,
+      "topics": null,
+      "deprecated": true
     }
-  ],
-  "foregone": [],
-  "language": "Kotlin",
-  "solution_pattern": "reference"
+  ]
 }
