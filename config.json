@@ -415,7 +415,7 @@
       "slug": "spiral-matrix",
       "uuid": "e3407da5-0524-4565-b724-9778bba1033f",
       "core": false,
-      "unlocked_by": "matrix",
+      "unlocked_by": "flatten-array",
       "difficulty": 5,
       "topics": [
         "arrays",
@@ -485,7 +485,7 @@
       "slug": "pascals-triangle",
       "uuid": "67db30e4-b4d8-4224-b0f8-19a00af40387",
       "core": false,
-      "unlocked_by": "matrix",
+      "unlocked_by": "triangle",
       "difficulty": 5,
       "topics": [
         "algorithms",
