@@ -64,7 +64,7 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun invalidWhenMoreThan11Digits() {
-        val expectedNumber = null
+        val expectedNumber: String? = null
         val actualNumber = PhoneNumber("321234567890").number
 
         assertEquals(expectedNumber, actualNumber)
@@ -73,7 +73,7 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun invalidWithLetters() {
-        val expectedNumber = null
+        val expectedNumber: String? = null
         val actualNumber = PhoneNumber("123-abc-7890").number
 
         assertEquals(expectedNumber, actualNumber)
@@ -82,7 +82,7 @@ class PhoneNumberTest {
     @Ignore
     @Test
     fun invalidWithInvalidPunctuation() {
-        val expectedNumber = null
+        val expectedNumber: String? = null
         val actualNumber = PhoneNumber("123-@:!-7890").number
 
         assertEquals(expectedNumber, actualNumber)
