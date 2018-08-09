@@ -182,6 +182,18 @@
       ]
     },
     {
+      "slug": "isbn-verifier",
+      "uuid": "838bc1d7-b2de-482a-9bfc-c881b4ccb04c",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 4,
+      "topics": [
+        "integers",
+        "loops",
+        "strings"
+      ]
+    },
+    {
       "slug": "sum-of-multiples",
       "uuid": "d3f960e5-cf19-4308-a1bc-897777f62689",
       "core": false,
@@ -530,6 +542,18 @@
       "topics": [
         "cryptography",
         "integers",
+        "strings"
+      ]
+    },
+    {
+      "slug": "isbn-verifier",
+      "uuid": "400d8014-9f75-43da-8a1c-93d95d91f4d2",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 4,
+      "topics": [
+        "integers",
+        "loops",
         "strings"
       ]
     },
