@@ -54,7 +54,7 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 
 # macOS
 
-Below are instructions for install using the most common method - using Homebrew.  If you'd rather, you can also [install on OS X without Homebrew](#installing-on-macos-without-homebrew).
+Below are instructions for install using the most common method - using Homebrew.  If you'd rather, you can also [install on macOS without Homebrew](#installing-on-macos-without-homebrew).
 
 ## Installing
 
