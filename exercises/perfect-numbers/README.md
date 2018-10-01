@@ -16,9 +16,6 @@ The Greek mathematician [Nicomachus](https://en.wikipedia.org/wiki/Nicomachus) d
   - Prime numbers are deficient
 
 Implement a way to determine whether a given number is **perfect**. Depending on your language track, you may also need to implement a way to determine whether a given number is **abundant** or **deficient**.
-
-
-
 ## Source
 
 Taken from Chapter 2 of Functional Thinking by Neal Ford. [http://shop.oreilly.com/product/0636920029687.do](http://shop.oreilly.com/product/0636920029687.do)

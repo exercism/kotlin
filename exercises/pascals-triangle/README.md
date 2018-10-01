@@ -13,9 +13,6 @@ the right and left of the current position in the previous row.
 1 4 6 4 1
 # ... etc
 ```
-
-
-
 ## Source
 
 Pascal's Triangle at Wolfram Math World [http://mathworld.wolfram.com/PascalsTriangle.html](http://mathworld.wolfram.com/PascalsTriangle.html)

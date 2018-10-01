@@ -31,8 +31,5 @@ I think you got the idea!
 
 *Yes. Those three numbers above are exactly the same. Congratulations!*
 
-
-
-
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.

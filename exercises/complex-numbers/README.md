@@ -30,9 +30,6 @@ Implement the following operations:
 
 
 Assume the programming language you are using does not have an implementation of complex numbers.
-
-
-
 ## Source
 
 Wikipedia [https://en.wikipedia.org/wiki/Complex_number](https://en.wikipedia.org/wiki/Complex_number)

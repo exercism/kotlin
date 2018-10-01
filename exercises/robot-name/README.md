@@ -14,9 +14,6 @@ respond with a new random name.
 The names must be random: they should not follow a predictable sequence.
 Random names means a risk of collisions. Your solution must ensure that
 every existing robot has a unique name.
-
-
-
 ## Source
 
 A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)

@@ -19,9 +19,6 @@ file that guides you through your solution. Check it out for tips and
 assistance!
 
 
-
-
-
 ## Source
 
 This is an exercise to introduce users to using Exercism [http://en.wikipedia.org/wiki/%22Hello,_world!%22_program](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program)

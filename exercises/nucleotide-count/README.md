@@ -11,9 +11,6 @@ Here is an analogy:
 - nucleotides are to DNA as
 - legos are to lego houses as
 - words are to sentences as...
-
-
-
 ## Source
 
 The Calculating DNA Nucleotides_problem at Rosalind [http://rosalind.info/problems/dna/](http://rosalind.info/problems/dna/)

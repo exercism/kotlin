@@ -45,9 +45,6 @@ A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
 example, an "E" is scored at 2 in the Māori-language version of the
 game while being scored at 4 in the Hawaiian-language version.
-
-
-
 ## Source
 
 The Jumpstart Lab team [http://jumpstartlab.com](http://jumpstartlab.com)

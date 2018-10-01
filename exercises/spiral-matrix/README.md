@@ -22,9 +22,6 @@ like these examples:
 11 16 15 6
 10  9  8 7
 ```
-
-
-
 ## Source
 
 Reddit r/dailyprogrammer challenge #320 [Easy] Spiral Ascension. [https://www.reddit.com/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/](https://www.reddit.com/r/dailyprogrammer/comments/6i60lr/20170619_challenge_320_easy_spiral_ascension/)

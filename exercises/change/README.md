@@ -15,9 +15,6 @@ that the sum of the coins' value would equal the correct amount of change.
 - Does your algorithm work for any given set of coins?
 - Can you ask for negative change?
 - Can you ask for a change value smaller than the smallest coin value?
-
-
-
 ## Source
 
 Software Craftsmanship - Coin Change Kata [https://web.archive.org/web/20130115115225/http://craftsmanship.sv.cmu.edu:80/exercises/coin-change-kata](https://web.archive.org/web/20130115115225/http://craftsmanship.sv.cmu.edu:80/exercises/coin-change-kata)
