@@ -26,7 +26,7 @@ so now.  For help with this, see: http://exercism.io/languages/kotlin/installati
 This guide picks-up where [Running the Tests (in Kotlin)](http://exercism.io/languages/kotlin/tests)
 left off.  If you haven't reviewed those instructions, do so now.
 
-The following instructions work equally well on Windows, Mac OS X and Linux.
+The following instructions work equally well on Windows, macOS and Linux.
 
 # Exercise Structure
 
