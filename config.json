@@ -363,6 +363,19 @@
       ]
     },
     {
+      "slug": "rail-fence-cipher",
+      "uuid": "49e730fb-7031-4de9-9bfd-b86564f20d8a",
+      "core": false,
+      "unlocked_by": "rotational-cipher",
+      "difficulty": 6,
+      "topics": [
+        "cryptography",
+        "algorithms",
+        "strings",
+        "transforming"
+      ]
+    },
+    {
       "slug": "phone-number",
       "uuid": "2c8c1c16-bbb8-49e5-a248-f7a473c2bc86",
       "core": false,
