@@ -540,6 +540,18 @@
       ]
     },
     {
+      "slug": "isbn-verifier",
+      "uuid": "400d8014-9f75-43da-8a1c-93d95d91f4d2",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 4,
+      "topics": [
+        "integers",
+        "loops",
+        "strings"
+      ]
+    },
+    {
       "slug": "bank-account",
       "uuid": "12e1d685-32be-4b2c-a40b-c68e5b60de1d",
       "core": true,
