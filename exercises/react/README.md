@@ -15,8 +15,5 @@ In addition, compute cells should allow for registering change notification
 callbacks.  Call a cell’s callbacks when the cell’s value in a new stable
 state has changed from the previous stable state.
 
-
-
-
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.

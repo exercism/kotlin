@@ -32,9 +32,6 @@ language.
 Keep your hands off that filter/reject/whatchamacallit functionality
 provided by your standard library!  Solve this one yourself using other
 basic tools instead.
-
-
-
 ## Source
 
 Conversation with James Edward Gray II [https://twitter.com/jeg2](https://twitter.com/jeg2)

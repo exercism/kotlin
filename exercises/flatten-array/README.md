@@ -9,9 +9,6 @@ For Example
 input: [1,[2,3,null,4],[null],5]
 
 output: [1,2,3,4,5]
-
-
-
 ## Source
 
 Interview Question [https://reference.wolfram.com/language/ref/Flatten.html](https://reference.wolfram.com/language/ref/Flatten.html)

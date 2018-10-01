@@ -16,9 +16,6 @@ Convert a number to a string, the contents of which depend on the number's facto
   - In raindrop-speak, this would be a "PlingPlang".
 - 34 has four factors: 1, 2, 17, and 34.
   - In raindrop-speak, this would be "34".
-
-
-
 ## Source
 
 A variation on a famous interview question intended to weed out potential candidates. [http://jumpstartlab.com](http://jumpstartlab.com)

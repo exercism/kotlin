@@ -33,9 +33,6 @@ are some additional things you could try:
 
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
-
-
-
 ## Source
 
 A pairing session with Phil Battos at gSchool [http://gschool.it](http://gschool.it)

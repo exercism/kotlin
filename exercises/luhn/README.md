@@ -63,9 +63,6 @@ Sum the digits
 ```
 
 57 is not evenly divisible by 10, so this number is not valid.
-
-
-
 ## Source
 
 The Luhn Algorithm on Wikipedia [http://en.wikipedia.org/wiki/Luhn_algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm)

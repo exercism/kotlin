@@ -7,9 +7,6 @@ the 6th prime is 13.
 
 If your language provides methods in the standard library to deal with prime
 numbers, pretend they don't exist and implement them yourself.
-
-
-
 ## Source
 
 A variation on Problem 7 at Project Euler [http://projecteuler.net/problem=7](http://projecteuler.net/problem=7)
