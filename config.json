@@ -3,18 +3,17 @@
   "active": true,
   "blurb": "Kotlin is a pragmatic programming language for JVM and Android that combines OO and functional features and is focused on interoperability, safety, clarity and tooling support.",
   "solution_pattern": "reference",
-  "forgone": [],
   "exercises": [
     {
       "slug": "hello-world",
       "uuid": "58c16459-348a-4536-8228-43379174735e",
       "core": true,
+      "auto_approve": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "strings"
-      ],
-      "auto_approve": true
+      ]
     },
     {
       "slug": "two-fer",
@@ -94,8 +93,7 @@
       "difficulty": 3,
       "topics": [
         "conditionals",
-        "floating_point_numbers",
-        "mathematics"
+        "floating_point_numbers"
       ]
     },
     {
@@ -134,7 +132,6 @@
       "topics": [
         "conditionals",
         "integers",
-        "mathematics",
         "strings"
       ]
     },
@@ -147,7 +144,7 @@
       "topics": [
         "integers",
         "loops",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -163,7 +160,6 @@
         "enumerations",
         "integers",
         "loops",
-        "mathematics",
         "transforming"
       ]
     },
@@ -178,7 +174,7 @@
         "exception_handling",
         "filtering",
         "integers",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -192,7 +188,7 @@
         "conditionals",
         "integers",
         "loops",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -205,7 +201,6 @@
         "algorithms",
         "booleans",
         "loops",
-        "mathematics",
         "strings",
         "type_conversion"
       ]
@@ -220,7 +215,6 @@
         "conditionals",
         "exception_handling",
         "integers",
-        "mathematics",
         "recursion"
       ]
     },
@@ -233,7 +227,7 @@
       "topics": [
         "integers",
         "loops",
-        "mathematics",
+        "math",
         "strings",
         "type_conversion"
       ]
@@ -259,7 +253,7 @@
         "integers",
         "lists",
         "loops",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -272,7 +266,7 @@
         "conditionals",
         "exception_handling",
         "integers",
-        "mathematics",
+        "math",
         "recursion"
       ]
     },
@@ -299,7 +293,8 @@
         "exception_handling",
         "integers",
         "lists",
-        "loops"
+        "loops",
+        "math"
       ]
     },
     {
@@ -313,8 +308,7 @@
         "conditionals",
         "exception_handling",
         "integers",
-        "loops",
-        "mathematics"
+        "loops"
       ]
     },
     {
@@ -421,7 +415,6 @@
         "arrays",
         "integers",
         "loops",
-        "mathematics",
         "matrices"
       ]
     },
@@ -451,7 +444,7 @@
         "integers",
         "lists",
         "loops",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -492,7 +485,7 @@
         "arrays",
         "exception_handling",
         "integers",
-        "mathematics",
+        "math",
         "matrices"
       ]
     },
@@ -556,7 +549,6 @@
         "logic",
         "loops",
         "maps",
-        "mathematics",
         "strings"
       ]
     },
@@ -665,7 +657,7 @@
         "exception_handling",
         "integers",
         "loops",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -759,7 +751,6 @@
       "topics": [
         "cryptography",
         "exception_handling",
-        "mathematics",
         "randomness",
         "security",
         "strings"
@@ -773,7 +764,7 @@
       "difficulty": 8,
       "topics": [
         "floating_point_numbers",
-        "mathematics"
+        "math"
       ]
     },
     {
