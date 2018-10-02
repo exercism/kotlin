@@ -95,5 +95,4 @@ class AnagramTest {
         val anagrams = detector.match(listOf("Banana"))
         assertEquals(emptySet(), anagrams)
     }
-    
 }
