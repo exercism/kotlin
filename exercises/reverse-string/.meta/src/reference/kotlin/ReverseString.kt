@@ -1,5 +1,3 @@
-import java.lang.StringBuilder
-
 fun reverse(input: String): String {
     var result = StringBuilder()
     for(i in 0 until input.length) {
