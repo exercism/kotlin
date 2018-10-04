@@ -1,0 +1,28 @@
+buildscript {
+  ext.kotlin_version = '1.2.40'
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+  testCompile 'junit:junit:4.12'
+  testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+}
+test {
+  testLogging {
+    exceptionFormat = 'full'
+    events = ["passed", "failed", "skipped"]
+  }
+}
