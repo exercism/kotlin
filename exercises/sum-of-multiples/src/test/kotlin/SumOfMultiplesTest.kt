@@ -11,6 +11,12 @@ class SumOfMultiplesTest {
 
     @Test
     @Ignore
+    fun `multiples of 3 or 5 up to 20`() {
+        assertEquals(78, SumOfMultiples.sum(setOf(3, 5), 20))
+    }
+
+    @Test
+    @Ignore
     fun `multiples of 3 or 5 up to 4`() {
         assertEquals(3, SumOfMultiples.sum(setOf(3, 5), 4))
     }
