@@ -432,6 +432,19 @@
       ]
     },
     {
+      "slug": "run-length-encoding",
+      "uuid": "4499a3f9-73a7-48bf-8753-d5b6abf588c9",
+      "core": false,
+      "unlocked_by": "rotational-cipher",
+      "difficulty": 5,
+      "topics": [
+        "integers",
+        "pattern_matching",
+        "strings",
+        "transforming"
+      ]
+    },
+    {
       "slug": "robot-name",
       "uuid": "ce475b23-5dfc-4049-90c5-0c387926686f",
       "core": true,
