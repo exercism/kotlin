@@ -18,7 +18,6 @@ class ForthEvaluatorTest {
         forthEvaluator = ForthEvaluator()
     }
 
-    @Ignore
     @Test
     fun testNumbersAreJustPushedOntoTheStack() {
         assertEquals(
