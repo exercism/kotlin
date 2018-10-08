@@ -117,4 +117,12 @@ class ClockCreationTest {
         assertEquals("22:10", Clock(-121, -5810).toString())
     }
 
+    @Ignore
+    @Test
+    fun fullClockAndZeroedClock(){
+        val first = Clock(24,0)
+        val second = Clock(0,0)
+        assertEquals(first, second)
+    }
+
 }
