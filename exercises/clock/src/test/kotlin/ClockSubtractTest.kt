@@ -32,7 +32,7 @@ class ClockSubtractTest{
     @Test
     fun subtractMoreThanTwoHours() {
         val clock = Clock(0, 0)
-        clock.add(160)
+        clock.substract(160)
         assertEquals("21:20", clock.toString())
     }
 
@@ -40,7 +40,7 @@ class ClockSubtractTest{
     @Test
     fun subtractMoreThanTwoHoursWithBorrow() {
         val clock = Clock(6, 15)
-        clock.add(160)
+        clock.substract(160)
         assertEquals("03:35", clock.toString())
     }
 
@@ -48,7 +48,7 @@ class ClockSubtractTest{
     @Test
     fun subtractMoreThanOneDay() {
         val clock = Clock(5, 32)
-        clock.add(1500)
+        clock.substract(1500)
         assertEquals("04:32", clock.toString())
     }
 
@@ -56,7 +56,7 @@ class ClockSubtractTest{
     @Test
     fun subtractMoreThanTwoDays() {
         val clock = Clock(2, 20)
-        clock.add(3000)
+        clock.substract(3000)
         assertEquals("00:20", clock.toString())
     }
 }
