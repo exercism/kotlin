@@ -18,6 +18,7 @@ class BracketPushTest(val input: String, val expectedOutput: Boolean) {
                 arrayOf("}{", false),
                 arrayOf("{]", false),
                 arrayOf("{ }", true),
+                arrayOf("{[])", false),
                 arrayOf("{[]}", true),
                 arrayOf("{}[]", true),
                 arrayOf("([{}({}[])])", true),
