@@ -90,14 +90,27 @@ class PhoneNumberTest {
 
     @Ignore
     @Test
-    fun invalidWhenAreaCodeStartsWith0or1() {
+    fun invalidWhenAreaCodeStartsWith1() {
         assertNull(PhoneNumber("(123) 456-7890").number)
     }
 
     @Ignore
     @Test
-    fun invalidWhenExchangeCodeStartsWith0or1() {
+    fun invalidWhenAreaCodeStartsWith0() {
+        assertNull(PhoneNumber("(023) 456-7890").number)
+    }
+
+
+    @Ignore
+    @Test
+    fun invalidWhenExchangeCodeStartsWith0() {
         assertNull(PhoneNumber("(223) 056-7890").number)
+    }
+
+    @Ignore
+    @Test
+    fun invalidWhenExchangeCodeStartsWith1() {
+        assertNull(PhoneNumber("(223) 156-7890").number)
     }
 
 }
