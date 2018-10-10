@@ -18,7 +18,6 @@ class ForthEvaluatorTest {
         forthEvaluator = ForthEvaluator()
     }
 
-    @Ignore
     @Test
     fun testNumbersAreJustPushedOntoTheStack() {
         assertEquals(
@@ -168,7 +167,7 @@ class ForthEvaluatorTest {
     fun testDupCopiesTheTopValueOnTheStack() {
         assertEquals(
                 listOf(1, 1),
-                forthEvaluator.evaluateProgram(listOf("1 DUP")))
+                forthEvaluator.evaluateProgram(listOf("1 dup")))
     }
 
     @Ignore
@@ -176,7 +175,7 @@ class ForthEvaluatorTest {
     fun testDupParsingIsCaseInsensitive() {
         assertEquals(
                 listOf(1, 2, 2),
-                forthEvaluator.evaluateProgram(listOf("1 2 Dup")))
+                forthEvaluator.evaluateProgram(listOf("1 2 dup")))
     }
 
     @Ignore
@@ -319,6 +318,23 @@ class ForthEvaluatorTest {
         assertEquals(
                 listOf(12),
                 forthEvaluator.evaluateProgram(listOf(": + * ;", "3 4 +")))
+
+    }
+
+    @Ignore
+    @Test
+    fun testCanUseDifferentWordsWithSameName(){
+        assertEquals(
+                listOf(5,6),
+                forthEvaluator.evaluateProgram(listOf(": foo 5;", ": bar foo ;", ": foo 6 ;", "bar foo")))
+    }
+
+    @Ignore
+    @Test
+    fun testCanDefineWordThatUsesWordWithTheSameName(){
+        assertEquals(
+                listOf(11),
+                forthEvaluator.evaluateProgram(listOf(": foo 10;", ": foo foo 1 + ;", "foo")))
     }
 
     @Ignore
@@ -339,4 +355,51 @@ class ForthEvaluatorTest {
         forthEvaluator.evaluateProgram(listOf("foo"))
     }
 
+    @Ignore
+    @Test
+    fun testCaseInsensitivity(){
+        assertEquals(
+                listOf(1,1,1,1),
+                forthEvaluator.evaluateProgram(listOf("1 DUP Dup dup")))
+    }
+
+    @Ignore
+    @Test
+    fun testDropIsCaseInsensitive(){
+        assertEquals(
+                listOf(1),
+                forthEvaluator.evaluateProgram(listOf("1 2 3 4 DROP Drop drop")))
+    }
+
+    @Ignore
+    @Test
+    fun testSwapIsCaseInsensitive(){
+        assertEquals(
+                listOf(2,3,4,1),
+                forthEvaluator.evaluateProgram(listOf("1 2 SWAP 3 Swap 4 swap")))
+    }
+
+    @Ignore
+    @Test
+    fun testOverIsCaseInsensitive(){
+        assertEquals(
+                listOf(1,2,1,2,1),
+                forthEvaluator.evaluateProgram(listOf("1 2 OVER Over over")))
+    }
+
+    @Ignore
+    @Test
+    fun testUserDefinedWordsAreCaseInsensitive(){
+        assertEquals(
+                listOf(1,1,1,1),
+                forthEvaluator.evaluateProgram(listOf(": foo dup;", "1 FOO Foo foo")))
+    }
+
+    @Ignore
+    @Test
+    fun testDefinitionsAreCaseInsensitive(){
+        assertEquals(
+                listOf(1,1,1,1),
+                forthEvaluator.evaluateProgram(listOf(": SWAP DUP Dup dup ;", "1 swap")))
+    }
 }
