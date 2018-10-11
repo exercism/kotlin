@@ -37,14 +37,7 @@ Open an administrative command prompt.  (If you need assistance opening an admin
         ...
        ```
 
-3.  Install Gradle:
-
-       ```batchfile
-        C:\Windows\system32>choco install gradle
-        ...
-       ```
-
-We recommend closing the administrative command prompt and opening a new command prompt -- you do not require administrator priviledges to practice Exercism exercises.
+We recommend closing the administrative command prompt and opening a new command prompt -- you do not require administrator privileges to practice Exercism exercises.
 
 You now are ready to get started with the Kotlin track of Exercism!
 
@@ -74,12 +67,6 @@ Below are instructions for install using the most common method - using Homebrew
 
        ```
         $ brew cask install java
-       ```
-
-4.  Install Gradle:
-
-       ```
-        $ brew install gradle
        ```
 
 You now are ready to get started with the Kotlin track of Exercism!
@@ -112,13 +99,6 @@ If you are using Debian or its derivatives (like Ubuntu or Linux Mint), use APT:
         $ sudo apt install oracle-java8-set-default
       ```
 
-2. Install Gradle:
-
-      ```sh
-        $ sudo add-apt-repository ppa:cwchien/gradle
-        $ sudo apt-get update
-        $ sudo apt-get install gradle
-      ```
 
 You now are ready to get started with the Kotlin track of Exercism!
 
@@ -136,12 +116,6 @@ If you are using Fedora or its derivatives, use DNF:
 
       ```sh
         $ sudo dnf install java-1.8.0-openjdk-devel
-      ```
-
-2. Install Gradle:
-
-      ```sh
-        $ sudo dnf install gradle
       ```
 
 
@@ -166,11 +140,6 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 1. Install the JDK:
    1. Download "**Java Platform (JDK)**" from [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
    -  Run the installer, using all the defaults.
-2. Install Gradle:
-   - Download "**Binary only distribution**" from the [Gradle download page](https://gradle.org/gradle-download/).
-   - Unzip the archive.  We recommend a place like `C:\Users\JohnDoe\Tools`.
-   - Add a new system environment variable named `GRADLE_HOME` and set it to the path you just created (e.g. `C:\Users\JohnDoe\Tools\gradle-x.y`).
-   - Update the system `Path` to include the `bin` directory from Gradle's home (e.g. `Path`=`...;%GRADLE_HOME%\bin`).
 
 
 You now are ready to get started with the Kotlin track of Exercism!
@@ -186,26 +155,6 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 1. Install the JDK:
    1. Download "**Java Platform (JDK)**" from [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
    2. Run the installer, using all the defaults.
-2. Install Gradle:
-   1. Download "**Binary only distribution**" from the [Gradle download page](https://gradle.org/gradle-download/).
-   2. Unpack Gradle:
-
-       ```sh
-        $ mkdir ~/tools
-        $ cd ~/tools
-        $ unzip ~/Downloads/gradle-*-bin.zip
-        $ cd gradle*
-       ```
-
-   3. Configure Gradle and add it to the path:
-
-       ```sh
-        $ cat << DONE >> ~/.bashrc
-        export GRADLE_HOME=`pwd`
-        export PATH=\$PATH:\$GRADLE_HOME/bin
-        DONE
-       ```
-
 
 You now are ready to get started with the Kotlin track of Exercism!
 
@@ -220,25 +169,6 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 1. Install the JDK:
    1. Download "**Java Platform (JDK)**" from [Oracle OTN](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
    2. Run the installer, using all the defaults.
-2. Install Gradle:
-   1. Download "**Binary only distribution**" from the [Gradle download page](https://gradle.org/gradle-download/).
-   2. Unpack Gradle:
-
-       ```sh
-        $ mkdir ~/tools
-        $ cd ~/tools
-        $ unzip ~/Downloads/gradle-*-bin.zip
-        $ cd gradle*
-       ```
-
-   3. Configure Gradle and add it to the path:
-
-       ```sh
-        $ cat << DONE >> ~/.bashrc
-        export GRADLE_HOME=`pwd`
-        export PATH=\$PATH:\$GRADLE_HOME/bin
-        DONE
-       ```
 
 You now are ready to get started with the Kotlin track of Exercism!
 
