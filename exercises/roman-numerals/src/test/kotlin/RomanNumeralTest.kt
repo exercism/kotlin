@@ -21,6 +21,7 @@ class RomanNumeralsTest(val input: Int, val expectedOutput: String) {
                 arrayOf(9, "IX"),
                 arrayOf(27, "XXVII"),
                 arrayOf(48, "XLVIII"),
+                arrayOf(49, "XLIX"),
                 arrayOf(59, "LIX"),
                 arrayOf(93, "XCIII"),
                 arrayOf(141, "CXLI"),
