@@ -1,38 +1,81 @@
 import org.junit.Test
-import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class SeriesTest {
 
-
     @Test
-    fun slicesOfOne() {
-        assertEquals(listOf<List<Int>>(), Series.slices(1, ""))
+    fun slicesOfOneFromOne() {
         assertEquals(
-                listOf(listOf(0), listOf(1), listOf(2), listOf(3), listOf(4)),
-                Series.slices(1, "01234")
+                listOf(listOf(1)),
+                Series.slices(1, "1")
         )
     }
 
-    @Ignore
+    @Test
+    fun slicesOfOneFromTwo() {
+        assertEquals(
+                listOf(listOf(1), listOf(2)),
+                Series.slices(1, "12")
+        )
+    }
+
     @Test
     fun slicesOfTwo() {
-        assertEquals(listOf<List<Int>>(), Series.slices(2, ""))
-        assertEquals(listOf(listOf(0, 1)), Series.slices(2, "01"))
         assertEquals(
-                listOf(listOf(0, 1), listOf(1, 2), listOf(2, 3), listOf(3, 4)),
-                Series.slices(2, "01234")
+                listOf(listOf(3,5)),
+                Series.slices(2, "35")
         )
     }
 
-    @Ignore
     @Test
-    fun slicesOfThree() {
-        assertEquals(listOf<List<Int>>(), Series.slices(3, ""))
-        assertEquals(listOf(listOf(0, 1, 2)), Series.slices(3, "012"))
+    fun slicesOfTwoOverlap() {
         assertEquals(
-                listOf(listOf(0, 1, 2), listOf(1, 2, 3), listOf(2, 3, 4)),
-                Series.slices(3, "01234")
+                listOf(listOf(9,1), listOf(1,4), listOf(4,2)),
+                Series.slices(2, "9142")
         )
+    }
+
+    @Test
+    fun slicesCanIncludeDuplicates() {
+        assertEquals(
+                listOf(listOf(7,7,7), listOf(7,7,7), listOf(7,7,7), listOf(7,7,7)),
+                Series.slices(3, "777777")
+        )
+    }
+
+    @Test
+    fun slicesOfALongSeries() {
+        assertEquals(
+                listOf(listOf(9,1,8,4,9),
+                        listOf(1,8,4,9,3),
+                        listOf(8,4,9,3,9),
+                        listOf(4,9,3,9,0),
+                        listOf(9,3,9,0,4),
+                        listOf(3,9,0,4,2),
+                        listOf(9,0,4,2,4),
+                        listOf(0,4,2,4,3)),
+                Series.slices(5, "918493904243")
+        )
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun sliceLengthIsTooLarge() {
+        Series.slices(4, "123")
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun sliceLengthCannotBeZero() {
+        Series.slices(0, "123")
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun sliceLengthCannotBeNegative() {
+        Series.slices(-2, "123")
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun emptySeriesIsInvalid() {
+        Series.slices(1, "")
+        Series.slices(1, "")
     }
 }
