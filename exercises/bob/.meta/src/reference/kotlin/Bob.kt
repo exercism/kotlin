@@ -3,10 +3,11 @@ object Bob {
         val trimmedInput = input.trim()
 
         return when {
-            isSilence(trimmedInput)  -> "Fine. Be that way!"
-            isShout(trimmedInput)    -> "Whoa, chill out!"
-            isQuestion(trimmedInput) -> "Sure."
-            else                     -> "Whatever."
+            isSilence(trimmedInput)         -> "Fine. Be that way!"
+            isShoutedQuestion(trimmedInput) -> "Calm down, I know what I'm doing!"
+            isShout(trimmedInput)           -> "Whoa, chill out!"
+            isQuestion(trimmedInput)        -> "Sure."
+            else                            -> "Whatever."
         }
     }
 
@@ -21,4 +22,5 @@ object Bob {
         return hasLetter && isOnlyUppercase
     }
 
+    private fun isShoutedQuestion(input: String) = isShout(input) && isQuestion(input)
 }
