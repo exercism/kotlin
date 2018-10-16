@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 class BobTest {
 
     @Test
-    fun saySomething() {
+    fun statingSomething() {
         assertEquals("Whatever.", Bob.hey("Tom-ay-to, tom-aaaah-to."))
     }
 
@@ -54,7 +54,7 @@ class BobTest {
     @Ignore
     @Test
     fun forcefulQuestion() {
-        assertEquals("Whoa, chill out!", Bob.hey("WHAT THE HELL WERE YOU THINKING?"))
+        assertEquals("Calm down, I know what I'm doing!", Bob.hey("WHAT THE HELL WERE YOU THINKING?"))
     }
 
     @Ignore
@@ -65,13 +65,13 @@ class BobTest {
 
     @Ignore
     @Test
-    fun onlyNumbers() {
+    fun noLetters() {
         assertEquals("Whatever.", Bob.hey("1, 2, 3"))
     }
 
     @Ignore
     @Test
-    fun questionWithOnlyNumbers() {
+    fun questionWithNoLetters() {
         assertEquals("Sure.", Bob.hey("4?"))
     }
 
@@ -84,7 +84,7 @@ class BobTest {
     @Ignore
     @Test
     fun shoutingWithNoExclamationMark() {
-        assertEquals("Whoa, chill out!", Bob.hey("I HATE YOU"))
+        assertEquals("Whoa, chill out!", Bob.hey("I HATE THE DMV"))
     }
 
     @Ignore
