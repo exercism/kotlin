@@ -18,8 +18,6 @@ data class Clock(private var hours: Int, private var minutes: Int) {
         sanitiseTime()
     }
 
-    fun substract(minutes: Int) = add(minutes * -1)
-
     private fun sanitiseTime() {
         while (minutes < 0) {
             minutes += MINUTES_IN_AN_HOUR
