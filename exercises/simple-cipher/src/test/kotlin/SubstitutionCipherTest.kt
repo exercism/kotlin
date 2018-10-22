@@ -62,17 +62,17 @@ class SubstitutionCipherTest {
 
     @Ignore
     @Test
-    fun cipherCanEncodeMessageThatIsShorterThanTheKey() {
-        val expectedOutput = "abcde"
+    fun cipherCanWrapDecode() {
+        val expectedOutput = "zzzzzzzzzz"
 
-        assertEquals(expectedOutput, cipher.encode("aaaaa"))
+        assertEquals(expectedOutput, cipher.decode("zabcdefghi"))
     }
 
     @Ignore
     @Test
-    fun cipherCanDecodeMessageThatIsShorterThanTheKey() {
-        val expectedOutput = "aaaaa"
+    fun cipherCanEncodeMessageThatIsLongerThanTheKey() {
+        val expectedOutput = "iboaqcnecbfcr"
 
-        assertEquals(expectedOutput, cipher.decode("abcde"))
+        assertEquals(expectedOutput, Cipher("abc").encode("iamapandabear"))
     }
 }
