@@ -30,7 +30,7 @@
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
-      "unlocked_by": "hello-world",
+      "unlocked_by": "gigasecond",
       "difficulty": 2,
       "topics": [
         "control_flow_if_else_statements",
