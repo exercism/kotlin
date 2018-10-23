@@ -98,6 +98,43 @@ class ReactTest {
 
     @Ignore
     @Test
+    fun callbacksDoNotReportAlreadyReportedValues(){
+        val reactor = Reactor<Int>()
+        val input = reactor.InputCell(1)
+        val output = reactor.ComputeCell(input){it[0] + 1}
+
+        val vals = mutableListOf<Int>()
+        output.addCallback{vals.add(it)}
+
+        input.value = 2
+        assertEquals(listOf(3), vals)
+
+        input.value = 3
+        assertEquals(listOf(4), vals)
+    }
+
+    @Ignore
+    @Test
+    fun callbacksCanFireFromMultipleCells(){
+        val reactor = Reactor<Int>()
+        val input = reactor.InputCell(1)
+        val plus_one = reactor.ComputeCell(input){it[0] + 1}
+
+        val minus_one = reactor.ComputeCell(input){it[0] - 1}
+
+        val vals1 = mutableListOf<Int>()
+
+        plus_one.addCallback{vals1.add(it)}
+
+        val vals2 = mutableListOf<Int>()
+        minus_one.addCallback{vals2.add(it)}
+
+        assertEquals(listOf(11), val1)
+        assertEquals(listOf(9), vals2)
+    }
+
+    @Ignore
+    @Test
     fun callbacksCanBeAddedAndRemoved() {
         val reactor = Reactor<Int>()
         val input = reactor.InputCell(11)
