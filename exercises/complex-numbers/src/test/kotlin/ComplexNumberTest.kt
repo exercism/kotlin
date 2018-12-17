@@ -260,4 +260,12 @@ class ComplexNumberTest {
         assertComplexNumbersEqual(expected, actual)
     }
 
+    @Ignore
+    @Test
+    fun testExponentialOfANumberWithRealAndImaginaryPart() {
+        val expected = ComplexNumber(real = -2.0)
+        val actual = exponential(ComplexNumber(real = Math.log(2.0), imag = Math.PI))
+        assertComplexNumbersEqual(expected, actual)
+    }
+
 }
