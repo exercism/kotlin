@@ -1,6 +1,8 @@
+import kotlin.math.*
+
 data class ComplexNumber(val real: Double = 0.0, val imag: Double = 0.0) {
 
-    val abs = Math.hypot(real, imag)
+    val abs = hypot(real, imag)
 
     operator fun plus(other: ComplexNumber)
             = copy(real = real + other.real, imag = imag + other.imag)
@@ -12,7 +14,7 @@ data class ComplexNumber(val real: Double = 0.0, val imag: Double = 0.0) {
             = copy(real = real*other.real - imag*other.imag, imag = real*other.imag + imag*other.real)
 
     operator fun div(other: ComplexNumber)
-            = this * other.conjugate() / Math.pow(other.abs, 2.0)
+            = this * other.conjugate() / other.abs.pow(2.0)
 
     operator fun times(factor: Double)
             = copy(real = factor * real, imag = factor * imag)
@@ -25,4 +27,4 @@ data class ComplexNumber(val real: Double = 0.0, val imag: Double = 0.0) {
 }
 
 fun exponential(exponent: ComplexNumber)
-        = ComplexNumber(real = Math.cos(exponent.imag), imag = Math.sin(exponent.imag)) * Math.exp(exponent.real)
+        = ComplexNumber(real = cos(exponent.imag), imag = sin(exponent.imag)) * exp(exponent.real)
