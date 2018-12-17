@@ -1,6 +1,7 @@
 import org.junit.Assert.assertEquals
 import org.junit.Ignore
 import org.junit.Test
+import kotlin.math.*
 
 class ComplexNumberTest {
 
@@ -240,7 +241,7 @@ class ComplexNumberTest {
     @Test
     fun testExponentialOfPurelyImaginaryNumber() {
         val expected = ComplexNumber(real = -1.0)
-        val actual = exponential(ComplexNumber(imag = Math.PI))
+        val actual = exponential(ComplexNumber(imag = PI))
         assertComplexNumbersEqual(expected, actual)
     }
 
@@ -255,7 +256,7 @@ class ComplexNumberTest {
     @Ignore
     @Test
     fun testExponentialOfPurelyRealNumber() {
-        val expected = ComplexNumber(real = Math.E)
+        val expected = ComplexNumber(real = E)
         val actual = exponential(ComplexNumber(real = 1.0))
         assertComplexNumbersEqual(expected, actual)
     }
@@ -264,7 +265,7 @@ class ComplexNumberTest {
     @Test
     fun testExponentialOfANumberWithRealAndImaginaryPart() {
         val expected = ComplexNumber(real = -2.0)
-        val actual = exponential(ComplexNumber(real = Math.log(2.0), imag = Math.PI))
+        val actual = exponential(ComplexNumber(real = ln(2.0), imag = PI))
         assertComplexNumbersEqual(expected, actual)
     }
 
