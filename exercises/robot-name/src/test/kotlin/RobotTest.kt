@@ -35,4 +35,12 @@ class RobotTest {
         assertTrue(isValidName(name2), "Robot name $name2 didn't match expected pattern.")
     }
 
+    @Test
+    fun isRandom() {
+        val iterations = 100000
+        val names = (0 until iterations).map { Robot().name }
+        assertEquals(iterations, names.size)
+        assertEquals(iterations, names.distinct().size)
+    }
+
 }
