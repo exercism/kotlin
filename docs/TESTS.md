@@ -11,10 +11,10 @@ Choose your operating system:
 # Windows
 
 1. Open a Command Prompt.
-2. Get the first exercise:
+2. Get an exercise:
 
     ```batchfile
-    C:\Users\JohnDoe>exercism fetch kotlin
+    C:\Users\JohnDoe>exercism download --exercise=hello-world --track=kotlin
 
     Not Submitted:     1 problem
     Kotlin (Hello World) C:\Users\JohnDoe\exercism\kotlin\hello-world
@@ -49,10 +49,10 @@ If you get stuck, at any point, don't forget to reach out for [help](http://exer
 
 # macOS
 
-1. In the terminal window, get the first exercise:
+1. In the terminal window, get an exercise:
 
     ```
-    $ exercism fetch kotlin
+    $ exercism download --exercise=hello-world --track=kotlin
 
     New:                 1 problem
     Kotlin (Etl) /Users/johndoe/exercism/kotlin/hello-world
@@ -83,10 +83,10 @@ If you get stuck, at any point, don't forget to reach out for [help](http://exer
 
 # Linux
 
-1. In the terminal window, get the first exercise:
+1. In the terminal window, get an exercise:
 
     ```
-    $ exercism fetch kotlin
+    $ exercism download --exercise=hello-world --track=kotlin
 
     New:                 1 problem
     Kotlin (Etl) /home/johndoe/exercism/kotlin/hello-world
