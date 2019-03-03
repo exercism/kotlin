@@ -220,13 +220,10 @@ $ exercism submit src/main/kotlin/HelloWorld.kt
 From here, there are a number of paths you can take.
 
 
-## Move on to the next exercise
+## Move on to another exercise
 
-There are many more exercises you can practice with.  Grab the next one!
-
-```
-$ exercism fetch kotlin
-```
+There are many more exercises you can practice with.  Grab another one
+from the [Kotlin track](https://exercism.io/my/tracks/kotlin).
 
 
 ## Review (and comment on) others' submissions to this exercise
