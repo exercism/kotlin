@@ -1,10 +1,12 @@
-# kotlin [![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin)
+# Exercism Kotlin Track
+
+[![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin)
 
 Source for Exercism Exercises in Kotlin.
 
 ## Contributing Guide
 
-For general information about how to contribute to Exercism, please refer to the [Contributing Guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#the-exercise-data).
+For general information about how to contribute to Exercism, please refer to the [contributing guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
 
 ## Table of Contents
 
