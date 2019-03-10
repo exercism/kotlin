@@ -806,21 +806,6 @@
       ]
     },
     {
-      "slug": "forth",
-      "uuid": "eecd4f8b-eedc-49a3-adad-49747521ef66",
-      "core": false,
-      "unlocked_by": "secret-handshake",
-      "difficulty": 9,
-      "topics": [
-        "exception_handling",
-        "lists",
-        "logic",
-        "parsing",
-        "stacks",
-        "strings"
-      ]
-    },
-    {
       "slug": "react",
       "uuid": "240788cd-afa5-4fd6-8df0-a158239c0610",
       "core": false,
