@@ -54,6 +54,6 @@ subprojects {
       filter { line -> line.contains("@Ignore") ? "" : line }
     }
 
-    test.dependsOn(copyTestsFilteringIgnores)
+    compileTestKotlin.dependsOn(copyTestsFilteringIgnores)
   }
 }

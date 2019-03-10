@@ -86,6 +86,20 @@ Each problem/submodule has three source sets:
 * `.meta/src/reference/kotlin/` — a reference solution that passes all the tests
 * `src/main/kotlin/` — starter source files, if required/desired *(this directory usually only has a `.keep` file in it)*.
 
+To run the tests for a specific exercise, run the `test` Gradle task from the exercises
+directory. For example:
+
+```bash
+cd exercises
+../gradlew bob:test
+
+```
+
+Steps for modifying an exercise:
+1. Change the test(s).
+2. Watch the changes fail.
+3. Update the reference solution to make the test(s) pass.
+
 ----
 
 ## Advanced: Complete Local Setup
