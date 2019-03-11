@@ -1,23 +1,27 @@
-import java.util.*
-
 class Robot {
-
     companion object {
-        private val alphabet = ('A'..'Z').toList()
-        private val numbers = (0..9).toList()
-
-        private val random = Random()
-        private fun <T : Any> random(list: List<T>): Sequence<T> = generateSequence { list[random.nextInt(list.size)] }
+        val existingNames = mutableSetOf<String>()
     }
 
-    var name: String = makeName()
-        private set
+    private var _name: String = generateName()
+    val name: String
+        get() = _name
 
     fun reset() {
-        name = makeName()
+        _name = generateName()
     }
 
-    private fun makeName() = prefix() + suffix()
-    private fun prefix() = random(alphabet).take(2).joinToString("")
-    private fun suffix() = random(numbers).take(3).joinToString("")
+    private tailrec fun generateName(): String {
+        val randomLetters = ('A'..'Z').randomSample(2)
+        val numbers = (0..9).randomSample(3)
+        val newName = (randomLetters + numbers).joinToString("")
+
+        return when {
+            existingNames.add(newName) -> newName
+            else -> generateName()
+        }
+    }
+
+    private fun <T> Iterable<T>.randomSample(number: Int): Iterable<T> =
+        (0 until number).map { this.shuffled()[0] }
 }
