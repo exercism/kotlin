@@ -75,11 +75,10 @@ class SchoolTest {
         school.add("Christopher", 4)
         school.add("Kyle", 3)
 
-        val expected = mapOf(6 to listOf("Kareem"), 4 to listOf("Christopher", "Jennifer"), 3 to listOf("Kyle"))
+        val expected = mapOf(3 to listOf("Kyle"), 4 to listOf("Christopher", "Jennifer"), 6 to listOf("Kareem"))
         val sortedClasses = school.sort()
-        assertEquals(expected, sortedClasses)
         assertEquals(listOf(3, 4, 6), sortedClasses.keys.toList(), "Grades not sorted in ascending order")
+        assertEquals(expected, sortedClasses)
 
-        assertEquals(listOf("Jennifer", "Christopher"), school.db().get(4), "Original student order should not be mutated")
     }
 }
