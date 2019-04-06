@@ -24,7 +24,7 @@ class TwoferTest {
     @Test
     @Ignore
     fun emptyStringGiven() {
-        assertEquals("One for , one for me.", twofer(""))
+        assertEquals("One for you, one for me.", twofer(""))
     }
 
 }
