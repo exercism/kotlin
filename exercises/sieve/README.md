@@ -28,9 +28,34 @@ that you've implemented the algorithm, only that you've come up with the
 correct list of primes. A good first test is to check that you do not use
 division or remainder operations (div, /, mod or % depending on the
 language).
+
+## Setup
+
+Go through the setup instructions for Kotlin to install the necessary
+dependencies:
+
+[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ gradlew test
+```
+
+> Use `gradlew.bat` if you're on Windows
+
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by removing the
+`@Ignore` annotation.
+
 ## Source
 
 Sieve of Eratosthenes at Wikipedia [http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
 
 ## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

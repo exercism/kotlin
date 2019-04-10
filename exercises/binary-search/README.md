@@ -33,9 +33,34 @@ found in the array and a special "not found" indication is returned.
 A binary search halves the number of items to check with each iteration,
 so locating an item (or determining its absence) takes logarithmic time.
 A binary search is a dichotomic divide and conquer search algorithm.
+
+## Setup
+
+Go through the setup instructions for Kotlin to install the necessary
+dependencies:
+
+[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ gradlew test
+```
+
+> Use `gradlew.bat` if you're on Windows
+
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by removing the
+`@Ignore` annotation.
+
 ## Source
 
 Wikipedia [http://en.wikipedia.org/wiki/Binary_search_algorithm](http://en.wikipedia.org/wiki/Binary_search_algorithm)
 
 ## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

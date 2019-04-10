@@ -16,9 +16,34 @@ Convert a number to a string, the contents of which depend on the number's facto
   - In raindrop-speak, this would be a "PlingPlang".
 - 34 has four factors: 1, 2, 17, and 34.
   - In raindrop-speak, this would be "34".
+
+## Setup
+
+Go through the setup instructions for Kotlin to install the necessary
+dependencies:
+
+[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ gradlew test
+```
+
+> Use `gradlew.bat` if you're on Windows
+
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by removing the
+`@Ignore` annotation.
+
 ## Source
 
 A variation on a famous interview question intended to weed out potential candidates. [http://jumpstartlab.com](http://jumpstartlab.com)
 
 ## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

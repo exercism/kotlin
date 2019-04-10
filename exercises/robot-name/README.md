@@ -14,9 +14,34 @@ respond with a new random name.
 The names must be random: they should not follow a predictable sequence.
 Random names means a risk of collisions. Your solution must ensure that
 every existing robot has a unique name.
+
+## Setup
+
+Go through the setup instructions for Kotlin to install the necessary
+dependencies:
+
+[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ gradlew test
+```
+
+> Use `gradlew.bat` if you're on Windows
+
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by removing the
+`@Ignore` annotation.
+
 ## Source
 
 A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)
 
 ## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

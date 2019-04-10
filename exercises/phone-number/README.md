@@ -27,9 +27,34 @@ should all produce the output
 `6139950253`
 
 **Note:** As this exercise only deals with telephone numbers used in NANP-countries, only 1 is considered a valid country code.
+
+## Setup
+
+Go through the setup instructions for Kotlin to install the necessary
+dependencies:
+
+[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ gradlew test
+```
+
+> Use `gradlew.bat` if you're on Windows
+
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by removing the
+`@Ignore` annotation.
+
 ## Source
 
 Event Manager by JumpstartLab [http://tutorials.jumpstartlab.com/projects/eventmanager.html](http://tutorials.jumpstartlab.com/projects/eventmanager.html)
 
 ## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.
