@@ -6,7 +6,7 @@ import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
 
 @RunWith(Parameterized::class)
-class BracketPushTest(val input: String, val expectedOutput: Boolean) {
+class MatchingBracketsTest(val input: String, val expectedOutput: Boolean) {
 
     companion object {
         @JvmStatic
@@ -32,7 +32,7 @@ class BracketPushTest(val input: String, val expectedOutput: Boolean) {
 
     @Test
     fun test() {
-        assertEquals(expectedOutput, BracketPush.isValid(input))
+        assertEquals(expectedOutput, MatchingBrackets.isValid(input))
     }
 
 }

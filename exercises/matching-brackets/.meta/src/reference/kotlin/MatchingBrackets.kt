@@ -1,7 +1,7 @@
 import java.util.*
 import java.util.Collections.asLifoQueue
 
-object BracketPush {
+object MatchingBrackets {
 
     private val CLOSING_TO_OPENING_MAP = mapOf(
              '}' to '{',
