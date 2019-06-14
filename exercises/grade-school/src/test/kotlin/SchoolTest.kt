@@ -57,8 +57,8 @@ class SchoolTest {
         school.add("Bradley", 5)
         school.add("Jeff", 1)
 
-        val expected = mapOf(5 to listOf("Franklin", "Bradley"), 1 to listOf("Jeff"))
-        assertEquals(expected, school.db())
+        val expected = mapOf(5 to listOf("Franklin", "Bradley"))
+        assertEquals(expected, school.grade(5))
     }
 
     @Ignore
