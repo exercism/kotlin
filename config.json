@@ -267,6 +267,22 @@
       ]
     },
     {
+      "slug": "kindergarten-garden",
+      "uuid": "0b92ffee-c092-4ab1-ad78-76c8cf80e1b5",
+      "core": false,
+      "unlocked_by": "triangle",
+      "difficulty": 4,
+      "topics": [
+        "arrays",
+        "enumerations",
+        "lists",
+        "logic",
+        "loops",
+        "pattern_recognition",
+        "strings"
+      ]
+    },
+    {
       "slug": "collatz-conjecture",
       "uuid": "ab52d0f4-a001-4d44-951e-0cfc396374f3",
       "core": false,
