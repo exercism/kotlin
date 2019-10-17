@@ -106,4 +106,26 @@ class TriangleTest {
         assertTrue(Triangle(0.5, 0.4, 0.6).isScalene)
     }
 
+
+    @Ignore
+    @Test
+    fun denerateTriangle_isoscelesIfTwoSidesAreEqual()
+    {
+        assertTrue(Triangle(1,2,1).isIscosceles)
+    }
+
+    @Ignore
+    @Test
+    fun denerateTriangle_ScaleneIfNoSidesAreEqual()
+    {
+        assertTrue(Triangle(1,3,4).isIscosceles)
+    }
+
+    @Ignore
+    @Test
+    fun denerateTriangle_isoscelesIfLastTwoSidesAreEqual()
+    {
+        assertTrue(Triangle(1,2,1).isIscosceles)
+    }
+
 }
