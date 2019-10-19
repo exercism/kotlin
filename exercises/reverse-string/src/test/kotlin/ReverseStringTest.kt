@@ -1,35 +1,39 @@
-import org.junit.Ignore
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation
+import org.junit.jupiter.api.Order
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.TestMethodOrder
 
+@TestMethodOrder(OrderAnnotation::class)
 class ReverseStringTest {
+
     @Test
+    @Order(0)
     fun testAnEmptyString() {
         assertEquals("", reverse(""))
     }
 
-    @Ignore
     @Test
+    @Order(1)
     fun testAWord() {
         assertEquals("tobor", reverse("robot"))
     }
 
-    @Ignore
     @Test
+    @Order(2)
     fun testACapitalizedWord() {
         assertEquals("nemaR", reverse("Ramen"))
     }
 
-    @Ignore
     @Test
+    @Order(3)
     fun testASentenceWithPunctuation() {
         assertEquals("!yrgnuh m'I", reverse("I'm hungry!"))
     }
 
-    @Ignore
     @Test
+    @Order(4)
     fun testAPalindrome() {
         assertEquals("racecar", reverse("racecar"))
     }
-
 }
