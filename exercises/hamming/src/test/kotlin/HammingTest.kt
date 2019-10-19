@@ -11,37 +11,37 @@ class HammingTest {
     var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
-    fun noDistanceBetweenEmptyStrands() {
+    fun `empty strands`() {
         assertEquals(0, Hamming.compute("", ""))
     }
 
     @Ignore
     @Test
-    fun noDistanceBetweenSingleLetterIdenticalStrands() {
+    fun `single letter identical strands`() {
         assertEquals(0, Hamming.compute("A", "A"))
     }
 
     @Ignore
     @Test
-    fun completeDistanceInSingleLetterDifferentStrands() {
+    fun `single letter different strands`() {
         assertEquals(1, Hamming.compute("G", "T"))
     }
 
     @Ignore
     @Test
-    fun noDistanceBetweenLongIdenticalStrands() {
+    fun `long identical strands`() {
         assertEquals(0, Hamming.compute("GGACTGAAATCTG", "GGACTGAAATCTG"))
     }
 
     @Ignore
     @Test
-    fun largeDistanceBetweenLongDifferentStrands() {
+    fun `long different strands`() {
         assertEquals(9, Hamming.compute("GGACGGATTCTG", "AGGACGGATTCT"))
     }
 
     @Ignore
     @Test
-    fun disallowFirstStrandLonger() {
+    fun `disallow first strand longer`() {
         expectedException.expect(IllegalArgumentException::class.java)
         expectedException.expectMessage("left and right strands must be of equal length")
 
@@ -50,7 +50,7 @@ class HammingTest {
 
     @Ignore
     @Test
-    fun disallowSecondStrandLonger() {
+    fun `disallow second strand longer`() {
         expectedException.expect(IllegalArgumentException::class.java)
         expectedException.expectMessage("left and right strands must be of equal length")
 
