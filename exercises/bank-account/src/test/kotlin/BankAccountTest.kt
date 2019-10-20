@@ -31,7 +31,7 @@ class BankAccountTest {
         val account = BankAccount()
         account.close()
 
-        assertFailsWith(IllegalStateException::class, { account.balance })
+        assertFailsWith(IllegalStateException::class) { account.balance }
     }
 
     @Ignore
@@ -40,7 +40,7 @@ class BankAccountTest {
         val account = BankAccount()
         account.close()
 
-        assertFailsWith(IllegalStateException::class, { account.adjustBalance(1000) })
+        assertFailsWith(IllegalStateException::class) { account.adjustBalance(1000) }
     }
 
     @Ignore
