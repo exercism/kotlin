@@ -60,6 +60,16 @@
       "link_url": null,
       "avatar_url": null,
       "bio": "[Mobile] Software engineer and Kotlin enthusiast."
+    },
+    {
+      "github_username": "eparovyshnaya",
+      "alumnus": false,
+      "show_on_website": true,
+      "name": "Elena Parovyshnaia",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "Staying with Java since 1.0, currently a Kotlin fan. Experienced in explaining things. Eager learner. Enthusiastic in putting things in order, evolving an infrastructure and processes, easing work for a community."
     }
   ]
 }
