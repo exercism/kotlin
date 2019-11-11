@@ -43,7 +43,7 @@
       "unlocked_by": "gigasecond",
       "difficulty": 2,
       "topics": [
-        "control_flow_if_else_statements",
+        "conditionals",
         "integers"
       ]
     },
@@ -728,7 +728,7 @@
       "unlocked_by": "linked-list",
       "difficulty": 7,
       "topics": [
-        "enumeration",
+        "enumerations",
         "generics",
         "lists",
         "loops",
