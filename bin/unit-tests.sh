@@ -14,6 +14,6 @@ bin/configlet lint .
 pushd exercises
 echo ""
 echo ">>> Running tests..."
-TERM=dumb ../gradlew check compileStarterSourceKotlin --continue
+TERM=dumb ../gradlew clean check compileStarterSourceKotlin --continue
 popd
 
