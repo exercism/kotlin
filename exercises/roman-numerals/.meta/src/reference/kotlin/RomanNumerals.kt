@@ -1,4 +1,5 @@
-object RomanNumeral {
+object RomanNumerals {
+
     private val numeralValues = listOf(
             Pair(1000, "M"),
             Pair(900, "CM"),
