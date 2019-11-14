@@ -12,25 +12,25 @@ class PangramTest {
 
     @Ignore
     @Test
-    fun perfectLowercasePangram() {
+    fun perfectLowerCase() {
         assertTrue(Pangram.isPangram("abcdefghijklmnopqrstuvwxyz"))
     }
 
     @Ignore
     @Test
-    fun lowercasePangram() {
+    fun onlyLowerCase() {
         assertTrue(Pangram.isPangram("the quick brown fox jumps over the lazy dog"))
     }
 
     @Ignore
     @Test
-    fun missingCharacterX() {
+    fun missingTheLetterX() {
         assertFalse(Pangram.isPangram("a quick movement of the enemy will jeopardize five gunboats"))
     }
 
     @Ignore
     @Test
-    fun anotherMissingCharacterX() {
+    fun missingTheLetterH() {
         assertFalse(Pangram.isPangram("five boxing wizards jump quickly at it"))
     }
 
@@ -60,7 +60,7 @@ class PangramTest {
 
     @Ignore
     @Test
-    fun mixedCaseDuplicatedCharacters() {
+    fun caseInsensitive() {
         assertFalse(Pangram.isPangram("the quick brown fox jumps over with lazy FX"))
     }
 
