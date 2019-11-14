@@ -1,7 +1,9 @@
 import java.util.Random
 
 data class Cipher(val key: String) {
+
     constructor() : this(generateRandomKey())
+
     init {
         require(key.matches(Regex("^[a-z]+$")), { "Invalid key: $key" })
     }
@@ -29,5 +31,4 @@ data class Cipher(val key: String) {
 
         return alphabet[alphaIdx]
     }
-
 }
