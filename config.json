@@ -43,7 +43,7 @@
       "unlocked_by": "gigasecond",
       "difficulty": 2,
       "topics": [
-        "control_flow_if_else_statements",
+        "conditionals",
         "integers"
       ]
     },
@@ -823,8 +823,8 @@
       "difficulty": 10,
       "topics": [
         "generics",
-        "higher_order_functions",
-        "nested_classes",
+        "functional_programming",
+        "classes",
         "reactive_programming"
       ]
     },
