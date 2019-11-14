@@ -728,7 +728,7 @@
       "unlocked_by": "linked-list",
       "difficulty": 7,
       "topics": [
-        "enumeration",
+        "enumerations",
         "generics",
         "lists",
         "loops",
@@ -834,7 +834,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "lists"
+      ],
       "deprecated": true
     },
     {
@@ -843,7 +845,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "strings"
+      ],
       "deprecated": true
     },
     {
@@ -852,7 +856,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "string",
+        "integers"
+      ],
       "deprecated": true
     },
     {
@@ -861,7 +868,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "arrays",
+        "filtering"
+      ],
       "deprecated": true
     }
   ]
