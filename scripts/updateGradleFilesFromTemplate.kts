@@ -23,7 +23,7 @@ fun updateGradleFiles() {
     exerciseDirs.forEach { dir ->
         println(dir.name)
 
-        dir.resolve("buid.gradle")
+        dir.resolve("build.gradle")
             .takeIf { it.exists() }
             ?.delete()
 
