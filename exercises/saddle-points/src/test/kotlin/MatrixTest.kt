@@ -25,7 +25,7 @@ class MatrixTest {
     fun `no saddle points for empty matrix`() =
         assertSaddlePointsEqual(
             Matrix(listOf(emptyList())),
-            emptySet<MatrixCoordinate>()
+            emptySet()
         )
 
     @Ignore
@@ -39,7 +39,7 @@ class MatrixTest {
                     listOf(2, 3, 1)
                 )
             ),
-            emptySet<MatrixCoordinate>()
+            emptySet()
         )
 
     @Ignore
