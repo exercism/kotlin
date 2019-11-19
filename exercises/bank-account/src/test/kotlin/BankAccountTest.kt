@@ -1,9 +1,10 @@
 import org.junit.Ignore
 import org.junit.Test
 import java.util.*
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
-import kotlinx.coroutines.experimental.*
 
 class BankAccountTest {
 
@@ -46,25 +47,26 @@ class BankAccountTest {
     @Ignore
     @Test
     fun concurrentBalanceAdjustments() {
-        val threads = 1000
+        val threads = 100
         val iterations = 500
         val random = Random()
 
         val account = BankAccount()
 
-        val jobs = List(threads) {
-            launch(CommonPool) {
+        val executor = Executors.newFixedThreadPool(8)
+
+        repeat(threads) {
+            executor.submit {
                 repeat(iterations) {
                     account.adjustBalance(1)
-                    delay(random.nextInt(10).toLong())
+                    Thread.sleep(random.nextInt(10).toLong())
                     account.adjustBalance(-1)
                 }
             }
         }
 
-        runBlocking {
-            jobs.forEach { it.join() }
-        }
+        executor.shutdown()
+        executor.awaitTermination(10, TimeUnit.MINUTES)
 
         assertEquals(0, account.balance)
     }

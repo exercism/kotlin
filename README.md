@@ -78,7 +78,7 @@ This is the top-level module, contained in the `exercises` directory.  It is a c
 The `exercises` subdirectory contains all of the problem submodules.
 Each problem/submodule is a subdirectory of the same name as its slug.
 
-  * its `build.gradle` names dependencies required to work that problem.
+  * its `build.gradle.kts` names dependencies required to work that problem.
 
 Each problem/submodule has three source sets:
 
