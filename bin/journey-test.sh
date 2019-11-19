@@ -56,7 +56,7 @@ solve_exercise() {
 
     mkdir -p ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/kotlin/
     mkdir -p ${exercism_exercises_dir}/${TRACK}/${exercise}/src/test/kotlin/
-    cp ${track_root}/exercises/${exercise}/build.gradle ${exercism_exercises_dir}/${TRACK}/${exercise}/build.gradle
+    cp ${track_root}/exercises/${exercise}/build.gradle.kts ${exercism_exercises_dir}/${TRACK}/${exercise}/build.gradle.kts
     cp -R -H ${track_root}/exercises/${exercise}/.meta/src/reference/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
     cp -R -H ${track_root}/exercises/${exercise}/src/test/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/test/${TRACK}/
     
