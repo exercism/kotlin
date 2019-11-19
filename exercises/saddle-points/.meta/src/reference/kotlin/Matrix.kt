@@ -4,12 +4,11 @@ data class Matrix(val entries: List<List<Int>>) {
         val result = mutableSetOf<MatrixCoordinate>()
 
         if (entries.isNotEmpty()) {
-            for (row in 0 until entries.size) {
-                for (col in 0 until entries[0].size) {
+            for (row in entries.indices) {
+                for (col in entries[0].indices) {
                     val coordinateValue = entries[row][col]
-
                     if (coordinateValue == getRowMax(row) && coordinateValue == getColumnMin(col)) {
-                        result.add(MatrixCoordinate(row, col))
+                        result.add(MatrixCoordinate(row + 1, col + 1))
                     }
                 }
             }
