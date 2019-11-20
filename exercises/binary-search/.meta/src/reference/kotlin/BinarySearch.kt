@@ -1,12 +1,10 @@
 object BinarySearch {
 
-    val NOT_FOUND = -1
-
     fun <T: Comparable<T>> search(list: List<T>, item: T) : Int {
         require(list.isSorted()) {"The provided list must be sorted in ascending order"}
 
         if(list.isEmpty()) {
-            return NOT_FOUND
+            throw NoSuchElementException("value $item is not in array $list")
         }
 
         return searchRec(list, item, 0)
@@ -14,7 +12,7 @@ object BinarySearch {
 
     private tailrec fun <T: Comparable<T>> searchRec(list: List<T>, item: T, accumulatedOffset: Int) : Int {
         if(1 == list.size) {
-            return if(list.first() == item) accumulatedOffset else NOT_FOUND
+            return if(list.first() == item) accumulatedOffset else throw NoSuchElementException("value $item is not in array $list")
         }
 
         val midIndex = list.size / 2
