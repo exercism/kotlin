@@ -4,32 +4,32 @@ import kotlin.test.assertEquals
 
 class ReverseStringTest {
     @Test
-    fun testAnEmptyString() {
-        assertEquals("", reverse(""))
-    }
+    fun `empty string`() = assertEquals("", reverse(""))
 
     @Ignore
     @Test
-    fun testAWord() {
-        assertEquals("tobor", reverse("robot"))
-    }
+    fun `single word`() = assertEquals("tobor", reverse("robot"))
 
     @Ignore
     @Test
-    fun testACapitalizedWord() {
-        assertEquals("nemaR", reverse("Ramen"))
-    }
+    fun `capitalized word`() = assertEquals("nemaR", reverse("Ramen"))
 
     @Ignore
     @Test
-    fun testASentenceWithPunctuation() {
-        assertEquals("!yrgnuh m'I", reverse("I'm hungry!"))
-    }
+    fun `sentence with punctuation`() = assertEquals("!yrgnuh m'I", reverse("I'm hungry!"))
 
     @Ignore
     @Test
-    fun testAPalindrome() {
-        assertEquals("racecar", reverse("racecar"))
-    }
+    fun `palindrome word`() = assertEquals("racecar", reverse("racecar"))
 
+    @Ignore
+    @Test
+    fun `even-sized word`() = assertEquals("reward", reverse("drawer"))
+
+    @Ignore
+    @Test
+    fun `apply twice`() {
+        val input = "input"
+        assertEquals(input, reverse(reverse(input)))
+    }
 }
