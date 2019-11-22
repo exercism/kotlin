@@ -1,14 +1,20 @@
 import java.math.BigDecimal
 
-class SpaceAge(val seconds: Long) {
+class SpaceAge(private val seconds: Long) {
 
     companion object {
         val EARTH_ORBITAL_PERIOD_IN_SECONDS = 31557600.0
         val PRECISION = 2
 
         private enum class Planet(val relativeOrbitalPeriod: Double) {
-            EARTH(1.0), MERCURY(0.2408467), VENUS(0.61519726), MARS(1.8808158),
-            JUPITER(11.862615), SATURN(29.447498), URANUS(84.016846), NEPTUNE(164.79132)
+            EARTH(1.0),
+            MERCURY(0.2408467),
+            VENUS(0.61519726),
+            MARS(1.8808158),
+            JUPITER(11.862615),
+            SATURN(29.447498),
+            URANUS(84.016846),
+            NEPTUNE(164.79132)
         }
     }
 
