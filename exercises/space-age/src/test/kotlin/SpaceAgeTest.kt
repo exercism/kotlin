@@ -3,68 +3,36 @@ import org.junit.Ignore
 import kotlin.test.assertEquals
 
 class SpaceAgeTest {
-
     @Test
-    fun ageOnEarth() {
-        val age = SpaceAge(1000000000)
-
-        assertEquals(31.69, age.onEarth())
-    }
+    fun `age on Earth`() = assertYearsEqual(31.69, SpaceAge(1000000000).onEarth())
 
     @Ignore
     @Test
-    fun ageOnMercury() {
-        val age = SpaceAge(2134835688)
-
-        assertEquals(280.88, age.onMercury())
-    }
+    fun `age on Mercury`() = assertYearsEqual(280.88, SpaceAge(2134835688).onMercury())
 
     @Ignore
     @Test
-    fun ageOnVenus() {
-        val age = SpaceAge(189839836)
-
-        assertEquals(9.78, age.onVenus())
-    }
+    fun `age on Venus`() = assertYearsEqual(9.78, SpaceAge(189839836).onVenus())
 
     @Ignore
     @Test
-    fun ageOnMars() {
-        val age = SpaceAge(2329871239L)
-
-        assertEquals(39.25, age.onMars())
-    }
+    fun `age on Mars`() = assertYearsEqual(35.88, SpaceAge(2129871239).onMars())
 
     @Ignore
     @Test
-    fun ageOnJupiter() {
-        val age = SpaceAge(901876382)
-
-        assertEquals(2.41, age.onJupiter())
-    }
+    fun `age on Jupiter`() = assertYearsEqual(2.41, SpaceAge(901876382).onJupiter())
 
     @Ignore
     @Test
-    fun ageOnSaturn() {
-        val age = SpaceAge(3000000000L)
-
-        assertEquals(3.23, age.onSaturn())
-    }
+    fun `age on Saturn`() = assertYearsEqual(2.15, SpaceAge(2000000000).onSaturn())
 
     @Ignore
     @Test
-    fun ageOnUranus() {
-        val age = SpaceAge(3210123456L)
-
-        assertEquals(1.21, age.onUranus())
-    }
+    fun `age on Uranus`() = assertYearsEqual(0.46, SpaceAge(1210123456).onUranus())
 
     @Ignore
     @Test
-    fun ageOnNeptune() {
-        val age = SpaceAge(8210123456L)
-
-        assertEquals(1.58, age.onNeptune())
-    }
-
+    fun `age on Neptune`() = assertYearsEqual(0.35, SpaceAge(1821023456).onNeptune())
 }
+
+private fun assertYearsEqual(expectedYears: Double, actualYears: Double) = assertEquals(expectedYears, actualYears)
