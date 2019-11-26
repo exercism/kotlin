@@ -778,6 +778,19 @@
       ]
     },
     {
+      "slug": "diffie-hellman",
+      "uuid": "9b191b2f-b1a4-4c0e-b911-36666bff614d",
+      "core": false,
+      "unlocked_by": "linked-list",
+      "difficulty": 8,
+      "topics": [
+        "cryptography",
+        "randomness",
+        "algorithms",
+        "integers"
+      ]
+    },
+    {
       "slug": "simple-cipher",
       "uuid": "e23b06de-bd91-482f-9783-b0334b75b489",
       "core": false,
