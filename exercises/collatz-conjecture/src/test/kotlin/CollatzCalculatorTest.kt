@@ -11,44 +11,34 @@ class CollatzCalculatorTest {
     var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
-    fun testZeroStepsRequiredWhenStartingFrom1() {
-        assertEquals(0, CollatzCalculator.computeStepCount(1))
-    }
+    fun `zero steps for 1`() = assertStepsEqual(1, 0)
 
     @Ignore
     @Test
-    fun testCorrectNumberOfStepsWhenAllStepsAreDivisions() {
-        assertEquals(4, CollatzCalculator.computeStepCount(16))
-    }
+    fun `divide if even`() = assertStepsEqual(16, 4)
 
     @Ignore
     @Test
-    fun testCorrectNumberOfStepsWhenBothStepTypesAreNeeded() {
-        assertEquals(9, CollatzCalculator.computeStepCount(12))
-    }
+    fun `even and odd steps`() = assertStepsEqual(12, 9)
 
     @Ignore
     @Test
-    fun testAVeryLargeInput() {
-        assertEquals(152, CollatzCalculator.computeStepCount(1000000))
+    fun `large number of even and odd steps`() = assertStepsEqual(1000000, 152)
+
+    @Ignore
+    @Test(expected = IllegalArgumentException::class)
+    fun `invalid input | zero`() {
+        steps(0)
     }
 
     @Ignore
-    @Test
-    fun testZeroIsConsideredInvalidInput() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Only natural numbers are allowed")
-
-        CollatzCalculator.computeStepCount(0)
-    }
-
-    @Ignore
-    @Test
-    fun testNegativeIntegerIsConsideredInvalidInput() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Only natural numbers are allowed")
-
-        CollatzCalculator.computeStepCount(-15)
+    @Test(expected = IllegalArgumentException::class)
+    fun `invalid input | negative`() {
+        steps(-15)
     }
 
 }
+
+private fun assertStepsEqual(input: Int, steps: Int) = assertEquals(steps, steps(input))
+
+private fun steps(input: Int) = CollatzCalculator.computeStepCount(input)
