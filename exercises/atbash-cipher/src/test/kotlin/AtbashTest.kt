@@ -13,7 +13,7 @@ class AtbashTest {
 
         companion object {
             @JvmStatic
-            @Parameterized.Parameters
+            @Parameterized.Parameters (name = "{index}: encode({0}) = {1}")
             fun data() = listOf(
                     arrayOf("yes", "bvh"),
                     arrayOf("no", "ml"),
@@ -38,11 +38,14 @@ class AtbashTest {
 
         companion object {
             @JvmStatic
-            @Parameterized.Parameters
+            @Parameterized.Parameters(name = "{index}: decode({0}) = {1}")
             fun data() = listOf(
                     arrayOf("vcvix rhn", "exercism"),
                     arrayOf("zmlyh gzxov rhlug vmzhg vkkrm thglm v", "anobstacleisoftenasteppingstone"),
-                    arrayOf("gvhgr mt123 gvhgr mt", "testing123testing")
+                    arrayOf("gvhgr mt123 gvhgr mt", "testing123testing"),
+                    arrayOf("gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt", "thequickbrownfoxjumpsoverthelazydog"),
+                    arrayOf("vc vix    r hn", "exercism"),
+                    arrayOf("zmlyhgzxovrhlugvmzhgvkkrmthglmv", "anobstacleisoftenasteppingstone")
             )
         }
 
