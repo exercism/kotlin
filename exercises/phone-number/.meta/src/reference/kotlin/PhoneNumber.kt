@@ -8,14 +8,13 @@ data class PhoneNumber(private val rawNumber: String) {
     val number: String?
 
     init {
-        val containsInvalidChar = invalidChars.containsMatchIn(rawNumber)
+        require(!invalidChars.containsMatchIn(rawNumber))
+        number = pure() ?: throw  IllegalArgumentException()
+    }
 
-        if (containsInvalidChar) {
-            number = null
-        } else {
-            val digits = rawNumber.replace(Regex("[^\\d]"), "")
-            number = digitsValidationRegex.matchEntire(digits)?.groupValues?.last()
-        }
+    private fun pure(): String? {
+        val digits = rawNumber.replace(Regex("[^\\d]"), "")
+        return digitsValidationRegex.matchEntire(digits)?.groupValues?.last()
     }
 
 }
