@@ -25,6 +25,8 @@ class MatchingBracketsTest(val input: String, val expectedOutput: Boolean) {
                 arrayOf("{[)][]}", false),
                 arrayOf("([{])", false),
                 arrayOf("[({]})", false),
+                arrayOf("{}[", false),
+                arrayOf("[]]", false),
                 arrayOf("(((185 + 223.85) * 15) - 543)/2", true),
                 arrayOf("\\\\left(\\\\begin{array}{cc} \\\\frac{1}{3} & x\\\\\\\\ \\\\mathrm{e}^{x} &... x^2 \\\\end{array}\\\\right)", true)
         )
