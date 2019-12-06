@@ -309,6 +309,18 @@
       ]
     },
     {
+      "slug": "affine-cipher",
+      "uuid": "94fdd990-101b-4daf-8692-75085e6563f2",
+      "core": false,
+      "unlocked_by": "rotational-cipher",
+      "difficulty": 4,
+      "topics": [
+        "cryptography",
+        "security",
+        "strings"
+      ]
+    },
+    {
       "slug": "nth-prime",
       "uuid": "6e2bbe8d-b6ab-4675-9c31-5b437cefd0c4",
       "core": false,

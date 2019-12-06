@@ -1,6 +1,7 @@
 include 'accumulate'
 include 'acronym'
 include 'all-your-base'
+include 'affine-cipher'
 include 'allergies'
 include 'anagram'
 include 'atbash-cipher'
