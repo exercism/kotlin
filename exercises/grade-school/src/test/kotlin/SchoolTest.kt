@@ -1,84 +1,93 @@
-import org.junit.Before
-import org.junit.Test
 import org.junit.Ignore
+import org.junit.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 class SchoolTest {
-
-    private lateinit var school: School
-
-    @Before
-    fun beforeTest() {
-        school = School()
-    }
-
-
     @Test
-    fun startsWithNoStudents() {
-        assertTrue(school.db().isEmpty())
-    }
+    fun `adding a student adds them to the sorted roster`() = assertRosterEquals(
+        mapOf(
+            "Aimee" to 2
+        ),
+        listOf("Aimee")
+    )
 
     @Ignore
     @Test
-    fun addsStudents() {
-        school.add("Aimee", 2)
-
-        val expected = mapOf(2 to listOf("Aimee"))
-        assertEquals(expected, school.db())
-    }
-
-    @Ignore
-    @Test
-    fun addsMoreStudentsInSameGrade() {
-        val grade = 2
-        school.add("James", grade)
-        school.add("Blair", grade)
-        school.add("Paul", grade)
-
-        val expected = mapOf(2 to listOf("James", "Blair", "Paul"))
-        assertEquals(expected, school.db())
-    }
+    fun `adding more student adds them to the sorted roster`() =
+        assertRosterEquals(
+            mapOf(
+                "Blair" to 2,
+                "James" to 2,
+                "Paul" to 2
+            ),
+            listOf("Blair", "James", "Paul")
+        )
 
     @Ignore
     @Test
-    fun addsStudentsInMultipleGrades() {
-        school.add("Chelsea", 3)
-        school.add("Logan", 7)
-
-        val expected = mapOf(3 to listOf("Chelsea"), 7 to listOf("Logan"))
-        assertEquals(expected, school.db())
-    }
-
-    @Ignore
-    @Test
-    fun getsStudentsInAGrade() {
-        school.add("Franklin", 5)
-        school.add("Bradley", 5)
-        school.add("Jeff", 1)
-
-        val expected = mapOf(5 to listOf("Franklin", "Bradley"), 1 to listOf("Jeff"))
-        assertEquals(expected, school.db())
-    }
+    fun `adding students to different grades adds them to the same sorted roster`() =
+        assertRosterEquals(
+            mapOf(
+                "Chelsea" to 3,
+                "Logan" to 7
+            ),
+            listOf("Chelsea", "Logan")
+        )
 
     @Ignore
     @Test
-    fun getsStudentsInEmptyGrade() {
-        assertTrue(school.grade(1).isEmpty())
-    }
+    fun `roster returns an empty list if there are no students enrolled`() =
+        assertRosterEquals(
+            mapOf(),
+            listOf()
+        )
 
     @Ignore
     @Test
-    fun sortsSchool() {
-        school.add("Jennifer", 4)
-        school.add("Kareem", 6)
-        school.add("Christopher", 4)
-        school.add("Kyle", 3)
+    fun `student names with grades are displayed in the same sorted roster`() =
+        assertRosterEquals(
+            mapOf(
+                "Peter" to 2,
+                "Anna" to 1,
+                "Barb" to 1,
+                "Zoe" to 2,
+                "Alex" to 2,
+                "Jim" to 3,
+                "Charlie" to 1
+            ),
+            listOf("Anna", "Barb", "Charlie", "Alex", "Peter", "Zoe", "Jim")
+        )
 
-        val expected = mapOf(3 to listOf("Kyle"), 4 to listOf("Christopher", "Jennifer"), 6 to listOf("Kareem"))
-        val sortedClasses = school.sort()
-        assertEquals(listOf(3, 4, 6), sortedClasses.keys.toList(), "Grades not sorted in ascending order")
-        assertEquals(expected, sortedClasses)
+    @Ignore
+    @Test
+    fun `grade returns the students in that grade in alphabetical order`() =
+        assertGradeEquals(
+            mapOf(
+                "Franklin" to 5,
+                "Bradley" to 5,
+                "Jeff" to 1
+            ),
+            5,
+            listOf("Bradley", "Franklin")
+        )
 
-    }
+    @Ignore
+    @Test
+    fun `grade returns an empty list if there are no students in that grade`() = assertGradeEquals(
+        mapOf(),
+        1,
+        listOf()
+    )
 }
+
+private fun assertRosterEquals(students: Map<String, Int>, expectation: List<String>) =
+    with(School()) {
+        students.forEach { add(it.key, it.value) }
+        assertEquals(expectation, roster())
+    }
+
+private fun assertGradeEquals(students: Map<String, Int>, grade: Int, expectation: List<String>) =
+    with(School()) {
+        students.forEach { add(it.key, it.value) }
+        assertEquals(expectation, grade(grade))
+    }
