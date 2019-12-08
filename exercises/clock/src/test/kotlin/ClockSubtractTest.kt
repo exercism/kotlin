@@ -2,61 +2,69 @@ import org.junit.Ignore
 import org.junit.Test
 import kotlin.test.assertEquals
 
-class ClockSubtractTest{
+class ClockSubtractTest {
 
     @Ignore
     @Test
-    fun subtractMinutes() {
-        val clock = Clock(10, 3)
-        clock.subtract(3)
-        assertEquals("10:00", clock.toString())
-    }
+    fun `subtract minutes`() =
+        Clock(10, 3)
+            .minusMinutes(3)
+            .shouldBe("10:00")
 
     @Ignore
     @Test
-    fun subtractToPreviousHour() {
-        val clock = Clock(10, 3)
-        clock.subtract(30)
-        assertEquals("09:33", clock.toString())
-    }
+    fun `subtract to previous hour`() =
+        Clock(10, 3)
+            .minusMinutes(30)
+            .shouldBe("09:33")
 
     @Ignore
     @Test
-    fun subtractAcrossMidnight() {
-        val clock = Clock(0, 3)
-        clock.subtract(4)
-        assertEquals("23:59", clock.toString())
-    }
+    fun `subtract more than an hour`() =
+        Clock(10, 3)
+            .minusMinutes(70)
+            .shouldBe("08:53")
 
     @Ignore
     @Test
-    fun subtractMoreThanTwoHours() {
-        val clock = Clock(0, 0)
-        clock.subtract(160)
-        assertEquals("21:20", clock.toString())
-    }
+    fun `subtract across midnight`() =
+        Clock(0, 3)
+            .minusMinutes(4)
+            .shouldBe("23:59")
 
     @Ignore
     @Test
-    fun subtractMoreThanTwoHoursWithBorrow() {
-        val clock = Clock(6, 15)
-        clock.subtract(160)
-        assertEquals("03:35", clock.toString())
-    }
+    fun `subtract more than two hours`() =
+        Clock(0, 0)
+            .minusMinutes(160)
+            .shouldBe("21:20")
 
     @Ignore
     @Test
-    fun subtractMoreThanOneDay() {
-        val clock = Clock(5, 32)
-        clock.subtract(1500)
-        assertEquals("04:32", clock.toString())
-    }
+    fun `subtract more than two hours with borrow`() =
+        Clock(6, 15)
+            .minusMinutes(160)
+            .shouldBe("03:35")
 
     @Ignore
     @Test
-    fun subtractMoreThanTwoDays() {
-        val clock = Clock(2, 20)
-        clock.subtract(3000)
-        assertEquals("00:20", clock.toString())
-    }
+    fun `subtract more than one day`() =
+        Clock(5, 32)
+            .minusMinutes(1500)
+            .shouldBe("04:32")
+
+    @Ignore
+    @Test
+    fun `subtract more than two days`() =
+        Clock(2, 20)
+            .minusMinutes(3000)
+            .shouldBe("00:20")
+
 }
+
+private fun Clock.minusMinutes(minutes: Int): Clock {
+    subtract(minutes)
+    return this
+}
+
+private fun Clock.shouldBe(expectation: String) = assertEquals(expectation, toString())
