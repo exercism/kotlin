@@ -1,16 +1,13 @@
-import java.util.HashMap
-
 class School {
 
     private val database = mutableMapOf<Int, List<String>>()
-    fun db() = HashMap(database)
 
     fun add(student: String, grade: Int) {
-        database[grade] = grade(grade) + student
+        database[grade] = (grade(grade) + student).sorted()
     }
 
     fun grade(grade: Int) = database[grade] ?: listOf()
 
-    fun sort() = database.toSortedMap().mapValues { it.value.sorted() }
+    fun roster() = database.toSortedMap().map { it.value }.flatten()
 
 }
