@@ -566,6 +566,18 @@
       ]
     },
     {
+      "slug": "armstrong-numbers",
+      "uuid": "3905dff6-7835-44ff-a8c9-7f4d184ab714",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 3,
+      "topics": [
+        "algorithms",
+        "loops",
+        "math"
+      ]
+    },
+    {
       "slug": "rotational-cipher",
       "uuid": "7c24087a-ca61-48d3-9cb9-c3fde2edba86",
       "core": true,
