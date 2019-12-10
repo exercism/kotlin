@@ -706,6 +706,19 @@
       ]
     },
     {
+      "slug": "binary-search-tree",
+      "uuid": "12a9dd9f-28ed-4159-baf3-d28654cb8fa7",
+      "core": false,
+      "unlocked_by": "word-count",
+      "difficulty": 5,
+      "topics": [
+        "arrays",
+        "generics",
+        "recursion",
+        "searching"
+      ]
+    },
+    {
       "slug": "minesweeper",
       "uuid": "8eb6f225-fa3d-4a33-b476-2cae45053c82",
       "core": false,
