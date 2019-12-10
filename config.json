@@ -134,6 +134,18 @@
       ]
     },
     {
+      "slug": "crypto-square",
+      "uuid": "2928cf06-dab8-4522-a6d8-b2a15d7d356b",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "strings",
+        "text_formatting",
+        "transforming"
+      ]
+    },
+    {
       "slug": "raindrops",
       "uuid": "93ee76ba-d19f-4c72-b011-676f40dcda5e",
       "core": false,
