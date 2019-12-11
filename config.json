@@ -26,6 +26,17 @@
       ]
     },
     {
+      "slug": "dnd-character",
+      "uuid": "a550dafa-bcec-448c-a7dd-af0ebd4e1070",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "integers",
+        "randomness"
+      ]
+    },
+    {
       "slug": "two-fer",
       "uuid": "40f85461-c256-4b96-8d5b-0509f42fab17",
       "core": true,
