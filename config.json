@@ -60,6 +60,18 @@
       ]
     },
     {
+      "slug": "darts",
+      "uuid": "c2b49ff6-e7bf-40bb-b619-9cdfaa43c065",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "pattern_matching",
+        "conditionals",
+        "math"
+      ]
+    },
+    {
       "slug": "pangram",
       "uuid": "0e9ca09d-c32e-4fed-930f-1b7c10b67dc2",
       "core": false,
