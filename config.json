@@ -108,6 +108,18 @@
       ]
     },
     {
+      "slug": "custom-set",
+      "uuid": "10b6cca2-6c36-4017-9464-32aa11c59f85",
+      "core": false,
+      "unlocked_by": "gigasecond",
+      "difficulty": 3,
+      "topics": [
+        "object_oriented_programming",
+        "sets",
+        "varargs"
+      ]
+    },
+    {
       "slug": "space-age",
       "uuid": "a91ce7e9-9a2a-44de-b10c-cc1be63df2a1",
       "core": false,
