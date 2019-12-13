@@ -3,7 +3,7 @@ fun Orientation.turnRight() = Orientation.values()[Math.floorMod(ordinal + 1, Or
 
 class Robot(var gridPosition: GridPosition = GridPosition(0, 0), var orientation: Orientation = Orientation.NORTH) {
 
-    fun advance() {
+    private fun advance() {
         gridPosition = when (orientation) {
             Orientation.NORTH -> gridPosition.copy(y = gridPosition.y + 1)
             Orientation.EAST  -> gridPosition.copy(x = gridPosition.x + 1)
@@ -12,11 +12,11 @@ class Robot(var gridPosition: GridPosition = GridPosition(0, 0), var orientation
         }
     }
 
-    fun turnLeft() {
+    private fun turnLeft() {
         orientation = orientation.turnLeft()
     }
 
-    fun turnRight() {
+    private fun turnRight() {
         orientation = orientation.turnRight()
     }
 
