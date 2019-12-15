@@ -864,6 +864,19 @@
       ]
     },
     {
+      "slug": "dominoes",
+      "uuid": "c52c4b61-dca2-4b73-87b6-b4f2f63d9fdb",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 7,
+      "topics": [
+        "algorithms",
+        "exception_handling",
+        "games",
+        "lists"
+      ]
+    },
+    {
       "slug": "list-ops",
       "uuid": "34f1d5bf-f31f-415e-9905-4d48e6205d28",
       "core": false,
