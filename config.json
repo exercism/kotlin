@@ -221,6 +221,19 @@
       ]
     },
     {
+      "slug": "yacht",
+      "uuid": "2702ffe9-26c3-4f68-86dc-2993dfa2de91",
+      "core": false,
+      "unlocked_by": "difference-of-squares",
+      "difficulty": 3,
+      "topics": [
+        "enums",
+        "functional_programming",
+        "lists",
+        "pattern_matching"
+      ]
+    },
+    {
       "slug": "perfect-numbers",
       "uuid": "ad7c8fd8-acf0-40d0-8a30-d959c4b0252a",
       "core": false,
