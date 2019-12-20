@@ -1,98 +1,110 @@
 import org.junit.Test
 import org.junit.Ignore
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class AnagramTest {
 
     @Test
-    fun noMatches() {
-        val detector = Anagram("diaper")
-        assertEquals(emptySet(), detector.match(listOf("hello", "world", "zombies", "pants")))
-    }
+    fun `no matches`() =
+        anagramsOf("diaper")
+            .searchedIn("hello", "world", "zombies", "pants")
+            .shouldBeEmpty()
 
     @Ignore
     @Test
-    fun detectsTwoAnagrams() {
-        val detector = Anagram("master")
-        val anagrams = detector.match(listOf("stream", "pigeon", "maters"))
-        assertEquals(setOf("maters", "stream"), anagrams)
-    }
+    fun `detects two anagrams`() =
+        anagramsOf("master")
+            .searchedIn("stream", "pigeon", "maters")
+            .shouldBeOnly("maters", "stream")
 
     @Ignore
     @Test
-    fun doesNotDetectAnagramSubsets() {
-        val detector = Anagram("good")
-        assertEquals(emptySet(), detector.match(listOf("dog", "goody")))
-    }
+    fun `does not detect anagram subsets`() =
+        anagramsOf("good")
+            .searchedIn("dog", "goody")
+            .shouldBeEmpty()
 
     @Ignore
     @Test
-    fun detectsAnagram() {
-        val detector = Anagram("listen")
-        val anagrams = detector.match(listOf("enlists", "google", "inlets", "banana"))
-        assertEquals(setOf("inlets"), anagrams)
-    }
+    fun `detects anagram`() =
+        anagramsOf("listen")
+            .searchedIn("enlists", "google", "inlets", "banana")
+            .shouldBeOnly("inlets")
 
     @Ignore
     @Test
-    fun detectsThreeAnagrams() {
-        val detector = Anagram("allergy")
-        val anagrams = detector.match(listOf("gallery", "ballerina", "regally", "clergy", "largely", "leading"))
-        assertEquals(setOf("gallery", "largely", "regally"), anagrams)
-    }
+    fun `detects three anagrams`() =
+        anagramsOf("allergy")
+            .searchedIn("gallery", "ballerina", "regally", "clergy", "largely", "leading")
+            .shouldBeOnly("gallery", "largely", "regally")
 
     @Ignore
     @Test
-    fun doesNotDetectNonAnagramsWithIdenticalChecksums() {
-        val detector = Anagram("mass")
-        assertEquals(emptySet(), detector.match(listOf("last")))
-    }
+    fun `detects multiple anagrams with different case`() =
+        anagramsOf("nose")
+            .searchedIn("Eons", "ONES")
+            .shouldBeOnly("Eons", "ONES")
 
     @Ignore
     @Test
-    fun detectsAnagramsCaseInsensitively() {
-        val detector = Anagram("Orchestra")
-        val anagrams = detector.match(listOf("cashregister", "Carthorse", "radishes"))
-        assertEquals(setOf("Carthorse"), anagrams)
-    }
+    fun `does not detect non-anagrams with identical checksum`() =
+        anagramsOf("mass")
+            .searchedIn("last")
+            .shouldBeEmpty()
 
     @Ignore
     @Test
-    fun detectsAnagramsUsingCaseInsensitiveSubject() {
-        val detector = Anagram("Orchestra")
-        val anagrams = detector.match(listOf("cashregister", "carthorse", "radishes"))
-        assertEquals(setOf("carthorse"), anagrams)
-    }
+    fun `detects anagrams case-insensitively`() =
+        anagramsOf("Orchestra")
+            .searchedIn("cashregister", "Carthorse", "radishes")
+            .shouldBeOnly("Carthorse")
 
     @Ignore
     @Test
-    fun detectsAnagramsUsingCaseInsensitiveCandidates() {
-        val detector = Anagram("orchestra")
-        val anagrams = detector.match(listOf("cashregister", "Carthorse", "radishes"))
-        assertEquals(setOf("Carthorse"), anagrams)
-    }
+    fun `detects anagrams using case-insensitive subject`() =
+        anagramsOf("Orchestra")
+            .searchedIn("cashregister", "carthorse", "radishes")
+            .shouldBeOnly("carthorse")
 
     @Ignore
     @Test
-    fun doesNotDetectAnAnagramIfTheOriginalWordIsRepeated() {
-        val detector = Anagram("go")
-        val anagrams = detector.match(listOf("go Go GO"))
-        assertEquals(emptySet(), anagrams)
-    }
+    fun `detects anagrams using case-insensitive possible matches`() =
+
+        anagramsOf("orchestra")
+            .searchedIn("cashregister", "Carthorse", "radishes")
+            .shouldBeOnly("Carthorse")
 
     @Ignore
     @Test
-    fun anagramsMustUseAllLettersExactlyOnce() {
-        val detector = Anagram("tapper")
-        val anagrams = detector.match(listOf("patter"))
-        assertEquals(emptySet(), anagrams)
-    }
+    fun `does not detect an anagram if the original word is repeated`() =
+        anagramsOf("go")
+            .searchedIn("go Go GO")
+            .shouldBeEmpty()
 
     @Ignore
     @Test
-    fun doesNotDetectIdenticalUppercasedWordAsAnagram() {
-        val detector = Anagram("BANANA")
-        val anagrams = detector.match(listOf("Banana"))
-        assertEquals(emptySet(), anagrams)
-    }
+    fun `anagrams must use all letters exactly once`() =
+        anagramsOf("tapper")
+            .searchedIn("patter")
+            .shouldBeEmpty()
+
+    @Ignore
+    @Test
+    fun `words are not anagrams of themselves (case-insensitive)`() =
+        anagramsOf("BANANA")
+            .searchedIn("Banana")
+            .shouldBeEmpty()
+
+    @Ignore
+    @Test
+    fun `words other than themselves can be anagrams`() =
+        anagramsOf("LISTEN")
+            .searchedIn("Listen", "Silent", "LISTEN")
+            .shouldBeOnly("Silent")
 }
+
+private fun anagramsOf(source: String) = Anagram(source)
+private fun Anagram.searchedIn(vararg variants: String) = this.match(setOf(*variants))
+private fun Set<String>.shouldBeOnly(vararg expectation: String) = assertEquals(setOf(*expectation), this)
+private fun Set<String>.shouldBeEmpty() = assertTrue(this.isEmpty())
