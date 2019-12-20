@@ -807,6 +807,19 @@
       ]
     },
     {
+      "slug": "zebra-puzzle",
+      "uuid": "fe876a9b-2991-4624-a6fe-4311cb78f068",
+      "core": false,
+      "unlocked_by": "binary-search",
+      "difficulty": 9,
+      "topics": [
+        "algorithms",
+        "arrays",
+        "conditionals",
+        "games"
+      ]
+    },
+    {
       "slug": "anagram",
       "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a",
       "core": false,
