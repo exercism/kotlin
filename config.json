@@ -169,6 +169,19 @@
       ]
     },
     {
+      "slug": "wordy",
+      "uuid": "3c7a3c6b-8dc7-4e5a-ba72-e1a4bffb0bc4",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "loops",
+        "pattern_matching",
+        "strings",
+        "recursion"
+      ]
+    },
+    {
       "slug": "crypto-square",
       "uuid": "2928cf06-dab8-4522-a6d8-b2a15d7d356b",
       "core": false,
