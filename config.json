@@ -58,6 +58,16 @@
       ]
     },
     {
+      "slug": "resistor-color-duo",
+      "uuid": "84bdc53f-aa1f-4ddf-9c5d-95b03cfff72d",
+      "core": false,
+      "unlocked_by": "two-fer",
+      "difficulty": 2,
+      "topics": [
+        "lists"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
