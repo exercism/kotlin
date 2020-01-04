@@ -48,6 +48,16 @@
       ]
     },
     {
+      "slug": "resistor-color",
+      "uuid": "9d62b45c-1acf-4ae6-b990-73e5bc2b5893",
+      "core": false,
+      "unlocked_by": "two-fer",
+      "difficulty": 2,
+      "topics": [
+        "lists"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
