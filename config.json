@@ -68,6 +68,18 @@
       ]
     },
     {
+      "slug": "resistor-color-trio",
+      "uuid": "ae4df67d-c848-42e6-9fd7-d3cec83c1691",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 3,
+      "topics": [
+        "math",
+        "type_conversion",
+        "lists"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
