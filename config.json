@@ -201,6 +201,20 @@
       ]
     },
     {
+      "slug": "matrix",
+      "uuid": "46ab876c-cde2-4fa7-8970-b250ad8ccf74",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 4,
+      "topics": [
+        "loops",
+        "strings",
+        "pattern_matching",
+        "type_conversion",
+        "transforming"
+      ]
+    },
+    {
       "slug": "wordy",
       "uuid": "3c7a3c6b-8dc7-4e5a-ba72-e1a4bffb0bc4",
       "core": false,
