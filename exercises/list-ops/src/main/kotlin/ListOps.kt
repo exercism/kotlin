@@ -2,7 +2,7 @@ fun <T> List<T>.customAppend(list: List<T>): List<T> {
     TODO("Implement this function to complete the task")
 }
 
-fun <T> List<List<T>>.customConcat(): List<T> {
+fun List<Any>.customConcat(): List<Any> {
     TODO("Implement this function to complete the task")
 }
 
