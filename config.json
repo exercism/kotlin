@@ -372,6 +372,17 @@
       ]
     },
     {
+      "slug": "forth",
+      "uuid": "81d48ea4-0e88-45f2-839f-fe13e2059e92",
+      "core": false,
+      "unlocked_by": "secret-handshake",
+      "difficulty": 4,
+      "topics": [
+        "pattern_matching",
+        "integers"
+      ]
+    },
+    {
       "slug": "sieve",
       "uuid": "87ca4323-8a19-4529-962d-0f2ee63ebb2f",
       "core": false,
