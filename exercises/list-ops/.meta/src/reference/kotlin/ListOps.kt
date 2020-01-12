@@ -5,10 +5,14 @@ fun <T> List<T>.customAppend(list: List<T>): List<T> {
     return result
 }
 
-fun <T> List<List<T>>.customConcat(): List<T> {
-    val result = mutableListOf<T>()
-    forEach { result.addAll(it) }
-    return result
+fun List<Any>.customConcat(): List<Any> {
+    val result = mutableListOf<Any>()
+    forEach { result.add(it) }
+    fun flatten(list: List<Any?>): List<Any> = list.flatMap {
+        if (it is List<Any?>) flatten(it)
+        else listOf(it)
+    }.filterNotNull()
+    return flatten(result)
 }
 
 fun <T> List<T>.customFilter(predicate: (T) -> Boolean): List<T> {
