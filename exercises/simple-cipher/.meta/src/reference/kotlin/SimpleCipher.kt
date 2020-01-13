@@ -19,14 +19,14 @@ data class Cipher(val key: String) {
     fun decode(s: String): String = s.mapIndexed { index, char ->  decodeChar(char, index)}.joinToString("")
 
     private fun encodeChar(character: Char, index: Int): Char {
-        var alphaIdx = alphabet.indexOf(character) + alphabet.indexOf(key[index])
+        var alphaIdx = alphabet.indexOf(character) + alphabet.indexOf(key[index % key.length])
         if(alphaIdx >= alphabet.size) alphaIdx -= alphabet.size
 
         return alphabet[alphaIdx]
     }
 
     private fun decodeChar(character: Char, index: Int): Char {
-        var alphaIdx = alphabet.indexOf(character) - alphabet.indexOf(key[index])
+        var alphaIdx = alphabet.indexOf(character) - alphabet.indexOf(key[index % key.length])
         if(alphaIdx < 0) alphaIdx += alphabet.size
 
         return alphabet[alphaIdx]
