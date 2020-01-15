@@ -26,6 +26,17 @@
       ]
     },
     {
+      "slug": "dnd-character",
+      "uuid": "a550dafa-bcec-448c-a7dd-af0ebd4e1070",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "integers",
+        "randomness"
+      ]
+    },
+    {
       "slug": "two-fer",
       "uuid": "40f85461-c256-4b96-8d5b-0509f42fab17",
       "core": true,
@@ -37,13 +48,45 @@
       ]
     },
     {
+      "slug": "resistor-color",
+      "uuid": "9d62b45c-1acf-4ae6-b990-73e5bc2b5893",
+      "core": false,
+      "unlocked_by": "two-fer",
+      "difficulty": 2,
+      "topics": [
+        "lists"
+      ]
+    },
+    {
+      "slug": "resistor-color-duo",
+      "uuid": "84bdc53f-aa1f-4ddf-9c5d-95b03cfff72d",
+      "core": false,
+      "unlocked_by": "two-fer",
+      "difficulty": 2,
+      "topics": [
+        "lists"
+      ]
+    },
+    {
+      "slug": "resistor-color-trio",
+      "uuid": "ae4df67d-c848-42e6-9fd7-d3cec83c1691",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 3,
+      "topics": [
+        "math",
+        "type_conversion",
+        "lists"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
       "unlocked_by": "gigasecond",
       "difficulty": 2,
       "topics": [
-        "control_flow_if_else_statements",
+        "conditionals",
         "integers"
       ]
     },
@@ -57,6 +100,18 @@
         "loops",
         "maps",
         "strings"
+      ]
+    },
+    {
+      "slug": "darts",
+      "uuid": "c2b49ff6-e7bf-40bb-b619-9cdfaa43c065",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "pattern_matching",
+        "conditionals",
+        "math"
       ]
     },
     {
@@ -93,6 +148,18 @@
         "dates",
         "integers",
         "time"
+      ]
+    },
+    {
+      "slug": "custom-set",
+      "uuid": "10b6cca2-6c36-4017-9464-32aa11c59f85",
+      "core": false,
+      "unlocked_by": "gigasecond",
+      "difficulty": 3,
+      "topics": [
+        "object_oriented_programming",
+        "sets",
+        "varargs"
       ]
     },
     {
@@ -134,6 +201,45 @@
       ]
     },
     {
+      "slug": "matrix",
+      "uuid": "46ab876c-cde2-4fa7-8970-b250ad8ccf74",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 4,
+      "topics": [
+        "loops",
+        "strings",
+        "pattern_matching",
+        "type_conversion",
+        "transforming"
+      ]
+    },
+    {
+      "slug": "wordy",
+      "uuid": "3c7a3c6b-8dc7-4e5a-ba72-e1a4bffb0bc4",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "loops",
+        "pattern_matching",
+        "strings",
+        "recursion"
+      ]
+    },
+    {
+      "slug": "crypto-square",
+      "uuid": "2928cf06-dab8-4522-a6d8-b2a15d7d356b",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "strings",
+        "text_formatting",
+        "transforming"
+      ]
+    },
+    {
       "slug": "raindrops",
       "uuid": "93ee76ba-d19f-4c72-b011-676f40dcda5e",
       "core": false,
@@ -171,6 +277,19 @@
         "integers",
         "loops",
         "transforming"
+      ]
+    },
+    {
+      "slug": "yacht",
+      "uuid": "2702ffe9-26c3-4f68-86dc-2993dfa2de91",
+      "core": false,
+      "unlocked_by": "difference-of-squares",
+      "difficulty": 3,
+      "topics": [
+        "enums",
+        "functional_programming",
+        "lists",
+        "pattern_matching"
       ]
     },
     {
@@ -253,6 +372,17 @@
       ]
     },
     {
+      "slug": "forth",
+      "uuid": "81d48ea4-0e88-45f2-839f-fe13e2059e92",
+      "core": false,
+      "unlocked_by": "secret-handshake",
+      "difficulty": 4,
+      "topics": [
+        "pattern_matching",
+        "integers"
+      ]
+    },
+    {
       "slug": "sieve",
       "uuid": "87ca4323-8a19-4529-962d-0f2ee63ebb2f",
       "core": false,
@@ -264,6 +394,22 @@
         "lists",
         "loops",
         "math"
+      ]
+    },
+    {
+      "slug": "kindergarten-garden",
+      "uuid": "0b92ffee-c092-4ab1-ad78-76c8cf80e1b5",
+      "core": false,
+      "unlocked_by": "triangle",
+      "difficulty": 4,
+      "topics": [
+        "arrays",
+        "enumerations",
+        "lists",
+        "logic",
+        "loops",
+        "pattern_recognition",
+        "strings"
       ]
     },
     {
@@ -283,6 +429,18 @@
     {
       "slug": "atbash-cipher",
       "uuid": "b325401a-c8f0-49da-9f1a-a83318e780c9",
+      "core": false,
+      "unlocked_by": "rotational-cipher",
+      "difficulty": 4,
+      "topics": [
+        "cryptography",
+        "security",
+        "strings"
+      ]
+    },
+    {
+      "slug": "affine-cipher",
+      "uuid": "94fdd990-101b-4daf-8692-75085e6563f2",
       "core": false,
       "unlocked_by": "rotational-cipher",
       "difficulty": 4,
@@ -538,6 +696,18 @@
       ]
     },
     {
+      "slug": "armstrong-numbers",
+      "uuid": "3905dff6-7835-44ff-a8c9-7f4d184ab714",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 3,
+      "topics": [
+        "algorithms",
+        "loops",
+        "math"
+      ]
+    },
+    {
       "slug": "rotational-cipher",
       "uuid": "7c24087a-ca61-48d3-9cb9-c3fde2edba86",
       "core": true,
@@ -666,6 +836,19 @@
       ]
     },
     {
+      "slug": "binary-search-tree",
+      "uuid": "12a9dd9f-28ed-4159-baf3-d28654cb8fa7",
+      "core": false,
+      "unlocked_by": "word-count",
+      "difficulty": 5,
+      "topics": [
+        "arrays",
+        "generics",
+        "recursion",
+        "searching"
+      ]
+    },
+    {
       "slug": "minesweeper",
       "uuid": "8eb6f225-fa3d-4a33-b476-2cae45053c82",
       "core": false,
@@ -707,6 +890,19 @@
       ]
     },
     {
+      "slug": "zebra-puzzle",
+      "uuid": "fe876a9b-2991-4624-a6fe-4311cb78f068",
+      "core": false,
+      "unlocked_by": "binary-search",
+      "difficulty": 9,
+      "topics": [
+        "algorithms",
+        "arrays",
+        "conditionals",
+        "games"
+      ]
+    },
+    {
       "slug": "anagram",
       "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a",
       "core": false,
@@ -728,7 +924,7 @@
       "unlocked_by": "linked-list",
       "difficulty": 7,
       "topics": [
-        "enumeration",
+        "enumerations",
         "generics",
         "lists",
         "loops",
@@ -764,6 +960,19 @@
       ]
     },
     {
+      "slug": "dominoes",
+      "uuid": "c52c4b61-dca2-4b73-87b6-b4f2f63d9fdb",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 7,
+      "topics": [
+        "algorithms",
+        "exception_handling",
+        "games",
+        "lists"
+      ]
+    },
+    {
       "slug": "list-ops",
       "uuid": "34f1d5bf-f31f-415e-9905-4d48e6205d28",
       "core": false,
@@ -775,6 +984,19 @@
         "generics",
         "lists",
         "loops"
+      ]
+    },
+    {
+      "slug": "diffie-hellman",
+      "uuid": "9b191b2f-b1a4-4c0e-b911-36666bff614d",
+      "core": false,
+      "unlocked_by": "linked-list",
+      "difficulty": 8,
+      "topics": [
+        "cryptography",
+        "randomness",
+        "algorithms",
+        "integers"
       ]
     },
     {
@@ -823,8 +1045,8 @@
       "difficulty": 10,
       "topics": [
         "generics",
-        "higher_order_functions",
-        "nested_classes",
+        "functional_programming",
+        "classes",
         "reactive_programming"
       ]
     },
@@ -834,7 +1056,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "lists"
+      ],
       "deprecated": true
     },
     {
@@ -843,7 +1067,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "strings"
+      ],
       "deprecated": true
     },
     {
@@ -852,7 +1078,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "string",
+        "integers"
+      ],
       "deprecated": true
     },
     {
@@ -861,7 +1090,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 0,
-      "topics": null,
+      "topics": [
+        "arrays",
+        "filtering"
+      ],
       "deprecated": true
     }
   ]

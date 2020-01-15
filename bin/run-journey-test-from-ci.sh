@@ -3,7 +3,7 @@
 contains_setup_file() {
     local files=$1
     for file in $files; do
-        if [[ $file == *.gradle || $file == *.sh || $file == config.json ]]; then
+        if [[ $file == *.gradle || $file == *.gradle.kts || $file == *.sh || $file == config.json ]]; then
             return 0
         fi
     done
@@ -26,7 +26,7 @@ run_journey_test_with_modified_exercises() {
     local modded_exercises=""
     
     for file in $modded_files; do
-        if [[ $file == exercises* ]] && [[ $file != exercises/settings.gradle ]] && [[ $file != exercises/build.gradle ]]; then
+        if [[ $file == exercises* ]] && [[ $file != exercises/settings.gradle ]] && [[ $file != exercises/build.gradle.kts ]]; then
             local modded_exercise=${file#exercises/}
             modded_exercise=${modded_exercise%%/*}
             if [[ $last_modded_exercise != $modded_exercise ]]; then
@@ -65,7 +65,7 @@ main() {
     
     local modded_files=`echo $pr_files_json | bin/jq -r '.[].filename'`
     
-    # If the changed files contain a .sh file or .gradle file or config.json then we should run all the exercises
+    # If the changed files contain a .sh file or .gradle.kts file or config.json then we should run all the exercises
     if contains_setup_file "${modded_files}"; then
         echo "Pr changes contain setup file(s): ${modded_files}"
         run_journey_test_with_all_exercises

@@ -1,8 +1,8 @@
-import org.assertj.core.api.Assertions.assertThat
 import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.ExpectedException
+import kotlin.test.assertEquals
 
 class ChangeCalculatorTest {
 
@@ -13,57 +13,57 @@ class ChangeCalculatorTest {
     @Test
     fun singleCoinChange() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 25, 100)).computeMostEfficientChange(25)
-        assertThat(computedChange).containsExactly(25)
+        assertContainsExactly(computedChange, listOf(25))
     }
 
     @Ignore
     @Test
     fun multipleCoinChange() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 25, 100)).computeMostEfficientChange(15)
-        assertThat(computedChange).containsExactly(5, 10)
+        assertContainsExactly(computedChange, listOf(5, 10))
     }
 
     @Ignore
     @Test
     fun changeWithLilliputianCoins() {
         val computedChange = ChangeCalculator(listOf(1, 4, 15, 20, 50)).computeMostEfficientChange(23)
-        assertThat(computedChange).containsExactly(4, 4, 15)
+        assertContainsExactly(computedChange, listOf(4, 4, 15))
     }
 
     @Ignore
     @Test
     fun changeWithLowerElboniaCoins() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 21, 25)).computeMostEfficientChange(63)
-        assertThat(computedChange).containsExactly(21, 21, 21)
+        assertContainsExactly(computedChange, listOf(21, 21, 21))
     }
 
     @Ignore
     @Test
     fun largeTargetValues() {
         val computedChange = ChangeCalculator(listOf(1, 2, 5, 10, 20, 50, 100)).computeMostEfficientChange(999)
-        assertThat(computedChange)
-                .containsExactly(2, 2, 5, 20, 20, 50, 100, 100, 100, 100, 100, 100, 100, 100, 100)
+        assertContainsExactly(computedChange,
+            listOf(2, 2, 5, 20, 20, 50, 100, 100, 100, 100, 100, 100, 100, 100, 100))
     }
 
     @Ignore
     @Test
     fun possibleChangeWithoutUnitCoinsAvailable() {
         val computedChange = ChangeCalculator(listOf(2, 5, 10, 20, 50)).computeMostEfficientChange(21)
-        assertThat(computedChange).containsExactly(2, 2, 2, 5, 10)
+        assertContainsExactly(computedChange, listOf(2, 2, 2, 5, 10))
     }
 
     @Ignore
     @Test
     fun anotherPossibleChangeWithoutUnitCoinsAvailable() {
         val computedChange = ChangeCalculator(listOf(4, 5)).computeMostEfficientChange(27)
-        assertThat(computedChange).containsExactly(4, 4, 4, 5, 5, 5)
+        assertContainsExactly(computedChange, listOf(4, 4, 4, 5, 5, 5))
     }
 
     @Ignore
     @Test
     fun noCoinsMake0Change() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 21, 25)).computeMostEfficientChange(0)
-        assertThat(computedChange).isEmpty()
+        assertEquals(0, computedChange.size)
     }
 
     @Ignore
@@ -99,4 +99,9 @@ class ChangeCalculatorTest {
         changeCalculator.computeMostEfficientChange(-5)
     }
 
+}
+
+private inline fun <reified T> assertContainsExactly(actualList: List<T>, expectedValues: List<T>) {
+    assertEquals(expectedValues.size, actualList.size)
+    expectedValues.forEach { actualList.contains(it) }
 }

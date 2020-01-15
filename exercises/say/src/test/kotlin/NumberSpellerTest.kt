@@ -1,135 +1,75 @@
 import org.junit.Ignore
-import org.junit.Rule
 import org.junit.Test
-import org.junit.rules.ExpectedException
-import java.math.BigInteger
+import java.lang.IllegalArgumentException
 import kotlin.test.assertEquals
 
 class NumberSpellerTest {
-
-    @Rule
-    @JvmField
-    var expectedException: ExpectedException = ExpectedException.none()
-
     @Test
-    fun test0IsSpelledCorrectly() {
-        assertEquals(
-                "zero",
-                NumberSpeller().say(0))
-    }
+    fun `0 as zero`() = 0.shouldSoundLike("zero")
 
     @Ignore
     @Test
-    fun test1IsSpelledCorrectly() {
-        assertEquals(
-                "one",
-                NumberSpeller().say(1))
-    }
+    fun `1 as one`() = 1.shouldSoundLike("one")
 
     @Ignore
     @Test
-    fun test14IsSpelledCorrectly() {
-        assertEquals(
-                "fourteen",
-                NumberSpeller().say(14))
-    }
+    fun `14 as fourteen`() = 14.shouldSoundLike("fourteen")
 
     @Ignore
     @Test
-    fun test20IsSpelledCorrectly() {
-        assertEquals(
-                "twenty",
-                NumberSpeller().say(20))
-    }
+    fun `20 as twenty`() = 20.shouldSoundLike("twenty")
 
     @Ignore
     @Test
-    fun test22IsSpelledCorrectly() {
-        assertEquals(
-                "twenty-two",
-                NumberSpeller().say(22))
-    }
+    fun `22 as twenty-two`() = 22.shouldSoundLike("twenty-two")
 
     @Ignore
     @Test
-    fun test100IsSpelledCorrectly() {
-        assertEquals(
-                "one hundred",
-                NumberSpeller().say(100))
-    }
+    fun `100 as one hundred`() = 100.shouldSoundLike("one hundred")
 
     @Ignore
     @Test
-    fun test123IsSpelledCorrectly() {
-        assertEquals(
-                "one hundred twenty-three",
-                NumberSpeller().say(123))
-    }
+    fun `123 as one hundred twenty-three`() = 123.shouldSoundLike("one hundred twenty-three")
 
     @Ignore
     @Test
-    fun test1000IsSpelledCorrectly() {
-        assertEquals(
-                "one thousand",
-                NumberSpeller().say(1000))
-    }
+    fun `1000 as one thousand`() = 1000.shouldSoundLike("one thousand")
 
     @Ignore
     @Test
-    fun test1234IsSpelledCorrectly() {
-        assertEquals(
-                "one thousand two hundred thirty-four",
-                NumberSpeller().say(1234))
-    }
+    fun `1234 as one thousand two hundred thirty-four`() = 1234.shouldSoundLike("one thousand two hundred thirty-four")
 
     @Ignore
     @Test
-    fun test1000000IsSpelledCorrectly() {
-        assertEquals(
-                "one million",
-                NumberSpeller().say(1000000))
-    }
+    fun `1000000 as one million`() = 1000000.shouldSoundLike("one million")
 
     @Ignore
     @Test
-    fun test1002345IsSpelledCorrectly() {
-        assertEquals(
-                "one million two thousand three hundred forty-five",
-                NumberSpeller().say(1002345))
-    }
+    fun `1002345 as one million two thousand three hundred forty-five`() =
+        1002345.shouldSoundLike("one million two thousand three hundred forty-five")
 
     @Ignore
     @Test
-    fun test1000000000IsSpelledCorrectly() {
-        assertEquals(
-                "one billion",
-                NumberSpeller().say(1000000000))
-    }
+    fun `1000000000 as one billion`() = 1000000000.shouldSoundLike("one billion")
 
     @Ignore
     @Test
-    fun test987654321123IsSpelledCorrectly() {
-        assertEquals(
-                "nine hundred eighty-seven billion six hundred fifty-four million three hundred twenty-one thousand one hundred twenty-three",
-                NumberSpeller().say(987654321123))
-    }
+    fun `spell a big number`() = 987654321123
+        .shouldSoundLike("nine hundred eighty-seven billion six hundred fifty-four million three hundred twenty-one thousand one hundred twenty-three")
 
     @Ignore
-    @Test
-    fun testNegativeNumbersAreOutOfRange() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Input must be non-negative")
-
+    @Test(expected = IllegalArgumentException::class)
+    fun `numbers below zero are out of range`() {
         NumberSpeller().say(-1)
     }
 
     @Ignore
-    @Test
-    fun testNumbersAbove1000000000000AreOutOfRange() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Input must be less than 1000000000000")
-
+    @Test(expected = IllegalArgumentException::class)
+    fun `numbers above 999,999,999,999 are out of range`() {
         NumberSpeller().say(1000000000000)
     }
-
 }
+
+private fun Long.shouldSoundLike(expected: String) = assertEquals(expected, NumberSpeller().say(this))
+
+private fun Int.shouldSoundLike(expected: String) = this.toLong().shouldSoundLike(expected)
