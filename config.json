@@ -201,6 +201,20 @@
       ]
     },
     {
+      "slug": "run-length-encoding",
+      "uuid": "483b5124-b5b2-4bb0-aa69-b04e3ea6aeb6",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "loops",
+        "regular_expressions",
+        "strings",
+        "transforming",
+        "type_conversion"
+      ]
+    },
+    {
       "slug": "matrix",
       "uuid": "46ab876c-cde2-4fa7-8970-b250ad8ccf74",
       "core": true,
