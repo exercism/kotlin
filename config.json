@@ -80,6 +80,19 @@
       ]
     },
     {
+      "slug": "transpose",
+      "uuid": "045de074-eeb3-499e-9cf4-65b75d9988fc",
+      "core": false,
+      "unlocked_by": "hamming",
+      "difficulty": 3,
+      "topics": [
+        "lists",
+        "loops",
+        "maps",
+        "strings"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "639e59b6-84aa-4f13-9718-537606703c43",
       "core": false,
