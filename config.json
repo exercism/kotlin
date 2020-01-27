@@ -255,6 +255,17 @@
       ]
     },
     {
+      "slug": "scale-generator",
+      "uuid": "dfa35a61-07da-4317-8c25-0c630e551d8c",
+      "core": false,
+      "unlocked_by": "scrabble-score",
+      "difficulty": 3,
+      "topics": [
+        "lists",
+        "strings"
+      ]
+    },
+    {
       "slug": "crypto-square",
       "uuid": "2928cf06-dab8-4522-a6d8-b2a15d7d356b",
       "core": false,
