@@ -124,4 +124,14 @@ class BinarySearchTreeTest {
         val actual = tree.asSortedList()
         assertEquals(expected, actual)
     }
+
+    @Test
+    fun `big tree level order`() {
+        val tree = BinarySearchTree<Int>()
+        val expected = listOf(8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15)
+        val treeData = listOf(8, 4, 2, 6, 1, 3, 5, 7, 12, 14, 10, 9, 11, 13, 15)
+        treeData.forEach(tree::insert)
+        val actual = tree.asLevelOrderList()
+        assertEquals(expected, actual)
+    }
 }
