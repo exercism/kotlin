@@ -1,4 +1,4 @@
-import kotlin.test.assertEquals
+import kotlin.test.asserter
 import kotlin.test.Test
 
 class ScaleTest {
@@ -7,103 +7,134 @@ class ScaleTest {
     @Test
     fun `chromatic scale with sharps`() {
         val expected = listOf("C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B")
-        assertEquals(expected, Scale("C").chromatic())
+        assertScalesEqual(expected, Scale("C").chromatic())
     }
 
     @Test
     fun `chromatic scale with flats`() {
         val expected = listOf("F", "Gb", "G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb", "E")
-        assertEquals(expected, Scale("F").chromatic())
+        assertScalesEqual(expected, Scale("F").chromatic())
     }
 
     // Test scales with specified intervals
     @Test
     fun `simple major scale`() {
         val expected = listOf("C", "D", "E", "F", "G", "A", "B")
-        assertEquals(expected, Scale("C").interval("MMmMMMm"))
+        assertScalesEqual(expected, Scale("C").interval("MMmMMMm"))
     }
 
     @Test
     fun `major scale with sharps`() {
         val expected = listOf("G", "A", "B", "C", "D", "E", "F#")
-        assertEquals(expected, Scale("G").interval("MMmMMMm"))
+        assertScalesEqual(expected, Scale("G").interval("MMmMMMm"))
     }
 
     @Test
     fun `major scale with flats`() {
         val expected = listOf("F", "G", "A", "Bb", "C", "D", "E")
-        assertEquals(expected, Scale("F").interval("MMmMMMm"))
+        assertScalesEqual(expected, Scale("F").interval("MMmMMMm"))
     }
 
     @Test
     fun `minor scale with sharps`() {
         val expected = listOf("F#", "G#", "A", "B", "C#", "D", "E")
-        assertEquals(expected, Scale("f#").interval("MmMMmMM"))
+        assertScalesEqual(expected, Scale("f#").interval("MmMMmMM"))
     }
 
     @Test
     fun `minor scale with flats`() {
         val expected = listOf("Bb", "C", "Db", "Eb", "F", "Gb", "Ab")
-        assertEquals(expected, Scale("bb").interval("MmMMmMM"))
+        assertScalesEqual(expected, Scale("bb").interval("MmMMmMM"))
     }
 
     @Test
     fun `dorian mode`() {
         val expected = listOf("D", "E", "F", "G", "A", "B", "C")
-        assertEquals(expected, Scale("d").interval("MmMMMmM"))
+        assertScalesEqual(expected, Scale("d").interval("MmMMMmM"))
     }
 
     @Test
     fun `mixolydian mode`() {
         val expected = listOf("Eb", "F", "G", "Ab", "Bb", "C", "Db")
-        assertEquals(expected, Scale("Eb").interval("MMmMMmM"))
+        assertScalesEqual(expected, Scale("Eb").interval("MMmMMmM"))
     }
 
     @Test
     fun `lydian mode`() {
         val expected = listOf("A", "B", "C#", "D#", "E", "F#", "G#")
-        assertEquals(expected, Scale("a").interval("MMMmMMm"))
+        assertScalesEqual(expected, Scale("a").interval("MMMmMMm"))
     }
 
     @Test
     fun `phrygian mode`() {
         val expected = listOf("E", "F", "G", "A", "B", "C", "D")
-        assertEquals(expected, Scale("e").interval("mMMMmMM"))
+        assertScalesEqual(expected, Scale("e").interval("mMMMmMM"))
     }
 
     @Test
     fun `locrian mode`() {
         val expected = listOf("G", "Ab", "Bb", "C", "Db", "Eb", "F")
-        assertEquals(expected, Scale("g").interval("mMMmMMM"))
+        assertScalesEqual(expected, Scale("g").interval("mMMmMMM"))
     }
 
     @Test
     fun `harmonic minor`() {
         val expected = listOf("D", "E", "F", "G", "A", "Bb", "Db")
-        assertEquals(expected, Scale("d").interval("MmMMmAm"))
+        assertScalesEqual(expected, Scale("d").interval("MmMMmAm"))
     }
 
     @Test
     fun octatonic() {
         val expected = listOf("C", "D", "D#", "F", "F#", "G#", "A", "B")
-        assertEquals(expected, Scale("C").interval("MmMmMmMm"))
+        assertScalesEqual(expected, Scale("C").interval("MmMmMmMm"))
     }
 
     @Test
     fun hexatonic() {
         val expected = listOf("Db", "Eb", "F", "G", "A", "B")
-        assertEquals(expected, Scale("Db").interval("MMMMMM"))
+        assertScalesEqual(expected, Scale("Db").interval("MMMMMM"))
     }
 
     @Test
     fun pentatonic() {
         val expected = listOf("A", "B", "C#", "E", "F#")
-        assertEquals(expected, Scale("A").interval("MMAMA"))
+        assertScalesEqual(expected, Scale("A").interval("MMAMA"))
     }
 
     @Test
     fun enigmatic() {
         val expected = listOf("G", "G#", "B", "C#", "D#", "F", "F#")
-        assertEquals(expected, Scale("G").interval("mAMMMmm"))
+        assertScalesEqual(expected, Scale("G").interval("mAMMMmm"))
+    }
+
+    fun assertScalesEqual(expected: List<String>, actual: List<String>) {
+        asserter.assertTrue(
+            { "Scales should be equal. Expected <$expected>, actual <$actual>" },
+            scalesAreEqual(expected, actual))
+    }
+
+    fun scalesAreEqual(expected: List<String>, actual: List<String>): Boolean {
+        if (expected.size != actual.size) return false
+        return expected.zip(actual, this::notesEqual).all { it }
+    }
+
+    // Few enough equal notes that we can just list them all
+    fun notesEqual(left: String, right: String) = left.equals(right) || when(left) {
+        // A# == Bb
+        "A#" -> right.equals("Bb")
+        "Bb" -> right.equals("A#")
+        // C# == Db
+        "C#" -> right.equals("Db")
+        "Db" -> right.equals("C#")
+        // D# == Eb
+        "D#" -> right.equals("Eb")
+        "Eb" -> right.equals("D#")
+        // F# == Gb
+        "F#" -> right.equals("Gb")
+        "Gb" -> right.equals("F#")
+        // G# == Ab
+        "G#" -> right.equals("Ab")
+        "Ab" -> right.equals("G#")
+        else -> false
     }
 }
