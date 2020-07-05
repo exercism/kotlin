@@ -1,0 +1,7 @@
+class BasicsTest {
+
+    @Test
+    fun ``() {
+
+    }
+}
