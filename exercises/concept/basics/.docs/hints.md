@@ -1,6 +1,7 @@
 ## General
 
 - An [integer (`Int`) value][numbers] can be defined as one or more consecutive digits.
+- Use variables to give nice and readable names for your values. Remember that code readability is much more important than amount of code lines.
 
 ## 1. Calculate remaining baking time in minutes
 
