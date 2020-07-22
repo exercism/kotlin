@@ -1,8 +1,8 @@
 # What's next?
 
-## Submitting your solution
+## Type inference
 
-_Hint_: Use `Code --> Reformat` in [IntelliJ IDEA][intellij-idea-ic] to automatically format your code.
+Kotlin compiler can infer types for functions and variables in most of the cases. However, declaring function return types explicitly for **public API** is a good practice.
 
 ## Entry point
 
