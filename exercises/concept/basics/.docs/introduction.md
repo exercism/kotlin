@@ -1,6 +1,8 @@
+## basics
+
 Kotlin is a **statically typed** programming language developed by JetBrains. This means that the type of variables is defined at compile-time.
 
-## Variables
+### Variables
 
 Similarly to other statically-typed programming languages, the type of each variable should be defined at compile time. You can avoid explicit type declarations where they can be inferred by the compiler from their context.
 
@@ -23,7 +25,7 @@ print(index)  // 100
 
 Semicolons in Kotlin are optional, except for a few special cases that will be covered later.
 
-## Functions
+### Functions
 
 Functions in Kotlin are defined with the `fun` keyword and are _first-class citizens_ (not related to OOP). It means that you can declare (so-called `top-level functions`) them right in files (e.g. in Java you can define methods only in classes, not in files):
 
@@ -72,7 +74,7 @@ ping("exercism.io")  // PING --> exercism.io
 ping()               // PING --> localhost
 ```
 
-## Comments
+### Comments
 
 Use `//` to define single-line comment:
 
