@@ -18,8 +18,9 @@ Please also watch the following video:
 
 As this document is generic, the following placeholders are used:
 
-- `<exercise-slug>`: the name of the exercise in kebab-case (e.g. `functions-basic`).
-- `<ExerciseSlug>`: the name of the exercise in PascalCase (e.g. `FunctionsBasic`).
+- `<exercise-slug>`: the name of the exercise in kebab-case (e.g. `calculator-conundrum`).
+- `<ExerciseSlug>`: the name of the exercise in PascalCase (e.g. `CalculatorConundrum`).
+- `<concept-slug>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the [exercise's GitHub issue](https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Atrack%2Fkotlin+Implement+new+concept+exercise+in%3Atitle).
 
@@ -28,6 +29,10 @@ Any concept exercise in any v3 track requires the following files to be created:
 <pre>
 languages
 └── kotlin
+    ├── concepts
+    |   └── &lt;concept-slug&gt;
+    |       ├── about.md
+    |       └── links.json
     └── exercises
         └── concept
             └── &lt;exercise-slug>
@@ -35,8 +40,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   ├── source.md (required if there are third-party sources)
-                |   └── after.md
+                |   └── source.md (required if there are third-party sources)
                 ├── .meta
                 |   |── design.md
                 |   |── config.json
