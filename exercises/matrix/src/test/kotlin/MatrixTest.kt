@@ -28,7 +28,7 @@ class MatrixTest {
     }
 
     @Test
-    fun `extract row from square matrix`() {
+    fun `extract row from non square matrix`() {
         val matrixAsString = """
             1 2 3
             4 5 6
