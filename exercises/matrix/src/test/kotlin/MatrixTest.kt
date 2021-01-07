@@ -78,7 +78,7 @@ class MatrixTest {
             89 1903   3
             18    3   1
              9    4 800
-            """.trimIndent()
+            """.replace(Regex("[ ]+"), " ").trimIndent()
         val columnIndex = 2
         val expectedColumn = listOf(1903, 3, 4)
         assertEquals(expectedColumn, Matrix(matrixAsString).column(columnIndex))
