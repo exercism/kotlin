@@ -1,5 +1,3 @@
-## basics
-
 Kotlin is a **statically typed** programming language developed by JetBrains. This means that the type of variables is defined at compile-time.
 
 ### Variables
