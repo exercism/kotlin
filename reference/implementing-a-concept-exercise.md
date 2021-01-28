@@ -44,7 +44,7 @@ languages
                 ├── .meta
                 |   |── design.md
                 |   |── config.json
-                |   └── Example.kt
+                |   └── Exemplar.kt
                 ├── src
                 |   ├── main
                 |   | 	└── kotlin
@@ -67,7 +67,7 @@ The code files are track-specific and should be designed to help the student lea
 
 - A stub implementation file (`src/main/kotlin/<ExerciseSlug>.kt`).
 - A file containing the test suite (`src/test/kotlin/<ExerciseSlug>.kt`).
-- An example implementation file that passes all the tests (`meta/Example.kt`).
+- An exemplar implementation file that passes all the tests (`meta/Example.kt`).
 
 What these files look like depends on your track. Note that some tracks might require more files in addition to the three files just mentioned.
 
