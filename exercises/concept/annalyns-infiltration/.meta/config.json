@@ -5,5 +5,10 @@
       "exercism_username": "dector"
     }
   ],
-  "forked_from": ["fsharp/booleans"]
+  "forked_from": ["fsharp/booleans"],
+  "files": {
+    "solution": [],
+    "test": [],
+    "exemplar": []
+  }
 }
