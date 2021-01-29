@@ -1170,5 +1170,13 @@
         ]
       }
     ]
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "72e47dcb-dccf-44a5-ab91-8773c2aec5bd",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    }
+  ]
 }
