@@ -5,5 +5,10 @@
       "exercism_username": "dector"
     }
   ],
-  "forked_from": ["fsharp/basics"]
+  "forked_from": ["fsharp/basics"],
+  "files": {
+    "solution": [],
+    "test": [],
+    "exemplar": []
+  }
 }
