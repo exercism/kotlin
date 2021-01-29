@@ -1,5 +1,6 @@
 {
   "language": "Kotlin",
+  "slug": "kotlin",
   "active": true,
   "status": {
     "concept_exercises": false,
