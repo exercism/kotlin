@@ -2,6 +2,7 @@
   "language": "Kotlin",
   "active": true,
   "blurb": "Kotlin is a pragmatic programming language for JVM and Android that combines OO and functional features and is focused on interoperability, safety, clarity and tooling support.",
+  "version": 3,
   "solution_pattern": "reference",
   "exercises": [
     {
