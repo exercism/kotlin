@@ -16,6 +16,27 @@
   },
   "solution_pattern": "reference",
   "exercises": {
+    "concept": [
+      {
+        "slug": "basics",
+        "uuid": "de14936d-28d7-4531-9761-69deba31a7ca",
+        "concepts": [
+          "basics"
+        ],
+        "prerequisites": []
+      },
+      {
+        "slug": "annalyns-infiltration",
+        "name": "Annalyn's Infiltration",
+        "uuid": "5a0af671-2549-411c-860a-f36859b429e5",
+        "concepts": [
+          "booleans"
+        ],
+        "prerequisites": [
+          "basics"
+        ]
+      }
+    ],
     "practice": [
       {
         "slug": "hello-world",
