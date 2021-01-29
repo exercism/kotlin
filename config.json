@@ -1109,7 +1109,8 @@
       "topics": [
         "lists"
       ],
-      "deprecated": true
+      "deprecated": true,
+      "status": "deprecated"
     },
     {
       "slug": "binary",
@@ -1120,7 +1121,8 @@
       "topics": [
         "strings"
       ],
-      "deprecated": true
+      "deprecated": true,
+      "status": "deprecated"
     },
     {
       "slug": "hexadecimal",
@@ -1132,7 +1134,8 @@
         "string",
         "integers"
       ],
-      "deprecated": true
+      "deprecated": true,
+      "status": "deprecated"
     },
     {
       "slug": "strain",
@@ -1144,7 +1147,8 @@
         "arrays",
         "filtering"
       ],
-      "deprecated": true
+      "deprecated": true,
+      "status": "deprecated"
     }
   ]
 }
