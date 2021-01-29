@@ -91,7 +91,7 @@ directory. For example:
 
 ```bash
 cd exercises
-../gradlew bob:test
+https://github.com/exercism/v3/blob/main/gradlew bob:test
 
 ```
 
