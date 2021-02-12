@@ -1,3 +1,5 @@
+# About
+
 ## Type inference
 
 Kotlin compiler can infer types for functions and variables in most of the cases. However, declaring function return types explicitly for **public API** is a good practice.

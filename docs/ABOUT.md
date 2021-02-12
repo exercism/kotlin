@@ -1,3 +1,5 @@
+# About
+
 Kotlin was designed and developed by JetBrains, the company behind IntelliJ. 
 It is a language that runs on the JVM which can target versions 6+ (including the [Android platform](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/)).
 JetBrains wanted to use a statically typed language which can remove Java boilerplate code, provide modern functional paradigms, and had seamless two-way Java interoperability with their existing codebase. 

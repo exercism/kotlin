@@ -1,4 +1,4 @@
-## Recommended learning resources
+# Recommended learning resources
 
 * [Kotlin Tutorials](https://kotlinlang.org/docs/tutorials/)
 * [Kotlin Documentation](https://kotlinlang.org/docs/reference/)

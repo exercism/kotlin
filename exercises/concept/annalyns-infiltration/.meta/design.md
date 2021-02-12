@@ -1,3 +1,5 @@
+# Design
+
 ## Learning objectives
 
 - Know of the existence of the `Boolean` type and its two values.
