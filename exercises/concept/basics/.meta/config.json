@@ -1,11 +1,14 @@
 {
+  "blurb": "TODO: add blurb for basics exercise",
   "authors": [
     {
       "github_username": "dector",
       "exercism_username": "dector"
     }
   ],
-  "forked_from": ["fsharp/basics"],
+  "forked_from": [
+    "fsharp/basics"
+  ],
   "files": {
     "solution": [],
     "test": [],
