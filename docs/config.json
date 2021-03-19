@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "91fa3615-3f2d-44fe-a060-93dac297583c",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing Kotlin locally",
+      "blurb": "Learn how to install Kotlin locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "015670c8-aded-4ba5-9824-454e928b8d37",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn Kotlin",
+      "blurb": "An overview of how to get started from scratch with Kotlin"
+    },
+    {
+      "uuid": "f2a23a48-b160-4925-98c6-8844ab63b931",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the Kotlin track",
+      "blurb": "Learn how to test your Kotlin exercises on Exercism"
+    },
+    {
+      "uuid": "336b6d0a-43a1-44d4-b1ac-0320aed1baa7",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful Kotlin resources",
+      "blurb": "A collection of useful resources to help you master Kotlin"
+    }
+  ]
+}
