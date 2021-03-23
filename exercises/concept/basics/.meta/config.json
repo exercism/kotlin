@@ -1,10 +1,7 @@
 {
   "blurb": "TODO: add blurb for basics exercise",
   "authors": [
-    {
-      "github_username": "dector",
-      "exercism_username": "dector"
-    }
+    "dector"
   ],
   "forked_from": [
     "fsharp/basics"
