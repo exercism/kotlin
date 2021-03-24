@@ -1,6 +1,21 @@
 {
   "blurb": "Implement a simple shift cipher like Caesar and a more secure substitution cipher",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "mikegehard",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/SimpleCipher.kt"

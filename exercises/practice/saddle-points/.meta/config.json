@@ -1,6 +1,17 @@
 {
   "blurb": "Detect saddle points in a matrix.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/SaddlePoints.kt"

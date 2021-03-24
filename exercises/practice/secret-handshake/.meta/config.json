@@ -1,6 +1,17 @@
 {
   "blurb": "Given a decimal number, convert it to the appropriate sequence of events for a secret handshake.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/SecretHandshake.kt"

@@ -1,6 +1,21 @@
 {
   "blurb": "Implement a binary search algorithm.",
-  "authors": [],
+  "authors": [
+    "geoand"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/BinarySearch.kt"

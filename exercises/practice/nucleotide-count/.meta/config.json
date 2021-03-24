@@ -1,6 +1,20 @@
 {
   "blurb": "Given a DNA string, compute how many times each nucleotide occurs in the string.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/NucleotideCount.kt"

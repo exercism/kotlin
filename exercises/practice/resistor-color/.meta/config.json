@@ -1,6 +1,12 @@
 {
   "blurb": "Convert a resistor band's color to its numeric representation",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ResistorColor.kt"

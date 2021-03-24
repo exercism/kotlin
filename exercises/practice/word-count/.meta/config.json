@@ -1,6 +1,21 @@
 {
   "blurb": "Given a phrase, count the occurrences of each word in that phrase.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "kytrinyx",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/WordCount.kt"

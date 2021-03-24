@@ -1,6 +1,21 @@
 {
   "blurb": "Manage robot factory settings.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "mikegehard",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RobotName.kt"

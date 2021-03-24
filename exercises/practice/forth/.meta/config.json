@@ -1,6 +1,18 @@
 {
   "blurb": "Implement an evaluator for a very simple subset of Forth",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "lathspell",
+    "lihofm",
+    "luoken",
+    "mdowds",
+    "mikegehard",
+    "sjwarner-bp",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Forth.kt"

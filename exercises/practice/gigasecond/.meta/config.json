@@ -1,6 +1,22 @@
 {
   "blurb": "Given a moment, determine the moment that would be after a gigasecond has passed.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "enixander",
+    "eparovyshnaya",
+    "jtigger",
+    "kytrinyx",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Gigasecond.kt"

@@ -1,6 +1,12 @@
 {
   "blurb": "Create a custom set type.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/CustomSet.kt"

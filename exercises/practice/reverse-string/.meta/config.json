@@ -1,6 +1,16 @@
 {
   "blurb": "Reverse a string",
-  "authors": [],
+  "authors": [
+    "vmichalak"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "mikegehard",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ReverseString.kt"

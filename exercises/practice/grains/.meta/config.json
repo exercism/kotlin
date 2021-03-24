@@ -1,6 +1,18 @@
 {
   "blurb": "Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Grains.kt"

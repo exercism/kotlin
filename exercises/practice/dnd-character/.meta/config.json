@@ -1,6 +1,12 @@
 {
   "blurb": "Randomly generate Dungeons & Dragons characters",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/DndCharacter.kt"

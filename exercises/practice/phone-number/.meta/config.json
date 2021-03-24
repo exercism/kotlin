@@ -1,6 +1,22 @@
 {
   "blurb": "Clean up user-entered phone numbers so that they can be sent SMS messages.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "beatbrot",
+    "carpeliam",
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/PhoneNumber.kt"

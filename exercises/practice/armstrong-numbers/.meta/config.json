@@ -1,6 +1,12 @@
 {
   "blurb": "Determine if a number is an Armstrong number",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ArmstrongNumber.kt"

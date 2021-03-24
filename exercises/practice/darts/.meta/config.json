@@ -1,6 +1,12 @@
 {
   "blurb": "Write a function that returns the earned points in a single toss of a Darts game",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Darts.kt"

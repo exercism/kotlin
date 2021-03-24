@@ -1,6 +1,17 @@
 {
   "blurb": "Calculate the date of meetups.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Meetup.kt"

@@ -1,6 +1,19 @@
 {
   "blurb": "Implement complex numbers.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "DanCorder",
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ComplexNumbers.kt"

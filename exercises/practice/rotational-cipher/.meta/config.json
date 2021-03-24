@@ -1,6 +1,17 @@
 {
   "blurb": "Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RotationalCipher.kt"

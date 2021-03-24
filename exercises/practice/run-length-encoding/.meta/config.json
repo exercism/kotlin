@@ -1,6 +1,11 @@
 {
   "blurb": "Implement run-length encoding and decoding.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RunLengthEncoding.kt"

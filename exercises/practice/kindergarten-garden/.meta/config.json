@@ -1,6 +1,12 @@
 {
   "blurb": "Given a diagram, determine which plants each child in the kindergarten class is responsible for.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/KindergartenGarden.kt"

@@ -1,6 +1,12 @@
 {
   "blurb": "Make a chain of dominoes.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Dominoes.kt"

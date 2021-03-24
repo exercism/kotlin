@@ -1,6 +1,18 @@
 {
   "blurb": " Given the size, return a square matrix of numbers in spiral order.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/SpiralMatrix.kt"

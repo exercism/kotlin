@@ -1,6 +1,19 @@
 {
   "blurb": "Determine if a word or phrase is an isogram.",
   "authors": [],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Isogram.kt"

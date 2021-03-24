@@ -1,6 +1,12 @@
 {
   "blurb": "Convert color codes, as used on resistors, to a numeric value.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ResistorColorDuo.kt"

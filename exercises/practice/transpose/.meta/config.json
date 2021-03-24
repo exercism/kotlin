@@ -1,6 +1,8 @@
 {
   "blurb": "Take input text and output it transposed.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Transpose.kt"

@@ -1,6 +1,13 @@
 {
   "blurb": "Insert and search for numbers in a binary tree.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "glennj",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/BinarySearchTree.kt"

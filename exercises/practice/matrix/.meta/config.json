@@ -1,6 +1,13 @@
 {
   "blurb": "Given a string representing a matrix of numbers, return the rows and columns of that matrix.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "SunCatMC",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Matrix.kt"

@@ -1,6 +1,17 @@
 {
   "blurb": "Check if a given string is a valid ISBN-10 number.",
-  "authors": [],
+  "authors": [
+    "vmichalak"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/IsbnVerifier.kt"

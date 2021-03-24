@@ -1,6 +1,12 @@
 {
   "blurb": "Create an implementation of the Affine cipher, an ancient encryption algorithm from the Middle East.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/AffineCipher.kt"

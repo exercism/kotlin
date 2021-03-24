@@ -1,6 +1,21 @@
 {
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "sup95",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/Anagram.kt"

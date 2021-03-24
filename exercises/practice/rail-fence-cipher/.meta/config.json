@@ -1,6 +1,18 @@
 {
   "blurb": "Implement encoding and decoding for the rail fence cipher.",
-  "authors": [],
+  "authors": [
+    "vmichalak"
+  ],
+  "contributors": [
+    "araknoid",
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RailFenceCipher.kt"

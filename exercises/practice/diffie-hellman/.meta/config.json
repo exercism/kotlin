@@ -1,6 +1,12 @@
 {
   "blurb": "Diffie-Hellman key exchange.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/DiffieHellman.kt"

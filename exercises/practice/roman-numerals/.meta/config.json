@@ -1,6 +1,21 @@
 {
   "blurb": "Write a function to convert from normal numbers to Roman Numerals.",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "lihofm",
+    "mdowds",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "sup95",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RomanNumerals.kt"

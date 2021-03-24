@@ -1,6 +1,19 @@
 {
   "blurb": "Given a number, find the sum of all the multiples of particular numbers up to but not including that number.",
-  "authors": [],
+  "authors": [
+    "nithia"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/SumOfMultiples.kt"

@@ -1,6 +1,19 @@
 {
   "blurb": "Create a sentence of the form \"One for X, one for me.\"",
-  "authors": [],
+  "authors": [
+    "Mouzourides"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "sup95",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/TwoFer.kt"

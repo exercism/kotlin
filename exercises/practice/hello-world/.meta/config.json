@@ -1,6 +1,27 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\"",
-  "authors": [],
+  "authors": [
+    "cswagner"
+  ],
+  "contributors": [
+    "bneevan",
+    "dector",
+    "HawkiesZA",
+    "jtigger",
+    "katrinleinweber",
+    "kytrinyx",
+    "lihofm",
+    "mdowds",
+    "mikegehard",
+    "Mouzourides",
+    "nithia",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "sup95",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/HelloWorld.kt"

@@ -1,6 +1,18 @@
 {
   "blurb": "Write a robot simulator.",
-  "authors": [],
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "sup95",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/RobotSimulator.kt"

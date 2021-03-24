@@ -1,6 +1,23 @@
 {
   "blurb": "Given students' names along with the grade that they are in, create a roster for the school",
-  "authors": [],
+  "authors": [
+    "sdavids13"
+  ],
+  "contributors": [
+    "dector",
+    "eparovyshnaya",
+    "jtigger",
+    "kytrinyx",
+    "lihofm",
+    "mdowds",
+    "mikegehard",
+    "nithia",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "stkent",
+    "tehbilly",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/GradeSchool.kt"

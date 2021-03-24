@@ -1,6 +1,12 @@
 {
   "blurb": "Solve the zebra puzzle.",
-  "authors": [],
+  "authors": [
+    "lathspell"
+  ],
+  "contributors": [
+    "eparovyshnaya",
+    "uzilan"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ZebraPuzzle.kt"
