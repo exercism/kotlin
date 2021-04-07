@@ -2,9 +2,15 @@
   "blurb": "Score a single throw of dice in the game Yacht",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Yacht.kt"
+    ],
+    "test": [
+      "src/test/kotlin/YachtTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Yacht.kt"
+    ]
   },
   "source": "James Kilfiger, using wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Yacht_(dice_game)"

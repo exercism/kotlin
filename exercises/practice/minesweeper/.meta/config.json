@@ -2,8 +2,14 @@
   "blurb": "Add the numbers to a minesweeper board",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Minesweeper.kt"
+    ],
+    "test": [
+      "src/test/kotlin/MinesweeperTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Minesweeper.kt"
+    ]
   }
 }

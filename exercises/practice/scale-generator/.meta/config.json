@@ -2,8 +2,14 @@
   "blurb": "Generate musical scales, given a starting note and a set of intervals. ",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/ScaleGenerator.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ScaleGeneratorTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/ScaleGenerator.kt"
+    ]
   }
 }

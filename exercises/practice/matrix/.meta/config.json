@@ -2,9 +2,15 @@
   "blurb": "Given a string representing a matrix of numbers, return the rows and columns of that matrix.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Matrix.kt"
+    ],
+    "test": [
+      "src/test/kotlin/MatrixTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Matrix.kt"
+    ]
   },
   "source": "Warmup to the `saddle-points` warmup.",
   "source_url": "http://jumpstartlab.com"

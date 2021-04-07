@@ -7,8 +7,14 @@
     "fsharp/booleans"
   ],
   "files": {
-    "solution": [],
-    "test": [],
-    "exemplar": []
+    "solution": [
+      "src/main/kotlin/AnnalynsInfiltration.kt"
+    ],
+    "test": [
+      "src/test/kotlin/AnnalynsInfiltrationTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/AnnalynsInfiltration.kt"
+    ]
   }
 }

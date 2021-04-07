@@ -2,9 +2,15 @@
   "blurb": "Determine if a number is an Armstrong number",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/ArmstrongNumbers.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ArmstrongNumbersTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/ArmstrongNumbers.kt"
+    ]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"

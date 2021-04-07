@@ -2,9 +2,15 @@
   "blurb": "Insert and search for numbers in a binary tree.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/BinarySearchTree.kt"
+    ],
+    "test": [
+      "src/test/kotlin/BinarySearchTreeTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/BinarySearchTree.kt"
+    ]
   },
   "source": "Josh Cheek",
   "source_url": "https://twitter.com/josh_cheek"

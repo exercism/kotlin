@@ -2,9 +2,15 @@
   "blurb": "Implement a clock that handles times without dates.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Clock.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ClockTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Clock.kt"
+    ]
   },
   "source": "Pairing session with Erin Drummond",
   "source_url": "https://twitter.com/ebdrummond"

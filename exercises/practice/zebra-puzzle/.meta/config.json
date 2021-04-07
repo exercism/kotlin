@@ -2,9 +2,15 @@
   "blurb": "Solve the zebra puzzle.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/ZebraPuzzle.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ZebraPuzzleTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/ZebraPuzzle.kt"
+    ]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Zebra_Puzzle"

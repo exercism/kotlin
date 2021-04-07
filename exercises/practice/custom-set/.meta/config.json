@@ -2,8 +2,14 @@
   "blurb": "Create a custom set type.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/CustomSet.kt"
+    ],
+    "test": [
+      "src/test/kotlin/CustomSetTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/CustomSet.kt"
+    ]
   }
 }
