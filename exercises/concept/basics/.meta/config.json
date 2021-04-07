@@ -7,8 +7,14 @@
     "fsharp/basics"
   ],
   "files": {
-    "solution": [],
-    "test": [],
-    "exemplar": []
+    "solution": [
+      "src/main/kotlin/Basics.kt"
+    ],
+    "test": [
+      "src/test/kotlin/BasicsTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/Basics.kt"
+    ]
   }
 }

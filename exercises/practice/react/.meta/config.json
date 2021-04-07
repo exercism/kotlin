@@ -2,8 +2,14 @@
   "blurb": "Implement a basic reactive system.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/React.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ReactTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/React.kt"
+    ]
   }
 }

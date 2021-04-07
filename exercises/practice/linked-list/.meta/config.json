@@ -2,9 +2,15 @@
   "blurb": "Implement a doubly linked list",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/LinkedList.kt"
+    ],
+    "test": [
+      "src/test/kotlin/LinkedListTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/LinkedList.kt"
+    ]
   },
   "source": "Classic computer science topic"
 }

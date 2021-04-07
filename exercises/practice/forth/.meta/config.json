@@ -2,8 +2,14 @@
   "blurb": "Implement an evaluator for a very simple subset of Forth",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Forth.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ForthTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Forth.kt"
+    ]
   }
 }

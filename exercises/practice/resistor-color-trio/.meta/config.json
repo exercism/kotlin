@@ -2,9 +2,15 @@
   "blurb": "Convert color codes, as used on resistors, to a human-readable label.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/ResistorColorTrio.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ResistorColorTrioTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/ResistorColorTrio.kt"
+    ]
   },
   "source": "Maud de Vries, Erik Schierboom",
   "source_url": "https://github.com/exercism/problem-specifications/issues/1549"

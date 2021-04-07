@@ -2,9 +2,15 @@
   "blurb": "Determine if a word or phrase is an isogram.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Isogram.kt"
+    ],
+    "test": [
+      "src/test/kotlin/IsogramTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Isogram.kt"
+    ]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Isogram"

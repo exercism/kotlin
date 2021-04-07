@@ -2,9 +2,15 @@
   "blurb": "Make sure the brackets and braces all match.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/MatchingBrackets.kt"
+    ],
+    "test": [
+      "src/test/kotlin/MatchingBracketsTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/MatchingBrackets.kt"
+    ]
   },
   "source": "Ginna Baker"
 }

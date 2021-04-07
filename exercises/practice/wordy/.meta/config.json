@@ -2,9 +2,15 @@
   "blurb": "Parse and evaluate simple math word problems returning the answer as an integer.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/main/kotlin/Wordy.kt"
+    ],
+    "test": [
+      "src/test/kotlin/WordyTest.kt"
+    ],
+    "example": [
+      ".meta/src/main/kotlin/Wordy.kt"
+    ]
   },
   "source": "Inspired by one of the generated questions in the Extreme Startup game.",
   "source_url": "https://github.com/rchatley/extreme_startup"
