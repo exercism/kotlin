@@ -280,7 +280,7 @@ class CustomSetTest {
     fun `union of non empty sets contains all unique elements`() {
         val set1 = CustomSet(1, 3)
         val set2 = CustomSet(2, 3)
-        val expected = CustomSet(3, 2, 1)
+        val expected = CustomSet(1, 2, 3)
         assertEquals(expected, set1 + set2)
     }
 }
