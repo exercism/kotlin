@@ -858,7 +858,7 @@
       {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
-        "uuid": "0b92ffee-c092-4ab1-ad78-76c8cf80e1b5",
+        "uuid": "1603e77a-0fbc-43ed-8200-b86a4219af8d",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4,
@@ -1131,7 +1131,7 @@
       {
         "slug": "diffie-hellman",
         "name": "Diffie Hellman",
-        "uuid": "9b191b2f-b1a4-4c0e-b911-36666bff614d",
+        "uuid": "33d64c7c-292e-4221-aed8-ac411a9d490d",
         "practices": [],
         "prerequisites": [],
         "difficulty": 8,
@@ -1250,7 +1250,7 @@
       {
         "slug": "reverse-string",
         "name": "Reverse String",
-        "uuid": "0000e75e-9b43-11e8-98d0-529269fb1459",
+        "uuid": "95d495a6-b1a2-42d5-8190-443d6f94e80b",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
