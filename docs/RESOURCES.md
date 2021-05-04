@@ -1,4 +1,4 @@
-## Recommended resources
+# Recommended resources
 
 * [Kotlin Documentation](https://kotlinlang.org/docs/reference/)
 * [Kotlin Forums](https://discuss.kotlinlang.org/)

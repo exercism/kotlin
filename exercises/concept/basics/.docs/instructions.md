@@ -1,3 +1,5 @@
+# Instructions
+
 The owner of your local pizza place has asked you to help her to calculate cooking times for different pizzas. In this exercise you're going to write few functions to calculate that.
 
 You have three tasks.
