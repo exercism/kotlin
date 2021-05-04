@@ -3,13 +3,13 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/main/kotlin/ScaleGenerator.kt"
+      "src/main/kotlin/Scale.kt"
     ],
     "test": [
-      "src/test/kotlin/ScaleGeneratorTest.kt"
+      "src/test/kotlin/ScaleTest.kt"
     ],
     "example": [
-      ".meta/src/main/kotlin/ScaleGenerator.kt"
+      ".meta/src/main/kotlin/Scale.kt"
     ]
   }
 }
