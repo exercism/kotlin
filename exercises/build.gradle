@@ -1,3 +1,4 @@
+/*
 subprojects {
   afterEvaluate { Project project ->
 
@@ -57,3 +58,4 @@ subprojects {
     compileTestKotlin.dependsOn(copyTestsFilteringIgnores)
   }
 }
+ */
