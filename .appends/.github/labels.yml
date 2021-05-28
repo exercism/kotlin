@@ -1,0 +1,56 @@
+- name: "good first issue"
+  description: ""
+  color: "fafafa"
+
+- name: "help wanted"
+  description: ""
+  color: "Ff7f00"
+
+- name: "issue: in progress"
+  description: "Issue that is already occupied by somebody (usually by assigned person)."
+  color: "7987f2"
+
+- name: "issue: meta"
+  description: "Meta-discussions."
+  color: "d4c5f9"
+
+- name: "issue: new exercise"
+  description: "Request to add new exercise."
+  color: "ff9682"
+
+- name: "issue: ready for dev"
+  description: "Issue is ready for development."
+  color: "97e87d"
+
+- name: "issue: requires investigation"
+  description: "This issue requires further investigation from maintainers."
+  color: "26b75e"
+
+- name: "issue: waiting response"
+  description: "Issue marked with this label requires additional information from the author."
+  color: "005b93"
+
+- name: "meta:v3"
+  description: "Discussions related to exercism v3"
+  color: "006b75"
+
+- name: "pr: dont merge"
+  description: "Don't merge this PR for some reasons (e.g. tests are failing)."
+  color: "ea3c99"
+
+- name: "pr: not ready"
+  description: ""
+  color: "ff0000"
+
+- name: "pr: rebase required"
+  description: "PR marked with this label requires rebase on other branch (`master` by default)."
+  color: "eeeeee"
+
+- name: "pr: review needed"
+  description: ""
+  color: "268902"
+
+- name: "v3-migration 🤖"
+  description: "Preparing for Exercism v3"
+  color: "E99695"
+
