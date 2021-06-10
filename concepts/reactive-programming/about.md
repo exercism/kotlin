@@ -28,7 +28,7 @@ Since they are incorporated in the example, the following has these facts:
 2. In this context they serve as a tool to illustrate the idea of state in a reactive process.
 
 ```kotlin
-import kotlin.properties.Delegates //delegate import
+import kotlin.properties.Delegates //delegate  import
 
     //Class declarations enum class  Type<*>(Any<*>):Any<*>   
    enum class StopGo {

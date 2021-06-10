@@ -6,4 +6,4 @@ using a reactive process where one variable changing can cause multiple types of
 focused around it.
 
 By doing this I believe it forces the student to conceptualize what a reaction is in terms of programming. 
-I included a basic template in the "about.md" file which can be used to solve the concept exercise fairly quickly.
+I included a basic template in the "about.md" file which can be used to solve the concept exercise fairly quick.
