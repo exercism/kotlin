@@ -14,7 +14,7 @@ enum class Drift {//Coordinate enumeration
         }
     };
 
-    abstract fun coordinateBuilder(x:Int, y:Int): Coordinate //the abstract override
+    abstract fun coordinateBuilder(x:Int, y:Int): Coordinate //the abstract override.
     }
 
     class Coordinate(x:Int = 0, y:Int = 0){//coordinate class

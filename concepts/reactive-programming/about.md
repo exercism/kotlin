@@ -24,7 +24,7 @@ Then, again, after a reasonable amount of time the red turn green and the green 
 What does that look like in code?
 
 Since they are incorporated in the example, the following has these facts:
-1. This is a Kotlin enumeration class
+1. This is a Kotlin enumeration class.
 2. In this context they serve as a tool to illustrate the idea of state in a reactive process.
 
 ```kotlin
