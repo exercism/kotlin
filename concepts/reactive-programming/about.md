@@ -30,7 +30,7 @@ Since they are incorporated in the example, the following has these facts:
 ```kotlin
 import kotlin.properties.Delegates //delegate import
 
-    //Class declarations enum class Type<*>(Any<*>):Any<*>   
+    //Class declarations enum class  Type<*>(Any<*>):Any<*>   
    enum class StopGo {
         //Establish the enumerated value
         REDLIGHT {
