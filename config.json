@@ -26,6 +26,7 @@
     "concept": [
       {
         "slug": "basics",
+        "name": "Basics",
         "uuid": "de14936d-28d7-4531-9761-69deba31a7ca",
         "concepts": ["basics"],
         "prerequisites": [],
