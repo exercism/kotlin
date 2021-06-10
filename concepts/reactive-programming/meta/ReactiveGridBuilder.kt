@@ -9,7 +9,7 @@ enum class Drift {//Coordinate enumeration
         }
     },
     THREE_DIMENSION_GRID {
-        override fun coordinateBuilder(x: Int, y: Int) : Coordinate {//Plans to implement three dimensional grid
+        override fun coordinateBuilder(x: Int, y: Int) : Coordinate {//Plans to implement three dimensional grid.
             return TODO()
         }
     };
