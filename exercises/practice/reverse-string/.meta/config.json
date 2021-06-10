@@ -1,8 +1,6 @@
 {
   "blurb": "Reverse a string",
-  "authors": [
-    "vmichalak"
-  ],
+  "authors": ["vmichalak"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -12,15 +10,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/ReverseString.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ReverseStringTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/ReverseString.kt"
-    ]
+    "solution": ["src/main/kotlin/ReverseString.kt"],
+    "test": ["src/test/kotlin/ReverseStringTest.kt"],
+    "example": [".meta/src/reference/kotlin/ReverseString.kt"]
   },
   "source": "Introductory challenge to reverse an input string",
   "source_url": "https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb"

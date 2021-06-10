@@ -1,8 +1,6 @@
 {
   "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",
-  "authors": [
-    "nithia"
-  ],
+  "authors": ["nithia"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,15 +13,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Triangle.kt"
-    ],
-    "test": [
-      "src/test/kotlin/TriangleTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Triangle.kt"
-    ]
+    "solution": ["src/main/kotlin/Triangle.kt"],
+    "test": ["src/test/kotlin/TriangleTest.kt"],
+    "example": [".meta/src/reference/kotlin/Triangle.kt"]
   },
   "source": "The Ruby Koans triangle project, parts 1 & 2",
   "source_url": "http://rubykoans.com"

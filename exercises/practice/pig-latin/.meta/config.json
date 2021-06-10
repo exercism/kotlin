@@ -1,8 +1,6 @@
 {
   "blurb": "Implement a program that translates from English to Pig Latin",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/PigLatin.kt"
-    ],
-    "test": [
-      "src/test/kotlin/PigLatinTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/PigLatin.kt"
-    ]
+    "solution": ["src/main/kotlin/PigLatin.kt"],
+    "test": ["src/test/kotlin/PigLatinTest.kt"],
+    "example": [".meta/src/reference/kotlin/PigLatin.kt"]
   },
   "source": "The Pig Latin exercise at Test First Teaching by Ultrasaurus",
   "source_url": "https://github.com/ultrasaurus/test-first-teaching/blob/master/learn_ruby/pig_latin/"

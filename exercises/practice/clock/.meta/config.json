@@ -1,8 +1,6 @@
 {
   "blurb": "Implement a clock that handles times without dates.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,15 +12,14 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Clock.kt"
-    ],
+    "solution": ["src/main/kotlin/Clock.kt"],
     "test": [
-      "src/test/kotlin/ClockTest.kt"
+      "src/test/kotlin/ClockCreationTest.kt",
+      "src/test/kotlin/ClockAddTest.kt",
+      "src/test/kotlin/ClockSubtractTest.kt",
+      "src/test/kotlin/ClockEqualTest.kt"
     ],
-    "example": [
-      ".meta/src/main/kotlin/Clock.kt"
-    ]
+    "example": [".meta/src/reference/kotlin/Clock.kt"]
   },
   "source": "Pairing session with Erin Drummond",
   "source_url": "https://twitter.com/ebdrummond"

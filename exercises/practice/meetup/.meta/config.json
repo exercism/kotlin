@@ -1,8 +1,6 @@
 {
   "blurb": "Calculate the date of meetups.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -13,15 +11,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Meetup.kt"
-    ],
-    "test": [
-      "src/test/kotlin/MeetupTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Meetup.kt"
-    ]
+    "solution": ["src/main/kotlin/Meetup.kt"],
+    "test": ["src/test/kotlin/MeetupTest.kt"],
+    "example": [".meta/src/reference/kotlin/Meetup.kt"]
   },
   "source": "Jeremy Hinegardner mentioned a Boulder meetup that happens on the Wednesteenth of every month",
   "source_url": "https://twitter.com/copiousfreetime"

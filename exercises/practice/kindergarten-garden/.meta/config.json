@@ -1,22 +1,11 @@
 {
   "blurb": "Given a diagram, determine which plants each child in the kindergarten class is responsible for.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/KindergartenGarden.kt"
-    ],
-    "test": [
-      "src/test/kotlin/KindergartenGardenTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/KindergartenGarden.kt"
-    ]
+    "solution": ["src/main/kotlin/KindergartenGarden.kt"],
+    "test": ["src/test/kotlin/KindergartenGardenTest.kt"],
+    "example": [".meta/src/reference/kotlin/KindergartenGarden.kt"]
   },
   "source": "Random musings during airplane trip.",
   "source_url": "http://jumpstartlab.com"

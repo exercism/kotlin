@@ -1,8 +1,6 @@
 {
   "blurb": "Determine if a number is perfect, abundant, or deficient based on Nicomachus' (60 - 120 CE) classification scheme for positive integers.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,15 +13,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/PerfectNumbers.kt"
-    ],
-    "test": [
-      "src/test/kotlin/PerfectNumbersTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/PerfectNumbers.kt"
-    ]
+    "solution": ["src/main/kotlin/NaturalNumber.kt"],
+    "test": ["src/test/kotlin/NaturalNumberTest.kt"],
+    "example": [".meta/src/reference/kotlin/NaturalNumber.kt"]
   },
   "source": "Taken from Chapter 2 of Functional Thinking by Neal Ford.",
   "source_url": "http://shop.oreilly.com/product/0636920029687.do"

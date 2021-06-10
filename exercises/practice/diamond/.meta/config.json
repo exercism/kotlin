@@ -1,8 +1,6 @@
 {
   "blurb": "Given a letter, print a diamond starting with 'A' with the supplied letter at the widest point.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,15 +12,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Diamond.kt"
-    ],
-    "test": [
-      "src/test/kotlin/DiamondTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Diamond.kt"
-    ]
+    "solution": ["src/main/kotlin/DiamondPrinter.kt"],
+    "test": ["src/test/kotlin/DiamondPrinterTest.kt"],
+    "example": [".meta/src/reference/kotlin/DiamondPrinter.kt"]
   },
   "source": "Seb Rose",
   "source_url": "http://claysnow.co.uk/recycling-tests-in-tdd/"

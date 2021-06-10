@@ -1,8 +1,6 @@
 {
   "blurb": "Convert a number, represented as a sequence of digits in one base, to any other base.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,14 +13,8 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/AllYourBase.kt"
-    ],
-    "test": [
-      "src/test/kotlin/AllYourBaseTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/AllYourBase.kt"
-    ]
+    "solution": ["src/main/kotlin/BaseConverter.kt"],
+    "test": ["src/test/kotlin/BaseConverterTest.kt"],
+    "example": [".meta/src/reference/kotlin/BaseConverter.kt"]
   }
 }

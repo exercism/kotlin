@@ -1,8 +1,6 @@
 {
   "blurb": "Implement complex numbers.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "DanCorder",
     "dector",
@@ -15,15 +13,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/ComplexNumbers.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ComplexNumbersTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/ComplexNumbers.kt"
-    ]
+    "solution": ["src/main/kotlin/ComplexNumber.kt"],
+    "test": ["src/test/kotlin/ComplexNumberTest.kt"],
+    "example": [".meta/src/reference/kotlin/ComplexNumber.kt"]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Complex_number"

@@ -1,8 +1,6 @@
 {
   "blurb": "Produce the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/BeerSong.kt"
-    ],
-    "test": [
-      "src/test/kotlin/BeerSongTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/BeerSong.kt"
-    ]
+    "solution": ["src/main/kotlin/BeerSong.kt"],
+    "test": ["src/test/kotlin/BeerSongTest.kt"],
+    "example": [".meta/src/reference/kotlin/BeerSong.kt"]
   },
   "source": "Learn to Program by Chris Pine",
   "source_url": "http://pine.fm/LearnToProgram/?Chapter=06"

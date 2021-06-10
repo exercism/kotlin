@@ -1,20 +1,10 @@
 {
   "blurb": "TODO: add blurb for basics exercise",
-  "authors": [
-    "dector"
-  ],
-  "forked_from": [
-    "fsharp/basics"
-  ],
+  "authors": ["dector"],
+  "forked_from": ["fsharp/basics"],
   "files": {
-    "solution": [
-      "src/main/kotlin/Basics.kt"
-    ],
-    "test": [
-      "src/test/kotlin/BasicsTest.kt"
-    ],
-    "exemplar": [
-      ".meta/src/reference/kotlin/Basics.kt"
-    ]
+    "solution": ["src/main/kotlin/Basics.kt"],
+    "test": ["src/test/kotlin/BasicsTest.kt"],
+    "exemplar": [".meta/src/main/kotlin/Exemplar.kt"]
   }
 }

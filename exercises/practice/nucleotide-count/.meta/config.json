@@ -1,8 +1,6 @@
 {
   "blurb": "Given a DNA string, compute how many times each nucleotide occurs in the string.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/NucleotideCount.kt"
-    ],
-    "test": [
-      "src/test/kotlin/NucleotideCountTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/NucleotideCount.kt"
-    ]
+    "solution": ["src/main/kotlin/Dna.kt"],
+    "test": ["src/test/kotlin/DnaTest.kt"],
+    "example": [".meta/src/reference/kotlin/Dna.kt"]
   },
   "source": "The Calculating DNA Nucleotides_problem at Rosalind",
   "source_url": "http://rosalind.info/problems/dna/"

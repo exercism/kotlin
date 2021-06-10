@@ -1,8 +1,6 @@
 {
   "blurb": "Implement a binary search algorithm.",
-  "authors": [
-    "geoand"
-  ],
+  "authors": ["geoand"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/BinarySearch.kt"
-    ],
-    "test": [
-      "src/test/kotlin/BinarySearchTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/BinarySearch.kt"
-    ]
+    "solution": ["src/main/kotlin/BinarySearch.kt"],
+    "test": ["src/test/kotlin/BinarySearchTest.kt"],
+    "example": [".meta/src/reference/kotlin/BinarySearch.kt"]
   },
   "source": "Wikipedia",
   "source_url": "http://en.wikipedia.org/wiki/Binary_search_algorithm"

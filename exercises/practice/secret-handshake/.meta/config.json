@@ -1,8 +1,6 @@
 {
   "blurb": "Given a decimal number, convert it to the appropriate sequence of events for a secret handshake.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -13,15 +11,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/SecretHandshake.kt"
-    ],
-    "test": [
-      "src/test/kotlin/SecretHandshakeTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/SecretHandshake.kt"
-    ]
+    "solution": ["src/main/kotlin/HandshakeCalculator.kt"],
+    "test": ["src/test/kotlin/HandshakeCalculatorTest.kt"],
+    "example": [".meta/src/reference/kotlin/HandshakeCalculator.kt"]
   },
   "source": "Bert, in Mary Poppins",
   "source_url": "http://www.imdb.com/title/tt0058331/quotes/qt0437047"

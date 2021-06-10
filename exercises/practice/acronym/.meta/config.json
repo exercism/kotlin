@@ -1,8 +1,6 @@
 {
   "blurb": "Convert a long phrase to its acronym",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "beatbrot",
     "dector",
@@ -18,15 +16,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Acronym.kt"
-    ],
-    "test": [
-      "src/test/kotlin/AcronymTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Acronym.kt"
-    ]
+    "solution": ["src/main/kotlin/Acronym.kt"],
+    "test": ["src/test/kotlin/AcronymTest.kt"],
+    "example": [".meta/src/reference/kotlin/Acronym.kt"]
   },
   "source": "Julien Vanier",
   "source_url": "https://github.com/monkbroc"

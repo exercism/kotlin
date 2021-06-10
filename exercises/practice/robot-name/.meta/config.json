@@ -1,8 +1,6 @@
 {
   "blurb": "Manage robot factory settings.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/RobotName.kt"
-    ],
-    "test": [
-      "src/test/kotlin/RobotNameTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/RobotName.kt"
-    ]
+    "solution": ["src/main/kotlin/RobotName.kt"],
+    "test": ["src/test/kotlin/RobotTest.kt"],
+    "example": [".meta/src/reference/kotlin/RobotName.kt"]
   },
   "source": "A debugging session with Paul Blackwell at gSchool."
 }

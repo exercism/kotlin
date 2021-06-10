@@ -1,8 +1,6 @@
 {
   "blurb": "Create a sentence of the form \"One for X, one for me.\"",
-  "authors": [
-    "Mouzourides"
-  ],
+  "authors": ["Mouzourides"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,15 +13,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/TwoFer.kt"
-    ],
-    "test": [
-      "src/test/kotlin/TwoFerTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/TwoFer.kt"
-    ]
+    "solution": ["src/main/kotlin/TwoFer.kt"],
+    "test": ["src/test/kotlin/TwoFerTest.kt"],
+    "example": [".meta/src/reference/kotlin/TwoFer.kt"]
   },
   "source_url": "https://github.com/exercism/problem-specifications/issues/757"
 }

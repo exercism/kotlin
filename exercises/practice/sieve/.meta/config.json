@@ -1,8 +1,6 @@
 {
   "blurb": "Use the Sieve of Eratosthenes to find all the primes from 2 up to a given number.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Sieve.kt"
-    ],
-    "test": [
-      "src/test/kotlin/SieveTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Sieve.kt"
-    ]
+    "solution": ["src/main/kotlin/Sieve.kt"],
+    "test": ["src/test/kotlin/SieveTest.kt"],
+    "example": [".meta/src/reference/kotlin/Sieve.kt"]
   },
   "source": "Sieve of Eratosthenes at Wikipedia",
   "source_url": "http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes"

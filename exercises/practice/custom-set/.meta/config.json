@@ -1,21 +1,10 @@
 {
   "blurb": "Create a custom set type.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/CustomSet.kt"
-    ],
-    "test": [
-      "src/test/kotlin/CustomSetTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/CustomSet.kt"
-    ]
+    "solution": ["src/main/kotlin/CustomSet.kt"],
+    "test": ["src/test/kotlin/CustomSetTest.kt"],
+    "example": [".meta/src/reference/kotlin/CustomSet.kt"]
   }
 }

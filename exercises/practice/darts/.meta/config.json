@@ -1,22 +1,11 @@
 {
   "blurb": "Write a function that returns the earned points in a single toss of a Darts game",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/Darts.kt"
-    ],
-    "test": [
-      "src/test/kotlin/DartsTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Darts.kt"
-    ]
+    "solution": ["src/main/kotlin/Darts.kt"],
+    "test": ["src/test/kotlin/DartsTest.kt"],
+    "example": [".meta/src/reference/kotlin/Darts.kt"]
   },
   "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
 }

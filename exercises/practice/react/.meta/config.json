@@ -1,8 +1,6 @@
 {
   "blurb": "Implement a basic reactive system.",
-  "authors": [
-    "petertseng"
-  ],
+  "authors": ["petertseng"],
   "contributors": [
     "dector",
     "lihofm",
@@ -15,14 +13,8 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/React.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ReactTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/React.kt"
-    ]
+    "solution": ["src/main/kotlin/React.kt"],
+    "test": ["src/test/kotlin/ReactTest.kt"],
+    "example": [".meta/src/reference/kotlin/React.kt"]
   }
 }

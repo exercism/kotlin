@@ -1,8 +1,6 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\"",
-  "authors": [
-    "cswagner"
-  ],
+  "authors": ["cswagner"],
   "contributors": [
     "bneevan",
     "dector",
@@ -23,15 +21,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/HelloWorld.kt"
-    ],
-    "test": [
-      "src/test/kotlin/HelloWorldTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/HelloWorld.kt"
-    ]
+    "solution": ["src/main/kotlin/HelloWorld.kt"],
+    "test": ["src/test/kotlin/HelloWorldTest.kt"],
+    "example": [".meta/src/reference/kotlin/HelloWorld.kt"]
   },
   "source": "This is an exercise to introduce users to using Exercism",
   "source_url": "http://en.wikipedia.org/wiki/%22Hello,_world!%22_program"

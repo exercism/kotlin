@@ -1,23 +1,11 @@
 {
   "blurb": "Given a string representing a matrix of numbers, return the rows and columns of that matrix.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "SunCatMC",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "SunCatMC", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/Matrix.kt"
-    ],
-    "test": [
-      "src/test/kotlin/MatrixTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Matrix.kt"
-    ]
+    "solution": ["src/main/kotlin/Matrix.kt"],
+    "test": ["src/test/kotlin/MatrixTest.kt"],
+    "example": [".meta/src/reference/kotlin/Matrix.kt"]
   },
   "source": "Warmup to the `saddle-points` warmup.",
   "source_url": "http://jumpstartlab.com"

@@ -1,8 +1,6 @@
 {
   "blurb": "Compute the prime factors of a given natural number.",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -13,15 +11,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/PrimeFactors.kt"
-    ],
-    "test": [
-      "src/test/kotlin/PrimeFactorsTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/PrimeFactors.kt"
-    ]
+    "solution": ["src/main/kotlin/PrimeFactors.kt"],
+    "test": ["src/test/kotlin/PrimeFactorCalculatorTest.kt"],
+    "example": [".meta/src/reference/kotlin/PrimeFactors.kt"]
   },
   "source": "The Prime Factors Kata by Uncle Bob",
   "source_url": "http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata"
