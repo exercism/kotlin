@@ -1,22 +1,11 @@
 {
   "blurb": "Parse and evaluate simple math word problems returning the answer as an integer.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/Wordy.kt"
-    ],
-    "test": [
-      "src/test/kotlin/WordyTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Wordy.kt"
-    ]
+    "solution": ["src/main/kotlin/Wordy.kt"],
+    "test": ["src/test/kotlin/WordyTest.kt"],
+    "example": [".meta/src/reference/kotlin/Wordy.kt"]
   },
   "source": "Inspired by one of the generated questions in the Extreme Startup game.",
   "source_url": "https://github.com/rchatley/extreme_startup"

@@ -1,21 +1,11 @@
 {
   "blurb": "Implement run-length encoding and decoding.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya"],
   "files": {
-    "solution": [
-      "src/main/kotlin/RunLengthEncoding.kt"
-    ],
-    "test": [
-      "src/test/kotlin/RunLengthEncodingTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/RunLengthEncoding.kt"
-    ]
+    "solution": ["src/main/kotlin/RunLengthEncoding.kt"],
+    "test": ["src/test/kotlin/RunLengthEncodingTest.kt"],
+    "example": [".meta/src/reference/kotlin/RunLengthEncoding.kt"]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Run-length_encoding"

@@ -1,23 +1,11 @@
 {
   "blurb": "Insert and search for numbers in a binary tree.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "glennj",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "glennj", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/BinarySearchTree.kt"
-    ],
-    "test": [
-      "src/test/kotlin/BinarySearchTreeTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/BinarySearchTree.kt"
-    ]
+    "solution": ["src/main/kotlin/BinarySearchTree.kt"],
+    "test": ["src/test/kotlin/BinarySearchTreeTest.kt"],
+    "example": [".meta/src/reference/kotlin/BinarySearchTree.kt"]
   },
   "source": "Josh Cheek",
   "source_url": "https://twitter.com/josh_cheek"

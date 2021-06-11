@@ -1,8 +1,6 @@
 {
   "blurb": "Determine if a word or phrase is an isogram.",
-  "authors": [
-    "gandrianakis"
-  ],
+  "authors": ["gandrianakis"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Isogram.kt"
-    ],
-    "test": [
-      "src/test/kotlin/IsogramTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Isogram.kt"
-    ]
+    "solution": ["src/main/kotlin/Isogram.kt"],
+    "test": ["src/test/kotlin/IsogramTest.kt"],
+    "example": [".meta/src/reference/kotlin/Isogram.kt"]
   },
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Isogram"

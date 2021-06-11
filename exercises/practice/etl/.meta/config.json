@@ -1,8 +1,6 @@
 {
   "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Etl.kt"
-    ],
-    "test": [
-      "src/test/kotlin/EtlTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Etl.kt"
-    ]
+    "solution": ["src/main/kotlin/ETL.kt"],
+    "test": ["src/test/kotlin/ETLTest.kt"],
+    "example": [".meta/src/reference/kotlin/ETL.kt"]
   },
   "source": "The Jumpstart Lab team",
   "source_url": "http://jumpstartlab.com"

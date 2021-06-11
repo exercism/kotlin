@@ -1,8 +1,6 @@
 {
   "blurb": "Add the numbers to a minesweeper board",
-  "authors": [
-    "stkent"
-  ],
+  "authors": ["stkent"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,14 +12,8 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Minesweeper.kt"
-    ],
-    "test": [
-      "src/test/kotlin/MinesweeperTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Minesweeper.kt"
-    ]
+    "solution": ["src/main/kotlin/Minesweeper.kt"],
+    "test": ["src/test/kotlin/MinesweeperBoardTest.kt"],
+    "example": [".meta/src/reference/kotlin/Minesweeper.kt"]
   }
 }

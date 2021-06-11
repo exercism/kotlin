@@ -1,8 +1,6 @@
 {
   "blurb": "Given a moment, determine the moment that would be after a gigasecond has passed.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "enixander",
@@ -18,15 +16,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Gigasecond.kt"
-    ],
-    "test": [
-      "src/test/kotlin/GigasecondTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Gigasecond.kt"
-    ]
+    "solution": ["src/main/kotlin/Gigasecond.kt"],
+    "test": ["src/test/kotlin/GigasecondTest.kt"],
+    "example": [".meta/src/reference/kotlin/Gigasecond.kt"]
   },
   "source": "Chapter 9 in Chris Pine's online Learn to Program tutorial.",
   "source_url": "http://pine.fm/LearnToProgram/?Chapter=09"

@@ -1,8 +1,6 @@
 {
   "blurb": "Correctly determine change to be given using the least number of coins",
-  "authors": [
-    "geoand"
-  ],
+  "authors": ["geoand"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/Change.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ChangeTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/Change.kt"
-    ]
+    "solution": ["src/main/kotlin/ChangeCalculator.kt"],
+    "test": ["src/test/kotlin/ChangeCalculatorTest.kt"],
+    "example": [".meta/src/reference/kotlin/ChangeCalculator.kt"]
   },
   "source": "Software Craftsmanship - Coin Change Kata",
   "source_url": "https://web.archive.org/web/20130115115225/http://craftsmanship.sv.cmu.edu:80/exercises/coin-change-kata"

@@ -1,8 +1,6 @@
 {
   "blurb": "Write a function to convert from normal numbers to Roman Numerals.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/RomanNumerals.kt"
-    ],
-    "test": [
-      "src/test/kotlin/RomanNumeralsTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/RomanNumerals.kt"
-    ]
+    "solution": ["src/main/kotlin/RomanNumerals.kt"],
+    "test": ["src/test/kotlin/RomanNumeralsTest.kt"],
+    "example": [".meta/src/reference/kotlin/RomanNumerals.kt"]
   },
   "source": "The Roman Numeral Kata",
   "source_url": "http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals"

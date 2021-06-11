@@ -1,8 +1,6 @@
 {
   "blurb": "Given a DNA strand, return its RNA Complement Transcription.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "enixander",
@@ -18,15 +16,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/RnaTranscription.kt"
-    ],
-    "test": [
-      "src/test/kotlin/RnaTranscriptionTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/RnaTranscription.kt"
-    ]
+    "solution": ["src/main/kotlin/RnaTranscription.kt"],
+    "test": ["src/test/kotlin/RnaTranscriptionTest.kt"],
+    "example": [".meta/src/reference/kotlin/RnaTranscription.kt"]
   },
   "source": "Hyperphysics",
   "source_url": "http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html"

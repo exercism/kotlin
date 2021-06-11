@@ -1,8 +1,6 @@
 {
   "blurb": "Given a word, compute the Scrabble score for that word.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/ScrabbleScore.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ScrabbleScoreTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/ScrabbleScore.kt"
-    ]
+    "solution": ["src/main/kotlin/ScrabbleScore.kt"],
+    "test": ["src/test/kotlin/ScrabbleScoreTest.kt"],
+    "example": [".meta/src/reference/kotlin/ScrabbleScore.kt"]
   },
   "source": "Inspired by the Extreme Startup game",
   "source_url": "https://github.com/rchatley/extreme_startup"

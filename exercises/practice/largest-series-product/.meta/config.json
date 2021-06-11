@@ -1,8 +1,6 @@
 {
   "blurb": "Given a string of digits, calculate the largest product for a contiguous substring of digits of length n.",
-  "authors": [
-    "geoand"
-  ],
+  "authors": ["geoand"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -17,15 +15,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/LargestSeriesProduct.kt"
-    ],
-    "test": [
-      "src/test/kotlin/LargestSeriesProductTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/LargestSeriesProduct.kt"
-    ]
+    "solution": ["src/main/kotlin/LargestSeriesProduct.kt"],
+    "test": ["src/test/kotlin/SeriesTest.kt"],
+    "example": [".meta/src/reference/kotlin/LargestSeriesProduct.kt"]
   },
   "source": "A variation on Problem 8 at Project Euler",
   "source_url": "http://projecteuler.net/problem=8"

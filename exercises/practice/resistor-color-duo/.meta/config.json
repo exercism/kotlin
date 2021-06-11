@@ -1,22 +1,11 @@
 {
   "blurb": "Convert color codes, as used on resistors, to a numeric value.",
-  "authors": [
-    "lathspell"
-  ],
-  "contributors": [
-    "eparovyshnaya",
-    "uzilan"
-  ],
+  "authors": ["lathspell"],
+  "contributors": ["eparovyshnaya", "uzilan"],
   "files": {
-    "solution": [
-      "src/main/kotlin/ResistorColorDuo.kt"
-    ],
-    "test": [
-      "src/test/kotlin/ResistorColorDuoTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/ResistorColorDuo.kt"
-    ]
+    "solution": ["src/main/kotlin/ResistorColorDuo.kt"],
+    "test": ["src/test/kotlin/ResistorColorDuoTest.kt"],
+    "example": [".meta/src/reference/kotlin/ResistorColorDuo.kt"]
   },
   "source": "Maud de Vries, Erik Schierboom",
   "source_url": "https://github.com/exercism/problem-specifications/issues/1464"

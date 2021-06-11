@@ -1,8 +1,6 @@
 {
   "blurb": "Given an age in seconds, calculate how old someone is in terms of a given planet's solar years.",
-  "authors": [
-    "sdavids13"
-  ],
+  "authors": ["sdavids13"],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -16,15 +14,9 @@
     "uzilan"
   ],
   "files": {
-    "solution": [
-      "src/main/kotlin/SpaceAge.kt"
-    ],
-    "test": [
-      "src/test/kotlin/SpaceAgeTest.kt"
-    ],
-    "example": [
-      ".meta/src/main/kotlin/SpaceAge.kt"
-    ]
+    "solution": ["src/main/kotlin/SpaceAge.kt"],
+    "test": ["src/test/kotlin/SpaceAgeTest.kt"],
+    "example": [".meta/src/reference/kotlin/SpaceAge.kt"]
   },
   "source": "Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial.",
   "source_url": "http://pine.fm/LearnToProgram/?Chapter=01"
