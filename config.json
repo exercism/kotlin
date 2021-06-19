@@ -1051,5 +1051,22 @@
       "content": "Kotlin is fully open-source. Submit patches or suggest language improvements."
     }
   ],
-  "tags": []
+  "tags": [
+    "paradigm/functional",
+    "paradigm/imperative",
+    "paradigm/object_oriented",
+    "typing/static",
+    "typing/strong",
+    "execution_mode/compiled",
+    "platform/windows",
+    "platform/mac",
+    "platform/linux",
+    "platform/android",
+    "platform/web",
+    "runtime/jvm",
+    "used_for/backends",
+    "used_for/cross_platform_development",
+    "used_for/mobile",
+    "used_for/games"
+  ]
 }
