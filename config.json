@@ -15,7 +15,6 @@
     "indent_size": 4,
     "highlightjs_language": "kotlin"
   },
-  "solution_pattern": "reference",
   "files": {
     "solution": ["src/main/kotlin/%{pascal_slug}.kt"],
     "test": ["src/test/kotlin/%{pascal_slug}Test.kt"],
