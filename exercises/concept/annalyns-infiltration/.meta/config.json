@@ -1,7 +1,7 @@
 {
   "blurb": "TODO: add blurb for annalyns-infiltration exercise",
   "authors": ["dector"],
-  "forked_from": ["fsharp/booleans"],
+  "forked_from": ["fsharp/annalyns-infiltration"],
   "files": {
     "solution": ["src/main/kotlin/AnnalynsInfiltration.kt"],
     "test": ["src/test/kotlin/AnnalynsInfiltrationTest.kt"],
