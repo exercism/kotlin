@@ -1020,32 +1020,32 @@
   ],
   "key_features": [
     {
-      "icon": "features-generic",
+      "icon": "powerful",
       "title": "Pragmatic",
       "content": "Kotlin is trying hard to be a modern language with great tooling support."
     },
     {
-      "icon": "features-strongly-typed",
+      "icon": "immutable",
       "title": "Statically Typed",
       "content": "Strong type-safety and null-safety features for building robust software."
     },
     {
-      "icon": "features-lazy",
+      "icon": "multi-paradigm",
       "title": "Multi-Paradigm",
       "content": "Kotlin support both functional and mainstream OOP programming principles."
     },
     {
-      "icon": "features-functional",
+      "icon": "cross-platform",
       "title": "Platform Independent",
       "content": "Develop for Android, iOS, JVM, Node.js, browser and many native targets."
     },
     {
-      "icon": "features-oop",
+      "icon": "garbage-collected",
       "title": "Garbage collected",
       "content": "Kotlin (as a modern generic-purpose language) does memory management for you."
     },
     {
-      "icon": "features-declarative",
+      "icon": "community",
       "title": "Open-Source",
       "content": "Kotlin is fully open-source. Submit patches or suggest language improvements."
     }
