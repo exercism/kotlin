@@ -1,13 +1,4 @@
-# exercise readme insert
-
-## Setup
-
-Go through the setup instructions for Kotlin to install the necessary
-dependencies:
-
-[https://exercism.io/tracks/kotlin/installation](https://exercism.io/tracks/kotlin/installation)
-
-## Making the test suite pass
+# Tests
 
 Execute the tests with:
 
@@ -16,6 +7,8 @@ $ gradlew test
 ```
 
 > Use `gradlew.bat` if you're on Windows
+
+## Skipped tests
 
 In the test suites all tests but the first have been skipped.
 
