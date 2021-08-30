@@ -16,6 +16,5 @@
     "test": ["src/test/kotlin/RobotTest.kt"],
     "example": [".meta/src/reference/kotlin/Robot.kt"]
   },
-  "source": "Inspired by an interview question at a famous company.",
-  "source_url": ""
+  "source": "Inspired by an interview question at a famous company."
 }
