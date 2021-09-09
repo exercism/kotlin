@@ -41,7 +41,7 @@ We recommend closing the administrative command prompt and opening a new command
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -71,7 +71,7 @@ Below are instructions for install using the most common method - using Homebrew
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -101,20 +101,20 @@ If you are using Debian or its derivatives (like Ubuntu or Linux Mint), use APT:
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
 ## Other Linux distributions
 
-There are a lot of ways to install Jdk 11, but one of the easiest ways is to use SDKMAN, 
+There are a lot of ways to install Jdk 11, but one of the easiest ways is to use SDKMAN,
 which lets you install OpenJdk11 with ease. Use the following steps:
 
 1. Install SDKMAN:
     ```sh
     $ curl -s "https://get.sdkman.io" | bash
     ``` 
-    (if that doesn't work, take a look at the instructions found here: https://sdkman.io/install )
+   (if that doesn't work, take a look at the instructions found here: https://sdkman.io/install )
 1. Install openjdk11:
     ```
     $ sdk install java 11.0.2-open
@@ -122,7 +122,7 @@ which lets you install OpenJdk11 with ease. Use the following steps:
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -139,12 +139,12 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 *NOTE: these instructions are intended for experienced Windows users.  If you don't already know how to set environment variables or feel comfortable managing the directory structure, we highly recommend you use the Chocolatey-based install, [above](#windows).*
 
 1. Install the JDK:
-   1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_win) (choose **"Install JDK"**).
-   -  Run the installer, using all the defaults.
+    1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_win) (choose **"Install JDK"**).
+    -  Run the installer, using all the defaults.
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -153,12 +153,12 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 *NOTE: these instructions are intended for experienced macOS users.  Unless you specifically do not want to use a package manager, we highly recommend using the Homebrew-based installation instructions, [above](#macos).*
 
 1. Install the JDK:
-   1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_mac) (choose **"Install JDK"**).
-   2. Run the installer, using all the defaults.
-      
+    1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_mac) (choose **"Install JDK"**).
+    2. Run the installer, using all the defaults.
+
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -167,12 +167,12 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 *NOTE: these instructions are intended for experienced Linux users.  Unless you specifically do not want to use a package manager, we highly recommend using the the installation instructions, [above](#linux).*
 
 1. Install the JDK:
-   1. Choose your distribution and download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11) (choose **"Install JDK"**).
-   2. Run the installer, using all the defaults.
+    1. Choose your distribution and download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11) (choose **"Install JDK"**).
+    2. Run the installer, using all the defaults.
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](http://exercism.io/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -181,9 +181,8 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 There are many Java IDEs available.  The three most popular are:
 
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (download the "Community" edition)
-  - from the authors of Kotlin, this IDE provides the best support for the language.
+    - from the authors of Kotlin, this IDE provides the best support for the language.
 - [Eclipse](https://www.eclipse.org/downloads/)
 - [NetBeans](https://netbeans.org/downloads/) (download the "Java SE" bundle)
 
 and there are [others](https://en.wikibooks.org/wiki/Java_Programming/Java_IDEs).
-
