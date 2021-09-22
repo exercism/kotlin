@@ -6,7 +6,7 @@ Source for Exercism Exercises in Kotlin.
 
 ## Contributing Guide
 
-For general information about how to contribute to Exercism, please refer to the [contributing guide](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md).
+For general information about how to contribute to Exercism, please refer to the [contributing guide](https://exercism.org/docs/building).
 
 ## Table of Contents
 
@@ -33,10 +33,10 @@ To submit a fix for an existing exercise or port an exercise to Kotlin with the 
 
 1. **Ensure you have the basic Java tooling installed:**  JDK 1.8+, an editor and Gradle 2.x.
 
-   (see [exercism.io: Installing Kotlin](http://exercism.io/languages/kotlin/installation))
+   (see [exercism.io: Installing Kotlin](https://exercism.org/docs/tracks/kotlin/installation))
 -  **Setup a branch on a fork of [exercism/kotlin](https://github.com/exercism/kotlin) on your computer.**
 
-Use those instructions (in conjunction with the [Git Basics doc](https://github.com/exercism/docs/blob/master/contributing/git-basics.md)) to:
+Next steps:
    * "fork" a repository on GitHub;
    - install `git`;
    - "clone" a copy of your fork;
@@ -54,7 +54,8 @@ Use those instructions (in conjunction with the [Git Basics doc](https://github.
    $ git push
    ```
 
-   The Git Basics doc has a section on [commit messages](https://github.com/exercism/docs/blob/master/contributing/git-basics.md#commit-messages) that provides practical advice on crafting meaningful commit messages.
+   Always try to write meaningful and concise commit messages. It's super important since everyone should understand your changes and their reasons.
+
 -  **Verify that your work passes all tests.**  When you create a pull request (PR), GitHub triggers a build on Travis CI.  Your PR will not be merged unless those tests pass.
 
 ## Getting Familiar With the Codebase
