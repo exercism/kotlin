@@ -1,19 +1,20 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.4.10"
+    kotlin("jvm")
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
+    implementation(kotlin("stdlib-jdk8"))
+
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 }
 
 tasks.withType<Test> {
-    useJUnitPlatform()
     testLogging {
         exceptionFormat = TestExceptionFormat.FULL
         events("passed", "failed", "skipped")
