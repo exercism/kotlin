@@ -18,13 +18,13 @@ data class Matrix(val entries: List<List<Int>>) {
     }
 
     private fun getRowMax(row: Int): Int {
-        return entries[row].max() ?: 0
+        return entries[row].maxOrNull() ?: 0
     }
 
     private fun getColumnMin(col: Int): Int {
         return entries
             .map { row -> row[col] }
-            .min() ?: 0
+            .minOrNull() ?: 0
     }
 
 }

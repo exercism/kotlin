@@ -11,8 +11,8 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
         require(originalBase >= MINIMUM_VALID_BASE) { INVALID_BASE_ERROR_MESSAGE }
         require(originalDigits.isNotEmpty()) { "You must supply at least one digit." }
         require(originalDigits.size == 1 || originalDigits[0] != 0) { "Digits may not contain leading zeros." }
-        require(originalDigits.min()!! >= 0) { "Digits may not be negative." }
-        require(originalDigits.max()!! < originalBase) { "All digits must be strictly less than the base." }
+        require(originalDigits.minOrNull()!! >= 0) { "Digits may not be negative." }
+        require(originalDigits.maxOrNull()!! < originalBase) { "All digits must be strictly less than the base." }
 
         this.numeral = computeNumeral(originalBase, originalDigits)
     }
