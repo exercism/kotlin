@@ -4,8 +4,8 @@ import java.io.File
 
 fun updateTemplate() {
     val versions = object {
-        val kotlin = "1.3.60"
-        val junit4 = "4.12"
+        val kotlin = "1.5.31"
+        val junit4 = "4.13.2"
     }
 
     File("_template").resolve("build.gradle.kts").writeText(
@@ -13,15 +13,15 @@ fun updateTemplate() {
         import org.gradle.api.tasks.testing.logging.TestExceptionFormat
         
         plugins {
-            kotlin("jvm") version "${versions.kotlin}"
+            kotlin("jvm")
         }
         
         repositories {
-            jcenter()
+            mavenCentral()
         }
         
         dependencies {
-            compile(kotlin("stdlib"))
+            implementation(kotlin("stdlib-jdk8"))
             
             testImplementation("junit:junit:${versions.junit4}")
             testImplementation(kotlin("test-junit"))
@@ -31,6 +31,25 @@ fun updateTemplate() {
             testLogging {
                 exceptionFormat = TestExceptionFormat.FULL
                 events("passed", "failed", "skipped")
+            }
+        }
+
+        """.trimIndent()
+    )
+
+    File("_template").resolve("settings.gradle.kts").writeText(
+        """
+        pluginManagement {
+            repositories {
+                mavenCentral()
+                gradlePluginPortal()
+            }
+            resolutionStrategy {
+                eachPlugin {
+                    when (requested.id.id) {
+                        "org.jetbrains.kotlin.jvm" -> useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}")
+                    }
+                }
             }
         }
 

@@ -5,11 +5,11 @@ import java.io.File
 fun updateGradleFiles() {
     val exerciseDirs = File("exercises").listFiles()
         .filter { it.isDirectory }
-        .filter { it.resolve("src/main/kotlin").exists() }
-    //.filter { it.name == "hello-world" }
+        .flatMap { it.listFiles().filter { it.resolve("src/main/kotlin").exists() } }
 
     val filesToCopy = listOf(
         "build.gradle.kts",
+        "settings.gradle.kts",
         "gradle/",
         "gradlew",
         "gradlew.bat"
