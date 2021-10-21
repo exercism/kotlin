@@ -1,7 +1,7 @@
 # Tutorial
 
 NOTE: You can also view the HTML version of this file here:
-https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md
+https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md
 
 * [Introduction](#introduction)
 * [Exercise Structure](#exercise-structure)
