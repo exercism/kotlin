@@ -66,7 +66,7 @@ Below are instructions for install using the most common method - using Homebrew
 3.  Install the JDK:
 
        ```
-        $ brew cask install homebrew/cask-versions/java11
+        $ brew install --cask adoptopenjdk11
        ```
 
 You now are ready to get started with the Kotlin track of Exercism!
