@@ -1,7 +1,7 @@
 # Tutorial
 
 NOTE: You can also view the HTML version of this file here:
-https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md
+<https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md>
 
 * [Introduction](#introduction)
 * [Exercise Structure](#exercise-structure)
@@ -21,11 +21,11 @@ Each exercise comes with a set of tests.  The first pass through the
 exercise is about getting all of the tests to pass, one at a time.
 
 If you have not installed the Java Development Kit and Gradle, you must do
-so now.  For help with this, see: http://exercism.io/languages/kotlin/installation
+so now.  For help with this, see: https://exercism.org/docs/tracks/kotlin/installation
 
 ----
 
-This guide picks-up where [Running the Tests (in Kotlin)](http://exercism.io/languages/kotlin/tests)
+This guide picks-up where [Running the Tests (in Kotlin)](https://exercism.org/docs/tracks/kotlin/tests)
 left off.  If you haven't reviewed those instructions, do so now.
 
 The following instructions work equally well on Windows, macOS and Linux.
@@ -225,7 +225,7 @@ From here, there are a number of paths you can take.
 ## Move on to another exercise
 
 There are many more exercises you can practice with.  Grab another one
-from the [Kotlin track](https://exercism.io/my/tracks/kotlin).
+from the [Kotlin track](https://exercism.org/tracks/kotlin).
 
 
 ## Review (and comment on) others' submissions to this exercise
@@ -245,7 +245,7 @@ because you'll have your own experience of trying to solve the problem.
 
 Here's an up-to-date list of submissions on the Kotlin track:
 
-http://exercism.io/tracks/kotlin/exercises
+<https://exercism.org/tracks/kotlin/exercises>
 
 
 
@@ -276,7 +276,7 @@ than 100 maintainers and many more contributors.
 
 A starting point to jumping in can be found here:
 
-https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/README.md
+<https://exercism.org/docs/building>
 
 ----
 
@@ -284,6 +284,6 @@ Regardless of what you decide to do next, we sincerely hope you learn
 and enjoy being part of this community.  If at any time you need assistance
 do not hesitate to ask for help:
 
-http://exercism.io/languages/kotlin/help
+<https://exercism.org/docs/using/contact>
 
 Cheers!

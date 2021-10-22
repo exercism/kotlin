@@ -41,7 +41,7 @@ We recommend closing the administrative command prompt and opening a new command
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -71,7 +71,7 @@ Below are instructions for install using the most common method - using Homebrew
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -101,7 +101,7 @@ If you are using Debian or its derivatives (like Ubuntu or Linux Mint), use APT:
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -122,7 +122,7 @@ which lets you install OpenJdk11 with ease. Use the following steps:
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -144,7 +144,7 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -158,7 +158,7 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
       
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 
@@ -172,7 +172,7 @@ To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tes
 
 You now are ready to get started with the Kotlin track of Exercism!
 
-To get started, see "[Running the Tests](http://exercism.io/languages/kotlin/tests)".
+To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin/tests)".
 
 ----
 

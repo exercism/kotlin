@@ -1,8 +1,8 @@
 # Recommended learning resources
 
-* [Kotlin Tutorials](https://kotlinlang.org/docs/tutorials/)
-* [Kotlin Documentation](https://kotlinlang.org/docs/reference/)
-  * [Kotlin Idioms](https://kotlinlang.org/docs/reference/idioms.html)
+* [Get started with Kotlin](https://kotlinlang.org/docs/getting-started.html)
+* [Kotlin Documentation](https://kotlinlang.org/docs/home.html)
+  * [Kotlin Idioms](https://kotlinlang.org/docs/idioms.html)
 * [Kotlin Tutorial Videos](https://kotlinlang.org/docs/videos.html)
-* [Stack Overflow](https://stackoverflow.com/questions/tagged/kotlin)
-
+* [Kotlin examples](https://play.kotlinlang.org/byExample/overview)
+* [Kotlin on Stack Overflow](https://stackoverflow.com/questions/tagged/kotlin)

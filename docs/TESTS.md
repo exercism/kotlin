@@ -38,12 +38,12 @@ Choose your operating system:
     ```
    *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
 
-5. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md)).
+5. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
 
 
 Good luck!  Have fun!
 
-If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
+If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
 
 ----
 
@@ -73,11 +73,11 @@ If you get stuck, at any point, don't forget to reach out for [help](http://exer
     ```
    *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
 
-4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md)).
+4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
 
 Good luck!  Have fun!
 
-If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
+If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
 
 ----
 
@@ -107,9 +107,9 @@ If you get stuck, at any point, don't forget to reach out for [help](http://exer
     ```
    *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
 
-4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/master/exercises/hello-world/TUTORIAL.md)).
+4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
 
 Good luck!  Have fun!
 
-If you get stuck, at any point, don't forget to reach out for [help](http://exercism.io/languages/kotlin/help).
+If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
 
