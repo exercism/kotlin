@@ -948,7 +948,7 @@
         "uuid": "86015770-603b-44cf-aedf-f2a7cf79c841",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 0,
+        "difficulty": 1,
         "topics": ["lists"],
         "status": "deprecated"
       },
@@ -958,7 +958,7 @@
         "uuid": "def44955-c048-4b74-8777-2fb7d779b09e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 0,
+        "difficulty": 1,
         "topics": ["strings"],
         "status": "deprecated"
       },
@@ -968,7 +968,7 @@
         "uuid": "13b1a62e-8e0e-4d57-b8c9-341b41f25cf5",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 0,
+        "difficulty": 1,
         "topics": ["string", "integers"],
         "status": "deprecated"
       },
@@ -978,7 +978,7 @@
         "uuid": "8ae8492d-620c-4446-9928-5b4d78d496d9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 0,
+        "difficulty": 1,
         "topics": ["arrays", "filtering"],
         "status": "deprecated"
       },
