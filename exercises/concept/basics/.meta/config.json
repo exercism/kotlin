@@ -1,7 +1,7 @@
 {
   "blurb": "TODO: add blurb for basics exercise",
   "authors": ["dector"],
-  "forked_from": ["fsharp/basics"],
+  "forked_from": ["fsharp/lucians-luscious-lasagna"],
   "files": {
     "solution": ["src/main/kotlin/Basics.kt"],
     "test": ["src/test/kotlin/BasicsTest.kt"],
