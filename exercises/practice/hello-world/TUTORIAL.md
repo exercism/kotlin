@@ -1,7 +1,7 @@
 # Tutorial
 
 NOTE: You can also view the HTML version of this file here:
-https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md
+<https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md>
 
 * [Introduction](#introduction)
 * [Exercise Structure](#exercise-structure)
@@ -245,7 +245,7 @@ because you'll have your own experience of trying to solve the problem.
 
 Here's an up-to-date list of submissions on the Kotlin track:
 
-https://exercism.org/tracks/kotlin/exercises
+<https://exercism.org/tracks/kotlin/exercises>
 
 
 
@@ -276,7 +276,7 @@ than 100 maintainers and many more contributors.
 
 A starting point to jumping in can be found here:
 
-https://exercism.org/docs/building
+<https://exercism.org/docs/building>
 
 ----
 
@@ -284,6 +284,6 @@ Regardless of what you decide to do next, we sincerely hope you learn
 and enjoy being part of this community.  If at any time you need assistance
 do not hesitate to ask for help:
 
-https://exercism.org/docs/using/contact
+<https://exercism.org/docs/using/contact>
 
 Cheers!

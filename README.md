@@ -54,7 +54,7 @@ Next steps:
    $ git push
    ```
 
-   Always try to write meaningful and concise commit messages. It's super important since everyone should understand your changes and their reasons.
+   It is advised you write meaningful commit messages. [Chris Beams wrote about "How to Write a Git Commit Message"](https://chris.beams.io/posts/git-commit/).
 
 -  **Verify that your work passes all tests.**  When you create a pull request (PR), GitHub triggers a build on Travis CI.  Your PR will not be merged unless those tests pass.
 
