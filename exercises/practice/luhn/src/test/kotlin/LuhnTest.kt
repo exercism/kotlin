@@ -64,6 +64,10 @@ class LuhnTest {
     @Test
     fun `valid | input digit 9`() = assertValid("091")
 
+    @Ignore
+    @Test
+    fun `valid | valid luhn with an odd number of digits and non zero first digit`() = assertValid("109")
+
     /**
      * Convert non-digits to their ascii values and then offset them by 48
      * sometimes accidentally declare an invalid string to be valid.
