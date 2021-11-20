@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 class ListExtensionsTest {
 
     @Test
-    fun `append | empty lists`() =
+    fun `append - empty lists`() =
         assertEquals(
             emptyList(),
             emptyList<Int>().customAppend(emptyList())
@@ -13,7 +13,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `append | list to empty list`() =
+    fun `append - list to empty list`() =
         assertEquals(
             listOf('1', '2', '3', '4'),
             emptyList<Char>().customAppend(listOf('1', '2', '3', '4'))
@@ -21,7 +21,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `append | non-empty lists`() =
+    fun `append - non-empty lists`() =
         assertEquals(
             listOf("1", "2", "2", "3", "4", "5"),
             listOf("1", "2").customAppend(listOf("2", "3", "4", "5"))
@@ -29,7 +29,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `concatenate | empty list`() =
+    fun `concatenate - empty list`() =
         assertEquals(
             emptyList<Char>(),
             emptyList<Any>().customConcat()
@@ -37,7 +37,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `concatenate | list of lists`() =
+    fun `concatenate - list of lists`() =
         assertEquals(
             listOf('1', '2', '3', '4', '5', '6'),
             listOf(
@@ -50,7 +50,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `concatenate | list of nested lists`() =
+    fun `concatenate - list of nested lists`() =
         assertEquals(
             listOf('1', '2', '3', '4', '5', '6'),
             listOf(
@@ -72,7 +72,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `filter | empty list`() =
+    fun `filter - empty list`() =
         assertEquals(
             emptyList(),
             emptyList<Int>().customFilter { it % 2 == 1 })
@@ -80,36 +80,36 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `filter | non-empty list`() =
+    fun `filter - non-empty list`() =
         assertEquals(
             listOf(1, 3, 5),
             listOf(1, 2, 3, 5).customFilter { it % 2 == 1 })
 
     @Ignore
     @Test
-    fun `size | empty list`() = assertEquals(0, emptyList<Int>().customSize)
+    fun `size - empty list`() = assertEquals(0, emptyList<Int>().customSize)
 
     @Ignore
     @Test
-    fun `size | non-empty list`() = assertEquals(4, listOf("one", "two", "three", "four").customSize)
+    fun `size - non-empty list`() = assertEquals(4, listOf("one", "two", "three", "four").customSize)
 
     @Ignore
     @Test
-    fun `map | empty list`() =
+    fun `map - empty list`() =
         assertEquals(
             emptyList(),
             emptyList<Int>().customMap { it -> it + 1 })
 
     @Ignore
     @Test
-    fun `map | non-empty list`() =
+    fun `map - non-empty list`() =
         assertEquals(
             listOf(2, 4, 6, 8),
             listOf(1, 3, 5, 7).customMap { it -> it + 1 })
 
     @Ignore
     @Test
-    fun `fold left | empty list`() =
+    fun `fold left - empty list`() =
         assertEquals(
             2.0,
             emptyList<Int>().customFoldLeft(2.0, Double::times)
@@ -117,7 +117,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `fold left | direction independent function`() =
+    fun `fold left - direction independent function`() =
         assertEquals(
             15,
             listOf(1, 2, 3, 4).customFoldLeft(5, Int::plus)
@@ -125,7 +125,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `fold left | direction dependent function`() =
+    fun `fold left - direction dependent function`() =
         assertEquals(
             0,
             listOf(2, 5).customFoldLeft(5, Int::div)
@@ -133,7 +133,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `fold right | empty list`() =
+    fun `fold right - empty list`() =
         assertEquals(
             2.0,
             emptyList<Double>().customFoldRight(2.0, Double::times)
@@ -141,7 +141,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `fold right | direction independent function`() =
+    fun `fold right - direction independent function`() =
         assertEquals(
             15,
             listOf(1, 2, 3, 4).customFoldRight(5, Int::plus)
@@ -149,7 +149,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `fold right | direction dependent function`() =
+    fun `fold right - direction dependent function`() =
         assertEquals(
             2,
             listOf(2, 5).customFoldRight(5, Int::div)
@@ -157,7 +157,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `reverse | empty list`() =
+    fun `reverse - empty list`() =
         assertEquals(
             emptyList(),
             emptyList<Int>().customReverse()
@@ -165,7 +165,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `reverse | non-empty list`() =
+    fun `reverse - non-empty list`() =
         assertEquals(
             listOf('7', '5', '3', '1'),
             listOf('1', '3', '5', '7').customReverse()
@@ -173,7 +173,7 @@ class ListExtensionsTest {
 
     @Ignore
     @Test
-    fun `reverse | list of lists`() =
+    fun `reverse - list of lists`() =
         assertEquals(
             listOf(
                 listOf('4', '5', '6'),
