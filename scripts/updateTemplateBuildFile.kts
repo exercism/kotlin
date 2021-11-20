@@ -4,7 +4,7 @@ import java.io.File
 
 fun updateTemplate() {
     val versions = object {
-        val kotlin = "1.5.31"
+        val kotlin = "1.6.0"
         val junit4 = "4.13.2"
     }
 
