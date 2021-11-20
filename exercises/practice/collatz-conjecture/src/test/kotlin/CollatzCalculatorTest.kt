@@ -27,13 +27,13 @@ class CollatzCalculatorTest {
 
     @Ignore
     @Test(expected = IllegalArgumentException::class)
-    fun `invalid input | zero`() {
+    fun `invalid input - zero`() {
         steps(0)
     }
 
     @Ignore
     @Test(expected = IllegalArgumentException::class)
-    fun `invalid input | negative`() {
+    fun `invalid input - negative`() {
         steps(-15)
     }
 

@@ -6,63 +6,63 @@ import kotlin.test.assertTrue
 class LuhnTest {
 
     @Test
-    fun `invalid | single digit`() = assertInvalid("1")
+    fun `invalid - single digit`() = assertInvalid("1")
 
     @Ignore
     @Test
-    fun `invalid | a single zero`() = assertInvalid("0")
+    fun `invalid - a single zero`() = assertInvalid("0")
 
     @Ignore
     @Test
-    fun `valid | simple reversable`() = assertValid("059")
+    fun `valid - simple reversable`() = assertValid("059")
 
     @Ignore
     @Test
-    fun `valid | simple unreversable`() = assertValid("59")
+    fun `valid - simple unreversable`() = assertValid("59")
 
     @Ignore
     @Test
-    fun `valid | Canadian`() = assertValid("055 444 285")
+    fun `valid - Canadian`() = assertValid("055 444 285")
 
     @Ignore
     @Test
-    fun `invalid | Canadian`() = assertInvalid("055 444 286")
+    fun `invalid - Canadian`() = assertInvalid("055 444 286")
 
     @Ignore
     @Test
-    fun `invalid | credit card`() = assertInvalid("8273 1232 7352 0569")
+    fun `invalid - credit card`() = assertInvalid("8273 1232 7352 0569")
 
     @Ignore
     @Test
-    fun `valid | even amount of digits`() = assertValid("095 245 88")
+    fun `valid - even amount of digits`() = assertValid("095 245 88")
 
     @Ignore
     @Test
-    fun `valid | odd amount of spaces`() = assertValid("234 567 891 234")
+    fun `valid - odd amount of spaces`() = assertValid("234 567 891 234")
 
     @Ignore
     @Test
-    fun `invalid | non-digit at the end of valid`() = assertInvalid("059a")
+    fun `invalid - non-digit at the end of valid`() = assertInvalid("059a")
 
     @Ignore
     @Test
-    fun `invalid | punctuation in valid`() = assertInvalid("055-444-285")
+    fun `invalid - punctuation in valid`() = assertInvalid("055-444-285")
 
     @Ignore
     @Test
-    fun `invalid | symbols in valid`() = assertInvalid("055# 444$ 285")
+    fun `invalid - symbols in valid`() = assertInvalid("055# 444$ 285")
 
     @Ignore
     @Test
-    fun `invalid | single zero with space`() = assertInvalid(" 0")
+    fun `invalid - single zero with space`() = assertInvalid(" 0")
 
     @Ignore
     @Test
-    fun `valid | many zeros`() = assertValid("0000 0")
+    fun `valid - many zeros`() = assertValid("0000 0")
 
     @Ignore
     @Test
-    fun `valid | input digit 9`() = assertValid("091")
+    fun `valid - input digit 9`() = assertValid("091")
 
     @Ignore
     @Test
@@ -75,7 +75,7 @@ class LuhnTest {
      */
     @Ignore
     @Test
-    fun `invalid | ascii value for non-doubled non-digit in the middle`() = assertInvalid("055b 444 285")
+    fun `invalid - ascii value for non-doubled non-digit in the middle`() = assertInvalid("055b 444 285")
 
     /**
      * Convert non-digits to their ascii values and then offset them by 48
@@ -84,7 +84,7 @@ class LuhnTest {
      */
     @Ignore
     @Test
-    fun `invalid | ascii value for non-doubled non-digit at the start`() = assertInvalid(":9")
+    fun `invalid - ascii value for non-doubled non-digit at the start`() = assertInvalid(":9")
 }
 
 private fun assertValid(value: String) = assertTrue(Luhn.isValid(value))
