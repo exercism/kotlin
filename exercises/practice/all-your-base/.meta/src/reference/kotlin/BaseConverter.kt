@@ -1,8 +1,11 @@
+import kotlin.math.floor
+import kotlin.math.pow
+
 class BaseConverter(originalBase: Int, originalDigits: IntArray) {
 
     companion object {
-        private val MINIMUM_VALID_BASE = 2
-        private val INVALID_BASE_ERROR_MESSAGE = "Bases must be at least 2."
+        private const val MINIMUM_VALID_BASE = 2
+        private const val INVALID_BASE_ERROR_MESSAGE = "Bases must be at least 2."
     }
 
     private val numeral: Int
@@ -25,11 +28,11 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
         var remainder = numeral
 
         for (currentExponent in largestExponent downTo 0) {
-            val coefficient = Math.floor(remainder / Math.pow(newBase.toDouble(), currentExponent.toDouble())).toInt()
+            val coefficient = floor(remainder / newBase.toDouble().pow(currentExponent.toDouble())).toInt()
 
             result[largestExponent - currentExponent] = coefficient
 
-            remainder -= (coefficient * Math.pow(newBase.toDouble(), currentExponent.toDouble())).toInt()
+            remainder -= (coefficient * newBase.toDouble().pow(currentExponent.toDouble())).toInt()
         }
 
         return result
@@ -38,9 +41,9 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
     private fun computeNumeral(originalBase: Int, originalDigits: IntArray): Int {
         val largestExponent = originalDigits.size - 1
 
-        val result = (largestExponent downTo 0).sumBy { exponent ->
+        val result = (largestExponent downTo 0).sumOf { exponent ->
             (originalDigits[largestExponent - exponent]
-                * Math.pow(originalBase.toDouble(), exponent.toDouble())).toInt()
+                    * originalBase.toDouble().pow(exponent.toDouble())).toInt()
         }
 
         return result
@@ -49,7 +52,7 @@ class BaseConverter(originalBase: Int, originalDigits: IntArray) {
     private fun computeLargestExponentForBase(newBase: Int): Int {
         var result = 0
 
-        while (Math.pow(newBase.toDouble(), (result + 1).toDouble()) < numeral) {
+        while (newBase.toDouble().pow((result + 1).toDouble()) < numeral) {
             result += 1
         }
 

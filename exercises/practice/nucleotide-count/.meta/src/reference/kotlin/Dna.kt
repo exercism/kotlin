@@ -1,11 +1,11 @@
 class Dna(strand: String) {
 
     init {
-        require(strand.matches(Regex("^[$nucleotides]*$")), { "DNA sequence contains invalid nucleotides sequence." })
+        require(strand.matches(Regex("^[$nucleotides]*$"))) { "DNA sequence contains invalid nucleotides sequence." }
     }
 
     companion object Dna {
-        val nucleotides = "ATCG"
+        const val nucleotides = "ATCG"
         val emptyNucleotideCounts = nucleotides.map { it to 0 }.toMap()
     }
 

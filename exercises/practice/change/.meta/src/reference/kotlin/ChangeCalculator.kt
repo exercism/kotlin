@@ -6,19 +6,17 @@ class ChangeCalculator(coins: List<Int>) {
         require(grandTotal >= 0) { "Negative totals are not allowed." }
 
         val minimalCoinsMap = mutableMapOf<Int, List<Int>?>()
-        minimalCoinsMap.put(0, ArrayList())
+        minimalCoinsMap[0] = ArrayList()
 
         for (total in 1..grandTotal) {
             val minimalCoins = sortedCoins
-                    .filter { it <= total }
-                    .mapNotNull { coin ->
-                        val minimalRemainderCoins = minimalCoinsMap[total - coin]
-                        if (minimalRemainderCoins != null) prepend(coin, minimalRemainderCoins) else null
-                    }
-                    .sortedBy { it.size }
-                    .firstOrNull()
+                .filter { it <= total }
+                .mapNotNull { coin ->
+                    val minimalRemainderCoins = minimalCoinsMap[total - coin]
+                    if (minimalRemainderCoins != null) prepend(coin, minimalRemainderCoins) else null
+                }.minByOrNull { it.size }
 
-            minimalCoinsMap.put(total, minimalCoins)
+            minimalCoinsMap[total] = minimalCoins
         }
 
         return minimalCoinsMap[grandTotal] ?: throw IllegalArgumentException(

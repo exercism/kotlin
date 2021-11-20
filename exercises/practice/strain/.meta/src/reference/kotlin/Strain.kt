@@ -6,5 +6,5 @@ object Strain {
         return filteredCollection
     }
 
-    fun <T> discard(collection: List<T>, predicate: (T) -> Boolean) = keep(collection, { value -> !predicate(value) })
+    fun <T> discard(collection: List<T>, predicate: (T) -> Boolean) = keep(collection) { value -> !predicate(value) }
 }

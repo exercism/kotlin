@@ -19,7 +19,7 @@ class Series(private val digits: String) {
 
     private tailrec fun calculateRec(digits: List<Int>, span: Int, maxSoFar: Long): Long {
         val currentProduct = digits.subList(0, span).prod()
-        val newMax = max(currentProduct, maxSoFar)
+        val newMax = kotlin.math.max(currentProduct, maxSoFar)
         if(digits.size == span) { //since we won't be checking 'remainders' of the list, the end condition is simply when the size is the same as the span
             return newMax
         }
@@ -37,7 +37,7 @@ fun Char.intValue() : Int  {
     return this.intDiff('0')
 }
 
-fun Char.intDiff(other: Char) = this.toInt() - other.toInt()
+fun Char.intDiff(other: Char) = this.code - other.code
 
 fun List<Int>.prod() : Long = this.fold(1L) {productSoFar, item -> item*productSoFar}
 

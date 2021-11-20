@@ -1,5 +1,5 @@
 object Series {
-    fun Char.toDigitValue() = this.toInt() - '0'.toInt()
+    fun Char.toDigitValue() = this.code - '0'.code
 
     fun slices(n: Int, s: String): List<List<Int>> =
         when {
@@ -8,7 +8,7 @@ object Series {
             (n < 0) -> throw IllegalArgumentException("slice length cannot be negative")
             (s == "") -> throw IllegalArgumentException("series cannot be empty")
             else -> s.dropLast(n - 1)
-                .mapIndexed { index, c ->
+                .mapIndexed { index, _ ->
                     s.subSequence(index, index + n).map { it.toDigitValue() }
                 }
         }

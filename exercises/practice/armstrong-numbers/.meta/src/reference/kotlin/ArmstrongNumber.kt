@@ -6,9 +6,8 @@ object ArmstrongNumber {
         val str = input.toString()
         val inputLength = str.length
         val calculated = str
-                .map { Character.getNumericValue(it) } // digit character to its numeric (not ASCII!) value
-                .map { BigInteger.valueOf(it.toLong()).pow(inputLength).toLong() } // calculate digit^inputLength
-                .sum()
+            .map { Character.getNumericValue(it) } // digit character to its numeric (not ASCII!) value
+            .sumOf { BigInteger.valueOf(it.toLong()).pow(inputLength).toLong() } // calculate digit^inputLength
 
         return input == calculated
     }

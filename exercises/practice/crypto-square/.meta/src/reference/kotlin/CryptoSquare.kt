@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 object CryptoSquare {
 
     fun ciphertext(plaintext: String): String {
-        val sanitized = plaintext.filter { it.isLetterOrDigit() }.toLowerCase()
+        val sanitized = plaintext.filter { it.isLetterOrDigit() }.lowercase()
         if (sanitized.isEmpty()) {
             return ""
         }

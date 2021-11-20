@@ -4,7 +4,7 @@ enum class Classification {
 }
 
 fun classify(naturalNumber: Int): Classification {
-    require(naturalNumber > 0, { "$naturalNumber is not a natural number" })
+    require(naturalNumber > 0) { "$naturalNumber is not a natural number" }
 
     val aliquotSum = naturalNumber.aliquotSum()
     return when {

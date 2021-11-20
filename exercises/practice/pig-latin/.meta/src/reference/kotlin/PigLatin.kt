@@ -1,6 +1,6 @@
 object PigLatin {
 
-    fun translate(phrase: String) = phrase.split(Regex("\\s+")).map({ translateWord(it) }).joinToString(" ")
+    fun translate(phrase: String) = phrase.split(Regex("\\s+")).joinToString(" ") { translateWord(it) }
 
     private fun translateWord(word: String): String {
         if (startsWithVowelSound(word)) {

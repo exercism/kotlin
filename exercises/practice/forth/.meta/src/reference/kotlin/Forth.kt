@@ -57,7 +57,7 @@ class Forth {
 
     fun evaluate(vararg lines: String): List<Int> {
         lines.forEach { line ->
-            evaluateLine(line.toUpperCase())
+            evaluateLine(line.uppercase())
         }
         return stack.reversed()
     }
