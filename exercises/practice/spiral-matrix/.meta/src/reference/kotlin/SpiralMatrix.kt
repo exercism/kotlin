@@ -1,4 +1,5 @@
 import Direction.RIGHT
+import kotlin.math.pow
 
 enum class Direction(val dx: Int, val dy: Int) {
     UP   ( 0, -1),
@@ -13,7 +14,7 @@ data class Coordinate(val x: Int, val y: Int) {
 
     fun step(direction: Direction) = copy(x + direction.dx, y + direction.dy)
 
-    fun isWithinGridOfSize(size: Int) = x in 0..size-1 && y in 0..size-1
+    fun isWithinGridOfSize(size: Int) = x in 0 until size && y in 0 until size
 
 }
 
@@ -24,8 +25,8 @@ object SpiralMatrix {
 
         if (size == 0) return emptyArray()
 
-        val result = Array(size, { IntArray(size, {0}) })
-        val entryCount = Math.pow(size.toDouble(), 2.0).toInt()
+        val result = Array(size) { IntArray(size) { 0 } }
+        val entryCount = size.toDouble().pow(2.0).toInt()
 
         var coord = Coordinate(0, 0)
         var direction = RIGHT

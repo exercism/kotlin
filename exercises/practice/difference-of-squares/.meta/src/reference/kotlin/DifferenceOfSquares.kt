@@ -1,7 +1,7 @@
 class Squares(private val max: Int) {
     private val range = 1..max
 
-    fun sumOfSquares() = range.map { it.squared() }.sum()
+    fun sumOfSquares() = range.sumOf { it.squared() }
     fun squareOfSum() = range.sum().squared()
     fun difference() = squareOfSum() - sumOfSquares()
 

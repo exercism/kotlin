@@ -5,7 +5,7 @@ data class Cipher(val key: String) {
     constructor() : this(generateRandomKey())
 
     init {
-        require(key.matches(Regex("^[a-z]+$")), { "Invalid key: $key" })
+        require(key.matches(Regex("^[a-z]+$"))) { "Invalid key: $key" }
     }
 
     companion object {

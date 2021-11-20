@@ -1,6 +1,6 @@
 fun reverse(input: String): String {
-    var result = StringBuilder()
-    for(i in 0 until input.length) {
+    val result = StringBuilder()
+    for(i in input.indices) {
         result.append(input[input.length - 1 - i])
     }
     return result.toString()

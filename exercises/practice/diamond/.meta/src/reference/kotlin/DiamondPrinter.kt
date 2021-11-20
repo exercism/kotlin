@@ -3,7 +3,7 @@ import java.util.*
 class DiamondPrinter {
 
     companion object {
-        private val A_INT = 'A'.toInt()
+        private const val A_INT = 'A'.code
 
         private fun blank(length: Int): String {
             return Collections.nCopies(length, " ").joinToString("")
@@ -11,12 +11,12 @@ class DiamondPrinter {
     }
 
     fun printToList(chr: Char): List<String> {
-        val nRows = 2 * (chr.toInt() - A_INT) + 1
+        val nRows = 2 * (chr.code - A_INT) + 1
 
         val result = mutableListOf<String>()
 
         // Populate the top rows.
-        for (nRow in 0..(nRows + 1) / 2 - 1) {
+        for (nRow in 0 until (nRows + 1) / 2) {
             val rowChr = (A_INT + nRow).toChar()
 
             val leftHalfOfRow = blank((nRows - 1) / 2 - nRow) + rowChr + blank(nRow)

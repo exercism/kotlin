@@ -1,3 +1,6 @@
+import kotlin.math.max
+import kotlin.math.min
+
 private const val MINE_CHAR = '*'
 private const val SPACE_CHAR = ' '
 
@@ -34,10 +37,10 @@ data class MinesweeperBoard(val mineLocations: List<String>) {
         var result = 0
 
         // Compute row and column ranges to inspect (respecting board edges).
-        val minRowToInspect = Math.max(rowNumber - 1, 0)
-        val maxRowToInspect = Math.min(rowNumber + 1, numberOfRows - 1)
-        val minColToInspect = Math.max(columnNumber - 1, 0)
-        val maxColToInspect = Math.min(columnNumber + 1, numberOfColumns - 1)
+        val minRowToInspect = max(rowNumber - 1, 0)
+        val maxRowToInspect = min(rowNumber + 1, numberOfRows - 1)
+        val minColToInspect = max(columnNumber - 1, 0)
+        val maxColToInspect = min(columnNumber + 1, numberOfColumns - 1)
 
         // Count mines in the cells surrounding (row, col).
         for (rowToInspect in minRowToInspect..maxRowToInspect) {

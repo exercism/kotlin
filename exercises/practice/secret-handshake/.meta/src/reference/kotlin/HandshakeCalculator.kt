@@ -1,6 +1,6 @@
 object HandshakeCalculator {
 
-    private val REVERSE_SIGNALS_BIT_POSITION = 4
+    private const val REVERSE_SIGNALS_BIT_POSITION = 4
 
     fun calculateHandshake(number: Int): List<Signal> {
         val result = Signal.values().filter {

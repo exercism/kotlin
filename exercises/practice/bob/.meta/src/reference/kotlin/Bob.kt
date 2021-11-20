@@ -16,7 +16,7 @@ object Bob {
     private fun isQuestion(input: String) = input.endsWith("?")
 
     private fun isShout(input: String): Boolean {
-        val isOnlyUppercase = input == input.toUpperCase()
+        val isOnlyUppercase = input == input.uppercase()
         val hasLetter = input.contains(Regex("[A-Z]"))
 
         return hasLetter && isOnlyUppercase

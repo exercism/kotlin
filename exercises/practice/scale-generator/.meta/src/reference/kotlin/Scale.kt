@@ -11,7 +11,7 @@ class Scale(private val tonic: String) {
 
     init {
         val notes = if (useFlats.contains(tonic)) flats else sharps
-        val start = notes.indexOfFirst { it.toLowerCase() == tonic.toLowerCase() }
+        val start = notes.indexOfFirst { it.lowercase() == tonic.lowercase() }
         orderedChromatic = notes.subList(start, notes.size) + notes.subList(0, start)
     }
 

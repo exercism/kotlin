@@ -1,7 +1,7 @@
 object PascalsTriangle {
 
     fun computeTriangle(rows: Int): List<List<Int>> {
-        require(rows >= 0, { "Rows can't be negative!" })
+        require(rows >= 0) { "Rows can't be negative!" }
 
         if (rows == 0) return emptyList()
         return (1..rows).map { buildTriangleRow(it) }

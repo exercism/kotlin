@@ -32,12 +32,12 @@ class NumberSpeller {
                 Pair(90, "ninety"   )
         )
 
-        val te = 10
-        val hu = 100
-        val th = 1000
-        val mi = 1000000
-        val bi = 1000000000
-        val tr = 1000000000000
+        const val te = 10
+        const val hu = 100
+        const val th = 1000
+        const val mi = 1000000
+        const val bi = 1000000000
+        const val tr = 1000000000000
     }
 
     fun say(input: Long): String {

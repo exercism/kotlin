@@ -1,7 +1,7 @@
 object WordCount {
 
     fun phrase(phrase: String): Map<String, Int> {
-        val withoutPunctuation = phrase.toLowerCase().replace(Regex("[^\\w']"), " ").trim()
+        val withoutPunctuation = phrase.lowercase().replace(Regex("[^\\w']"), " ").trim()
 
         val words = withoutPunctuation.split(Regex("\\s+"))
 

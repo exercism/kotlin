@@ -1,8 +1,8 @@
 data class Clock(private var hours: Int, private var minutes: Int) {
 
     companion object {
-        private val MINUTES_IN_AN_HOUR = 60
-        private val HOURS_IN_A_DAY = 24
+        private const val MINUTES_IN_AN_HOUR = 60
+        private const val HOURS_IN_A_DAY = 24
     }
 
     init {

@@ -17,6 +17,9 @@ class Meetup(monthOfYear: Int, year: Int) {
             MeetupSchedule.TEENTH -> {
                 while (result.dayOfMonth < 13) result = result.plusWeeks(1)
             }
+
+            // TODO: This may need to be fixed in the future as Kotlin 1.7+ may raise a compilation error for
+            //  non-exhaustive when blocks.
         }
 
         return result

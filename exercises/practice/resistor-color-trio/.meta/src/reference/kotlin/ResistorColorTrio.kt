@@ -9,7 +9,7 @@ object ResistorColorTrio {
 
         val thousandPowers = (log10(trioValue) / 3).toInt()
         val resultValue = (trioValue / 1000.0.pow(thousandPowers)).toInt()
-        val resultUnit = Unit.values()[thousandPowers].name.toLowerCase()
+        val resultUnit = Unit.values()[thousandPowers].name.lowercase()
 
         return "$resultValue $resultUnit"
     }

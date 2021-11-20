@@ -26,7 +26,7 @@ object AffineCipher {
         require(inv != 1) { "Key A and alphabet size must be coprime!" }
 
         return text
-                .toLowerCase()
+            .lowercase()
                 .mapNotNull { c ->
                     when {
                         c.isDigit() -> c
