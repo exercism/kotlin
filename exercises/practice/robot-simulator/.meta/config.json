@@ -12,7 +12,7 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/RobotSimulator.kt"],
+    "solution": ["src/main/kotlin/Robot.kt"],
     "test": ["src/test/kotlin/RobotTest.kt"],
     "example": [".meta/src/reference/kotlin/Robot.kt"]
   },

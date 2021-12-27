@@ -1,4 +1,4 @@
-class RobotSimulator {
+class Robot {
 
     // TODO: implement proper constructor, provide read access to `gridPosition` and `orientation`
 
