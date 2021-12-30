@@ -37,6 +37,7 @@ include(
     "practice:isbn-verifier",
     "practice:isogram",
     "practice:kindergarten-garden",
+    "practice:knapsack",
     "practice:largest-series-product",
     "practice:leap",
     "practice:linked-list",
