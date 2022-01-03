@@ -1016,10 +1016,9 @@
         "practices": [],
         "prerequisites": [
           "arrays",
-          "for-loops",
-          "objects",
-          "conditionals",
-          "conditionals-switch"
+          "loops",
+          "lists",
+          "conditionals"
         ],
         "difficulty": 5,
         "topics": ["algorithms", "logic"]
