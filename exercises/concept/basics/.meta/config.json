@@ -1,10 +1,10 @@
 {
-    "blurb": "Learn about the basics of Kotlin by following a lasagna recipe.",
-    "authors": ["dector"],
-    "forked_from": ["fsharp/lucians-luscious-lasagna"],
-    "files": {
-        "solution": ["src/main/kotlin/Basics.kt"],
-        "test": ["src/test/kotlin/BasicsTest.kt"],
-        "exemplar": [".meta/src/main/kotlin/Exemplar.kt"]
-    }
+  "blurb": "Learn about the basics of Kotlin by following a lasagna recipe.",
+  "authors": ["dector"],
+  "forked_from": ["fsharp/lucians-luscious-lasagna"],
+  "files": {
+    "solution": ["src/main/kotlin/Basics.kt"],
+    "test": ["src/test/kotlin/BasicsTest.kt"],
+    "exemplar": [".meta/src/main/kotlin/Exemplar.kt"]
+  }
 }
