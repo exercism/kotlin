@@ -1,5 +1,5 @@
 {
-  "blurb": "TODO: add blurb for basics exercise",
+  "blurb": "Learn about the basics of Kotlin by following a lasagna recipe.",
   "authors": ["dector"],
   "forked_from": ["fsharp/lucians-luscious-lasagna"],
   "files": {
