@@ -24,8 +24,8 @@
   "exercises": {
     "concept": [
       {
-        "slug": "basics",
-        "name": "Basics",
+        "slug": "lucians-luscious-lasagna",
+        "name": "Lucian's Luscious Lasagna",
         "uuid": "de14936d-28d7-4531-9761-69deba31a7ca",
         "concepts": ["basics"],
         "prerequisites": [],
