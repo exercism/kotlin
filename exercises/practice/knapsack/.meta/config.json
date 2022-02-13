@@ -1,0 +1,12 @@
+{
+  "blurb": "Given a knapsack that can only carry a certain weight, determine which items to put in the knapsack in order to maximize their combined value.",
+  "authors": ["lpizzinidev"],
+  "contributors": [],
+  "files": {
+    "solution": ["src/main/kotlin/Knapsack.kt"],
+    "test": ["src/test/kotlin/KnapsackTest.kt"],
+    "example": [".meta/src/reference/kotlin/Knapsack.kt"]
+  },
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Knapsack_problem"
+}

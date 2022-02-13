@@ -1008,6 +1008,20 @@
         "prerequisites": [],
         "difficulty": 2,
         "topics": ["pattern_matching", "conditionals", "math"]
+      },
+      {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "1c2e8e65-1d1f-43ce-a626-70769f8bae5f",
+        "practices": [],
+        "prerequisites": [
+          "arrays",
+          "loops",
+          "lists",
+          "conditionals"
+        ],
+        "difficulty": 5,
+        "topics": ["algorithms", "logic"]
       }
     ]
   },
