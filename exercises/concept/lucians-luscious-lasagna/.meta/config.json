@@ -3,8 +3,8 @@
   "authors": ["dector"],
   "forked_from": ["fsharp/lucians-luscious-lasagna"],
   "files": {
-    "solution": ["src/main/kotlin/Basics.kt"],
-    "test": ["src/test/kotlin/BasicsTest.kt"],
+    "solution": ["src/main/kotlin/LuciansLusciousLasagna.kt"],
+    "test": ["src/test/kotlin/LuciansLusciousLasagnaTests.kt"],
     "exemplar": [".meta/src/main/kotlin/Exemplar.kt"]
   }
 }
