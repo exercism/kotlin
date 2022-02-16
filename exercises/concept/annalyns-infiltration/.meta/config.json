@@ -5,6 +5,6 @@
   "files": {
     "solution": ["src/main/kotlin/AnnalynsInfiltration.kt"],
     "test": ["src/test/kotlin/AnnalynsInfiltrationTest.kt"],
-    "exemplar": [".meta/src/main/kotlin/Exemplar.kt"]
+    "exemplar": [".meta/src/reference/kotlin/AnnalynsInfiltration.kt"]
   }
 }
