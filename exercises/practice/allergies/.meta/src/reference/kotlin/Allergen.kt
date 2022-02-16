@@ -1,1 +1,0 @@
-../../../../src/main/kotlin/Allergen.kt

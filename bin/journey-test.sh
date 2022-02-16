@@ -2,7 +2,6 @@
 
 TRACK=kotlin
 TRACK_REPO="$TRACK"
-TRACK_SRC_EXT="kotlin"
 EXERCISES_TO_SOLVE=$@
 
 on_exit() {
@@ -48,29 +47,29 @@ clean() {
 
 solve_exercise() {
     local exercise="$1"
+    local exercise_type="$2"
 
     echo -e "\n\n"
     echo "=================================================="
     echo "Solving ${exercise}"
     echo "=================================================="
 
-    mkdir -p ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/kotlin/
-    mkdir -p ${exercism_exercises_dir}/${TRACK}/${exercise}/src/test/kotlin/
-    cp ${track_root}/exercises/${exercise}/build.gradle.kts ${exercism_exercises_dir}/${TRACK}/${exercise}/build.gradle.kts
-    cp -R -H ${track_root}/exercises/${exercise}/.meta/src/reference/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
-    cp -R -H ${track_root}/exercises/${exercise}/src/test/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/test/${TRACK}/
+    mkdir -p ${exercism_exercises_dir}/${TRACK}
+    cp -R -H ${track_root}/exercises/${exercise_type}/${exercise} ${exercism_exercises_dir}/${TRACK}/${exercise}
+    cp -R -H ${track_root}/exercises/${exercise_type}/${exercise}/.meta/src/reference/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
     
     pushd ${exercism_exercises_dir}/${TRACK}/${exercise}
     # Check that tests compile before we strip @Ignore annotations
     "$EXECPATH"/gradlew compileTestJava
     # Ensure we run all the tests (as delivered, all but the first is @Ignore'd)
-    for testfile in `find . -name "*Test.${TRACK_SRC_EXT}"`; do
+    for testfile in `find src/test/kotlin -name "*Test.kt"`; do
         # Strip @Ignore annotations to ensure we run the tests (as delivered, all but the first is @Ignore'd).
         # Note that unit-test.sh also strips @Ignore annotations via the Gradle task copyTestsFilteringIgnores.
         # The stripping implementations here and in copyTestsFilteringIgnores should be kept consistent.
         sed 's/@Ignore\(\(.*\)\)\{0,1\}//' ${testfile} > "${tempfile}" && mv "${tempfile}" "${testfile}"
     done
     "$EXECPATH"/gradlew test
+    echo "exit code: $?"
     popd
 }
 
@@ -79,21 +78,33 @@ solve_all_exercises() {
     echo ">>> solve_all_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\")"
     
     local track_root=$( pwd )
-    local exercises=`cat config.json | jq '.exercises[].slug + " "' --join-output`
-    local total_exercises=`cat config.json | jq '.exercises | length'`
+    local concept_exercises=`jq -r '.exercises.concept[].slug | sort' config.json | sort | xargs`
+    local practice_exercises=`jq -r '.exercises.practice[].slug' config.json | sort | xargs`
+    local total_exercises=`jq '.exercises.concept + .exercises.practice | length' config.json`
     local current_exercise_number=1
     local tempfile="${TMPDIR:-/tmp}/journey-test.sh-unignore_all_tests.txt"
 
     mkdir -p ${exercism_exercises_dir}
     pushd ${exercism_exercises_dir}
 
-    for exercise in $exercises; do
+    for exercise in $concept_exercises; do
         echo -e "\n\n"
         echo "=================================================="
         echo "${current_exercise_number} of ${total_exercises} -- ${exercise}"
         echo "=================================================="
         
-        solve_exercise "${exercise}"
+        solve_exercise "${exercise}" "concept"
+        
+        current_exercise_number=$((current_exercise_number + 1))
+    done
+
+    for exercise in $practice_exercises; do
+        echo -e "\n\n"
+        echo "=================================================="
+        echo "${current_exercise_number} of ${total_exercises} -- ${exercise}"
+        echo "=================================================="
+        
+        solve_exercise "${exercise}" "practice"
         
         current_exercise_number=$((current_exercise_number + 1))
     done
@@ -103,6 +114,7 @@ solve_all_exercises() {
 solve_single_exercise() {
     local exercism_exercises_dir="$1"
     local exercise_to_solve="$2"
+    local exercise_type="$3"
     echo ">>> solve_single_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\", exercise_to_solve=\"$exercise_to_solve\")"
     
     local track_root=$( pwd )
@@ -111,7 +123,7 @@ solve_single_exercise() {
     mkdir -p ${exercism_exercises_dir}
     pushd ${exercism_exercises_dir}
     
-    solve_exercise "${exercise_to_solve}"
+    solve_exercise "${exercise_to_solve}" "${exercise_type}"
     
     popd
 }
@@ -134,8 +146,12 @@ main() {
     if [[ $EXERCISES_TO_SOLVE == "" ]]; then
         solve_all_exercises "${exercism_home}"
     else
-        for exercise in $EXERCISES_TO_SOLVE
-        do solve_single_exercise "${exercism_home}" "${exercise}"
+        for exercise in $EXERCISES_TO_SOLVE; do
+            if [ -d "${exercism_home}/exercises/concept/${exercise}" ]; then
+                solve_single_exercise "${exercism_home}" "${exercise}" "concept"
+            else
+                solve_single_exercise "${exercism_home}" "${exercise}" "practice"
+            fi
         done
     fi
 }
