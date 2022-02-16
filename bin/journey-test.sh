@@ -78,8 +78,8 @@ solve_all_exercises() {
     echo ">>> solve_all_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\")"
     
     local track_root=$( pwd )
-    local concept_exercises=`jq -r '.exercises.concept[].slug' config.json | xargs`
-    local practice_exercises=`jq -r '.exercises.practice[].slug' config.json | xargs`
+    local concept_exercises=`jq -r '.exercises.concept[].slug | sort' config.json | sort | xargs`
+    local practice_exercises=`jq -r '.exercises.practice[].slug' config.json | sort | xargs`
     local total_exercises=`jq '.exercises.concept + .exercises.practice | length' config.json`
     local current_exercise_number=1
     local tempfile="${TMPDIR:-/tmp}/journey-test.sh-unignore_all_tests.txt"
@@ -114,6 +114,7 @@ solve_all_exercises() {
 solve_single_exercise() {
     local exercism_exercises_dir="$1"
     local exercise_to_solve="$2"
+    local exercise_type="$3"
     echo ">>> solve_single_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\", exercise_to_solve=\"$exercise_to_solve\")"
     
     local track_root=$( pwd )
@@ -122,7 +123,7 @@ solve_single_exercise() {
     mkdir -p ${exercism_exercises_dir}
     pushd ${exercism_exercises_dir}
     
-    solve_exercise "${exercise_to_solve}"
+    solve_exercise "${exercise_to_solve}" "${exercise_type}"
     
     popd
 }
@@ -145,8 +146,12 @@ main() {
     if [[ $EXERCISES_TO_SOLVE == "" ]]; then
         solve_all_exercises "${exercism_home}"
     else
-        for exercise in $EXERCISES_TO_SOLVE
-        do solve_single_exercise "${exercism_home}" "${exercise}"
+        for exercise in $EXERCISES_TO_SOLVE; do
+            if [ -d "${exercism_home}/exercises/concept/${exercise}" ]; then
+                solve_single_exercise "${exercism_home}" "${exercise}" "concept"
+            else
+                solve_single_exercise "${exercism_home}" "${exercise}" "practice"
+            fi
         done
     fi
 }
