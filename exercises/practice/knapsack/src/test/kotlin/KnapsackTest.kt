@@ -4,12 +4,12 @@ import kotlin.test.assertEquals
 class KnapsackTest {
 
     @Test
-    fun `no items`() = assertEquals(knapsack(100, listOf()), 0)
+    fun `no items`() = assertEquals(0, knapsack(100, listOf()))
 
     @Test
     fun `one item, too heavy`() {
         val items = listOf(Item(100, 1))
-        assertEquals(knapsack(10, items), 0)
+        assertEquals(0, knapsack(10, items))
     }
 
     @Test
@@ -21,7 +21,7 @@ class KnapsackTest {
             Item(2, 5),
             Item(10, 21)
         )
-        assertEquals(knapsack(10, items), 21)
+        assertEquals(21, knapsack(10, items))
     }
 
     @Test
@@ -33,7 +33,7 @@ class KnapsackTest {
             Item(2, 20),
             Item(10, 50)
         )
-        assertEquals(knapsack(10, items), 80)
+        assertEquals(80, knapsack(10, items))
     }
 
     @Test
@@ -44,7 +44,7 @@ class KnapsackTest {
             Item(6, 30),
             Item(4, 50)
         )
-        assertEquals(knapsack(10, items), 90)
+        assertEquals(90, knapsack(10, items))
     }
 
     @Test
@@ -59,7 +59,7 @@ class KnapsackTest {
             Item(2, 5),
             Item(2, 5)
         )
-        assertEquals(knapsack(104, items), 900)
+        assertEquals(900, knapsack(104, items))
     }
 
     @Test
@@ -81,6 +81,6 @@ class KnapsackTest {
             Item(118, 229),
             Item(120, 240)
         )
-        assertEquals(knapsack(750, items), 1458)
+        assertEquals(1458, knapsack(750, items))
     }
 }
