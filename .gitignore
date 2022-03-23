@@ -2,6 +2,7 @@
 .DS_Store
 bin/configlet
 bin/configlet.exe
+bin/jq*
 CHECKLIST
 build
 .gradle
