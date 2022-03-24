@@ -558,7 +558,7 @@
         "uuid": "3c7a3c6b-8dc7-4e5a-ba72-e1a4bffb0bc4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 6,
         "topics": ["loops", "pattern_matching", "strings", "recursion"]
       },
       {
