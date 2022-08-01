@@ -1,6 +1,6 @@
 # Exercism Kotlin Track
 
-[![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin)
+[![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin) [![Join the chat at https://gitter.im/exercism/kotlin](https://badges.gitter.im/exercism/kotlin.svg)](https://gitter.im/exercism/kotlin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Source for Exercism Exercises in Kotlin.
 
