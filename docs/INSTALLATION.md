@@ -7,18 +7,18 @@ In addition to the exercism CLI and your favorite text editor, practicing with E
 
 Choose your operating system:
 
-* [Windows](#windows)
-* [macOS](#macos)
-* [Linux](#linux)
+* [Windows](#h-windows)
+* [macOS](#h-macos)
+* [Linux](#h-linux)
 
 ... or ...
-* if you prefer to not use a package manager, you can [install manually](#install-manually).
+* if you prefer to not use a package manager, you can [install manually](#h-install-manually).
 
-Optionally, you can also use a [Java IDE](#java-ides).
+Optionally, you can also use a [Java IDE](#h-java-ides).
 
 ----
 
-# Windows
+## Windows
 
 Open an administrative command prompt.  (If you need assistance opening an administrative prompt, see [open an elevated prompt in Windows 8+](http://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/) (or [Windows 7](http://www.howtogeek.com/howto/windows-vista/run-a-command-as-administrator-from-the-windows-vista-run-box/)).
 
@@ -45,11 +45,11 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-# macOS
+## macOS
 
-Below are instructions for install using the most common method - using Homebrew.  If you'd rather, you can also [install on macOS without Homebrew](#installing-on-macos-without-homebrew).
+Below are instructions for install using the most common method - using Homebrew.  If you'd rather, you can also [install on macOS without Homebrew](#h-installing-on-macos-without-homebrew).
 
-## Installing
+### Installing
 
 1. If you haven't installed [Homebrew](http://brew.sh), yet, do so now:
 
@@ -75,14 +75,14 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-# Linux
+## Linux
 
-Below are instructions for install using the package manager of your distro.  If you'd rather, you can also [install on Linux without a package manager](#installing-on-linux-without-a-package-manager).
+Below are instructions for install using the package manager of your distro.  If you'd rather, you can also [install on Linux without a package manager](#h-installing-on-linux-without-a-package-manager).
 
-* [Debian](#debian)
-* [Other Linux distributions](#Other-Linux-distributions)
+* [Debian](#h-debian)
+* [Other Linux distributions](#h-other-linux-distributions)
 
-## Debian
+### Debian
 
 If you are using Debian or its derivatives (like Ubuntu or Linux Mint), use APT:
 
@@ -105,7 +105,7 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-## Other Linux distributions
+### Other Linux distributions
 
 There are a lot of ways to install Jdk 11, but one of the easiest ways is to use SDKMAN, 
 which lets you install OpenJdk11 with ease. Use the following steps:
@@ -126,17 +126,17 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-# Install Manually
+## Install Manually
 
-* [Installing on Windows manually](#installing-on-windows-manually)
-* [Installing on macOS without Homebrew](#installing-on-macos-without-homebrew)
-* [Installing on Linux without a package manager](#installing-on-linux-without-a-package-manager)
+* [Installing on Windows manually](#h-installing-on-windows-manually)
+* [Installing on macOS without Homebrew](#h-installing-on-macos-without-homebrew)
+* [Installing on Linux without a package manager](#h-installing-on-linux-without-a-package-manager)
 
 ----
 
-## Installing on Windows manually
+### Installing on Windows manually
 
-*NOTE: these instructions are intended for experienced Windows users.  If you don't already know how to set environment variables or feel comfortable managing the directory structure, we highly recommend you use the Chocolatey-based install, [above](#windows).*
+*NOTE: these instructions are intended for experienced Windows users.  If you don't already know how to set environment variables or feel comfortable managing the directory structure, we highly recommend you use the Chocolatey-based install, [above](#h-windows).*
 
 1. Install the JDK:
    1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_win) (choose **"Install JDK"**).
@@ -148,9 +148,9 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-## Installing on macOS without Homebrew
+### Installing on macOS without Homebrew
 
-*NOTE: these instructions are intended for experienced macOS users.  Unless you specifically do not want to use a package manager, we highly recommend using the Homebrew-based installation instructions, [above](#macos).*
+*NOTE: these instructions are intended for experienced macOS users.  Unless you specifically do not want to use a package manager, we highly recommend using the Homebrew-based installation instructions, [above](#h-macos).*
 
 1. Install the JDK:
    1. Download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11#x64_mac) (choose **"Install JDK"**).
@@ -162,9 +162,9 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-## Installing on Linux without a package manager
+### Installing on Linux without a package manager
 
-*NOTE: these instructions are intended for experienced Linux users.  Unless you specifically do not want to use a package manager, we highly recommend using the the installation instructions, [above](#linux).*
+*NOTE: these instructions are intended for experienced Linux users.  Unless you specifically do not want to use a package manager, we highly recommend using the the installation instructions, [above](#h-linux).*
 
 1. Install the JDK:
    1. Choose your distribution and download "**OpenJDK 11 (LTS)**" from [AdoptOpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk11) (choose **"Install JDK"**).
@@ -176,7 +176,7 @@ To get started, see "[Running the Tests](https://exercism.org/docs/tracks/kotlin
 
 ----
 
-# Java IDEs
+## Java IDEs
 
 There are many Java IDEs available.  The three most popular are:
 

@@ -2,13 +2,13 @@
 
 Choose your operating system:
 
-* [Windows](#windows)
-* [macOS](#macos)
-* [Linux](#linux)
+* [Windows](#h-windows)
+* [macOS](#h-macos)
+* [Linux](#h-linux)
 
 ----
 
-# Windows
+## Windows
 
 1. Open a Command Prompt.
 2. Get an exercise:
@@ -47,7 +47,7 @@ If you get stuck, at any point, don't forget to reach out for [help](https://exe
 
 ----
 
-# macOS
+## macOS
 
 1. In the terminal window, get an exercise:
 
@@ -81,7 +81,7 @@ If you get stuck, at any point, don't forget to reach out for [help](https://exe
 
 ----
 
-# Linux
+## Linux
 
 1. In the terminal window, get an exercise:
 
