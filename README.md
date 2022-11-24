@@ -1,6 +1,6 @@
 # Exercism Kotlin Track
 
-[![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin) [![Join the chat at https://gitter.im/exercism/kotlin](https://badges.gitter.im/exercism/kotlin.svg)](https://gitter.im/exercism/kotlin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/exercism/kotlin.svg?branch=master)](https://travis-ci.org/exercism/kotlin)
 
 Source for Exercism Exercises in Kotlin.
 
@@ -23,7 +23,7 @@ For general information about how to contribute to Exercism, please refer to the
 
 This guide covers contributing to the Kotlin track.  If you are new, this guide is for you.
 
-If, at any point, you're having any trouble, pop in the [Gitter exercism/dev room](https://gitter.im/exercism/dev) for help.
+If, at any point, you're having any trouble, pop in the [Building Exercism](https://forum.exercism.org/c/exercism/building-exercism/125) category of the [Exercism forum](https://forum.exercism.org/) for help.
 
 ## Contributing With Minimal Setup
 
