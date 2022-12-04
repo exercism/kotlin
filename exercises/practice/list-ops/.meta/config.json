@@ -1,6 +1,7 @@
 {
-  "blurb": "Implement basic list operations",
-  "authors": ["stkent"],
+  "authors": [
+    "stkent"
+  ],
   "contributors": [
     "beatbrot",
     "dector",
@@ -13,8 +14,15 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/ListOps.kt"],
-    "test": ["src/test/kotlin/ListExtensionsTest.kt"],
-    "example": [".meta/src/reference/kotlin/ListOps.kt"]
-  }
+    "solution": [
+      "src/main/kotlin/ListOps.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ListExtensionsTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/ListOps.kt"
+    ]
+  },
+  "blurb": "Implement basic list operations"
 }

@@ -1,6 +1,7 @@
 {
-  "blurb": "Given a number n, determine what the nth prime is.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,10 +16,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/NthPrime.kt"],
-    "test": ["src/test/kotlin/PrimeTest.kt"],
-    "example": [".meta/src/reference/kotlin/NthPrime.kt"]
+    "solution": [
+      "src/main/kotlin/NthPrime.kt"
+    ],
+    "test": [
+      "src/test/kotlin/PrimeTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/NthPrime.kt"
+    ]
   },
+  "blurb": "Given a number n, determine what the nth prime is.",
   "source": "A variation on Problem 7 at Project Euler",
   "source_url": "http://projecteuler.net/problem=7"
 }

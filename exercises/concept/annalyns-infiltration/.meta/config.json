@@ -1,10 +1,20 @@
 {
-  "blurb": "Learn about booleans while helping Annalyn rescue her friend.",
-  "authors": ["dector"],
-  "forked_from": ["fsharp/annalyns-infiltration"],
+  "authors": [
+    "dector"
+  ],
   "files": {
-    "solution": ["src/main/kotlin/AnnalynsInfiltration.kt"],
-    "test": ["src/test/kotlin/AnnalynsInfiltrationTest.kt"],
-    "exemplar": [".meta/src/reference/kotlin/AnnalynsInfiltration.kt"]
-  }
+    "solution": [
+      "src/main/kotlin/AnnalynsInfiltration.kt"
+    ],
+    "test": [
+      "src/test/kotlin/AnnalynsInfiltrationTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/AnnalynsInfiltration.kt"
+    ]
+  },
+  "forked_from": [
+    "fsharp/annalyns-infiltration"
+  ],
+  "blurb": "Learn about booleans while helping Annalyn rescue her friend."
 }
