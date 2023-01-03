@@ -1,6 +1,7 @@
 {
-  "blurb": "Write a function to determine if a list is a sublist of another list.",
-  "authors": ["stkent"],
+  "authors": [
+    "stkent"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -12,8 +13,15 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/Sublist.kt"],
-    "test": ["src/test/kotlin/SublistTest.kt"],
-    "example": [".meta/src/reference/kotlin/Sublist.kt"]
-  }
+    "solution": [
+      "src/main/kotlin/Sublist.kt"
+    ],
+    "test": [
+      "src/test/kotlin/SublistTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/Sublist.kt"
+    ]
+  },
+  "blurb": "Write a function to determine if a list is a sublist of another list."
 }

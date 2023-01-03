@@ -1,6 +1,7 @@
 {
-  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,10 +16,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/Atbash.kt"],
-    "test": ["src/test/kotlin/AtbashTest.kt"],
-    "example": [".meta/src/reference/kotlin/Atbash.kt"]
+    "solution": [
+      "src/main/kotlin/Atbash.kt"
+    ],
+    "test": [
+      "src/test/kotlin/AtbashTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/Atbash.kt"
+    ]
   },
+  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
   "source": "Wikipedia",
   "source_url": "http://en.wikipedia.org/wiki/Atbash"
 }

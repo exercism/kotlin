@@ -1,6 +1,7 @@
 {
-  "blurb": "Compute Pascal's triangle up to a given number of rows.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,10 +15,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/PascalsTriangle.kt"],
-    "test": ["src/test/kotlin/PascalsTriangleTest.kt"],
-    "example": [".meta/src/reference/kotlin/PascalsTriangle.kt"]
+    "solution": [
+      "src/main/kotlin/PascalsTriangle.kt"
+    ],
+    "test": [
+      "src/test/kotlin/PascalsTriangleTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/PascalsTriangle.kt"
+    ]
   },
+  "blurb": "Compute Pascal's triangle up to a given number of rows.",
   "source": "Pascal's Triangle at Wolfram Math World",
   "source_url": "http://mathworld.wolfram.com/PascalsTriangle.html"
 }

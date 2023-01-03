@@ -1,6 +1,7 @@
 {
-  "blurb": "Write a robot simulator.",
-  "authors": ["stkent"],
+  "authors": [
+    "stkent"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -12,9 +13,16 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/Robot.kt"],
-    "test": ["src/test/kotlin/RobotTest.kt"],
-    "example": [".meta/src/reference/kotlin/Robot.kt"]
+    "solution": [
+      "src/main/kotlin/Robot.kt"
+    ],
+    "test": [
+      "src/test/kotlin/RobotTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/Robot.kt"
+    ]
   },
+  "blurb": "Write a robot simulator.",
   "source": "Inspired by an interview question at a famous company."
 }
