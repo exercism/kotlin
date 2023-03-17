@@ -94,12 +94,15 @@ running the task you asked it to: executing the tests against the solution.
 ```
 :test
 
-
 HelloWorldTest > helloWorldTest FAILED
-    org.junit.ComparisonFailure: expected:<[Hello, World!]> but was:<[]>
-        at org.junit.Assert.assertEquals(Assert.java:115)
-        at org.junit.Assert.assertEquals(Assert.java:144)
-        at HelloWorldTest.helloNoName(HelloWorldTest.kt:10)
+    org.junit.ComparisonFailure: expected:<[Hello, World]!> but was:<[Goodbye, Mars]!>
+        at org.junit.Assert.assertEquals(Assert.java:117)
+        at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+        at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+        at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+        at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+        at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+        at HelloWorldTest.helloWorldTest(HelloWorldTest.kt:8)
 
 1 test completed, 1 failed
 :test FAILED
@@ -126,7 +129,7 @@ Let's focus in on the important bits:
 
 ```
 HelloWorldTest > helloWorldTest FAILED
-    org.junit.ComparisonFailure: expected:<[Hello, World!]> but was:<[]>
+    org.junit.ComparisonFailure: expected:<[Hello, World!]> but was:<[Goodbye, Mars]!>
 ```
 
 ...is read: "Within the test class named `HelloWorldTest`, the test method
@@ -138,35 +141,35 @@ The last line of the stack trace tells us exactly where this unsatisfied
 assertion lives:
 
 ```
-        at HelloWorldTest.helloWorldTest(HelloWorldTest.kt:10)
+        at HelloWorldTest.helloWorldTest(HelloWorldTest.kt:8)
 ```
 
-Looks like the scene of the crime is on line 10 in the test file.
+Looks like the scene of the crime is on line 8 in the test file.
 
 Knowing these two facts,
 
 1. the return value was not what was expected, and
-2. the failure was on line 10 of the test,
+2. the failure was on line 8 of the test,
 
 we can turn this failure into success.
 
 ## Step 2: Fix the Test!
 
 In your favorite text editor, open `src/test/kotlin/HelloWorldTest.kt`
-and go to line 10.
+and go to line 8.
 
 ```kotlin
 assertEquals("Hello, World!", hello())
 ```
 
-The test is expecting that `hello()`, returns "Hello, World!".  Instead, `hello()` is returning `""`.
+The test is expecting that `hello()`, returns "Hello, World!".  Instead, `hello()` is returning `"Goodbye, Mars!"`.
 Let's fix that.
 
 Open `src/main/kotlin/HelloWorld.kt`.
 
 ```kotlin
 fun hello(): String {
-   return ""
+   return "Goodbye, Mars!"
 }
 ```
 
