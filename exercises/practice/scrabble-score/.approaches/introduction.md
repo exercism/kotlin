@@ -61,7 +61,7 @@ The `when` approach is succinct and reasonably performant.
 A `Map` lookup is fast, but it takes time to set up a `Map`, so for only a few lookups a `when` may be finished before the `Map` is built.
 Once the `Map` is built, if there are a lot of lookups, then the `Map` may finish all of them sooner than a `when`.
 
-[approach-when]: https://exercism.org/tracks/kotlin/exercises/gigasecond/approaches/when
-[approach-map]: https://exercism.org/tracks/kotlin/exercises/gigasecond/approaches/map
+[approach-when]: https://exercism.org/tracks/kotlin/exercises/scrabble-score/approaches/when
+[approach-map]: https://exercism.org/tracks/kotlin/exercises/scrabble-score/approaches/map
 [when]: https://kotlinlang.org/docs/control-flow.html#when-expression
 [map]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/
