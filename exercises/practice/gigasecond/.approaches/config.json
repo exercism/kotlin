@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "54bff868-f84e-481e-ae00-bed8e960445e",
+      "slug": "secondary-constructor-atstartofday",
+      "title": "Secondary constructor with atStartOfDay",
+      "blurb": "Use a secondary constructor with atStartOfDay to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
