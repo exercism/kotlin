@@ -3,6 +3,10 @@
 There are many ways to solve Pig Latin.
 One approach is to look up values from [HashSet][hashset]s.
 
+## General guidance
+
+At the time of writing only four rules need to be handled, but if they have similar output, they don't need to be handled completely separately.
+
 ## Approach: `HashSet` lookup
 
 ```kotlin
@@ -24,7 +28,6 @@ object PigLatin {
                 return word.substring(posCalc) + word.substring(0, posCalc) + "ay"
             }
         }
-        // needed to satisfy exhaustiveness
         return word
     }
 }
