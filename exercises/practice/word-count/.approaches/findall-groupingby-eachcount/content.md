@@ -1,0 +1,15 @@
+# `findAll` with `groupingBy` and `eachCount`
+
+```kotlin
+object WordCount {
+
+    fun phrase(phrase: String): Map<String, Int> {
+        return Regex("[a-z0-9]+(?:'[a-z]+)?")
+                .findAll(phrase.lowercase())
+                .groupingBy { it.value }
+                .eachCount()
+    }
+}
+```
+
+TODO
