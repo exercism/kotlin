@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "310ac3a8-5ef7-47c6-a2c9-5efc98a17d4a",
+      "slug": "findall-groupingby-eachcount",
+      "title": "findAll with groupingBy and eachCount",
+      "blurb": "Use findAll with groupingBy and eachCount to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
