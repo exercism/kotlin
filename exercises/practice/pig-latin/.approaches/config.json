@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "8fc23555-9445-452e-9982-c09b9716b6dc",
+      "slug": "hashset-lookup",
+      "title": "HashSet lookup",
+      "blurb": "Look up values in HashSets to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
