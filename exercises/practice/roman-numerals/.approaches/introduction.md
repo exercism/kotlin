@@ -1,7 +1,7 @@
 # Introduction
 
 There are many ways to solve Roman Numerals.
-One approach can use the [`fold`][fold] methodon a list of [`Pair`][pair]s that associate the Arabic numeral with the Roman numeral.
+One approach can use the [`fold`][fold] method on a list of [`Pair`][pair]s that associate the Arabic numeral with the Roman numeral.
 
 ## Approach: `fold` with `repeat`
 
