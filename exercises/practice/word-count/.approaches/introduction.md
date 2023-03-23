@@ -18,7 +18,7 @@ object WordCount {
 }
 ```
 
-For more information, check the [`findAll` with `groupingBy` and `eachCount` approach][approach-findAll-groupingBy-eachCount].
+For more information, check the [`findAll` with `groupingBy` and `eachCount` approach][approach-findAll-groupingby-eachcount].
 
-[approach-findAll-groupingBy-eachCount]: https://exercism.org/tracks/kotlin/exercises/word-count/approaches/findAll-groupingBy-eachCount
+[approach-findAll-groupingby-eachcount]: https://exercism.org/tracks/kotlin/exercises/word-count/approaches/findAll-groupingby-eachcount
 [regex]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/
