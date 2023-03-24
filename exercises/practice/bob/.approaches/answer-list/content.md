@@ -18,6 +18,11 @@ object Bob {
 In this approach you define a `List` that contains Bob’s answers, and each condition is given a score.
 The correct answer is selected from the `List` by using the score as the `List` index.
 
+An [object declaration][object] is used to define `Bob` as essentially a [singleton][singleton] object instantiation of the class.
+This is sufficient, since there is no object state that needs to change with each call of the `hey` method.
+
+The [`listOf`][listof] method is used to create a list of Bob's answers.
+
 The `String` [`trim()`][trim] method is applied to the input to eliminate any whitespace at either end of the input.
 If the string has no characters left, it returns the response for saying nothing.
 
@@ -53,7 +58,9 @@ For example, giving a question a score of `1` would use an index of `1` to get t
 | `true`    | `false`    | 2 + 0 = 2 | `"Whoa, chill out!"`                  |
 | `true`    | `true`     | 2 + 1 = 3 | `"Calm down, I know what I'm doing!"` |
 
-
+[object]: https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview
+[singleton]: https://en.wikipedia.org/wiki/Singleton_pattern
+[listof]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/list-of.html
 [trim]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/trim.html
 [endswith]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/ends-with.html
 [range]: https://kotlinlang.org/docs/ranges.html#range
