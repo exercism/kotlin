@@ -13,9 +13,9 @@
     },
     {
       "uuid": "03485733-b2e8-4be0-8a70-4a2d38ec2541",
-      "slug": "ternary-operator",
-      "title": "Ternary operator",
-      "blurb": "Use a ternary operator of boolean expressions.",
+      "slug": "ternary-expression",
+      "title": "Ternary expression",
+      "blurb": "Use a ternary expression.",
       "authors": ["bobahop"]
     },
     {
