@@ -30,7 +30,7 @@ A question is determined by use of the [`endsWith()`][endswith] method to see if
 
 A [range][range] of `A..Z` is defined to look for uppercase English alphabetic characters.
 
-The first half of the `isYelling` 
+The first half of the `isYelling` implementation
 
 ```java
 if (('A'..'Z').any { msg.contains(it) }
@@ -39,11 +39,11 @@ if (('A'..'Z').any { msg.contains(it) }
 is constructed from the range and the [`any`][any] method
 to ensure there is at least one uppercase letter character in the `String`.
 The [lambda][lambda] of `any` uses the [`it`][it] keyword to refer to the single `Char` parameter for the lambda,
-and passes it to the [`contains`][contains] method to check of the character is in the input `String`.
-The check that there is any alphabetic character is needed because the second half of the condition tests that the uppercased input is the same as the input.
+and passes it to the [`contains`][contains] method to check if the character is in the input `String`.
+The check that there is any alphabetic character is needed, because the second half of the condition tests that the uppercased input is the same as the input.
 If the input were only `"123"` it would equal itself uppercased, but without letters it would not be a yell.
 
-The conditions of being a question and being a yell are assigned scores through the use of the [ternary expression][ternary].
+The conditions of being a question and being a yell are assigned scores through the use of the [ternary expression][ternary-expression].
 For example, giving a question a score of `1` would use an index of `1` to get the element from the answers `List`, which is `"Sure."`.
 
 | isYelling | isQuestion | Index     | Answer                                |
