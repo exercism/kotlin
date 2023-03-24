@@ -1,0 +1,7 @@
+fun hey(input: String): String {
+    val msg = input.trim()
+    if (msg.isEmpty()) return "Fine. Be that way!"
+    val isQuestion = if (msg.endsWith('?')) 1 else 0
+    val isYelling = if (('A'..'Z').any { msg.contains(it) } && msg == msg.uppercase()) 2 else 0
+    return answers[isQuestion + isYelling]
+}
