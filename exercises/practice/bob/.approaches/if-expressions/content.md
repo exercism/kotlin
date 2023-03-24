@@ -18,6 +18,9 @@ object Bob {
 In this approach you have a series of `if` expressions to evaluate the conditions.
 As soon as the right condition is found, the correct response is returned.
 
+An [object declaration][object] is used to define `Bob` as essentially a [singleton][singleton] object instantiation of the class.
+This is sufficient, since there is no object state that needs to change with each call of the `hey` method.
+
 The `String` [`trim()`][trim] method is applied to the input to eliminate any whitespace at either end of the input.
 If the string has no characters left, it returns the response for saying nothing.
 
@@ -47,6 +50,8 @@ If `isYelling` is `true`, then a [ternary expresson][ternary-expression] is used
 
 If `isYelling` is `false`, then a ternary expression is used to return either the response for a question or a plain statement.
 
+[object]: https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview
+[singleton]: https://en.wikipedia.org/wiki/Singleton_pattern
 [trim]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/trim.html
 [endswith]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/ends-with.html
 [range]: https://kotlinlang.org/docs/ranges.html#range
