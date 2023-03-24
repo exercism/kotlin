@@ -2,7 +2,7 @@
 
 There are various idiomatic approaches to solve Bob.
 A basic approach can use a series of `if` expressions to test the conditions.
-An array can contain answers from which the right response is selected by an index calculated from scores given to the conditions.
+A `List` can contain answers from which the right response is selected by an index calculated from scores given to the conditions.
 
 ## General guidance
 
@@ -37,7 +37,7 @@ object Bob {
 
 For more information, check the [`if` expressions approach][approach-if].
 
-## Approach: answer array
+## Approach: Answer `List`
 
 ```kotlin
 object Bob {
@@ -54,14 +54,14 @@ object Bob {
 }
 ```
 
-For more information, check the [Answer array approach][approach-answer-array].
+For more information, check the [Answer `List` approach][approach-answer-list].
 
 ## Which approach to use?
 
-The choice between `if` expressions and answers array can be made by perceived readability.
+The choice between `if` expressions and answers `List` can be made by perceived readability.
 
 [trim]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/trim.html
 [endswith]: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/ends-with.html
 [dry]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [approach-if]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/if-expressions
-[approach-answer-array]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/answer-array
+[approach-answer-list]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/answer-list
