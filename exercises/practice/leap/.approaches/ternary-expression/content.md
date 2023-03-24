@@ -10,8 +10,8 @@ A [ternary expression][ternary-expression] uses a maximum of two checks to deter
 
 It starts by testing the outlier condition of the year being evenly divisible by `100`.
 It does this by using the [modulus operator][modulus-operator].
-If the year is evenly divisible by `100`, then the expression is `true`, and the ternary operator returns if the year is evenly divisible by `400`.
-If the year is _not_ evenly divisible by `100`, then the expression is `false`, and the ternary operator returns if the year is evenly divisible by `4`.
+If the year is evenly divisible by `100`, then the expression is `true`, and the ternary expression returns if the year is evenly divisible by `400`.
+If the year is _not_ evenly divisible by `100`, then the expression is `false`, and the ternary expression returns if the year is evenly divisible by `4`.
 
 | year | year % 100 == 0 | year % 400 == 0 | year % 4 == 0  | is leap year |
 | ---- | --------------- | --------------- | -------------- | ------------ |
