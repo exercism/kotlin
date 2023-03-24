@@ -45,7 +45,7 @@ Use the built-in method for the [Year][year]. For more information, see the [`is
 
 - The chain of boolean expressions is most efficient, as it proceeds from the most likely to least likely conditions.
   It has a maximum of three checks.
-- The ternary operator has a maximum of only two checks, but it starts from a less likely condition.
+- The ternary expression has a maximum of only two checks, but it starts from a less likely condition.
 - Using `plusDays()` or using the built-in `isLeap()` method may be considered "cheats" for the exercise,
   but `isLeap()` would be the idiomatic way to check if a year is a leap year in Kotlin.
 
