@@ -5,14 +5,14 @@
   },
   "approaches": [
     {
-      "uuid": "4b5a0b14-ea3c-4dfb-9930-ed0f013bd618",
+      "uuid": "d0608dd0-9320-46c2-af9e-e54b9d0fc354",
       "slug": "buildstring",
       "title": "buildString",
       "blurb": "Use buildString to return the result.",
       "authors": ["bobahop"]
     },
     {
-      "uuid": "69a3ec80-27f3-44a1-a4a4-555e5a23d490",
+      "uuid": "7d435fdf-db16-4c89-b56f-fe71a68c1d1b",
       "slug": "list",
       "title": "List",
       "blurb": "Iterate a List to return the result.",
