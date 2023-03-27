@@ -1,0 +1,8 @@
+object Raindrops {
+    fun convert(n: Int) =
+            listOf(3 to "Pling", 5 to "Plang", 7 to "Plong")
+                    .fold("") { output, pair ->
+                        output + if (n % pair.first == 0) pair.second else ""
+                    }
+                    .ifEmpty { n.toString() }
+}
