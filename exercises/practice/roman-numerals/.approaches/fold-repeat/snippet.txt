@@ -1,0 +1,8 @@
+.fold(Pair(StringBuilder(), n)) { (output, runnyNum), (value, numeral) ->
+    when {
+        runnyNum >= value ->
+                output.append(numeral.repeat(runnyNum / value)) to
+                        runnyNum % value
+        else -> output to runnyNum
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "96ce2094-949d-4576-a2d1-ab8a76081225",
+      "slug": "fold-repeat",
+      "title": "fold with repeat",
+      "blurb": "Use fold with repeat to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
