@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "addeaa3a-174d-45e4-9a50-47711b0bb097",
+      "slug": "fold-when-let",
+      "title": "fold, when, and let",
+      "blurb": "Use fold and when with let to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
