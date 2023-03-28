@@ -1,0 +1,22 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "51d03dc6-c93e-4d49-88b5-89165f00c1d8",
+      "slug": "if-expressions",
+      "title": "if expressions",
+      "blurb": "Use if expressions to return the answer.",
+      "authors": ["bobahop"]
+    },
+    {
+      "uuid": "1cd79ba8-6786-4ae4-a248-0f89a1daa8a8",
+      "slug": "answer-list",
+      "title": "Answer List",
+      "blurb": "Index into a List to return the answer.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
