@@ -1,0 +1,22 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "d0608dd0-9320-46c2-af9e-e54b9d0fc354",
+      "slug": "buildstring",
+      "title": "buildString",
+      "blurb": "Use buildString to return the result.",
+      "authors": ["bobahop"]
+    },
+    {
+      "uuid": "7d435fdf-db16-4c89-b56f-fe71a68c1d1b",
+      "slug": "fold-on-list",
+      "title": "fold on a List",
+      "blurb": "Iterate a List with fold to return the result.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
