@@ -1,0 +1,5 @@
+import java.time.*
+
+data class Year(val year: Int) {
+    val isLeap = LocalDate.of(year, Month.FEBRUARY, 28).isLeapYear
+}
