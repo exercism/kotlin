@@ -1,7 +1,7 @@
 # Introduction
 
 There are several ways to solve Isbn Verifier.
-One aproach is to use [`fold`][fold] and [`when`][when] with [`let`][let].
+One approach is to use [`fold`][fold] and [`when`][when] with [`let`][let].
 
 ## Approach: `fold` and `when` with `let`
 
