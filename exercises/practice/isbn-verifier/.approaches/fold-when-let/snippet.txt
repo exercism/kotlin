@@ -1,0 +1,8 @@
+.fold(Pair(10, 0)) { (pos, sum), ch ->
+    when {
+        ch.isDigit() -> pos - 1 to sum + (ch.digitToInt() * pos)
+        ch == 'X' && pos == 1 -> pos - 1 to sum + 10
+        ch == '-' -> pos to sum
+        else -> -1 to sum
+    }
+}
