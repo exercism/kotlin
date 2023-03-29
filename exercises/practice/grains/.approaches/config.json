@@ -1,0 +1,14 @@
+{
+  "introduction": {
+    "authors": ["bobahop"]
+  },
+  "approaches": [
+    {
+      "uuid": "4c786343-22f8-493f-8cb8-9c313f81ab59",
+      "slug": "bit-shifting",
+      "title": "Bit-shifting",
+      "blurb": "Use bit-shifting to raise 2 by a specified power.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
