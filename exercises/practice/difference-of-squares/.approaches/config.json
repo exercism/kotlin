@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["bobahop"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "862a595e-613f-4172-87f1-95c04e0051de",
+      "slug": "formula",
+      "title": "Formula",
+      "blurb": "Use a formula to calculate a solution.",
+      "authors": ["bobahop"]
+    }
+  ]
+}
