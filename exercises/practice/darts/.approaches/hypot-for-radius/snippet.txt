@@ -1,0 +1,7 @@
+val toss = hypot(x.toDouble(), y.toDouble())
+fun throwWithin(ring: Double) = toss <= ring
+
+if (throwWithin(innerRing)) return 10
+if (throwWithin(middleRing)) return 5
+if (throwWithin(outerRing)) return 1
+return 0
