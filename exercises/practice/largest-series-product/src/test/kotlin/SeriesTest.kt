@@ -46,14 +46,6 @@ class SeriesTest {
     }
 
     @Ignore
-    @Test
-    fun `corner - zero span on empty sequence`() = assertLSPEquals("", 0, 1)
-
-    @Ignore
-    @Test
-    fun `corner - zero span on not empty sequence`() = assertLSPEquals("123", 0, 1)
-
-    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun `reject - empty string and nonzero span`() {
         lsp("", 1)
