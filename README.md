@@ -91,7 +91,7 @@ To run the tests for a specific exercise, run the `test` Gradle task from the ex
 directory. For example:
 
 ```bash
-cd exercises
+cd exercises/practice
 https://github.com/exercism/v3/blob/main/gradlew bob:test
 
 ```
