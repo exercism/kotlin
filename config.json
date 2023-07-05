@@ -4,7 +4,7 @@
   "active": true,
   "status": {
     "concept_exercises": false,
-    "test_runner": false,
+    "test_runner": true,
     "representer": false,
     "analyzer": false
   },
@@ -14,6 +14,9 @@
     "indent_style": "space",
     "indent_size": 4,
     "highlightjs_language": "kotlin"
+  },
+  "test_runner": {
+    "average_run_time": 4.0
   },
   "files": {
     "solution": ["src/main/kotlin/%{pascal_slug}.kt"],
