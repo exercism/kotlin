@@ -25,5 +25,6 @@
       ".meta/src/reference/kotlin/BankAccount.kt"
     ]
   },
+  "test_runner": false,
   "blurb": "Simulate a bank account supporting opening/closing, withdraws, and deposits of money. Watch out for concurrent transactions!"
 }
