@@ -16,7 +16,7 @@
     "highlightjs_language": "kotlin"
   },
   "test_runner": {
-    "average_run_time": 4.0
+    "average_run_time": 4
   },
   "files": {
     "solution": ["src/main/kotlin/%{pascal_slug}.kt"],
