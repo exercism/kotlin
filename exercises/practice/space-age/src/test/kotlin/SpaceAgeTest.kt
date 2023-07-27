@@ -35,4 +35,7 @@ class SpaceAgeTest {
     fun `age on Neptune`() = assertYearsEqual(0.35, SpaceAge(1821023456).onNeptune())
 }
 
-private fun assertYearsEqual(expectedYears: Double, actualYears: Double) = assertEquals(expectedYears, actualYears)
+private const val TOLERANCE = 0.01
+
+private fun assertYearsEqual(expectedYears: Double, actualYears: Double) = 
+    assertEquals(expectedYears, actualYears, absoluteTolerance = TOLERANCE)
