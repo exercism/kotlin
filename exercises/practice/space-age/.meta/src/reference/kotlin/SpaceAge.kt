@@ -1,11 +1,7 @@
-import java.math.BigDecimal
-import java.math.RoundingMode
-
 class SpaceAge(private val seconds: Long) {
 
     companion object {
         const val EARTH_ORBITAL_PERIOD_IN_SECONDS = 31557600.0
-        const val PRECISION = 2
 
         private enum class Planet(val relativeOrbitalPeriod: Double) {
             EARTH(1.0),
@@ -28,9 +24,6 @@ class SpaceAge(private val seconds: Long) {
     fun onUranus() = calculateAge(Planet.URANUS)
     fun onNeptune() = calculateAge(Planet.NEPTUNE)
 
-    private fun calculateAge(planet: Planet): Double {
-        val age: Double = seconds / (EARTH_ORBITAL_PERIOD_IN_SECONDS * planet.relativeOrbitalPeriod)
-
-        return BigDecimal(age).setScale(PRECISION, RoundingMode.HALF_UP).toDouble()
-    }
+    private fun calculateAge(planet: Planet): Double = 
+        seconds / (EARTH_ORBITAL_PERIOD_IN_SECONDS * planet.relativeOrbitalPeriod)
 }
