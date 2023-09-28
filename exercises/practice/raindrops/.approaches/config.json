@@ -1,7 +1,8 @@
 {
   "introduction": {
-    "authors": ["bobahop"],
-    "contributors": []
+    "authors": [
+      "bobahop"
+    ]
   },
   "approaches": [
     {
@@ -9,14 +10,18 @@
       "slug": "buildstring",
       "title": "buildString",
       "blurb": "Use buildString to return the result.",
-      "authors": ["bobahop"]
+      "authors": [
+        "bobahop"
+      ]
     },
     {
       "uuid": "7d435fdf-db16-4c89-b56f-fe71a68c1d1b",
       "slug": "fold-on-list",
       "title": "fold on a List",
       "blurb": "Iterate a List with fold to return the result.",
-      "authors": ["bobahop"]
+      "authors": [
+        "bobahop"
+      ]
     }
   ]
 }
