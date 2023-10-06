@@ -24,10 +24,10 @@ This is sufficient, since there is no object state that needs to change with eac
 The `String` [`trim()`][trim] method is applied to the input to eliminate any whitespace at either end of the input.
 If the string has no characters left, it returns the response for saying nothing.
 
-```exercism/caution
+~~~~exercism/caution
 Note that a `null` `string` would be different from a `String` of all whitespace.
 A `null` `String` would throw a `NullPointerException` if `trim()` were applied to it.
-```
+~~~~
 
 A question is determined by use of the [`endsWith()`][endswith] method to see if the input ends with a question mark.
 
