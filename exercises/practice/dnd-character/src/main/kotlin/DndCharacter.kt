@@ -1,22 +1,25 @@
+import java.lang.Math.floorDiv
+import kotlin.random.Random
+
 class DndCharacter {
 
-    val strength: Int = TODO("Initialize value to complete the task")
-    val dexterity: Int = TODO("Initialize value to complete the task")
-    val constitution: Int = TODO("Initialize value to complete the task")
-    val intelligence: Int = TODO("Initialize value to complete the task")
-    val wisdom: Int = TODO("Initialize value to complete the task")
-    val charisma: Int = TODO("Initialize value to complete the task")
-    val hitpoints: Int = TODO("Initialize value to complete the task")
+    val strength = ability()
+    val dexterity = ability()
+    val constitution = ability()
+    val intelligence = ability()
+    val wisdom = ability()
+    val charisma = ability()
+    val hitpoints = 10 + modifier(constitution)
 
     companion object {
 
-        fun ability(): Int {
-            TODO("Implement the function to complete the task")
-        }
+        fun ability() = (1..4)
+            .map { Random.nextInt(1, 6) }
+            .sorted()
+            .drop(1)
+            .sum()
 
-        fun modifier(score: Int): Int {
-            TODO("Implement the function to complete the task")
-        }
+        fun modifier(score: Int) = floorDiv(score - 10, 2)
     }
 
 }

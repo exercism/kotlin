@@ -1,9 +1,20 @@
-class Dna {
+class Dna(dna: String) {
 
-    // TODO: Implement proper constructor
+    private val map = mutableMapOf(
+        'A' to 0,
+        'C' to 0,
+        'T' to 0,
+        'G' to 0,
+    )
 
-    val nucleotideCounts: Map<Char, Int>
-        get() {
-            TODO("Implement this function to complete the task")
+    init {
+        if (dna.isNotEmpty()) {
+            require(dna.all { map.keys.contains(it) })
         }
+        dna.forEach {
+            map[it] = map.getOrDefault(it, 0) + 1
+        }
+    }
+
+    val nucleotideCounts = map
 }

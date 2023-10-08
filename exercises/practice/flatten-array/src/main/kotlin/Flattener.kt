@@ -1,5 +1,11 @@
 object Flattener {
-    fun flatten(source: Collection<Any?>): List<Any> {
-        TODO("Implement the function to complete the task")
-    }
+    fun flatten(source: Collection<Any?>): List<Any> = source
+        .filterNotNull()
+        .flatMap {
+            if (it is Collection<*>) {
+                return@flatMap flatten(it)
+            } else {
+                listOf(it)
+            }
+        }
 }
