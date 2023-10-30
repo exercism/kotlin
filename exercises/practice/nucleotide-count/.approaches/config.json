@@ -1,6 +1,6 @@
 {
   "introduction": {
-    "authors": ["Erwin97"],
+    "authors": ["ErwinOlie"],
     "contributors": []
   },
   "approaches": [
@@ -9,7 +9,7 @@
       "slug": "groupby-plus",
       "title": "groupBy with +",
       "blurb": "Use groupBy to count the nucleotides and add them to the base case.",
-      "authors": ["Erwin97"]
+      "authors": ["ErwinOlie"]
     }
   ]
 }
