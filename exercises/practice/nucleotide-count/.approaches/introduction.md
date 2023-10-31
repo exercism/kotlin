@@ -9,7 +9,6 @@ Each solution has to contain the following three elements:
 One approach is to use `groupBy` and the `+` operator:
 ```kotlin
 class Dna(val sequence: String) {
-
     init {
         require(sequence.all { it in "ACGT" })
     }
