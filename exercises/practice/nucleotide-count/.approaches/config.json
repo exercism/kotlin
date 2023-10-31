@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "authors": ["ErwinOlie"],
+    "contributors": []
+  },
+  "approaches": [
+    {
+      "uuid": "56375e89-328b-4fb6-9195-91fd8e623fd3",
+      "slug": "groupby-plus",
+      "title": "groupBy with +",
+      "blurb": "Use groupBy to count the nucleotides and add them to the base case.",
+      "authors": ["ErwinOlie"]
+    }
+  ]
+}
