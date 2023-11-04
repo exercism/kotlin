@@ -9,15 +9,6 @@ fun updateGradleFiles() {
 
     val filesToCopy = listOf(
         "build.gradle.kts",
-        "settings.gradle.kts",
-        "gradle/",
-        "gradlew",
-        "gradlew.bat"
-    )
-
-    val executables = listOf(
-        "gradlew",
-        "gradlew.bat"
     )
 
     exerciseDirs.forEach { dir ->
@@ -27,17 +18,13 @@ fun updateGradleFiles() {
             .takeIf { it.exists() }
             ?.delete()
 
-        val templateDir = File("_template")
+        val templateDir = File("exercises/_template")
 
         filesToCopy.forEach { file ->
             val src = templateDir.resolve(file)
             val dest = dir.resolve(file)
 
             src.copyRecursively(dest, overwrite = true)
-
-            if (file in executables) {
-                dest.setExecutable(true)
-            }
         }
     }
 }

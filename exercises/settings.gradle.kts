@@ -1,9 +1,14 @@
+include("_template")
+include(
+    "concept:annalyns-infiltration",
+    "concept:lucians-luscious-lasagna",
+)
 include(
     "practice:accumulate",
     "practice:acronym",
-    "practice:all-your-base",
     "practice:affine-cipher",
     "practice:allergies",
+    "practice:all-your-base",
     "practice:anagram",
     "practice:armstrong-numbers",
     "practice:atbash-cipher",
