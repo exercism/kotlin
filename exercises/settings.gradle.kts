@@ -13,6 +13,7 @@ include(
     "practice:binary-search",
     "practice:binary-search-tree",
     "practice:bob",
+    "practice:bowling",
     "practice:change",
     "practice:clock",
     "practice:collatz-conjecture",
