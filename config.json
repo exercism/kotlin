@@ -821,6 +821,17 @@
         "topics": ["arrays", "generics", "recursion", "searching"]
       },
       {
+        "slug": "bowling",
+        "name": "Bowling",
+        "uuid": "ae084405-48d7-43ea-9bc5-6c4ebae4c1ef",
+        "practices": [],
+        "prerequisites": [
+          "for-loops",
+          "arrays"
+        ],
+        "difficulty": 6
+      },
+      {
         "slug": "etl",
         "name": "ETL",
         "uuid": "f0f297f2-429f-4626-8b7f-0706a1e8f255",
