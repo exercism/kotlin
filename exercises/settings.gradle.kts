@@ -53,6 +53,7 @@ include(
     "practice:pangram",
     "practice:pascals-triangle",
     "practice:perfect-numbers",
+    "practice:protein-translation",
     "practice:phone-number",
     "practice:pig-latin",
     "practice:prime-factors",
