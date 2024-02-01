@@ -262,6 +262,15 @@
         "topics": ["conditionals", "loops", "parsing", "strings"]
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "368ba5ef-8c54-4016-93df-3a7d3b136243",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": ["algorithms", "lists", "conditionals", "loops", "strings"]
+      },
+      {
         "slug": "pig-latin",
         "name": "Pig Latin",
         "uuid": "cb2ce8e5-f143-4423-a3bc-959f4222c186",

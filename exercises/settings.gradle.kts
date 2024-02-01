@@ -56,6 +56,7 @@ include(
     "practice:phone-number",
     "practice:pig-latin",
     "practice:prime-factors",
+    "practice:protein-translation",
     "practice:rail-fence-cipher",
     "practice:raindrops",
     "practice:react",

@@ -1,0 +1,16 @@
+{
+  "authors": ["AnneKlapwijk"],
+  "files": {
+    "solution": [
+      "src/main/kotlin/ProteinTranslation.kt"
+    ],
+    "test": [
+      "src/test/kotlin/ProteinTranslationTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/ProteinTranslation.kt"
+    ]
+  },
+  "blurb": "Translate RNA sequences into proteins.",
+  "source": "Tyler Long"
+}
