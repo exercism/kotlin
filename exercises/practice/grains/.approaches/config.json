@@ -1,6 +1,8 @@
 {
   "introduction": {
-    "authors": ["bobahop"]
+    "authors": [
+      "bobahop"
+    ]
   },
   "approaches": [
     {
@@ -8,7 +10,9 @@
       "slug": "bit-shifting",
       "title": "Bit-shifting",
       "blurb": "Use bit-shifting to raise 2 by a specified power.",
-      "authors": ["bobahop"]
+      "authors": [
+        "bobahop"
+      ]
     }
   ]
 }

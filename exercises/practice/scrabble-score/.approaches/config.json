@@ -1,7 +1,8 @@
 {
   "introduction": {
-    "authors": ["bobahop"],
-    "contributors": []
+    "authors": [
+      "bobahop"
+    ]
   },
   "approaches": [
     {
@@ -9,14 +10,18 @@
       "slug": "map",
       "title": "map",
       "blurb": "Use map lookups to return the answer.",
-      "authors": ["bobahop"]
+      "authors": [
+        "bobahop"
+      ]
     },
     {
       "uuid": "5481eb78-3c12-458f-b88c-3cf7632856e1",
       "slug": "when",
       "title": "when",
       "blurb": "Use when lookups to return the answer.",
-      "authors": ["bobahop"]
+      "authors": [
+        "bobahop"
+      ]
     }
   ]
 }
