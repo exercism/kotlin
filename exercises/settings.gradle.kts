@@ -15,6 +15,7 @@ include(
     "practice:bob",
     "practice:bowling",
     "practice:change",
+    "practice:circular-buffer",
     "practice:clock",
     "practice:collatz-conjecture",
     "practice:complex-numbers",
