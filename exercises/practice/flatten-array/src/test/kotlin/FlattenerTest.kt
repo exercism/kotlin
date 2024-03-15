@@ -47,7 +47,7 @@ class FlattenerTest {
 
     @Ignore
     @Test
-    fun flattensHetrogenousList() {
+    fun flattensHeterogenousList() {
         val nestedList = listOf(0, 2.1, listOf(listOf(true, "flatten"), 'a', listOf(listOf(100)), null, listOf(listOf(null))), -2)
         assertEquals(listOf(0, 2.1, true, "flatten", 'a', 100, -2), Flattener.flatten(nestedList))
     }
