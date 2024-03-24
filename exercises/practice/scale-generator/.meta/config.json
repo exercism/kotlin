@@ -16,5 +16,5 @@
       ".meta/src/reference/kotlin/Scale.kt"
     ]
   },
-  "blurb": "Generate musical scales, given a starting note and a set of intervals. "
+  "blurb": "Generate musical scales, given a starting note and a set of intervals."
 }
