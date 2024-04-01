@@ -56,6 +56,23 @@ object Bob {
 
 For more information, check the [Answer `List` approach][approach-answer-list].
 
+## Approach: `when` expression
+
+```kotlin
+object Bob {
+    fun hey(statement: String): String =
+        when {
+            statement.isQuestion() && statement.isYelling() -> "Calm down, I know what I'm doing!"
+            statement.isQuestion() -> "Sure."
+            statement.isYelling() -> "Whoa, chill out!"
+            statement.isSilence() -> "Fine. Be that way!"
+            else -> "Whatever."
+        }
+}
+```
+
+For more information, check the [`when` expression approach][approach-when]
+
 ## Which approach to use?
 
 The choice between `if` expressions and answers `List` can be made by perceived readability.
@@ -65,3 +82,4 @@ The choice between `if` expressions and answers `List` can be made by perceived 
 [dry]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [approach-if]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/if-expressions
 [approach-answer-list]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/answer-list
+[approach-when]: https://exercism.org/tracks/kotlin/exercises/bob/approaches/when-expression
