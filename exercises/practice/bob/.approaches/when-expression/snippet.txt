@@ -1,0 +1,20 @@
+object Bob {
+    fun hey(statement: String): String =
+        when {
+            statement.isQuestion() && statement.isYelling() -> "Calm down, I know what I'm doing!"
+            statement.isQuestion() -> "Sure."
+            statement.isYelling() -> "Whoa, chill out!"
+            statement.isSilence() -> "Fine. Be that way!"
+            else -> "Whatever."
+        }
+
+    private fun String.isSilence(): Boolean = this.isBlank()
+    private fun String.isQuestion(): Boolean = this.trim().endsWith('?')
+    private fun String.isYelling(): Boolean {
+        val letters = this.filter { it.isLetter() }
+        return if (letters.isEmpty())
+            false
+        else
+            letters.all { it.isUpperCase() }
+    }
+}
