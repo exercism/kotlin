@@ -22,6 +22,15 @@
       "authors": [
         "bobahop"
       ]
+    },
+    {
+      "uuid": "7aebc1df-c23a-42c9-90c4-f022e40d67e9",
+      "slug": "when-exrpession",
+      "title":"when expression",
+      "blurb": "Use a when expression to return the answer.",
+      "authors": [
+        "micha-b"
+      ]
     }
   ]
 }
