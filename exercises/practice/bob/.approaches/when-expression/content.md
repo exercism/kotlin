@@ -13,13 +13,7 @@ object Bob {
 
     private fun String.isSilence(): Boolean = this.isBlank()
     private fun String.isQuestion(): Boolean = this.trim().endsWith('?')
-    private fun String.isYelling(): Boolean {
-        val letters = this.filter { it.isLetter() }
-        return if (letters.isEmpty())
-            false
-        else
-            letters.all { it.isUpperCase() }
-    }
+    private fun String.isYelling(): Boolean = any(Char::isLetter) && toUpperCase() == this
 }
 ```
 
