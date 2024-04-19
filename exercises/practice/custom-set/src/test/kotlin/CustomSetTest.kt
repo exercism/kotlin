@@ -8,32 +8,32 @@ class CustomSetTest {
 
     @Test
     fun `sets with no elements are empty`() {
-        val sut = CustomSet()
-        assertTrue(sut.isEmpty())
+        val customSet = CustomSet()
+        assertTrue(customSet.isEmpty())
     }
 
     @Test
     fun `sets with elements are not empty`() {
-        val sut = CustomSet(1)
-        assertFalse(sut.isEmpty())
+        val customSet = CustomSet(1)
+        assertFalse(customSet.isEmpty())
     }
 
     @Test
     fun `nothing is contained in an empty set`() {
-        val sut = CustomSet()
-        assertFalse(sut.contains(1))
+        val customSet = CustomSet()
+        assertFalse(customSet.contains(1))
     }
 
     @Test
     fun `when the element is in the set`() {
-        val sut = CustomSet(1, 2, 3)
-        assertTrue(sut.contains(1))
+        val customSet = CustomSet(1, 2, 3)
+        assertTrue(customSet.contains(1))
     }
 
     @Test
     fun `when the element is not in the set`() {
-        val sut = CustomSet(1, 2, 3)
-        assertFalse(sut.contains(4))
+        val customSet = CustomSet(1, 2, 3)
+        assertFalse(customSet.contains(4))
     }
 
     @Test
