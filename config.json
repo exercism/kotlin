@@ -184,6 +184,14 @@
         ]
       },
       {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "88e7d43f-87f8-4c00-a463-f1593d725e18",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "gigasecond",
         "name": "Gigasecond",
         "uuid": "1eb4c9d3-0085-4ca3-b1bb-9a20b88a1e7f",
