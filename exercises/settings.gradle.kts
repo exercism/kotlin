@@ -27,6 +27,7 @@ include(
     "practice:diffie-hellman",
     "practice:dnd-character",
     "practice:dominoes",
+    "practice:eliuds-eggs",
     "practice:etl",
     "practice:flatten-array",
     "practice:forth",
