@@ -1,115 +1,32 @@
-# Running the Tests
+# Tests
 
-Choose your operating system:
+## Running the Tests
 
-* [Windows](#h-windows)
-* [macOS](#h-macos)
-* [Linux](#h-linux)
+1. Get an exercise:
 
-----
-
-## Windows
-
-1. Open a Command Prompt.
-2. Get an exercise:
-
-    ```batchfile
-    C:\Users\JohnDoe>exercism download --exercise=hello-world --track=kotlin
-
-    Not Submitted:     1 problem
-    Kotlin (Hello World) C:\Users\JohnDoe\exercism\kotlin\hello-world
-
-    New:               1 problem
-    Kotlin (Hello World) C:\Users\JohnDoe\exercism\kotlin\hello-world
-
-    unchanged: 0, updated: 0, new: 1
-    ```
-
-3. Change directory into the exercism:
-
-    ```batchfile
-    C:\Users\JohnDoe>cd C:\Users\JohnDoe\exercism\kotlin\hello-world
-    ```
-
-4. Run the tests:
-
-    ```batchfile
-    C:\Users\JohnDoe\exercism\kotlin\hello-world>gradlew.bat test
-    ```
-   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
-
-5. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
-
-
-Good luck!  Have fun!
-
-If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
-
-----
-
-## macOS
-
-1. In the terminal window, get an exercise:
-
-    ```
-    $ exercism download --exercise=hello-world --track=kotlin
-
-    New:                 1 problem
-    Kotlin (Etl) /Users/johndoe/exercism/kotlin/hello-world
-
-    unchanged: 0, updated: 0, new: 1
+    ```bash
+    $ exercism download -track=kotlin --exercise=hello-world -
     ```
 
 2. Change directory into the exercise:
 
-    ```
-    $ cd /Users/johndoe/exercism/kotlin/hello-world
-    ```
-
-3. Run the tests:
-
-    ```
-    $ ./gradlew test
-    ```
-   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
-
-4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
-
-Good luck!  Have fun!
-
-If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
-
-----
-
-## Linux
-
-1. In the terminal window, get an exercise:
-
-    ```
-    $ exercism download --exercise=hello-world --track=kotlin
-
-    New:                 1 problem
-    Kotlin (Etl) /home/johndoe/exercism/kotlin/hello-world
-
-    unchanged: 0, updated: 0, new: 1
-    ```
-
-2. Change directory into the exercise:
-
-    ```
-    $ cd /home/johndoe/exercism/kotlin/hello-world
+    ```bash
+    $ cd <path_to_exercise_directory>
     ```
 
 3. Run the tests:
 
-    ```
+    ```bash
     $ ./gradlew test
     ```
-   *(Don't worry about the tests failing, at first, this is how you begin each exercise.)*
 
-4. Solve the exercise.  Find and work through the `TUTORIAL.md` guide ([view on GitHub](https://github.com/exercism/kotlin/blob/main/exercises/practice/hello-world/TUTORIAL.md)).
+On most exercises, only the first test is run by default.
+The other tests are annotated with `@Ignore` to skip them.
 
-Good luck!  Have fun!
+This is common practice in test-driven development (or TDD for short).
+It is used to ensure that you are working on one problem at a time.
 
-If you get stuck, at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
+---
+Good luck! Have fun!
 
+If you get stuck at any point, don't forget to reach out for [help](https://exercism.org/docs/using/contact).
