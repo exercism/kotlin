@@ -3,6 +3,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
+import kotlin.test.Ignore
 
 class CustomSetTest {
 
@@ -12,30 +13,35 @@ class CustomSetTest {
         assertTrue(sut.isEmpty())
     }
 
+    @Ignore
     @Test
     fun `sets with elements are not empty`() {
         val sut = CustomSet(1)
         assertFalse(sut.isEmpty())
     }
 
+    @Ignore
     @Test
     fun `nothing is contained in an empty set`() {
         val sut = CustomSet()
         assertFalse(sut.contains(1))
     }
 
+    @Ignore
     @Test
     fun `when the element is in the set`() {
         val sut = CustomSet(1, 2, 3)
         assertTrue(sut.contains(1))
     }
 
+    @Ignore
     @Test
     fun `when the element is not in the set`() {
         val sut = CustomSet(1, 2, 3)
         assertFalse(sut.contains(4))
     }
 
+    @Ignore
     @Test
     fun `empty set is a subset of another empty set`() {
         val set1 = CustomSet()
@@ -43,6 +49,7 @@ class CustomSetTest {
         assertTrue(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `empty set is a subset of non empty set`() {
         val set1 = CustomSet()
@@ -50,6 +57,7 @@ class CustomSetTest {
         assertTrue(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `non empty set is not a subset of empty set`() {
         val set1 = CustomSet(1)
@@ -57,6 +65,7 @@ class CustomSetTest {
         assertFalse(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `set is a subset of set with exact same elements`() {
         val set1 = CustomSet(1, 2, 3)
@@ -64,6 +73,7 @@ class CustomSetTest {
         assertTrue(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `set is a subset of larger set with same elements`() {
         val set1 = CustomSet(1, 2, 3)
@@ -71,6 +81,7 @@ class CustomSetTest {
         assertTrue(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `set is not a subset of set that does not contain its elements`() {
         val set1 = CustomSet(1, 2, 3)
@@ -78,6 +89,7 @@ class CustomSetTest {
         assertFalse(set1.isSubset(set2))
     }
 
+    @Ignore
     @Test
     fun `the empty set is disjoint with itself`() {
         val set1 = CustomSet()
@@ -85,6 +97,7 @@ class CustomSetTest {
         assertTrue(set1.isDisjoint(set2))
     }
 
+    @Ignore
     @Test
     fun `empty set is disjoint with non empty set`() {
         val set1 = CustomSet()
@@ -92,6 +105,7 @@ class CustomSetTest {
         assertTrue(set1.isDisjoint(set2))
     }
 
+    @Ignore
     @Test
     fun `non empty set is disjoint with empty set`() {
         val set1 = CustomSet(1)
@@ -99,6 +113,7 @@ class CustomSetTest {
         assertTrue(set1.isDisjoint(set2))
     }
 
+    @Ignore
     @Test
     fun `sets are not disjoint if they share an element`() {
         val set1 = CustomSet(1, 2)
@@ -106,6 +121,7 @@ class CustomSetTest {
         assertFalse(set1.isDisjoint(set2))
     }
 
+    @Ignore
     @Test
     fun `sets are disjoint if they share no elements`() {
         val set1 = CustomSet(1, 2)
@@ -113,6 +129,7 @@ class CustomSetTest {
         assertTrue(set1.isDisjoint(set2))
     }
 
+    @Ignore
     @Test
     fun `empty sets are equal`() {
         val set1 = CustomSet()
@@ -120,6 +137,7 @@ class CustomSetTest {
         assertEquals(set1, set2)
     }
 
+    @Ignore
     @Test
     fun `empty set is not equal to non empty set`() {
         val set1 = CustomSet()
@@ -127,6 +145,7 @@ class CustomSetTest {
         assertNotEquals(set1, set2)
     }
 
+    @Ignore
     @Test
     fun `non empty set is not equal to empty set`() {
         val set1 = CustomSet(1, 2, 3)
@@ -134,6 +153,7 @@ class CustomSetTest {
         assertNotEquals(set1, set2)
     }
 
+    @Ignore
     @Test
     fun `sets with the same elements are equal`() {
         val set1 = CustomSet(1, 2)
@@ -142,6 +162,7 @@ class CustomSetTest {
 
     }
 
+    @Ignore
     @Test
     fun `sets with different elements are not equal`() {
         val set1 = CustomSet(1, 2, 3)
@@ -149,6 +170,7 @@ class CustomSetTest {
         assertNotEquals(set1, set2)
     }
 
+    @Ignore
     @Test
     fun `set is not equal to larger set with same elements`() {
         val set1 = CustomSet(1, 2, 3)
@@ -156,6 +178,7 @@ class CustomSetTest {
         assertNotEquals(set1, set2)
     }
 
+    @Ignore
     @Test
     fun `add to empty set`() {
         val sut = CustomSet()
@@ -164,6 +187,7 @@ class CustomSetTest {
         assertEquals(expected, sut)
     }
 
+    @Ignore
     @Test
     fun `add to non empty set`() {
         val sut = CustomSet(1, 2, 4)
@@ -172,6 +196,7 @@ class CustomSetTest {
         assertEquals(expected, sut)
     }
 
+    @Ignore
     @Test
     fun `adding an existing element does not change the set`() {
         val sut = CustomSet(1, 2, 3)
@@ -180,6 +205,7 @@ class CustomSetTest {
         assertEquals(expected, sut)
     }
 
+    @Ignore
     @Test
     fun `intersection of two empty sets is an empty set`() {
         val set1 = CustomSet()
@@ -188,6 +214,7 @@ class CustomSetTest {
         assertEquals(expected, set1.intersection(set2))
     }
 
+    @Ignore
     @Test
     fun `intersection of an empty set and non empty set is an empty set`() {
         val set1 = CustomSet()
@@ -196,6 +223,7 @@ class CustomSetTest {
         assertEquals(expected, set1.intersection(set2))
     }
 
+    @Ignore
     @Test
     fun `intersection of a non empty set and an empty set is an empty set`() {
         val set1 = CustomSet(1, 2, 3, 4)
@@ -204,6 +232,7 @@ class CustomSetTest {
         assertEquals(expected, set1.intersection(set2))
     }
 
+    @Ignore
     @Test
     fun `intersection of two sets with no shared elements is an empty set`() {
         val set1 = CustomSet(1, 2, 3)
@@ -212,6 +241,7 @@ class CustomSetTest {
         assertEquals(expected, set1.intersection(set2))
     }
 
+    @Ignore
     @Test
     fun `intersection of two sets with shared elements is a set of the shared elements`() {
         val set1 = CustomSet(1, 2, 3, 4)
@@ -220,6 +250,7 @@ class CustomSetTest {
         assertEquals(expected, set1.intersection(set2))
     }
 
+    @Ignore
     @Test
     fun `difference of two empty sets is an empty set`() {
         val set1 = CustomSet()
@@ -228,6 +259,7 @@ class CustomSetTest {
         assertEquals(expected, set1 - set2)
     }
 
+    @Ignore
     @Test
     fun `difference of empty set and non empty set is an empty set`() {
         val set1 = CustomSet()
@@ -236,6 +268,7 @@ class CustomSetTest {
         assertEquals(expected, set1 - set2)
     }
 
+    @Ignore
     @Test
     fun `difference of a non empty set and an empty set is the non empty set`() {
         val set1 = CustomSet(1, 2, 3, 4)
@@ -244,6 +277,7 @@ class CustomSetTest {
         assertEquals(expected, set1 - set2)
     }
 
+    @Ignore
     @Test
     fun `difference of two non empty sets is a set of elements that are only in the first set`() {
         val set1 = CustomSet(3, 2, 1)
@@ -252,6 +286,7 @@ class CustomSetTest {
         assertEquals(expected, set1 - set2)
     }
 
+    @Ignore
     @Test
     fun `union of empty sets is an empty set`() {
         val set1 = CustomSet()
@@ -260,6 +295,7 @@ class CustomSetTest {
         assertEquals(expected, set1 + set2)
     }
 
+    @Ignore
     @Test
     fun `union of an empty set and non empty set is the non empty set`() {
         val set1 = CustomSet()
@@ -268,6 +304,7 @@ class CustomSetTest {
         assertEquals(expected, set1 + set2)
     }
 
+    @Ignore
     @Test
     fun `union of a non empty set and empty set is the non empty set`() {
         val set1 = CustomSet(1, 3)
@@ -276,6 +313,7 @@ class CustomSetTest {
         assertEquals(expected, set1 + set2)
     }
 
+    @Ignore
     @Test
     fun `union of non empty sets contains all unique elements`() {
         val set1 = CustomSet(1, 3)
