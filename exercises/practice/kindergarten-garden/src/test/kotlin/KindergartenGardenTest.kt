@@ -13,6 +13,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `single student2`() {
         val student = "Alice"
@@ -22,6 +23,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `two students`() {
         val student = "Bob"
@@ -31,6 +33,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `one garden second student`() {
         val student = "Bob"
@@ -40,6 +43,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `one garden third student`() {
         val student = "Charlie"
@@ -49,6 +53,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `full garden first student`() {
         val student = "Alice"
@@ -58,6 +63,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `full garden second student`() {
         val student = "Bob"
@@ -67,6 +73,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `full garden second to last student`() {
         val student = "Kincaid"
@@ -76,6 +83,7 @@ class KindergartenGardenTest {
         assertEquals(expected, KindergartenGarden(diagram).getPlantsOfStudent(student))
     }
 
+    @Ignore
     @Test
     fun `full garden last student`() {
         val student = "Larry"
