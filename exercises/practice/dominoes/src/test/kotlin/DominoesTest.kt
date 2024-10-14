@@ -1,5 +1,4 @@
-import org.junit.Rule
-import org.junit.rules.ExpectedException
+import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -8,49 +7,58 @@ class DominoesTest {
     @Test
     fun `empty input = empty output`() = Dominoes.formChain().should { haveSize(0) }
 
+    @Ignore
     @Test
     fun `singleton input = singleton output`() {
         val input = listOf(Domino(1, 1))
         Dominoes.formChain(input).should { beValidDominoes(input) }
     }
 
+    @Ignore
     @Test(ChainNotFoundException::class)
     fun `singleton can't be chained`() {
         Dominoes.formChain(Domino(1, 2))
     }
 
+    @Ignore
     @Test
     fun `three elements`() {
         val input = listOf(Domino(1, 2), Domino(3, 1), Domino(2, 3))
         Dominoes.formChain(input).should { beValidDominoes(input) }
     }
 
+    @Ignore
     @Test
     fun `can reverse dominoes`() {
         val input = listOf(Domino(1, 2), Domino(1, 3), Domino(2, 3))
         Dominoes.formChain(input).should { beValidDominoes(input) }
     }
 
+    @Ignore
     @Test(expected = ChainNotFoundException::class)
     fun `can't be chained`() {
         Dominoes.formChain(Domino(1, 2), Domino(4, 1), Domino(2, 3))
     }
 
+    @Ignore
     @Test(expected = ChainNotFoundException::class)
     fun `disconnected - simple`() {
         Dominoes.formChain(Domino(1, 1), Domino(2, 2))
     }
 
+    @Ignore
     @Test(expected = ChainNotFoundException::class)
     fun `disconnected - double loop`() {
         Dominoes.formChain(Domino(1, 2), Domino(2, 1), Domino(3, 4), Domino(4, 3))
     }
 
+    @Ignore
     @Test(expected = ChainNotFoundException::class)
     fun `disconnected - single isolated`() {
         Dominoes.formChain(Domino(1, 2), Domino(2, 3), Domino(3, 1), Domino(4, 4))
     }
 
+    @Ignore
     @Test
     fun `need backtrack`() {
         val input = listOf(
@@ -62,6 +70,7 @@ class DominoesTest {
         Dominoes.formChain(input).should { beValidDominoes(input) }
     }
 
+    @Ignore
     @Test
     fun `separate loops`() {
         val input = listOf(
@@ -74,6 +83,7 @@ class DominoesTest {
         Dominoes.formChain(input).should { beValidDominoes(input) }
     }
 
+    @Ignore
     @Test
     fun `nine elements`() {
         val input = listOf(
