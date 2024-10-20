@@ -1,5 +1,6 @@
 import org.junit.Test
 import java.math.BigInteger
+import kotlin.test.Ignore
 import kotlin.test.assertEquals
 import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
@@ -19,6 +20,7 @@ class DiffieHellmanTest {
      * Due to the nature of randomness, there is always a chance that this test fails.
      * Be sure to check the actual generated values.
      */
+    @Ignore
     @Test
     fun `private key is random`() {
         val prime = 7919.toBigInteger()
@@ -28,6 +30,7 @@ class DiffieHellmanTest {
         assertNotEquals(privateKeyA, privateKeyB)
     }
 
+    @Ignore
     @Test
     fun `calculate public key using private key`() {
         val primeA = 23.toBigInteger()
@@ -39,6 +42,7 @@ class DiffieHellmanTest {
     }
 
 
+    @Ignore
     @Test
     fun `calculate secret using other party's public key`() {
         val prime = 23.toBigInteger()
@@ -50,6 +54,7 @@ class DiffieHellmanTest {
     }
 
 
+    @Ignore
     @Test
     fun `key exchange`() {
         val primeA = 23.toBigInteger()
