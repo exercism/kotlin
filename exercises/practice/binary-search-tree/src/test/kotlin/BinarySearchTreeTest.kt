@@ -1,3 +1,4 @@
+import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -15,6 +16,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `inserts less`() {
         val tree = BinarySearchTree<Char>()
@@ -32,6 +34,7 @@ class BinarySearchTreeTest {
         assertEquals(expectedRoot, actualRoot)
     }
 
+    @Ignore
     @Test
     fun `inserts same`() {
         val tree = BinarySearchTree<String>()
@@ -49,6 +52,7 @@ class BinarySearchTreeTest {
         assertEquals(expectedRoot, actualRoot)
     }
 
+    @Ignore
     @Test
     fun `inserts right`() {
         val tree = BinarySearchTree<Int>()
@@ -66,6 +70,7 @@ class BinarySearchTreeTest {
         assertEquals(expectedRoot, actualRoot)
     }
 
+    @Ignore
     @Test
     fun `creates complex tree`() {
         val tree = BinarySearchTree<Char>()
@@ -76,6 +81,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `sorts single element`() {
         val tree = BinarySearchTree<String>()
@@ -85,6 +91,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `sorts collection of two if second inserted is smaller than first`() {
         val tree = BinarySearchTree<Int>()
@@ -95,6 +102,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `sorts collection of two if second number is same as first`() {
         val tree = BinarySearchTree<Char>()
@@ -105,6 +113,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `sorts collection of two if second inserted is bigger than first`() {
         val tree = BinarySearchTree<Char>()
@@ -115,6 +124,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `iterates over complex tree`() {
         val tree = BinarySearchTree<String>()
@@ -125,6 +135,7 @@ class BinarySearchTreeTest {
         assertEquals(expected, actual)
     }
 
+    @Ignore
     @Test
     fun `big tree level order`() {
         val tree = BinarySearchTree<Int>()
