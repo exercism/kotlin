@@ -1,17 +1,20 @@
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.Ignore
 
 class KnapsackTest {
 
     @Test
     fun `no items`() = assertEquals(0, knapsack(100, listOf()))
 
+    @Ignore
     @Test
     fun `one item, too heavy`() {
         val items = listOf(Item(100, 1))
         assertEquals(0, knapsack(10, items))
     }
 
+    @Ignore
     @Test
     fun `five items (cannot be greedy by weight)`() {
         val items = listOf(
@@ -24,6 +27,7 @@ class KnapsackTest {
         assertEquals(21, knapsack(10, items))
     }
 
+    @Ignore
     @Test
     fun `five items (cannot be greedy by value)`() {
         val items = listOf(
@@ -36,6 +40,7 @@ class KnapsackTest {
         assertEquals(80, knapsack(10, items))
     }
 
+    @Ignore
     @Test
     fun `example knapsack`() {
         val items = listOf(
@@ -47,6 +52,7 @@ class KnapsackTest {
         assertEquals(90, knapsack(10, items))
     }
 
+    @Ignore
     @Test
     fun `8 items`() {
         val items = listOf(
@@ -62,6 +68,7 @@ class KnapsackTest {
         assertEquals(900, knapsack(104, items))
     }
 
+    @Ignore
     @Test
     fun `15 items`() {
         val items = listOf(
