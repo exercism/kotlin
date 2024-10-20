@@ -1,5 +1,4 @@
-import org.junit.Rule
-import org.junit.rules.ExpectedException
+import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -12,6 +11,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `two characters in a row`() {
         val lines = listOf("A1")
@@ -19,6 +19,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `two characters in a column`() {
         val lines = listOf("A", "1")
@@ -26,6 +27,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun simple() {
         val lines = listOf("ABC", "123")
@@ -33,6 +35,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `single line`() {
         val lines = listOf("Single line.")
@@ -40,6 +43,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `first line longer than second line`() {
         val lines = listOf("The fourth line.", "The fifth line.")
@@ -47,6 +51,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `second line longer than first line`() {
         val lines = listOf("The first line.", "The second line.")
@@ -54,6 +59,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun `mixed line length`() {
         val lines = listOf("The longest line.", "A long line.", "A longer line.", "A line.")
@@ -61,6 +67,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun square() {
         val lines = listOf("HEART", "EMBER", "ABUSE", "RESIN", "TREND")
@@ -68,6 +75,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun rectangle() {
         val lines = listOf("FRACTURE", "OUTLINED", "BLOOMING", "SEPTETTE")
@@ -75,6 +83,7 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
     @Test
     fun triangle() {
         val lines = listOf("T", "EE", "AAA", "SSSS", "EEEEE", "RRRRRR")
