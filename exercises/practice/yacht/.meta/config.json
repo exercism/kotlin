@@ -8,7 +8,8 @@
   ],
   "files": {
     "solution": [
-      "src/main/kotlin/Yacht.kt"
+      "src/main/kotlin/Yacht.kt",
+      "src/main/kotlin/YachtCategory.kt"
     ],
     "test": [
       "src/test/kotlin/YachtTest.kt"
