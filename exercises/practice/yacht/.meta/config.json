@@ -8,14 +8,16 @@
   ],
   "files": {
     "solution": [
-      "src/main/kotlin/Yacht.kt",
-      "src/main/kotlin/YachtCategory.kt"
+      "src/main/kotlin/Yacht.kt"
     ],
     "test": [
       "src/test/kotlin/YachtTest.kt"
     ],
     "example": [
       ".meta/src/reference/kotlin/Yacht.kt"
+    ],
+    "editor": [
+      "src/main/kotlin/YachtCategory.kt"
     ]
   },
   "blurb": "Score a single throw of dice in the game Yacht.",
