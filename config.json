@@ -390,11 +390,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
+        "status": "deprecated",
         "topics": [
           "lists",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "scrabble-score",
