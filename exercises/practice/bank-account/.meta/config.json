@@ -1,6 +1,7 @@
 {
-  "blurb": "Simulate a bank account supporting opening/closing, withdraws, and deposits of money. Watch out for concurrent transactions!",
-  "authors": ["nithia"],
+  "authors": [
+    "nithia"
+  ],
   "contributors": [
     "araknoid",
     "dector",
@@ -14,8 +15,16 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/BankAccount.kt"],
-    "test": ["src/test/kotlin/BankAccountTest.kt"],
-    "example": [".meta/src/reference/kotlin/BankAccount.kt"]
-  }
+    "solution": [
+      "src/main/kotlin/BankAccount.kt"
+    ],
+    "test": [
+      "src/test/kotlin/BankAccountTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/BankAccount.kt"
+    ]
+  },
+  "test_runner": false,
+  "blurb": "Simulate a bank account supporting opening/closing, withdraws, and deposits of money. Watch out for concurrent transactions!"
 }

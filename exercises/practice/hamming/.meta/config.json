@@ -1,6 +1,7 @@
 {
-  "blurb": "Calculate the Hamming difference between two DNA strands.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -15,10 +16,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/Hamming.kt"],
-    "test": ["src/test/kotlin/HammingTest.kt"],
-    "example": [".meta/src/reference/kotlin/Hamming.kt"]
+    "solution": [
+      "src/main/kotlin/Hamming.kt"
+    ],
+    "test": [
+      "src/test/kotlin/HammingTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/Hamming.kt"
+    ]
   },
+  "blurb": "Calculate the Hamming distance between two DNA strands.",
   "source": "The Calculating Point Mutations problem at Rosalind",
-  "source_url": "http://rosalind.info/problems/hamm/"
+  "source_url": "https://rosalind.info/problems/hamm/"
 }

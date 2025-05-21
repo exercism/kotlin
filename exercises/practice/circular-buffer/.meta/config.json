@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/CircularBuffer.kt"
+    ],
+    "test": [
+      "src/test/kotlin/CircularBufferTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/CircularBuffer.kt"
+    ]
+  },
+  "blurb": "A data structure that uses a single, fixed-size buffer as if it were connected end-to-end.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Circular_buffer"
+}

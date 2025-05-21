@@ -1,6 +1,6 @@
+import kotlin.test.Ignore
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertFailsWith
 
 class CryptoSquareTest {
 
@@ -11,6 +11,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `letters are lower cased during encryption`() {
         val plaintext = "A"
@@ -18,6 +19,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `spaces are removed during encryption`() {
         val plaintext = " b "
@@ -25,6 +27,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `punctuation is removed during encryption`() {
         val plaintext = "@1,%!"
@@ -32,6 +35,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `nine character plaintext results in three chunks of three characters`() {
         val plaintext = "This is fun!"
@@ -39,6 +43,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `eight character plaintext results in three chunks with a trailing space`() {
         val plaintext = "Chill out."
@@ -46,6 +51,7 @@ class CryptoSquareTest {
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
     }
 
+    @Ignore
     @Test
     fun `fifty four character plaintext results in seven chunks with trailing spaces`() {
         val plaintext = "If man was meant to stay on the ground, god would have given us roots."

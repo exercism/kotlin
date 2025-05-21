@@ -1,6 +1,7 @@
 {
-  "blurb": "Implement a doubly linked list",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,9 +15,16 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/LinkedList.kt"],
-    "test": ["src/test/kotlin/DequeTest.kt"],
-    "example": [".meta/src/reference/kotlin/LinkedList.kt"]
+    "solution": [
+      "src/main/kotlin/LinkedList.kt"
+    ],
+    "test": [
+      "src/test/kotlin/DequeTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/LinkedList.kt"
+    ]
   },
+  "blurb": "Implement a doubly linked list.",
   "source": "Classic computer science topic"
 }

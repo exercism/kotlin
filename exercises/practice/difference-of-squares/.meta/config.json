@@ -1,6 +1,7 @@
 {
-  "blurb": "Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,10 +15,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/DifferenceOfSquares.kt"],
-    "test": ["src/test/kotlin/SquaresTest.kt"],
-    "example": [".meta/src/reference/kotlin/DifferenceOfSquares.kt"]
+    "solution": [
+      "src/main/kotlin/DifferenceOfSquares.kt"
+    ],
+    "test": [
+      "src/test/kotlin/SquaresTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/DifferenceOfSquares.kt"
+    ]
   },
+  "blurb": "Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.",
   "source": "Problem 6 at Project Euler",
-  "source_url": "http://projecteuler.net/problem=6"
+  "source_url": "https://projecteuler.net/problem=6"
 }

@@ -1,6 +1,7 @@
 {
-  "blurb": "Given a year, report if it is a leap year.",
-  "authors": ["sdavids13"],
+  "authors": [
+    "sdavids13"
+  ],
   "contributors": [
     "dector",
     "eparovyshnaya",
@@ -14,10 +15,17 @@
     "uzilan"
   ],
   "files": {
-    "solution": ["src/main/kotlin/Leap.kt"],
-    "test": ["src/test/kotlin/LeapTest.kt"],
-    "example": [".meta/src/reference/kotlin/Leap.kt"]
+    "solution": [
+      "src/main/kotlin/Leap.kt"
+    ],
+    "test": [
+      "src/test/kotlin/LeapTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/Leap.kt"
+    ]
   },
-  "source": "JavaRanch Cattle Drive, exercise 3",
-  "source_url": "http://www.javaranch.com/leap.jsp"
+  "blurb": "Determine whether a given year is a leap year.",
+  "source": "CodeRanch Cattle Drive, Assignment 3",
+  "source_url": "https://web.archive.org/web/20240907033714/https://coderanch.com/t/718816/Leap"
 }

@@ -1,0 +1,6 @@
+fun getGrainCountForSquare(number: Int) =
+        if (number < 1 || number > 64)
+                throw IllegalArgumentException("square must be between 1 and 64")
+        else BigInteger.ONE.shiftLeft(number - 1)
+
+fun getTotalGrainCount() = BigInteger.ONE.shiftLeft(64).subtract(BigInteger.ONE)

@@ -78,7 +78,7 @@ solve_all_exercises() {
     echo ">>> solve_all_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\")"
     
     local track_root=$( pwd )
-    local concept_exercises=`jq -r '.exercises.concept[].slug | sort' config.json | sort | xargs`
+    local concept_exercises=`jq -r '.exercises.concept[].slug' config.json | sort | xargs`
     local practice_exercises=`jq -r '.exercises.practice[].slug' config.json | sort | xargs`
     local total_exercises=`jq '.exercises.concept + .exercises.practice | length' config.json`
     local current_exercise_number=1
@@ -160,7 +160,7 @@ main() {
 # Execution begins here...
 
 # If any command fails, fail the script.
-set -ex
+set -exo pipefail
 SCRIPTPATH=$( pushd `dirname $0` > /dev/null && pwd && popd > /dev/null )
 EXECPATH=$( pwd )
 # Make output easier to read in CI

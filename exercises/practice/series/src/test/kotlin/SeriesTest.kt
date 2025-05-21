@@ -1,4 +1,5 @@
-import org.junit.Test
+import kotlin.test.Test
+import kotlin.test.Ignore
 import kotlin.test.assertEquals
 
 class SeriesTest {
@@ -11,6 +12,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfOneFromTwo() {
         assertEquals(
@@ -19,6 +21,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfTwo() {
         assertEquals(
@@ -27,6 +30,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfTwoOverlap() {
         assertEquals(
@@ -35,6 +39,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesCanIncludeDuplicates() {
         assertEquals(
@@ -43,6 +48,7 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test
     fun slicesOfALongSeries() {
         assertEquals(
@@ -58,21 +64,25 @@ class SeriesTest {
         )
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun sliceLengthIsTooLarge() {
         Series.slices(4, "123")
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun sliceLengthCannotBeZero() {
         Series.slices(0, "123")
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun sliceLengthCannotBeNegative() {
         Series.slices(-2, "123")
     }
 
+    @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun emptySeriesIsInvalid() {
         Series.slices(1, "")
