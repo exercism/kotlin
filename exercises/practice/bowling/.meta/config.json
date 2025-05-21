@@ -2,7 +2,6 @@
   "authors": [
     "vmichalak"
   ],
-  "contributors": [],
   "files": {
     "solution": [
       "src/main/kotlin/BowlingGame.kt"

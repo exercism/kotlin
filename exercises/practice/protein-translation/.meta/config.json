@@ -1,5 +1,7 @@
 {
-  "authors": ["AnneKlapwijk"],
+  "authors": [
+    "AnneKlapwijk"
+  ],
   "files": {
     "solution": [
       "src/main/kotlin/ProteinTranslation.kt"
