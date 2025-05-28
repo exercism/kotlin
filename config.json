@@ -117,7 +117,7 @@
         "prerequisites": [
           "generics"
         ],
-        "difficulty": 3
+        "difficulty": 5
       },
       {
         "slug": "crypto-square",
@@ -138,7 +138,7 @@
         "uuid": "10b6cca2-6c36-4017-9464-32aa11c59f85",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 5,
         "topics": [
           "object_oriented_programming",
           "sets",
@@ -151,7 +151,7 @@
         "uuid": "a550dafa-bcec-448c-a7dd-af0ebd4e1070",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 3,
         "topics": [
           "integers",
           "randomness"
@@ -459,7 +459,7 @@
         "uuid": "045de074-eeb3-499e-9cf4-65b75d9988fc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 5,
         "topics": [
           "lists",
           "loops",
@@ -512,7 +512,7 @@
         "uuid": "19d00436-f26a-47ad-b13e-128181dc09f3",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 4,
         "topics": [
           "arrays",
           "conditionals",
@@ -528,7 +528,7 @@
         "uuid": "a826af04-b7f3-426e-9bce-42375d0d928b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "booleans",
           "conditionals",
@@ -585,7 +585,7 @@
         "uuid": "c8815b6c-19b8-4f4d-9be4-6717e933591a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 3,
         "topics": [
           "arrays",
           "generics",
@@ -613,7 +613,7 @@
         "uuid": "f3713067-7f37-4dd6-a189-c80f46dab8ec",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 2,
         "topics": [
           "booleans",
           "conditionals",
@@ -637,7 +637,7 @@
         "uuid": "ab52d0f4-a001-4d44-951e-0cfc396374f3",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 2,
         "topics": [
           "conditionals",
           "exception_handling",
@@ -667,7 +667,7 @@
         "uuid": "f0f297f2-429f-4626-8b7f-0706a1e8f255",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 2,
         "topics": [
           "lists",
           "maps",
@@ -680,7 +680,7 @@
         "uuid": "c67907b6-0d8b-4b12-9c41-6069845952a3",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "stacks",
           "strings"
@@ -692,7 +692,7 @@
         "uuid": "81d48ea4-0e88-45f2-839f-fe13e2059e92",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 8,
         "topics": [
           "pattern_matching",
           "integers"
@@ -704,7 +704,7 @@
         "uuid": "62eb71dd-18ba-427f-a27a-86e993b4055a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 4,
         "topics": [
           "conditionals",
           "lists",
@@ -719,7 +719,7 @@
         "uuid": "1fa1e0f9-6410-4197-8778-debeb274e6d4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 2,
         "topics": [
           "integers"
         ]
@@ -743,7 +743,7 @@
         "uuid": "e5338be9-6f51-4448-9b10-20de7b1338b9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 2,
         "topics": [
           "conditionals",
           "loops",
@@ -893,7 +893,7 @@
         "uuid": "62bd648a-e959-4ec4-8a5f-09e08fa0b2c8",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 2,
         "topics": [
           "conditionals",
           "exception_handling",
@@ -926,7 +926,7 @@
         "uuid": "2c8c1c16-bbb8-49e5-a248-f7a473c2bc86",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "conditionals",
           "pattern_matching",
@@ -954,7 +954,7 @@
         "uuid": "0e92ba19-2727-4a5e-be38-e88878322c53",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "arrays",
           "conditionals",
@@ -999,7 +999,7 @@
         "uuid": "6e3b294b-16a3-4ebb-a78b-4bf7f6b96736",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 4,
         "topics": [
           "classes",
           "enumerations",
@@ -1013,7 +1013,7 @@
         "uuid": "da466ad5-6837-47d8-af39-2c0563d35a3c",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6,
+        "difficulty": 4,
         "topics": [
           "integers",
           "logic",
@@ -1028,7 +1028,7 @@
         "uuid": "7c24087a-ca61-48d3-9cb9-c3fde2edba86",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "cryptography",
           "integers",
@@ -1068,7 +1068,7 @@
         "uuid": "9caa5fd9-a774-4d4c-951d-053a4f3f2726",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "conditionals",
           "lists",
@@ -1112,7 +1112,7 @@
         "uuid": "d3f960e5-cf19-4308-a1bc-897777f62689",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 2,
         "topics": [
           "arrays",
           "conditionals",
@@ -1127,7 +1127,7 @@
         "uuid": "e282536b-267f-490c-a453-758135051a54",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 2,
         "topics": [
           "conditionals",
           "exception_handling",
@@ -1141,7 +1141,7 @@
         "uuid": "3b8b77ef-da2d-499d-9513-8fe771e86b3e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5,
+        "difficulty": 3,
         "topics": [
           "conditionals",
           "integers",
@@ -1170,7 +1170,7 @@
         "uuid": "f754e1cc-cb88-4776-ab11-3e6ae8362d5a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
+        "difficulty": 3,
         "topics": [
           "arrays",
           "conditionals",
@@ -1200,7 +1200,7 @@
         "uuid": "1dcefdea-5447-4622-a064-079aad781398",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
+        "difficulty": 3,
         "topics": [
           "equality",
           "integers",
@@ -1271,7 +1271,7 @@
         "uuid": "d617987e-64b8-4c21-89a9-66a932c4668d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
+        "difficulty": 5,
         "topics": [
           "conditionals",
           "dates",
@@ -1314,7 +1314,7 @@
         "uuid": "ebfdf40a-1fde-4c88-aa93-95e3190f5261",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 7,
+        "difficulty": 3,
         "topics": [
           "enumerations",
           "generics",
