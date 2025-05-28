@@ -262,28 +262,6 @@
         ]
       },
       {
-        "slug": "resistor-color",
-        "name": "Resistor Color",
-        "uuid": "9d62b45c-1acf-4ae6-b990-73e5bc2b5893",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "lists"
-        ]
-      },
-      {
-        "slug": "resistor-color-duo",
-        "name": "Resistor Color Duo",
-        "uuid": "84bdc53f-aa1f-4ddf-9c5d-95b03cfff72d",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "lists"
-        ]
-      },
-      {
         "slug": "rna-transcription",
         "name": "RNA Transcription",
         "uuid": "9772c916-c619-445c-834d-af7dbf1ad2d9",
@@ -571,6 +549,28 @@
           "conditionals",
           "integers",
           "strings"
+        ]
+      },
+      {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "9d62b45c-1acf-4ae6-b990-73e5bc2b5893",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "lists"
+        ]
+      },
+      {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "84bdc53f-aa1f-4ddf-9c5d-95b03cfff72d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "lists"
         ]
       },
       {
