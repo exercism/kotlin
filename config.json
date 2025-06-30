@@ -1145,6 +1145,22 @@
         "difficulty": 6
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "2bc77dfb-0e27-4beb-b8a1-20bed83ab6b7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6,
+        "topics": [
+          "conditionals",
+          "games",
+          "integers",
+          "lists",
+          "matrices",
+          "strings"
+        ]
+      },
+      {
         "slug": "linked-list",
         "name": "Linked List",
         "uuid": "fc977979-c8a4-44b6-a685-c8a32bd12bc3",
@@ -1171,7 +1187,8 @@
           "lists",
           "matrices",
           "strings"
-        ]
+        ],
+        "status": "deprecated"
       },
       {
         "slug": "rail-fence-cipher",

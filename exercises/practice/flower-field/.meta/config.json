@@ -1,0 +1,28 @@
+{
+  "authors": [
+    "stkent"
+  ],
+  "contributors": [
+    "BNAndras",
+    "dector",
+    "eparovyshnaya",
+    "lihofm",
+    "mdowds",
+    "sdavids13",
+    "sjwarner-bp",
+    "SleeplessByte",
+    "uzilan"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/FlowerField.kt"
+    ],
+    "test": [
+      "src/test/kotlin/FlowerFieldTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/FlowerField.kt"
+    ]
+  },
+  "blurb": "Mark all the flowers in a garden."
+}
