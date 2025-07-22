@@ -30,6 +30,7 @@ include(
     "practice:eliuds-eggs",
     "practice:etl",
     "practice:flatten-array",
+    "practice:flower-field",
     "practice:forth",
     "practice:gigasecond",
     "practice:grade-school",
