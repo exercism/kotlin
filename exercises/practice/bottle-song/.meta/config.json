@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/BottleSong.kt"
+    ],
+    "test": [
+      "src/test/kotlin/BottleSongTest.kt"
+    ],
+    "example": [
+      ".meta/src/reference/kotlin/BottleSong.kt"
+    ]
+  },
+  "blurb": "Produce the lyrics to the popular children's repetitive song: Ten Green Bottles.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Ten_Green_Bottles"
+}

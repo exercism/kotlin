@@ -13,6 +13,7 @@ include(
     "practice:binary-search",
     "practice:binary-search-tree",
     "practice:bob",
+    "practice:bottle-song",
     "practice:bowling",
     "practice:change",
     "practice:circular-buffer",
