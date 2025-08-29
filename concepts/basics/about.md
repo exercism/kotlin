@@ -59,7 +59,7 @@ fun add(x: Int, y: Int): Int {
 Some points to note:
 
 - Parentheses `()` are needed after the function name, even if the function takes no arguments.
-- Function arguments need to specify the type: there is no type inference (in contract to variables).
+- Function arguments need to specify the type: there is no type inference (in contrast to variables).
 - The body of the function is enclosed in braces `{ }` (though see below).
 - The `return` keyword is required, if returning a value.
 - Semicolons `;` at the end of lines are optional, and usually omitted.
