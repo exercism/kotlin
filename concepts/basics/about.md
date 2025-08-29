@@ -33,7 +33,13 @@ x = 43      // => 43
 Because immutable variables eliminate a common class of bugs, use of `val` is encouraged whenever possible.
 
 To reduce visual distraction, explicit types will mostly be omitted from this syllabus.
-Nevertheless, it is recommended to specify types in all serious code (for safety, and for documentation).
+Nevertheless, it is recommended to specify types at least for:
+
+- for public APIs
+- function signatures
+- where it needs documentation
+
+Some companies and organisations will require strict type safety and disallow type inference, whilst others restrict it to "simple" types, or embrace type inference fully.
 
 ```kotlin
 val x: Int = 42  // => 42
