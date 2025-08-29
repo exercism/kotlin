@@ -52,7 +52,20 @@ By deliberate choice, Kotlin does _not_ have the ternary operator `? :` found in
 A concise form of `if ... else` is preferred:
 
 ```Kotlin
+val result = if (isOk) goodValue else badValue
+
 return if (isOK) goodValue else badValue
+```
+
+Unlike Ruby, the concise `if ... else` form *always* needs an `else` and thus cannot be used as a guard statement:
+
+```kotlin
+return 42 if (isOk)
+// Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+// Syntax error: Expecting an expression.
+
+return if (isOk) true
+// 'if' must have both main and 'else' branches when used as an expression.
 ```
 
 Note that in Kotlin, `if` is an [_expression_][expression] returning a value.
