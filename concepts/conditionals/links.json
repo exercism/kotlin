@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/keyword-reference.html#operators-and-special-symbols",
+    "description": "Operators reference."
+  },
+  {
+    "url": "https://kotlinlang.org/docs/control-flow.html#if-expression",
+    "description": "Control flow introduction."
+  },
+  {
+    "url": "https://kotlinlang.org/docs/coding-conventions.html#control-flow-statements",
+    "description": "Coding conventions."
+  }
+]
