@@ -45,7 +45,7 @@ Some companies and organisations will require strict type safety and disallow ty
 val x: Int = 42  // => 42
 ```
 
-In general, the names of variables and functions should be in camelCase, not snake_case
+In general, the names of variables and functions should be in `camelCase`, not `snake_case`
 
 ## Functions
 
