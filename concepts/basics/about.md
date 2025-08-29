@@ -42,7 +42,7 @@ x = "foobar" // => Type mismatch: inferred type is String but Int was expected
 To reduce visual distraction, explicit types will mostly be omitted from this syllabus.
 Nevertheless, it is recommended to specify types at least for:
 
-- for public APIs
+- public APIs
 - function signatures
 - where it needs documentation
 
