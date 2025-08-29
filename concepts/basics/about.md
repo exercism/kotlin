@@ -1,41 +1,118 @@
-# About
+# About Basics
 
-## Type inference
+Kotlin is a statically typed language, designed to be fully interoperable with Java.
 
-Kotlin compiler can infer types for functions and variables in most of the cases. However, declaring function return types explicitly for **public API** is a good practice.
+Distinguishing it from Java, Kotlin:
 
-## Entry point
+- has a cleaner, more concise syntax;
+- incorporates many features of functional languages;
+- has extensive support for nullable values.
 
-To run your Kotlin program you need to define so-called entry point: top-level function with name `main` with or without arguments. However, in Exercism course we are using automatic tests that are using other functions defined in exercises.
+## Variables
 
-Entry point with arguments (you can use them for building CLI applications):
+Because Kotlin is statically typed, it is necessary to _know_ the type of each value at compile time.
+
+However, Kotlin's [type inference][inference] is very powerful, so _specifying_ the type is often optional.
+
+There are two ways to declare a variable.
+
+1. `val` creates an immutable variable, and trying to change it is a compile-time error.
 
 ```kotlin
-fun main(args: Array<String>) {
-    println("Hello, Exercism!")
-    println("Program args are: $args")
+val x = 42  // => 42
+x = 43      // => 'val' cannot be reasssigned
+```
+
+2. `var` creates a mutable variable.
+
+```Kotlin
+var x = 42  // => 42
+x = 43      // => 43
+```
+
+Because immutable variables eliminate a common class of bugs, use of `val` is encouraged whenever possible.
+
+To reduce visual distraction, explicit types will mostly be omitted from this syllabus.
+Nevertheless, it is recommended to specify types in all serious code (for safety, and for documentation).
+
+```kotlin
+val x: Int = 42  // => 42
+```
+
+In general, the names of variables and functions should be in camelCase, not snake_case
+
+## Functions
+
+Declare a function with the `fun` keyword.
+Unlike Java, functions are not required to be part of a class.
+
+```Kotlin
+fun hello(): String {
+    return "Hello, World!"
+}
+
+fun add(x: Int, y: Int): Int {
+    return x + y
 }
 ```
 
-Or ignore arguments completely:
+Some points to note:
+
+- Parentheses `()` are needed after the function name, even if the function takes no arguments.
+- Function arguments need to specify the type: there is no type inference (in contract to variables).
+- The body of the function is enclosed in braces `{ }` (though see below).
+- The `return` keyword is required, if returning a value.
+- Semicolons `;` at the end of lines are optional, and usually omitted.
+- Arithmetic operators `+`, `-`, `*`, `/` are similar to most mainstream languages.
+
+However, for these very simple, "single-expression" functions, there is an abbreviated syntax:
+
+```Kotlin
+// return type is usually omitted for single-expression functions
+fun add(x: Int, y: Int) = x + y  
+```
+Functions can have parameters with default values. 
+These values will be used if they are omitted where the function is invoked:
 
 ```kotlin
-fun main() {
-    println("Hello, Exercism!")
+fun ping(host: String = "localhost") {
+    println("PING --> $host")
+}
+
+ping("exercism.io")  // PING --> exercism.io
+ping()               // PING --> localhost
+```
+
+Functions within Exercism will usually return a value (because of the way the test runner is structured).
+To use Kotlin more widely, it may be useful to know that a function which returns no value can omit the return type and the return keyword.
+
+It is then said to have a `Unit` return type: equivalent to `void` in Java and several other languages.
+
+## Comments
+
+Single-line comments start with `//`, and the rest of the line is then ignored.
+
+Multi-line comments start with `/*` and end with `*/`
+
+```Kotlin
+fun hello(): String {
+    /*
+     * Failing to run this program on a new installation 
+     * is considered bad luck
+    */
+    return "Hello, World!" // the compiler pixies are now happy
 }
 ```
 
-## `Unit` return type
+This is the same as Java.
 
-You've seen that some functions (like `main()` above) are not returning value. However, they are implicitly returning value that is called `Unit` (quite similar to `void` in Java/C/C++):
+~~~~exercism-note
+Because of the importance of Java interop, many Kotlin learners are at least somewhat familiar with Java.
 
-```kotlin
-fun run() {}
+We will try to point out similarities and differences between the languages throughout the syllabus.
 
-// is the same as
-fun run(): Unit { return Unit }
-```
+_Please ignore this if you are a Kotlin-first learner!_
+~~~~
 
-Returning `Unit` (and using it in function declaration) is completely optional and is omitted in most of the cases.
 
-[intellij-idea-ic]: https://www.jetbrains.com/idea/download/
+[inference]: https://en.wikipedia.org/wiki/Type_inference
