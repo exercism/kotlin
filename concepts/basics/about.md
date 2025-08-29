@@ -32,6 +32,13 @@ x = 43      // => 43
 
 Because immutable variables eliminate a common class of bugs, use of `val` is encouraged whenever possible.
 
+Also, even a `var` cannot change type:
+
+```kotlin
+var x = 42
+x = "foobar" // => Type mismatch: inferred type is String but Int was expected
+```
+
 To reduce visual distraction, explicit types will mostly be omitted from this syllabus.
 Nevertheless, it is recommended to specify types at least for:
 
