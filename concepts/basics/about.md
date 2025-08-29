@@ -112,7 +112,7 @@ fun hello(): String {
 
 This is the same as Java.
 
-~~~~exercism-note
+~~~~exercism/note
 Because of the importance of Java interop, many Kotlin learners are at least somewhat familiar with Java.
 
 We will try to point out similarities and differences between the languages throughout the syllabus.
