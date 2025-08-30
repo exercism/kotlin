@@ -1384,6 +1384,11 @@
       "name": "Booleans"
     },
     {
+      "uuid": "157bbe3b-e4f5-41f7-8e0e-e2f57d526617",
+      "slug": "strings",
+      "name": "Strings"
+    },
+    {
       "uuid": "168827c0-4867-449a-ad22-611c87314c48",
       "slug": "conditionals",
       "name": "Conditionals"
