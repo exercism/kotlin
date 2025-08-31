@@ -13,8 +13,8 @@ Int.MAX_VALUE  // => 2147483647 (maximum for a 32-bit signed integer)
 Int.MAX_VALUE + 1  // -2147483648 (overflow gives a negative result!)
 ```
 
-- Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits (1, 2 4, 8 bytes).
-- Unsigned integers have a `U` prefix: `UByte`, `UShort`, `UInt` or `ULong`.
+- Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits (1, 2 4, 8 bytes), and can be positive or negative.
+- Unsigned integers have a `U` prefix: `UByte`, `UShort`, `UInt` or `ULong`, and can only represent numbers ≥ 0.
 - Floating point types are `Float` (32-bit) or `Double` (64-bit).
 
 Integer variables relying on type inference default to `Int`, even on 64-bit machines, but floating point variables default to `Double`.
@@ -31,7 +31,7 @@ val oneFloat = 1.0f // Float
 val lightSpeed = 3.0e8 // scientific notation (units of m/s)
 ```
 
-Hexadecimal and binary literals are conventional: `0x7F` and `0b100101` respectively.
+Hexadecimal and binary literals are the same as in many languages: `0x7F` and `0b100101` respectively.
 Octal literals are not supported in Kotlin.
 
 ## Arithmetic
