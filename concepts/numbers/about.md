@@ -5,7 +5,7 @@
 [Numbers][numbers] can be integer, unsigned integer, or floating point types.
 Each comes in various "sizes", meaning how many bits it needs in memory.
 
-Unlike some scripting languages (Ruby, recent versions of Python), each type in Kotlin has a maximum ([`MAX_VALUE][max_value] and minimum ([`MIN_VALUE`][min_value]) value it can store.
+Unlike some scripting languages (Ruby, recent versions of Python), each type in Kotlin has a maximum ([`MAX_VALUE`][max_value] and minimum ([`MIN_VALUE`][min_value]) value it can store.
 Assigning larger values will cause ["overflow"][wiki-overflow], causing either an exception (_bad_) or corrupted data (_worse_).
 
 - Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits (1, 2 4, 8 bytes).
