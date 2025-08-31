@@ -55,6 +55,18 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "cars-assemble",
+        "name": "cars-assemble",
+        "uuid": "9a67e10e-c331-4474-af3a-9cea17aa3f87",
+        "concepts": [
+          "numbers"
+        ],
+        "prerequisites": [
+          "basics"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [
@@ -1196,6 +1208,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6,
+        "status": "deprecated",
         "topics": [
           "conditionals",
           "games",
@@ -1203,8 +1216,7 @@
           "lists",
           "matrices",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "rail-fence-cipher",
