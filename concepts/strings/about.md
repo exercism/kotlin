@@ -68,8 +68,12 @@ Kotlin provides _many_ [`functions`][ref-string-functions] to manipulate strings
 
 Mostly, these are [`extensions functions`][ref-extensions] rather than members of the `String` class, though this has little effect on how we use them.
 
-***Note:*** _Kotlin's rather complex [documentation][ref-string-functions] pages hide extension functions in the default view.
-Be sure to click `Members and Extensions` to expand this section._
+~~~~exercism/note
+Kotlin's rather complex [documentation][ref-string-functions] pages hide extension functions in the default view.
+Be sure to click `Members and Extensions` to expand this section.
+
+[ref-string-functions]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/
+~~~~
 
 The following example shows just a small selection of what is available:
 
