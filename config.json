@@ -1387,6 +1387,11 @@
       "uuid": "168827c0-4867-449a-ad22-611c87314c48",
       "slug": "conditionals",
       "name": "Conditionals"
+    },
+    {
+      "uuid": "1050abed-4271-4519-a44c-a0ca121c7de2",
+      "slug": "bitwise-operations",
+      "name": "Bitwise Operations"
     }
   ],
   "key_features": [
