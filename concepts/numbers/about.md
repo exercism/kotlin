@@ -2,11 +2,16 @@
 
 ## Numerical types
 
-[Numbers][numbers] can be integer, unsigned integer, or floating point types.
+[Numbers][ref-numbers] can be integer, unsigned integer, or floating point types.
 Each comes in various "sizes", meaning how many bits it needs in memory.
 
-Unlike some scripting languages (Ruby, recent versions of Python), each type in Kotlin has a maximum ([`MAX_VALUE`][max_value]) and minimum ([`MIN_VALUE`][min_value]) value it can store.
-Assigning larger values will cause ["overflow"][wiki-overflow], causing either an exception (_bad_) or corrupted data (_worse_).
+Unlike some scripting languages (Ruby, recent versions of Python), each numeric type in Kotlin has a maximum ([`MAX_VALUE`][ref-max_value]) and minimum ([`MIN_VALUE`][ref-min_value]) value it can store.
+Assigning larger values will cause ["overflow"][wiki-overflow], resulting in either an exception (_bad_) or corrupted data (_worse_).
+
+```kotlin
+Int.MAX_VALUE  // => 2147483647 (maximum for a 32-bit signed integer)
+Int.MAX_VALUE + 1  // -2147483648 (overflow gives a negative result!)
+```
 
 - Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits (1, 2 4, 8 bytes).
 - Unsigned integers have a `U` prefix: `UByte`, `UShort`, `UInt` or `ULong`.
@@ -61,7 +66,7 @@ The modulo operator `%` gives the remainder from integer division:
 ```
 
 Kotlin, like other JVM languages, has no exponentiation operator (_this annoys scientists and engineers_).
-We need to use the [`pow()`][pow] function from the [`math`][math] library, and the number being raised to some power must be `Float` or `Double`.
+We need to use the [`pow()`][ref-pow] function from the [`math`][ref-math] library, and the number being raised to some power must be `Float` or `Double`.
 
 ```kotlin
 2.0.pow(3)  // => 8.0
@@ -70,7 +75,7 @@ We need to use the [`pow()`][pow] function from the [`math`][math] library, and 
 
 ## Rounding
 
-The [`math`][math] library contains several functions to round floating point numbers to a nearby integer.
+The [`math`][ref-math] library contains several functions to round floating point numbers to a nearby integer.
 
 _Did the last line sound slightly odd?_
 When we say "a nearby integer", there are two questions:
@@ -79,16 +84,16 @@ When we say "a nearby integer", there are two questions:
 - How are ties rounded? Does `4.5` round to `4` or `5`?
 
 It is not Kotlin's fault if this seems complicated.
-Mathematicians have been arguing about this for centuries.
+Mathematicians have been arguing about it for centuries.
 
 ### `round()`, `floor()`, `ceil()`, `truncate()`
 
 These four functions all return the same floating-point type as the input, but differ in how they round.
 
-- [`round()`][round] gives the _nearest_ integer if this is unambiguous, or the _nearest even_ integer when tied.
-- [`floor()`][floor] rounds towards negative infinity.
-- [`ceil()`][ceil] rounds towards positive infinity
-- [`truncate()`][truncate] rounds towards zero
+- [`round()`][ref-round] gives the _nearest_ integer if this is unambiguous, or the _nearest even_ integer when tied.
+- [`floor()`][ref-floor] rounds towards negative infinity.
+- [`ceil()`][ref-ceil] rounds towards positive infinity
+- [`truncate()`][ref-truncate] rounds towards zero
 
 ```kotlin
 round(4.7)  // => 5.0 (nearest integer)
@@ -138,17 +143,17 @@ val n = 42
 n.toDouble() // => 42.0
 ```
 
-See the [manual][conversions] for the full list of `toX()` methods.
+See the [manual][ref-conversions] for the full list of `toX()` methods.
 
-[numbers]: https://kotlinlang.org/docs/numbers.html
+[ref-numbers]: https://kotlinlang.org/docs/numbers.html
 [wiki-IEEE]: https://en.wikipedia.org/wiki/IEEE_754
-[conversions]: https://kotlinlang.org/docs/numbers.html#explicit-number-conversions
-[pow]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/pow.html
-[math]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/
-[round]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/round.html
-[floor]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/floor.html
-[ceil]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/ceil.html
-[truncate]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/truncate.html
+[ref-conversions]: https://kotlinlang.org/docs/numbers.html#explicit-number-conversions
+[ref-pow]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/pow.html
+[ref-math]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/
+[ref-round]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/round.html
+[ref-floor]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/floor.html
+[ref-ceil]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/ceil.html
+[ref-truncate]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/truncate.html
 [wiki-overflow]: https://en.wikipedia.org/wiki/Integer_overflow
-[max_value]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/-companion/#-244053257%2FProperties%2F-956074838
-[min_value]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/-companion/#-1907397559%2FProperties%2F-956074838
+[ref-max_value]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/-companion/#-244053257%2FProperties%2F-956074838
+[ref-min_value]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/-companion/#-1907397559%2FProperties%2F-956074838
