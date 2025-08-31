@@ -1387,6 +1387,11 @@
       "uuid": "168827c0-4867-449a-ad22-611c87314c48",
       "slug": "conditionals",
       "name": "Conditionals"
+    },
+    {
+      "uuid": "660e1acd-3072-4bbc-ae44-bbc204da5eab",
+      "slug": "chars",
+      "name": "Chars"
     }
   ],
   "key_features": [
