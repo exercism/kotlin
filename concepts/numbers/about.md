@@ -5,7 +5,10 @@
 [Numbers][numbers] can be integer, unsigned integer, or floating point types.
 Each comes in various "sizes", meaning how many bits it needs in memory.
 
-- Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits.
+Unlike some scripting languages (Ruby, recent versions of Python), each type in Kotlin has a maximum and minimum value it can store.
+Assigning larger values will cause ["overflow"][wiki-overflow], causing either an exception (_bad_) or corrupted data (_worse_).
+
+- Integers can be `Byte`, `Short`, `Int` or `Long`, respectively 8, 16, 32 and 64 bits (1, 2 4, 8 bytes).
 - Unsigned integers have a `U` prefix: `UByte`, `UShort`, `UInt` or `ULong`.
 - Floating point types are `Float` (32-bit) or `Double` (64-bit).
 
@@ -19,7 +22,7 @@ val threeBillion = 3_000_000_000 // Long, with optional underscores for clarity
 val oneLong = 1L // Long
 val oneByte: Byte = 1
 val oneDouble = 1.0 // defaults to Double
-val oneFloat = 1.0f //Float
+val oneFloat = 1.0f // Float
 val lightSpeed = 3.0e8 // scientific notation (units of m/s)
 ```
 
@@ -49,7 +52,7 @@ Division by zero is more interesting.
 0.0 / 0.0 // => NaN (Not a Number)
 ```
 
-Integer division by zero is an error, but [IEEE floating point standards][IEEE] can apply in other cases.
+Integer division by zero is an error, but [IEEE floating point standards][wiki-IEEE] can apply in other cases.
 
 The modulo operator `%` gives the remainder from integer division:
 
@@ -138,7 +141,7 @@ n.toDouble() // => 42.0
 See the [manual][conversions] for the full list of `toX()` methods.
 
 [numbers]: https://kotlinlang.org/docs/numbers.html
-[IEEE]: https://en.wikipedia.org/wiki/IEEE_754
+[wiki-IEEE]: https://en.wikipedia.org/wiki/IEEE_754
 [conversions]: https://kotlinlang.org/docs/numbers.html#explicit-number-conversions
 [pow]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/pow.html
 [math]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/
@@ -146,3 +149,4 @@ See the [manual][conversions] for the full list of `toX()` methods.
 [floor]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/floor.html
 [ceil]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/ceil.html
 [truncate]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/truncate.html
+[wiki-overflow]: https://en.wikipedia.org/wiki/Integer_overflow
