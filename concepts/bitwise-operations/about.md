@@ -54,6 +54,8 @@ This is more obvious in decimal representation:
 
 Such bit-shifting is much faster than "proper" arithmetic, making the technique very popular in low-level coding.
 
+### Bit-shifting negative integers
+
 With _negative integers_, we need to be a bit more careful.
 
 Negative values are stored in [two's complement][wiki-2complement] form, which means that the left-most bit is 1.
