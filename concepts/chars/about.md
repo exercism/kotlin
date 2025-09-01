@@ -22,8 +22,22 @@ Languages designed after about 2005 have the huge advantage that a reasonably st
 
 Kotlin (first released in 2011) was able to assume that users would use a variety of (human) languages, and would need Unicode to express them.
 
-[Characters][ref-char] in Kotlin are 16-bit by default: enough to express most written alphabets, but not the entire range of emojis.
-Note that this is not the full Unicode/UTF-8 standard, which uses up to six bytes (48 bits) per character.
+~~~~exercism/advanced
+[Characters][ref-char] in Kotlin are 16-bit (UTF-16) [`codepoints`][wiki-codepoint], the same as a JVM `char`.
+This is enough to express most written alphabets, but not the entire range of emojis.
+
+The full Unicode standard uses up to six bytes (48 bits) per character (called a [`grapheme`][wiki-grapheme]).
+
+Kotlin `Strings` support this full standard by using multiple codepoints per character, when necessary.
+For example, 😱 would be `\uD83D` and `\uDE31`.
+
+Unfortunately, Java has no built-in grapheme support, and for compatibility neither does Kotlin.
+
+[wiki-codepoint]: https://en.wikipedia.org/wiki/Code_point
+[wiki-grapheme]: https://en.wikipedia.org/wiki/Grapheme
+[ref-char]: https://kotlinlang.org/docs/characters.html
+~~~~
+
 
 Character literals are written in single-quotes, and are distinct from strings written in double quotes.
 This is probably obvious to people from the C/C++ world, but potentially confusing to Python and JavaScript programmers.
@@ -80,13 +94,6 @@ As always, there are far too [many functions][ref-char-lib] to discuss here, so 
 '4'.isDigit()       // => true
 '\t'.isWhitespace() // => true  (tab character)
 ```
-To check if a character is present in a `String`, or a `Char` list or array, we have `in`, equivalent to the [`contains()`][ref-contains] function.
-
-```kotlin
-val clist = "kotlin".toList()  // => [k, o, t, l, i, n]
-'t' in clist     // => true
-'t' in "kotlin"  // => true
-```
 
 Also, [regular expressions][ref-regex] (which will be the subject of a later Concept) allow powerful search and manipulation.
 
@@ -109,6 +116,13 @@ To _cast_ a single `Char` to a 1-character string, use `toString()`.
 'a'.toString() // => "a"
 ```
 
+To check if a character is present in a `String`, or a `Char` list or array, we have `in`, which maps to the [`contains()`][ref-contains] function.
+
+```kotlin
+val clist = "kotlin".toList()  // => [k, o, t, l, i, n]
+'t' in clist     // => true
+'t' in "kotlin"  // => true
+```
 
 [ref-char]: https://kotlinlang.org/docs/characters.html
 [ref-char-lib]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/
