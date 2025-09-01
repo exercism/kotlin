@@ -31,8 +31,7 @@ Bit-shifts just move everything to the left or right by a specified number of po
 Some bits drop off one end, and the other end is padded with zeros or ones.
 
 - Left shift with `shl`: zero-padding.
-- Right shift with `shr` or `ushr`: zero padding for positive numbers.
-- See below for more on negative signed integers.
+- Right shift with `shr` or `ushr`: zero padding for positive numbers (see later section for negative numbers).
 
 ```kotlin
 val ns = 0b111  // 7 decimal
