@@ -47,7 +47,8 @@ The basic arithmetic operators are the same as in many languages:
 -8.0 / 3 // => -2.6666666666666665
 ```
 
-To get a floating point result from division, at least one of the numerator / denominator must be floating point.
+To get a floating point result, at least one of the numbers in the calculation must be floating point.
+This is particularly significant for division, as integer division often leads to truncation.
 
 Division by zero is more interesting.
 
