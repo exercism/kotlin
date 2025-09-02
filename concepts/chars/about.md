@@ -53,7 +53,9 @@ jha.code  // => 2333
 val heart = '❤'  // heart emoji
 heart.code  // => 10084
 
-Char.MAX_VALUE.code  // => 65535 (64k, the largest code point allowed)
+Char.MAX_VALUE.code // => 65535 (64k, the largest code point allowed)
+
+val not_char = 'abc' // => Too many characters in a character literal.
 ```
 
 Converting between `Char` and `Int` is straightforward:
