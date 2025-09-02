@@ -31,7 +31,7 @@ val oneFloat = 1.0f // Float
 val lightSpeed = 3.0e8 // scientific notation (units of m/s)
 ```
 
-Hexadecimal and binary literals are the same as in many languages: `0x7F` and `0b100101` respectively.
+Hexadecimal literals start with `0x`, e.g. `0x7F`, and binary literals start with `0b`, e.g. `0b100101`.
 Octal literals are not supported in Kotlin.
 
 ## Arithmetic
