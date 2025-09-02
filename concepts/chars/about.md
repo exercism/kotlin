@@ -56,7 +56,7 @@ heart.code  // => 10084
 Char.MAX_VALUE.code  // => 65535 (64k, the largest code point allowed)
 ```
 
-Converting between `Char` and `Int` is simple:
+Converting between `Char` and `Int` is straightforward:
 
 ```kotlin
 a.code  // => 97
