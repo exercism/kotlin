@@ -36,19 +36,40 @@ Octal literals are not supported in Kotlin.
 
 ## Arithmetic
 
-The basic arithmetic operators are the same as in many languages:
+The basic arithmetic operators are the same as in many languages.
+When the numbers in the calculation are the same type, the result will also be the same type:
 
-```Kotlin
-4 + 3 // => 7
-4 - 3 // => 1
-4 * 3 // => 12
-4 / 3 // => 1  Int / Int always gives an Int
--8 / 3 // => -2  Truncated towards zero
--8.0 / 3 // => -2.6666666666666665
+```kotlin
+4 + 3       // => 7     Int + Int = Int
+4 - 3       // => 1     Int - Int = Int
+4L * 3L     // => 12    Long * Long = Long
+6.0 / 2.0   // => 3.0   Double / Double = Double
 ```
 
-To get a floating point result, at least one of the numbers in the calculation must be floating point.
-This is particularly significant for division, as integer division often leads to truncation.
+If the numbers are different types, Kotlin will infer the result's type to mitigate data loss:
+
+```kotlin
+4 + 3.0         // => 7.0                   Int + Double = Double
+10.5 - 3.125f   // => 7.375                 Double - Float = Double
+7L * 1.125      // => 7.875                 Long * Double = Double
+10L / 3.0       // => 3.3333333333333335    Long / Double = Double
+```
+
+This is particularly significant for division, as dividing an integer (for example an Int) by another integer (for example an Int) will give an integer (in this case an Int):
+
+```kotlin
+4 / 3   // => 1     Int / Int always gives an Int
+-8 / 3  // => -2    Truncated towards zero
+```
+
+To keep the decimal part, convert one of the numbers to a Float or Double:
+
+```kotlin
+-8.0 / 3    // => -2.6666666666666665
+-8 / 3.0    // => -2.6666666666666665
+-8.0 / 3.0  // => -2.6666666666666665
+```
+
 
 Division by zero is more interesting.
 
