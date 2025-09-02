@@ -59,7 +59,7 @@ Char.MAX_VALUE.code  // => 65535 (64k, the largest code point allowed)
 Converting between `Char` and `Int` is simple:
 
 ```kotlin
-a.code  // => 97  (a.toInt() is deprecated)
+a.code  // => 97
 Char(97) // => 'a'
 ```
 
