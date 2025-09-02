@@ -101,7 +101,7 @@ Also, [regular expressions][ref-regex] (which will be the subject of a later Con
 
 ## Char List and String interconversions
 
-For String to Char List, we can use `toList()`.
+To convert from a `String` to a `List` of `Char`s, we can use `toList()`.
 
 For Char List to String, there is the [`joinToString()`][ref-jointostring] function, which takes a separator (often the empty string) as argument.
 
