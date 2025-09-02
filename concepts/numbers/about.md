@@ -53,10 +53,12 @@ This is particularly significant for division, as integer division often leads t
 Division by zero is more interesting.
 
 ```Kotlin
-1 / 0 // => java.lang.ArithmeticException: / by zero
+1 / 0     // => java.lang.ArithmeticException: / by zero
 3.0 / 0.0 // => Infinity
 0.0 / 0.0 // => NaN (Not a Number)
 ```
+
+That's because floating point operations follow the [IEEE-standard for Floating Point math](https://en.wikipedia.org/wiki/IEEE_754).
 
 Integer division by zero is an error, but [IEEE floating point standards][wiki-IEEE] can apply in other cases.
 
