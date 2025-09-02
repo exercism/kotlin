@@ -7,7 +7,7 @@ Low-level manipulation, informally called "bit-twiddling", is particularly impor
 Higher-level languages like Kotlin usually abstract away most of this detail.
 However, a basic range of bit-level operations [is available][ref-bitwise].
 
-~~~~Exercism/note
+~~~~exercism/note
 To see human-readable binary output, nearly all the examples below need to be wrapped in an [`Integer.toBinaryString()`][web-binstring] function, or converted with `toString(radix = 2)`.
  
 This is visually distracting, so most occurrences of this function have been edited out, and the results are represented with `0b` notation.
