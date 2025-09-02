@@ -70,7 +70,8 @@ Mostly, these are [`extensions functions`][ref-extensions] rather than members o
 
 ~~~~exercism/note
 Kotlin's rather complex [documentation][ref-string-functions] pages hide extension functions in the default view.
-Be sure to click `Members and Extensions` to expand this section.
+At moment of writing this, the most valuable content is hidden in a tab named `Members and Extensions`.
+Click it to expand this section and see all the members and extensions available on the `String` class.
 
 [ref-string-functions]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/
 ~~~~
