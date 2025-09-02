@@ -17,7 +17,7 @@ This is visually distracting, so most occurrences of this function have been edi
 
 ## Bit-shift operations
 
-`Int` or `Long` types, signed or unsigned, can be represented as a string of 1's and 0's and manipulated as a sequence of bits.
+`Int` or `Long` types, both signed and unsigned, can be represented as a String of 1's and 0's, and manipulated as a sequence of bits.
 
 Perhaps surprisingly, `Byte` or `Short` types are not compatible with most bitwise operations in Kotlin.
 All the examples below use 32-bit integers (`Int` or `UInt`).
