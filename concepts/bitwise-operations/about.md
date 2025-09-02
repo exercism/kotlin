@@ -27,7 +27,7 @@ val ns = 0b111  // 7 decimal
 Integer.toBinaryString(ns)  // => "111"
 ```
 
-Bit-shifts just move everything to the left or right by a specified number of positions.
+Bit-shifts move everything to the left or right by a specified number of positions.
 Some bits drop off one end, and the other end is padded with zeros or ones.
 
 - Left shift with `shl`: zero-padding.
