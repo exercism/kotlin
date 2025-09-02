@@ -103,7 +103,7 @@ Also, [regular expressions][ref-regex] (which will be the subject of a later Con
 
 To convert from a `String` to a `List` of `Char`s, we can use `toList()`.
 
-For Char List to String, there is the [`joinToString()`][ref-jointostring] function, which takes a separator (often the empty string) as argument.
+To convert a `List` of `Char`s to a `String`, there is the [`joinToString()`][ref-jointostring] function, which takes a separator (often the empty string) as argument.
 
 ```kotlin
 val kt = "kotlin".toList()  // => [k, o, t, l, i, n]
