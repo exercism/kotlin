@@ -66,7 +66,7 @@ Char(97) // => 'a'
 The compiler allows _some_ forms of integer arithmetic on `Char`s:
 
 ```kotlin
-'a' + 5       // => 'f'
+'a' + 5     // => 'f'
 'c' - 'a'   // => 2
 'c' + 'a'   // => error!
 
