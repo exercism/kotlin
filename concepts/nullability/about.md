@@ -13,7 +13,7 @@ Kotlin has a few [general principles][ref-null-safety], which [differ significan
 _The differences mean that Kotlin has special functionality to deal with Java interop, though details are beyond the scope of this Concept._
 
 - Kotlin has a special `null` value.
-- All types _default_ to being non-nullable.
+- All types _default_ to being non-nullable (i.e. can not be `null`) .
 - All types can be _nullable_, but this must be explicitly done.
 - Functions which might fail with an exception are likely to have a variant with a nullable return value.
 - Special, highly terse syntax tries to make testing for and responding to nulls as easy as possible.
