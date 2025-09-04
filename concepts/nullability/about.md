@@ -20,7 +20,7 @@ _The differences mean that Kotlin has special functionality to deal with Java in
 
 ## Creating nullable variables
 
-Standard types generally have a [nullable equivalent][ref-nullable-type], with a `?` suffix: for example `String?` instead of `String`.
+A type can be made [nullable][ref-nullable-type] by adding the `?` suffix (e.g. `String?` instead of `String`).
 
 ```kotlin
 var a = "Kotlin"  // inferred type is String
