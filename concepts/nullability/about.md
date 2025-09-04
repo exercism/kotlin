@@ -14,7 +14,7 @@ _The differences mean that Kotlin has special functionality to deal with Java in
 
 - Kotlin has a special `null` value.
 - All types _default_ to being non-nullable.
-- Most types can be _made_ nullable, but the programmer must explicitly order this.
+- All types can be _nullable_, but this must be explicitly done.
 - Functions which might fail with an exception are likely to have a variant with a nullable return value.
 - Special, highly terse syntax tries to make testing for and responding to nulls as easy as possible.
 
