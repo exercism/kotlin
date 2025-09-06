@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/numbers.html",
+    "description": "Kotlin introduction to numbers"
+  },
+  {
+    "url": "https://kotlinlang.org/docs/numbers.html#explicit-number-conversions",
+    "description": "Numeric type conversions"
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.math/",
+    "description": "Kotlin math library"
+  }
+]
