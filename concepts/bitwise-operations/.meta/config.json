@@ -1,0 +1,7 @@
+{
+  "authors": [
+    "colinleach"
+  ],
+  "contributors": [],
+  "blurb": "Kotlin provides a set of bitwise operations that allow you to manipulate the individual bits of integers."
+}
