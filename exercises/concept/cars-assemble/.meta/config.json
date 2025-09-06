@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/CarsAssemble.kt"
+    ],
+    "test": [
+      "src/test/kotlin/CarsAssembleTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/CarsAssemble.kt"
+    ]
+  },
+  "blurb": "Learn about numbers and type conversion by analyzing an assembly line in a car factory."
+}
