@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/LogLevels.kt"
+    ],
+    "test": [
+      "src/test/kotlin/LogLevelsTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/LogLevels.kt"
+    ]
+  },
+  "blurb": ""
+}
