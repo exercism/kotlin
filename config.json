@@ -55,6 +55,18 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "log-levels",
+        "name": "log-levels",
+        "uuid": "ef54c5e6-7d31-42d1-a300-e405169dbd7f",
+        "concepts": [
+          "strings"
+        ],
+        "prerequisites": [
+          "basics"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [

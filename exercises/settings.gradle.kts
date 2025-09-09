@@ -1,4 +1,8 @@
 include(
+    "concept:annalyns-infiltration",
+    "concept:cars-assemble",
+    "concept:log-levels",
+    "concept:lucians-luscious-lasagna",
     "practice:accumulate",
     "practice:acronym",
     "practice:all-your-base",
