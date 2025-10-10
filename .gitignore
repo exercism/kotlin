@@ -3,6 +3,8 @@
 bin/configlet
 bin/configlet.exe
 bin/jq*
+exercises/**/bin
+_template/bin
 CHECKLIST
 build
 .gradle
