@@ -1221,6 +1221,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6,
+        "status": "deprecated",
         "topics": [
           "conditionals",
           "games",
@@ -1228,8 +1229,7 @@
           "lists",
           "matrices",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "rail-fence-cipher",
