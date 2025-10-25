@@ -67,6 +67,19 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "secret-agent",
+        "name": "secret-agent",
+        "uuid": "96553db0-5b98-4dcd-8a1c-882e42c3751a",
+        "concepts": [
+          "higher-order-functions"
+        ],
+        "prerequisites": [
+          "numbers",
+          "strings"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [

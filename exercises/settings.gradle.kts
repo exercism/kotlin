@@ -3,6 +3,7 @@ include(
     "concept:cars-assemble",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
+    "concept:secret-agent",
     "practice:accumulate",
     "practice:acronym",
     "practice:all-your-base",
