@@ -3,5 +3,5 @@
     "Tear4Pixelation"
   ],
   "contributors": [],
-  "blurb": "Lists are mutable or read-only collections of items of one specified type."
+  "blurb": "Lists are collections of elements of a single declared type, accessible by index. They can be read-only (List) or mutable (MutableList)."
 }
