@@ -1,72 +1,76 @@
 # Introduction
 
-A [`string`][ref-string] in Kotlin is an immutable sequence of Unicode characters.
+A [`List`][ref-lists] is a collection of items of a specified type.
 
-[`Immutable`][wiki-immutable] means that any operation on a string must return a new string: the original string can never change.
+There are two types of lists. One is `mutable` and the other is `read-only`
 
-[`Unicode`][wiki-unicode] means that most of the world's writing systems can be represented, but (in contrast to older languages such as C) there is no 1:1 mapping between characters and bytes.
+`read-only` means the list contents cannot be directly changed
+`mutable` means the list contents can be changed after creation
 
-A string is usually surrounded by double-quotes `" "`.
-
-Some characters need escaping: `\'`, `\\`, plus the usual non-printing characters such as `\t` (tab) and `\n` (newline).
-
+## Creating
+### Read-only
+A `read-only` list is created using the `listOf()` builtin function.
 ```kotlin
-val s = "Escape apostrophe \' and backslash \\."
-// Escape apostrophe ' and backslash \.
+listOf(0, 1, 2)
 ```
+In this example, kotlin will automatically recognize the type to be `List<Int>`, a list of integers.
+You can specify the type in multiple ways:
+1. `listOf<type>(…)`
+2. `val name: List<type> = listOf()`
+These are equivalent, but generally 2. is more idiomatic and more readable as it is easier to figure out the type of the variable/value.
 
-Raw strings use 3 double-quotes, and can contain arbitrary text (no need for escaping).
-Multiline strings are also supported, including flexible handling of indents.
+### Mutable
+Initializing a `mutable` list works the same way as the `read-only` list, but you use `mutableListOf()`.
 
-```kotlin
-val multi = """I'm a
-    |multi-line
-    |string with special characters \ \t """
-
-multi.trimMargin()  // delimiter defaults to | but can be specified
-//I'm a
-//multi-line
-//string with special characters  \ \t 
-```
-
-Strings can be concatenated with `+`, but this is best limited to short and simple cases.
-There are other and often better options.
-
-## String templates
-
-This refers to what some other languages call "interpolation".
-
-If a string contains a dollar sign `$`, followed by an identifier, or contains braces (`{expression}`) surrounding an expression, those are substituted by respectively the value or the result of the expression.
-
-```kotlin
-val x = 42
-val st = "x is $x, x squared is {x * x}"
-// x is 42, x squared is 1764
-```
-
-The braces `{ }` are needed around expressions when parsing would otherwise be ambiguous.
-
-In general, use of string templates is a more efficient and idiomatic way to combine strings than using `+`.
-
-## String functions
-
-Kotlin provides _many_ [`functions`][ref-string-functions] to manipulate strings.
-
-Mostly, these are [`extensions functions`][ref-extensions] rather than members of the `String` class, though this has little effect on how we use them.
-
-~~~~exercism/note
-Kotlin's rather complex [documentation][ref-string-functions] pages hide extension functions in the default view.
-Be sure to click `Members and Extensions` to expand this section.
-
-[ref-string-functions]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/
+~~~~exercism/caution
+When creating an empty list using any of the above methods, you **must** specify a type, because kotlin can’t guess the type. Kotlin does not look into future references to guess the type.
 ~~~~
 
-The following example shows just a small selection of what is available:
-
+## Using
+### Accessing
+You can access an item in a list using it’s [**index**][ref-get-by-index]:
 ```kotlin
-val str = "Hello World!"
+val list = listOf(1, 2, 3)
+println(list[0])  // prints: 1
+```
 
-str.length              // => 12 (a property, not a function)
+### Looping over a list
+To do something for every item in a list, you can use [`for`][ref-for]
+```kotlin
+val list = listOf(1, 2, 3)
+for (item in list) {
+	// Do something with the item
+}
+```
+
+#### With index
+Often you need to know the index of the item you are currently dealing with in the loop. For this you use [`for` and `list.withIndex()`][ref-for-withIndex]
+```kotlin
+for ((index, item) in list.withIndex()) {
+	// Do something with the item and the index
+}
+```
+
+### Writing (only for `mutable` lists)
+#### Adding
+You can add an element to the end of a list using [`list.add()`][ref-list-add]
+```kotlin
+val list = mutableListOf(0, 1, 2, 3)
+list.add(4)  // 0, 1, 2, 3, 4
+```
+Or at a specific index in a list:
+```kotlin
+val list = mutableListOf("one", "three")
+list.add(1, "two")  // "one", "two", "three"
+```
+
+#### Have fun with lists in Kotlin!
+
+[ref-lists]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/
+[ref-for]: https://kotlinlang.org/docs/control-flow.html#for-loops
+[ref-for-withIndex]: https://kotlinlang.org/docs/control-flow.html#arrays
+[ref-list-add]: https://kotlinlang.org/docs/list-operations.html#add
+[ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-index       // => 12 (a property, not a function)
 str.elementAt(6)        // => W
 str.elementAtOrNull(20) // => null (index out of range)
 str.substring(6, 11)    // => "World"
