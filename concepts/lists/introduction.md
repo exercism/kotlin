@@ -1,19 +1,21 @@
 # Introduction
 
-A [`List`][ref-lists] is a collection of items of a specified type.
+A [`List`][ref-lists] is an *ordered* collection of items of a specified type.
 
-There are two types of lists. One is `mutable` and the other is `read-only`
+”Ordered” here means that the items have a specific spot in the list (their *index*), **not** that they are sorted.
 
-`read-only` means the list contents cannot be directly changed
-`mutable` means the list contents can be changed after creation
+You use a list in Kotlin when you have multiple values that all represent the same kind of thing (e.g. chat messages, names) and you want to store and process them together instead of using many separate variables.
 
+There are two common ways to work with lists in Kotlin:
+- `List`: a read-only list (no add/remove/set operations).
+- `MutableList`: a mutable list that you can modify after creation
 ## Creating
 ### Read-only
-A `read-only` list is created using the `listOf()` builtin function.
+A `read-only` list is created using the `listOf()` built-in function.
 ```kotlin
 listOf(0, 1, 2)
 ```
-In this example, kotlin will automatically recognize the type to be `List<Int>`, a list of integers.
+In this example, Kotlin will automatically recognize the type to be `List<Int>`, a list of integers.
 You can specify the type in multiple ways:
 1. `listOf<type>(…)`
 2. `val name: List<type> = listOf()`
@@ -28,7 +30,7 @@ When creating an empty list using any of the above methods, you **must** specify
 
 ## Using
 ### Accessing
-You can access an item in a list using it’s [**index**][ref-get-by-index]:
+You can access an item in a list using its [**index**][ref-get-by-index]:
 ```kotlin
 val list = listOf(1, 2, 3)
 println(list[0])  // prints: 1
@@ -39,15 +41,15 @@ To do something for every item in a list, you can use [`for`][ref-for]
 ```kotlin
 val list = listOf(1, 2, 3)
 for (item in list) {
-	// Do something with the item
+    // Do something with the item
 }
 ```
 
 #### With index
 Often you need to know the index of the item you are currently dealing with in the loop. For this you use [`for` and `list.withIndex()`][ref-for-withIndex]
 ```kotlin
-for ((index, item) in list.withIndex()) {
-	// Do something with the item and the index
+for ((index, item) in list.withIndex()) 
+    // Do something with the item and the index
 }
 ```
 
@@ -70,16 +72,7 @@ list.add(1, "two")  // "one", "two", "three"
 [ref-for]: https://kotlinlang.org/docs/control-flow.html#for-loops
 [ref-for-withIndex]: https://kotlinlang.org/docs/control-flow.html#arrays
 [ref-list-add]: https://kotlinlang.org/docs/list-operations.html#add
-[ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-index       // => 12 (a property, not a function)
-str.elementAt(6)        // => W
-str.elementAtOrNull(20) // => null (index out of range)
-str.substring(6, 11)    // => "World"
-
-str.lowercase()        // => "hello world!"
-str.uppercase()        // => "HELLO WORLD!"
-
-str.startsWith("Hel")  // => true
-str.endsWith("xyz")    // => false
+[ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-indexe
 
 str.toCharArray()      // => [H, e, l, l, o,  , W, o, r, l, d, !]
 "42".toInt() + 1       // => 43  (parsing; see also toFloat)
