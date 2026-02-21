@@ -1,17 +1,17 @@
 # About lists in Kotlin
 
-A [`List`][ref-lists] is an *ordered* collection of items of a specified type.
+A [`List`][ref-lists] is an _ordered_ collection of items of a specified type.
 
-”Ordered” here means that the items have a specific spot in the list (their *index*), **not** that they are sorted.
+”Ordered” here means that the items have a specific spot in the list (their _index_), **not** that they are sorted.
 
 You use a list in Kotlin when you have multiple values that all represent the same kind of thing (e.g. chat messages, names) and you want to store and process them together instead of using many separate variables.
 
 There are two common ways to work with lists in Kotlin:
-- `List`: a read-only view of a list (no add/remove/set operations *through this reference*).
+- `List`: a read-only view of a list (no add/remove/set operations _through this reference_).
 - `MutableList`: a mutable list that you can modify after creation.
 
 ~~~~exercism/advanced
-The reason I say “through this reference” in `List` is because you cannot call e.g. `add` on that object, *but* if it is a reference to mutable list, that list can be modified in the background (But not through the `List`).
+The reason I say “through this reference” in `List` is because you cannot call e.g. `add` on that object, _but_ if it is a reference to mutable list, that list can be modified in the background (But not through the `List`).
 ```kotlin
 val mutable = mutableListOf(0)
 val readOnly: List<Int> = mutable
@@ -20,11 +20,11 @@ readOnly.add(1)  // ERROR
 mutable.add(1)  // 0, 1
 println(readOnly)  // 0, 1 
 ```
-as you see the list has been modified even though `List` is *read only* (not *immutable*)
+as you see the list has been modified even though `List` is _read only_ (not _immutable_)
 ~~~~
 ## Creating
 ### Read-only
-A *read-only* list is created using the `listOf()` built-in function.
+A _read-only_ list is created using the `listOf()` built-in function.
 ```kotlin
 listOf(0, 1, 2)
 ```
@@ -48,7 +48,7 @@ Sometimes you need/should copy a list to prevent modifying a `MutableList` that 
 You can also use the above-mentioned methods on lists to create a copy.
 ### Ranges
 ~~~~exercism/caution
-These range operations return *range* objects (`IntRange` in this case). You need to call `(0..10).toList()` or `.toMutableList`
+These range operations return _range_ objects (`IntRange` in this case). You need to call `(0..10).toList()` or `.toMutableList`
 ~~~~
 To create a range with values from e.g. 0 to 10, you can use multiple methods:
 - `0..10`: Inclusive range. Includes the bottom and the top value.
@@ -109,7 +109,7 @@ for ((index, item) in list.withIndex()) {
     // Do something with the item and the index
 }
 ```
-or its small sibling `forEach`*`Indexed`* :
+or its small sibling `forEach`_`Indexed`_ :
 ```kotlin
 list.forEachIndexed { index, item -> 
     // Do something with the item and the index
@@ -120,7 +120,7 @@ list.forEachIndexed { index, item ->
 ~~~~exercism/note
 These functions do **not** return the MutableList, they modify it!
 
-You *cannot* do 
+You _cannot_ do 
 `list.add(4).filter { ... }`, because the list is not returned by add(4)!
 ~~~~
 ~~~~exercism/advanced
@@ -191,7 +191,7 @@ list[2] = 3  // 1, 2, 3, 4
 
 ### Advanced operations
 #### `map`
-`map` is a *really* powerful tool to produce a transformed copy of a list 1-to-1. It works by executing the given lambda for every element, and putting the value it returns into a new list and returns that list.
+`map` is a _really_ powerful tool to produce a transformed copy of a list 1-to-1. It works by executing the given lambda for every element, and putting the value it returns into a new list and returns that list.
 ```kotlin
 val list = listOf(1, 2, 3)
 list.map { item ->  // you could omit this and use `it` instead
@@ -238,7 +238,7 @@ list.apply {
 }  // [2]
 ```
 ~~~~exercism/note
-You *can* call .apply on a `List`, but the write operations will still not be available.
+You _can_ call .apply on a `List`, but the write operations will still not be available.
 ~~~~
 #### Have fun with lists in Kotlin!
 

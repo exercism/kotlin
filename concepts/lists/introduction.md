@@ -1,8 +1,8 @@
 # Introduction
 
-A [`List`][ref-lists] is an *ordered* collection of items of a specified type.
+A [`List`][ref-lists] is an _ordered_ collection of items of a specified type.
 
-”Ordered” here means that the items have a specific spot in the list (their *index*), **not** that they are sorted.
+”Ordered” here means that the items have a specific spot in the list (their _index_), **not** that they are sorted.
 
 You use a list in Kotlin when you have multiple values that all represent the same kind of thing (e.g. chat messages, names) and you want to store and process them together instead of using many separate variables.
 
