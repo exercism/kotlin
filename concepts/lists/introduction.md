@@ -11,7 +11,7 @@ There are two common ways to work with lists in Kotlin:
 - `MutableList`: a mutable list that you can modify after creation
 ## Creating
 ### Read-only
-A `read-only` list is created using the `listOf()` built-in function.
+A read-only list is created using the `listOf()` built-in function.
 ```kotlin
 listOf(0, 1, 2)
 ```
@@ -22,7 +22,7 @@ You can specify the type in multiple ways:
 These are equivalent, but generally 2. is more idiomatic and more readable as it is easier to figure out the type of the variable/value.
 
 ### Mutable
-Initializing a `mutable` list works the same way as the `read-only` list, but you use `mutableListOf()`.
+Initializing a mutable list works the same way as the read-only list, but you use `mutableListOf()`.
 
 ~~~~exercism/caution
 When creating an empty list using any of the above methods, you **must** specify a type, because kotlin can’t guess the type. Kotlin does not look into future references to guess the type.
@@ -48,12 +48,12 @@ for (item in list) {
 #### With index
 Often you need to know the index of the item you are currently dealing with in the loop. For this you use [`for` and `list.withIndex()`][ref-for-withIndex]
 ```kotlin
-for ((index, item) in list.withIndex()) 
+for ((index, item) in list.withIndex()) {}
     // Do something with the item and the index
 }
 ```
 
-### Writing (only for `mutable` lists)
+### Writing (only for `MutableList`)
 #### Adding
 You can add an element to the end of a list using [`list.add()`][ref-list-add]
 ```kotlin
@@ -72,16 +72,5 @@ list.add(1, "two")  // "one", "two", "three"
 [ref-for]: https://kotlinlang.org/docs/control-flow.html#for-loops
 [ref-for-withIndex]: https://kotlinlang.org/docs/control-flow.html#arrays
 [ref-list-add]: https://kotlinlang.org/docs/list-operations.html#add
-[ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-indexe
+[ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-index
 
-str.toCharArray()      // => [H, e, l, l, o,  , W, o, r, l, d, !]
-"42".toInt() + 1       // => 43  (parsing; see also toFloat)
-```
-
-
-[ref-string]: https://kotlinlang.org/docs/strings.html
-[wiki-immutable]: https://en.wikipedia.org/wiki/Immutable_object
-[wiki-unicode]: https://en.wikipedia.org/wiki/Unicode
-[ref-stringbuilder]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-string-builder/
-[ref-extensions]: https://kotlinlang.org/docs/extensions.html#extensions.md
-[ref-string-functions]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/

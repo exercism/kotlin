@@ -1,14 +1,15 @@
 # About lists in Kotlin
-
 A [`List`][ref-lists] is an _ordered_ collection of items of a specified type.
 
 ”Ordered” here means that the items have a specific spot in the list (their _index_), **not** that they are sorted.
 
-You use a list in Kotlin when you have multiple values that all represent the same kind of thing (e.g. chat messages, names) and you want to store and process them together instead of using many separate variables.
+Use a list when you have multiple values of the same type that should be stored and processed together. Lists provide powerful transformation operations, which are often used in idiomatic Kotlin code.
 
 There are two common ways to work with lists in Kotlin:
 - `List`: a read-only view of a list (no add/remove/set operations _through this reference_).
 - `MutableList`: a mutable list that you can modify after creation.
+
+Read-only lists are the default, and mutable lists are opt-in. Use `List` wherever possible.
 
 ~~~~exercism/advanced
 The reason I say “through this reference” in `List` is because you cannot call e.g. `add` on that object, _but_ if it is a reference to mutable list, that list can be modified in the background (But not through the `List`).
@@ -21,7 +22,16 @@ mutable.add(1)  // 0, 1
 println(readOnly)  // 0, 1 
 ```
 as you see the list has been modified even though `List` is _read only_ (not _immutable_)
+
+When _creating_ a list with `listOf()`, however, the returned list cannot be modified. Kotlin provides an implementation that does not support mutation operations, so you cannot add or remove elements from it.
 ~~~~
+
+## When to use other Collections
+Use..
+- `Set` when you need each value to be unique
+- `Map` when you need to look up values by keys (like a json)
+- `Sequence` when you have a _lot_ of data and want to make large lazy transformations.
+
 ## Creating
 ### Read-only
 A _read-only_ list is created using the `listOf()` built-in function.
@@ -58,6 +68,7 @@ You can also:
 - Go downward: `10 downTo 0` (`10, 9, 8 , …, 0`)
 ## Using
 ### Retrieve
+#### Elements
 You can access an item in a list using its [**index**][ref-get-by-index]:
 ```kotlin
 val list = listOf(1, 2, 3)
@@ -67,6 +78,17 @@ If you don’t know if the index exists, try `list.getOrNull(index)` that return
 Further useful retrieve operations:
 - `list.first()`, `list.last()` get the first/last item of a list. If the list is empty, this will error (throws `NoSuchElementException`).
 - `list.firstOrNull()`, `list.lastOrNull()` same as `first` and `last`, but returns `null` instead of an error.
+
+#### Length/size
+You can find a lists `length` using `list.size`
+```kotlin
+val list = listOf(1, 2, 3)
+list.size // 3
+```
+
+~~~~exercism/caution
+The size of a list is exactly one bigger than the last index of the list. So for a list with 3 elements, the `size` is 3 but the last index is `list[2]`.
+~~~~
 
 ### Find or check presence in a list
 To find the index of value in a list, use:
@@ -115,6 +137,16 @@ list.forEachIndexed { index, item ->
     // Do something with the item and the index
 }
 ```
+#### Looping through indices ("indexes")
+This can be done with `list.indices`:
+```kotlin
+for (index in list.indices) {
+    // Do something with the index
+}
+```
+~~~~exercism/caution
+Prefer looping over elements or elements and indexes (with `withIndex()`) unless you truly need index-based access.
+~~~~
 
 ### Writing (only for `MutableList`)
 ~~~~exercism/note
@@ -211,7 +243,7 @@ list.mapIndexed { index, item ->  // You can’t use `it` here! (2 arguments)
 `filter` can be used to create a copy of a list with specific filtering. It uses a lambda just like `removeAll` that returns `true` or `false` given the item, but in this case `false` will remove that item.
 The difference in purpose to `removeAll` is that this returns the filtered list and doesn’t alter the list (and with that can be used on both `MutableList` and `List`). 
 ```kotlin
-val list = 1..10.toList()
+val list = (1..10).toList()
 list.filter {
     it <= 5
 }  // 1, 2, 3, 4, 5
