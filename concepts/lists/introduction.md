@@ -30,11 +30,24 @@ When creating an empty list using any of the above methods, you **must** specify
 
 ## Using
 ### Accessing
+#### Elements
 You can access an item in a list using its [**index**][ref-get-by-index]:
 ```kotlin
 val list = listOf(1, 2, 3)
 println(list[0])  // prints: 1
 ```
+Use `list.first()`, `list.last()` to get the first/last item of a list.
+
+#### Length/size
+You can find a lists `length` using `list.size`
+```kotlin
+val list = listOf(1, 2, 3)
+list.size // 3
+```
+
+~~~~exercism/caution
+The size of a list is exactly one bigger than the last index of the list. So for a list with 3 elements, the `size` is 3 but the last index is `list[2]`.
+~~~~
 
 ### Looping over a list
 To do something for every item in a list, you can use [`for`][ref-for]
