@@ -55,6 +55,13 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "messages-after-collapse",
+        "name": "messages-after-collapse",
+        "uuid": "06183285-11e6-4f6a-b2a2-f33964996ddd",
+        "concepts": [],
+        "prerequisites": []
       }
     ],
     "practice": [
@@ -1196,6 +1203,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6,
+        "status": "deprecated",
         "topics": [
           "conditionals",
           "games",
@@ -1203,8 +1211,7 @@
           "lists",
           "matrices",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "rail-fence-cipher",
