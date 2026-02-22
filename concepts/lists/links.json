@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/list-operations.html",
+    "description": "Kotlin List introduction"
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/",
+    "description": "Kotlin List API reference"
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-list/",
+    "description": "Kotlin MutableList API reference"
+  }
+]

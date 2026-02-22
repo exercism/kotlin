@@ -1,0 +1,7 @@
+{
+  "authors": [
+    "Tear4Pixelation"
+  ],
+  "contributors": [],
+  "blurb": "Lists are collections of elements of a single declared type, accessible by index. They can be read-only (List) or mutable (MutableList)."
+}

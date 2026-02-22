@@ -1,0 +1,15 @@
+{
+  "authors": ["Tear4Pixelation"],
+  "files": {
+    "solution": [
+      "src/main/kotlin/MessagesAfterCollapse.kt"
+    ],
+    "test": [
+      "src/test/kotlin/MessagesAfterCollapseTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/MessagesAfterCollapse.kt"
+    ]
+  },
+  "blurb": "Write a tiny messenger in kotlin using lists."
+}
