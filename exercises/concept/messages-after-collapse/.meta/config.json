@@ -1,5 +1,5 @@
 {
-  "authors": [],
+  "authors": ["Tear4Pixelation"],
   "files": {
     "solution": [
       "src/main/kotlin/MessagesAfterCollapse.kt"
@@ -11,5 +11,5 @@
       ".meta/src/reference/kotlin/MessagesAfterCollapse.kt"
     ]
   },
-  "blurb": ""
+  "blurb": "Write a tiny messenger in kotlin using lists."
 }
