@@ -60,8 +60,9 @@
         "slug": "messages-after-collapse",
         "name": "messages-after-collapse",
         "uuid": "06183285-11e6-4f6a-b2a2-f33964996ddd",
-        "concepts": [],
-        "prerequisites": []
+        "concepts": ["lists"],
+        "prerequisites": ["basics"],
+        "status": "wip"
       }
     ],
     "practice": [
@@ -1399,6 +1400,11 @@
       "uuid": "168827c0-4867-449a-ad22-611c87314c48",
       "slug": "conditionals",
       "name": "Conditionals"
+    },
+    {
+      "uuid": "5b88e6d2-0fdd-11f1-beaf-bfdfa335913d",
+      "slug": "lists",
+      "name": "Lists"
     }
   ],
   "key_features": [
