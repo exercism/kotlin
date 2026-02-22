@@ -168,6 +168,8 @@ list.toMutableList().apply {
     add(1)
     // other operations
 }.toList()
+
+But if you need this just during initialization, use `buildList` (see advanced)
 ```
 ~~~~
 
@@ -222,6 +224,17 @@ list[2] = 3  // 1, 2, 3, 4
 ```
 
 ### Advanced operations
+#### Using `buildList` to create `List`
+[`buildList {}`][ref-build-list] is a function that returns a read-only `List`, but allows you to run `MutableList` write operations on it first:
+```kotlin
+val list = buildList {
+    add("a")
+    add("b")
+    add("c")
+    // any other operations
+}  // ["a", "b", "c"]
+```
+
 #### `map`
 `map` is a _really_ powerful tool to produce a transformed copy of a list 1-to-1. It works by executing the given lambda for every element, and putting the value it returns into a new list and returns that list.
 ```kotlin
@@ -279,3 +292,4 @@ You _can_ call .apply on a `List`, but the write operations will still not be av
 [ref-for-withIndex]: https://kotlinlang.org/docs/control-flow.html#arrays
 [ref-list-add]: https://kotlinlang.org/docs/list-operations.html#add
 [ref-get-by-index]: https://kotlinlang.org/docs/list-operations.html#retrieve-elements-by-index
+[ref-build-list]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/build-list.html
