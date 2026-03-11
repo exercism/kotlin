@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/ranges.html#range",
+    "description": "Kotlin introduction to ranges."
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.ranges/",
+    "description": "Library reference for Range type."
+  }
+]
