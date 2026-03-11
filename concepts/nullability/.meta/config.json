@@ -1,0 +1,7 @@
+{
+  "authors": [
+    "colinleach"
+  ],
+  "contributors": [],
+  "blurb": "Kotlin provides optional nullable types, plus functionality to make nullability safe and convenient to use."
+}
