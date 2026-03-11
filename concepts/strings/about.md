@@ -16,18 +16,54 @@ val s = "Escape backslash \\."
 // Escape backslash \.
 ```
 
-Raw strings use 3 double-quotes, and can contain arbitrary text (no need for escaping).
-Multiline strings are also supported, including flexible handling of indents.
+Multi-line strings are surrounded by 3 double-quotes, and can contain arbitrary text (no need for escaping).
 
 ```kotlin
 val multi = """I'm a
-    |multi-line
-    |string with special characters \ \t """
-
-multi.trimMargin()  // delimiter defaults to | but can be specified
+    multi-line
+    string with special characters \ \t """
 //I'm a
-//multi-line
-//string with special characters  \ \t 
+//    multi-line
+//    string with special characters  \ \t 
+```
+
+Use [trimIndent][trimIndent-doc] to remove the common indenting from the lines.
+This is useful for formatting the string:
+
+```kotlin
+val multi = """
+    I'm a
+      multi-line
+    string""".trimIndent()
+
+//I'm a
+//  multi-line
+//string
+```
+
+Alternatively, [trimMargin][trimMargin-doc] lets you specify a delimiter.
+Each line in the `String` then begins after the delimiter.
+The delimiter defaults to `|`, but you can specify a different delimiter as a parameter.
+For example:
+
+```kotlin
+val multi = """
+    |I'm a
+    |  multi-line
+    |string""".trimMargin()
+
+//I'm a
+//  multi-line
+//string
+
+val multi2 = """
+    start>I'm a
+    start>  multi-line
+    start>string""".trimMargin("start>")
+
+//I'm a
+//  multi-line
+//string
 ```
 
 Strings can be concatenated with `+`, but this is best limited to short and simple cases.
@@ -70,7 +106,7 @@ Mostly, these are [`extensions functions`][ref-extensions] rather than members o
 
 ~~~~exercism/note
 Kotlin's rather complex [documentation][ref-string-functions] pages hide extension functions in the default view.
-At moment of writing this, the most valuable content is hidden in a tab named `Members and Extensions`.
+At moment of writing this, the most valuable content is hidden in a tab named `Members & Extensions`.
 Click it to expand this section and see all the members and extensions available on the `String` class.
 
 [ref-string-functions]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/
@@ -85,15 +121,19 @@ str.length              // => 12 (a property, not a function)
 str.elementAt(6)        // => W
 str.elementAtOrNull(20) // => null (index out of range)
 str.substring(6, 11)    // => "World"
+str.substringAfter(" ") // => "World!"
 
-str.lowercase()        // => "hello world!"
-str.uppercase()        // => "HELLO WORLD!"
+str.lowercase()         // => "hello world!"
+str.uppercase()         // => "HELLO WORLD!"
 
-str.startsWith("Hel")  // => true
-str.endsWith("xyz")    // => false
+str.startsWith("Hel")   // => true
+str.endsWith("xyz")     // => false
+str.indexOf("0")        // => 4
 
-str.toCharArray()      // => [H, e, l, l, o,  , W, o, r, l, d, !]
-"42".toInt() + 1       // => 43  (parsing; see also toFloat)
+str.toCharArray()       // => [H, e, l, l, o,  , W, o, r, l, d, !]
+"42".toInt() + 1        // => 43  (parsing; see also toFloat)
+
+"Howdy!  ".trim()       // => "Howdy"
 ```
 
 ## Building a string
@@ -157,3 +197,5 @@ val countDown = buildString {
 [ref-sb-deleterange]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-string-builder/#-1622040372%2FFunctions%2F-956074838
 [ref-buildstring]: https://kotlinlang.org/docs/java-to-kotlin-idioms-strings.html#build-a-string
 [ref-jointostring]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/join-to-string.html
+[trimIndent-doc]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/trim-indent.html
+[trimMargin-doc]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/trim-margin.html

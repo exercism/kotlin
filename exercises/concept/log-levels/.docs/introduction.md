@@ -6,13 +6,13 @@ A [`string`][ref-string] in Kotlin is an immutable sequence of Unicode character
 
 [`Unicode`][wiki-unicode] means that most of the world's writing systems can be represented, but (in contrast to older languages such as C) there is no 1:1 mapping between characters and bytes.
 
-A string is surrounded by double-quotes `" "`.
+A string is usually surrounded by double-quotes `" "`.
 
-Some characters need escaping: `\\`, plus the usual non-printing characters such as `\t` (tab) and `\n` (newline).
+Some characters need escaping: `\'`, `\\`, plus the usual non-printing characters such as `\t` (tab) and `\n` (newline).
 
 ```kotlin
-val s = "Escape backslash \\."
-// Escape backslash \.
+val s = "Escape apostrophe \' and backslash \\."
+// Escape apostrophe ' and backslash \.
 ```
 
 Multi-line strings are surrounded by 3 double-quotes, and can contain arbitrary text (no need for escaping).
