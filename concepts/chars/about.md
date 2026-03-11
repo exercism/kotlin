@@ -85,10 +85,10 @@ As always, there are far too [many functions][ref-char-lib] to discuss here, so 
 - For appropriate alphabets, change case with [`uppercase()`][ref-uppercase] and [`lowercase()`][ref-lowercase].
 - Test case with [`isUpperCase()`][ref-isuppercase] and [`isLowerCase()`][ref-islowercase].
 - Test character type with:
-    - [`isLetter()`][ref-isletter], covers many alphabets
-    - [`isDigit()`][ref-isdigit], in range 0..9
-    - `isLetterOrDigit()`, combines the previous two
-    - [`isWhitespace()`][ref-iswhitespace], any whitespace character
+  - [`isLetter()`][ref-isletter], covers many alphabets (the Lu, Ll, Lt, Lm, and Lo categories in unicode)
+  - [`isDigit()`][ref-isdigit], in range 0..9 (the Nd category in unicode)
+  - `isLetterOrDigit()`, combines the previous two
+  - [`isWhitespace()`][ref-iswhitespace], any whitespace character (the Cc, Zp, Zl, and Zs categories in unicode)
 
 ```kotlin
 'झ'.isLetter()      // => true
