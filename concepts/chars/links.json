@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/characters.html",
+    "description": "Kotlin introduction to characters."
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/",
+    "description": "Char type and functions"
+  }
+]
