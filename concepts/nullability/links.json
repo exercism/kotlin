@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/null-safety.html",
+    "description": "Kotlin introduction to null safety."
+  },
+  {
+    "url": "https://kotlinlang.org/docs/java-to-kotlin-nullability-guide.html",
+    "description": "Nullability guide for Java to Kotlin migration."
+  }
+]
