@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://kotlinlang.org/docs/strings.html",
+    "description": "Kotlin string introduction"
+  },
+  {
+    "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/",
+    "description": "String functions"
+  },
+  {
+    "url": "https://kotlinlang.org/docs/strings.html#string-templates",
+    "description": "String Templates"
+  }
+]
