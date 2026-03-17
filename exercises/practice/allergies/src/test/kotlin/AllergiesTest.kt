@@ -182,6 +182,13 @@ class AllergiesTest {
 
     @Ignore
     @Test
+    fun `list - just strawberries`() = assertAllergens(
+            8,
+            listOf(Allergen.STRAWBERRIES)
+    )
+
+    @Ignore
+    @Test
     fun `list - eggs and peanuts`() = assertAllergens(
             3,
             listOf(Allergen.EGGS, Allergen.PEANUTS))
@@ -209,6 +216,13 @@ class AllergiesTest {
     fun `list - no allergen score parts`() = assertAllergens(
             509,
             Allergen.values().toList() - Allergen.PEANUTS)
+
+    @Ignore
+    @Test
+    fun `list - no allergen score parts without highest valid score`() = assertAllergens(
+            257,
+            listOf(Allergen.EGGS)
+    )
 }
 
 private fun assertIsAllergic(score: Int, allergen: Allergen) = assertTrue(Allergies(score).isAllergicTo(allergen))
