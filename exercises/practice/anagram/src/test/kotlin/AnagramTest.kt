@@ -14,9 +14,9 @@ class AnagramTest {
     @Ignore
     @Test
     fun `detects two anagrams`() =
-        anagramsOf("master")
-            .searchedIn("stream", "pigeon", "maters")
-            .shouldBeOnly("maters", "stream")
+        anagramsOf("solemn")
+            .searchedIn("lemons", "cherry", "melons")
+            .shouldBeOnly("lemons", "melons")
 
     @Ignore
     @Test
@@ -79,7 +79,7 @@ class AnagramTest {
     @Test
     fun `does not detect an anagram if the original word is repeated`() =
         anagramsOf("go")
-            .searchedIn("go Go GO")
+            .searchedIn("goGoGO")
             .shouldBeEmpty()
 
     @Ignore
@@ -91,17 +91,45 @@ class AnagramTest {
 
     @Ignore
     @Test
-    fun `words are not anagrams of themselves (case-insensitive)`() =
+    fun `words are not anagrams of themselves`() =
+        anagramsOf("BANANA")
+            .searchedIn("BANANA")
+            .shouldBeEmpty()
+
+    @Ignore
+    @Test
+    fun `words are not anagrams of themselves even if letter case is partially different`() =
         anagramsOf("BANANA")
             .searchedIn("Banana")
             .shouldBeEmpty()
 
     @Ignore
     @Test
+    fun `words are not anagrams of themselves even if letter case is completely different`() =
+        anagramsOf("BANANA")
+            .searchedIn("banana")
+            .shouldBeEmpty()
+
+    @Ignore
+    @Test
     fun `words other than themselves can be anagrams`() =
         anagramsOf("LISTEN")
-            .searchedIn("Listen", "Silent", "LISTEN")
+            .searchedIn("LISTEN", "Silent")
             .shouldBeOnly("Silent")
+
+    @Ignore
+    @Test
+    fun `handles case of greek letters`() =
+        anagramsOf("ΑΒΓ")
+            .searchedIn("ΒΓΑ", "ΒΓΔ", "γβα", "αβγ")
+            .shouldBeOnly("ΒΓΑ", "γβα")
+
+    @Ignore
+    @Test
+    fun `different characters may have the same bytes`() =
+        anagramsOf("a⬂")
+            .searchedIn("€a")
+            .shouldBeEmpty()
 }
 
 private fun anagramsOf(source: String) = Anagram(source)
