@@ -11,6 +11,12 @@ class ChangeCalculatorTest {
     var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
+    fun `change for 1 cent`() {
+        var computedChange = ChangeCalculator(listOf(1, 5, 10, 25)).computeMostEfficientChange(1)
+        assertContainsExactly(computedChange, listOf(1))
+    }
+
+    @Test
     fun singleCoinChange() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 25, 100)).computeMostEfficientChange(25)
         assertContainsExactly(computedChange, listOf(25))
@@ -41,8 +47,10 @@ class ChangeCalculatorTest {
     @Test
     fun largeTargetValues() {
         val computedChange = ChangeCalculator(listOf(1, 2, 5, 10, 20, 50, 100)).computeMostEfficientChange(999)
-        assertContainsExactly(computedChange,
-            listOf(2, 2, 5, 20, 20, 50, 100, 100, 100, 100, 100, 100, 100, 100, 100))
+        assertContainsExactly(
+            computedChange,
+            listOf(2, 2, 5, 20, 20, 50, 100, 100, 100, 100, 100, 100, 100, 100, 100)
+        )
     }
 
     @Ignore
@@ -57,6 +65,13 @@ class ChangeCalculatorTest {
     fun anotherPossibleChangeWithoutUnitCoinsAvailable() {
         val computedChange = ChangeCalculator(listOf(4, 5)).computeMostEfficientChange(27)
         assertContainsExactly(computedChange, listOf(4, 4, 4, 5, 5, 5))
+    }
+
+    @Ignore
+    @Test
+    fun `a greedy approach is not optimal`() {
+        val computedChange = ChangeCalculator(listOf(1, 10, 11)).computeMostEfficientChange(20)
+        assertContainsExactly(computedChange, listOf(10, 10))
     }
 
     @Ignore
