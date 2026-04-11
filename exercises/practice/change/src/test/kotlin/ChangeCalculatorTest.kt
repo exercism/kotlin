@@ -16,6 +16,7 @@ class ChangeCalculatorTest {
         assertContainsExactly(computedChange, listOf(1))
     }
 
+    @Ignore
     @Test
     fun singleCoinChange() {
         val computedChange = ChangeCalculator(listOf(1, 5, 10, 25, 100)).computeMostEfficientChange(25)
