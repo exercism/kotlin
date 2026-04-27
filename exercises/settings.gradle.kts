@@ -1,6 +1,7 @@
 include(
     "concept:annalyns-infiltration",
     "concept:cars-assemble",
+    "concept:johannes-juice-maker",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
     "practice:accumulate",
