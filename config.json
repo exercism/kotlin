@@ -67,6 +67,18 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "secrets",
+        "name": "secrets",
+        "uuid": "eeb45ce0-2caa-4283-b374-f086a9627da2",
+        "concepts": [
+          "bitwise-operations"
+        ],
+        "prerequisites": [
+          "numbers"
+        ],
+        "status":"wip"
       }
     ],
     "practice": [
@@ -1208,6 +1220,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6,
+        "status": "deprecated",
         "topics": [
           "conditionals",
           "games",
@@ -1215,8 +1228,7 @@
           "lists",
           "matrices",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "rail-fence-cipher",
