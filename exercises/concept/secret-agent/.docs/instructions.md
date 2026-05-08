@@ -9,10 +9,15 @@ There are three tools you will need to carry out this mission.
 
 Each minion has a unique identifier that changes each day and depends on the number of secrets they hold and the number of hours they sleep.
 You will need to write a function that takes the day (as an `Int`) and creates an identifier generating function for the day.
+The identifier generating function takes two parameters:
+
+1. the number of secrets held
+2. the number of hours the minion sleeps
+
 The identifier is calculated by:
 
-1. Multiply the number of secrets held by the number of hours they sleep
-2. Add the day (represented as an `Int`) to the result
+1. multiply the number of secrets held by the number of hours they sleep
+2. add the day (represented as an `Int`) to the result
 
 ```kotlin
 val idGenerator = makeIdGenerator(4)
@@ -43,16 +48,20 @@ secretFunction("5up3r53cr37")
 ## 3. Find the secret password
 
 The UMBRA base has a number of rooms guarded by a security guard who will ask you for the secret password.
-The secret password depends on the room'sS number.
+The secret password depends on the room's number.
 Unfortunately, we have know only half of the algorithm for working out the password.
 The other half can be found by asking one of the minions.
 
-Implement the `getPassword` function that takes in the room number and the minion's function and returns the secret password.
-The secret number is obtained by calling the minion's function with another function representing the algorithm known by us.
+Implement the `getPassword` function that takes in the following and returns the password:
+
+1. the room number 
+2. the minion's function and returns the secret password
+
+The secret password is obtained by calling the minion's function with another function representing the algorithm known by us.
 Our part of the algorithm:
 
-1. Takes two numbers and adds them together
-2. Multiplies the result by the room id
+1. takes two numbers and adds them together
+2. multiplies the result by the room id
 
 ```kotlin
 val minionFunction = { yourFunc : (Int, Int) -> Int ->
