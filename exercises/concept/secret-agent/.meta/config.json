@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/SecretAgent.kt"
+    ],
+    "test": [
+      "src/test/kotlin/SecretAgentTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/SecretAgent.kt"
+    ]
+  },
+  "forked_from": [
+    "swift/secret-agent"
+  ],
+  "blurb": "Learn about higher-order functions by becoming a spy and infiltrate the secret UMBRA headquarters"
+}
