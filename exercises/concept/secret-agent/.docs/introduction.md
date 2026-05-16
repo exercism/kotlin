@@ -1,6 +1,6 @@
 # Introduction
 
-Functions in Kotlin are first class citizens.
+Functions in Kotlin are first-class citizens.
 This means they can be stored in variables, passed as arguments and even returned by other functions.
 For example, assigning a function to the variable `addOne`:
 
@@ -18,6 +18,8 @@ fun makeAddOne() : (Int) -> Int {
         return num + 1
     }
 }
+
+val addOne = makeAddOne()
 ```
 
 Once assigned, the function can be called through the variable as if it was just another function:
