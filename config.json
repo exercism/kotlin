@@ -67,6 +67,19 @@
           "basics"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "tim-from-marketing",
+        "name": "tim-from-marketing",
+        "uuid": "1eb4da65-661a-43d8-ac46-9a50d9213e15",
+        "concepts": [
+          "nullability"
+        ],
+        "prerequisites": [
+          "conditionals",
+          "strings"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [
