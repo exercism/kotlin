@@ -13,7 +13,9 @@ printBadge(734, "Ernest Johnny Payne", "Strategic Communication")
 // => "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION"
 ```
 
+~~~~exercism/note
 Note that the department should be uppercased on the label.
+~~~~
 
 ## 2. Print a badge for a new employee
 
@@ -38,9 +40,11 @@ printBadge(254, "Charlotte Hale", null)
 // => "[254] - Charlotte Hale - OWNER"
 ```
 
+~~~~exercism/note
 Note that it is possible for the owner to also be a new employee:
 
 ```kotlin
 printBadge(null, "Charlotte Hale", null)
 // => "Charlotte Hale - OWNER"
 ```
+~~~~
