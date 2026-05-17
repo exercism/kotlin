@@ -57,6 +57,18 @@
         "status": "wip"
       },
       {
+        "slug": "johannes-juice-maker",
+        "name": "johannes-juice-maker",
+        "uuid": "69b0d275-acee-4522-a348-32368bcd70b4",
+        "concepts": [
+          "classes"
+        ],
+        "prerequisites": [
+          "nullability"
+        ],
+        "status": "wip"
+      },
+      {
         "slug": "log-levels",
         "name": "log-levels",
         "uuid": "ef54c5e6-7d31-42d1-a300-e405169dbd7f",
@@ -1407,6 +1419,11 @@
       "uuid": "53e0b729-810e-4042-9477-8c8d05a7b302",
       "slug": "booleans",
       "name": "Booleans"
+    },
+    {
+      "uuid": "faad3482-d63f-45c5-bd69-e85583581e81",
+      "slug": "classes",
+      "name": "Classes"
     },
     {
       "uuid": "157bbe3b-e4f5-41f7-8e0e-e2f57d526617",

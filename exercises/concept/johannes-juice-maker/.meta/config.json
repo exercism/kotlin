@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/JohannesJuiceMaker.kt"
+    ],
+    "test": [
+      "src/test/kotlin/JohannesJuiceMakerTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/JohannesJuiceMaker.kt"
+    ],
+    "editor": [
+      "src/main/kotlin/Jug.kt",
+      "src/main/kotlin/Starter.kt"
+    ]
+  },
+  "blurb": "Learn about Classes while building a Juice maker"
+}
