@@ -4,6 +4,7 @@ include(
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
     "concept:secret-agent",
+    "concept:vehicle-purchase",
     "practice:accumulate",
     "practice:acronym",
     "practice:all-your-base",
