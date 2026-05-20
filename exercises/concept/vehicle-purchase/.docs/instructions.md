@@ -47,7 +47,7 @@ If the vehicle is at least 3 years old but less than 10 years, it costs 70% of t
 Implement the `calculateResellPrice(originalPrice, age)` function that applies this logic using `if`, `else if` and `else` (there are other ways if you want to practice).
 It takes the original price and the age of the vehicle as arguments and returns the estimated price in the dealership.
 
-```go
+```kotlin
 calculateResellPrice(1000, 1)
 // => 800
 
