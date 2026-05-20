@@ -26,7 +26,7 @@ needsLicense("truck")
 
 You evaluate your options of available vehicles.
 You manage to narrow it down to two options but you need help making the final decision.
-For that, implement the function `chooseVehicle(option1, option2)` that takes two vehicles as arguments and returns a decision that includes the option that comes first in lexicographical order.
+For that, implement the function `chooseVehicle(option1, option2)` that takes two vehicles as arguments and returns a decision that includes the option that comes first in [lexicographical order][lexicographical-order].
 
 ```kotlin
 chooseVehicle("Wuling Hongguang", "Toyota Corolla")
@@ -57,3 +57,5 @@ calculateResellPrice(1000, 5)
 calculateResellPrice(1000, 15)
 // => 500
 ```
+
+[lexicographical-order]: https://en.wikipedia.org/wiki/Lexicographic_order
