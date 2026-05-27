@@ -1,6 +1,6 @@
 # Instructions append
 
-## Hints
+## Track specific instructions
 
 The tests for this exercise require you to use extensions, a mechanism for adding new functionality to an existing class whose source you do not directly control without having to subclass it.
 To learn more about Kotlin's implementations of extensions, check out the [official documentation](https://kotlinlang.org/docs/reference/extensions.html#extensions).
