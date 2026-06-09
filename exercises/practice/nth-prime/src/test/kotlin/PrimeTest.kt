@@ -1,14 +1,9 @@
-import org.junit.Test
-import org.junit.Ignore
-import org.junit.Rule
-import org.junit.rules.ExpectedException
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
+import kotlin.test.Ignore
+import kotlin.test.Test
 
 class PrimeTest {
-
-    @Rule
-    @JvmField
-    var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
     fun firstPrime() {
@@ -36,10 +31,9 @@ class PrimeTest {
     @Ignore
     @Test
     fun undefinedPrime() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("There is no zeroth prime.")
-
-        Prime.nth(0)
+        assertFailsWith(IllegalArgumentException::class, "There is no zeroth prime.") {
+            Prime.nth(0)
+        }
     }
 
 }

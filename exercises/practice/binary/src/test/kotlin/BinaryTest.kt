@@ -10,7 +10,7 @@ class BinaryTest(val input: String, val expectedOutput: Int) {
     companion object {
         @JvmStatic
         @Parameterized.Parameters(name = "{index}: binary({0})={1}")
-        fun data() = listOf(
+        fun data() : Collection<Array<Any>> = listOf(
                 arrayOf("1", 1),
                 arrayOf("10", 2),
                 arrayOf("11", 3),
@@ -27,7 +27,6 @@ class BinaryTest(val input: String, val expectedOutput: Int) {
                 arrayOf("g1", 0)
         )
     }
-
 
     @Test
     fun binaryStringToInt() {

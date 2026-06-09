@@ -9,20 +9,20 @@ class TwoFerTest {
         assertEquals("One for you, one for me.", twofer())
     }
 
-    @Test
     @Ignore
+    @Test
     fun aNameGiven() {
         assertEquals("One for Alice, one for me.", twofer("Alice"))
     }
 
-    @Test
     @Ignore
+    @Test
     fun anotherNameGiven() {
         assertEquals("One for Bob, one for me.", twofer("Bob"))
     }
 
-    @Test
     @Ignore
+    @Test
     fun emptyStringGiven() {
         assertEquals("One for , one for me.", twofer(""))
     }

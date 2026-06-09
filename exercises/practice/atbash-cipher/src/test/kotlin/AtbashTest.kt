@@ -1,60 +1,92 @@
-import org.junit.Test
-import org.junit.Ignore
-import org.junit.experimental.runners.Enclosed
-import org.junit.runner.RunWith
-import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
+import kotlin.test.Ignore
+import kotlin.test.Test
 
-@RunWith(Enclosed::class)
 class AtbashTest {
 
-    @RunWith(Parameterized::class)
-    class EncodeTest(val input: String, val expectedOutput: String) {
-
-        companion object {
-            @JvmStatic
-            @Parameterized.Parameters (name = "{index}: encode({0}) = {1}")
-            fun data() = listOf(
-                    arrayOf("yes", "bvh"),
-                    arrayOf("no", "ml"),
-                    arrayOf("OMG", "lnt"),
-                    arrayOf("O M G", "lnt"),
-                    arrayOf("mindblowingly", "nrmwy oldrm tob"),
-                    arrayOf("Testing,1 2 3, testing.", "gvhgr mt123 gvhgr mt"),
-                    arrayOf("Truth is fiction.", "gifgs rhurx grlm"),
-                    arrayOf("The quick brown fox jumps over the lazy dog.", "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt")
-            )
-        }
-
-        @Test
-        fun test() {
-            assertEquals(expectedOutput, Atbash.encode(input))
-        }
-
+    @Test
+    fun `encode yes`() {
+        assertEquals("bvh", Atbash.encode("yes"))
     }
 
-    @RunWith(Parameterized::class)
-    class DecodeTest(val input: String, val expectedOutput: String) {
-
-        companion object {
-            @JvmStatic
-            @Parameterized.Parameters(name = "{index}: decode({0}) = {1}")
-            fun data() = listOf(
-                    arrayOf("vcvix rhn", "exercism"),
-                    arrayOf("zmlyh gzxov rhlug vmzhg vkkrm thglm v", "anobstacleisoftenasteppingstone"),
-                    arrayOf("gvhgr mt123 gvhgr mt", "testing123testing"),
-                    arrayOf("gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt", "thequickbrownfoxjumpsoverthelazydog"),
-                    arrayOf("vc vix    r hn", "exercism"),
-                    arrayOf("zmlyhgzxovrhlugvmzhgvkkrmthglmv", "anobstacleisoftenasteppingstone")
-            )
-        }
-
-        @Ignore
-        @Test
-        fun test() {
-            assertEquals(expectedOutput, Atbash.decode(input))
-        }
-
+    @Ignore
+    @Test
+    fun `encode no`() {
+        assertEquals("ml", Atbash.encode("no"))
     }
 
+    @Ignore
+    @Test
+    fun `encode OMG`() {
+        assertEquals("lnt", Atbash.encode("OMG"))
+    }
+
+    @Ignore
+    @Test
+    fun `encode spaces`() {
+        assertEquals("lnt", Atbash.encode("O M G"))
+    }
+
+    @Ignore
+    @Test
+    fun `encode mindblowingly`() {
+        assertEquals("nrmwy oldrm tob", Atbash.encode("mindblowingly"))
+    }
+
+    @Ignore
+    @Test
+    fun `encode numbers`() {
+        assertEquals("gvhgr mt123 gvhgr mt", Atbash.encode("Testing,1 2 3, testing."))
+    }
+
+    @Ignore
+    @Test
+    fun `encode deep thought`() {
+        assertEquals("gifgs rhurx grlm", Atbash.encode("Truth is fiction."))
+    }
+
+    @Ignore
+    @Test
+    fun `encode all the letters`() {
+        assertEquals(
+            "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt",
+            Atbash.encode("The quick brown fox jumps over the lazy dog.")
+        )
+    }
+
+    @Ignore
+    @Test
+    fun `decode exercism`() {
+        assertEquals("exercism", Atbash.decode("vcvix rhn"))
+    }
+
+    @Ignore
+    @Test
+    fun `decode a sentence`() {
+        assertEquals("anobstacleisoftenasteppingstone", Atbash.decode("zmlyh gzxov rhlug vmzhg vkkrm thglm v"))
+    }
+
+    @Ignore
+    @Test
+    fun `decode numbers`() {
+        assertEquals("testing123testing", Atbash.decode("gvhgr mt123 gvhgr mt"))
+    }
+
+    @Ignore
+    @Test
+    fun `decode all the letters`() {
+        assertEquals("thequickbrownfoxjumpsoverthelazydog", Atbash.decode("gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"))
+    }
+
+    @Ignore
+    @Test
+    fun `decode with too many spaces`() {
+        assertEquals("exercism", Atbash.decode("vc vix    r hn"))
+    }
+
+    @Ignore
+    @Test
+    fun `decode with no spaces`() {
+        assertEquals("anobstacleisoftenasteppingstone", Atbash.decode("zmlyhgzxovrhlugvmzhgvkkrmthglmv"))
+    }
 }
