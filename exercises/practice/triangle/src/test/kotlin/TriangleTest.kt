@@ -102,8 +102,20 @@ class TriangleTest {
 
     @Ignore
     @Test
-    fun `scalene - two sides are equal`() {
+    fun `scalene - first and second sides are equal`() {
         assertFalse(Triangle(4, 4, 3).isScalene)
+    }
+
+    @Ignore
+    @Test
+    fun `scalene triangle - first and third sides are equal`() {
+        assertFalse(Triangle(3, 4, 3).isScalene)
+    }
+
+    @Ignore
+    @Test
+    fun `scalene triangle - second and third sides are equal`() {
+        assertFalse(Triangle(4, 3, 3).isScalene)
     }
 
     @Ignore
