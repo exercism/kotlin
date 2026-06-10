@@ -80,6 +80,20 @@
           "strings"
         ],
         "status": "wip"
+      },
+      {
+        "slug": "vehicle-purchase",
+        "name": "vehicle-purchase",
+        "uuid": "4ffac784-73fc-4814-a24d-7515f0b025bd",
+        "concepts": [
+          "conditionals"
+        ],
+        "prerequisites": [
+          "booleans",
+          "numbers",
+          "strings"
+        ],
+        "status": "wip"
       }
     ],
     "practice": [
