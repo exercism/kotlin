@@ -69,6 +69,19 @@
         "status": "wip"
       },
       {
+        "slug": "secret-agent",
+        "name": "secret-agent",
+        "uuid": "96553db0-5b98-4dcd-8a1c-882e42c3751a",
+        "concepts": [
+          "higher-order-functions"
+        ],
+        "prerequisites": [
+          "numbers",
+          "strings"
+        ],
+        "status": "wip"
+      },
+      {
         "slug": "tim-from-marketing",
         "name": "tim-from-marketing",
         "uuid": "1eb4da65-661a-43d8-ac46-9a50d9213e15",
@@ -77,6 +90,20 @@
         ],
         "prerequisites": [
           "conditionals",
+          "strings"
+        ],
+        "status": "wip"
+      },
+      {
+        "slug": "vehicle-purchase",
+        "name": "vehicle-purchase",
+        "uuid": "4ffac784-73fc-4814-a24d-7515f0b025bd",
+        "concepts": [
+          "conditionals"
+        ],
+        "prerequisites": [
+          "booleans",
+          "numbers",
           "strings"
         ],
         "status": "wip"
@@ -1221,6 +1248,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6,
+        "status": "deprecated",
         "topics": [
           "conditionals",
           "games",
@@ -1228,8 +1256,7 @@
           "lists",
           "matrices",
           "strings"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "rail-fence-cipher",
@@ -1422,6 +1449,11 @@
       "uuid": "660e1acd-3072-4bbc-ae44-bbc204da5eab",
       "slug": "chars",
       "name": "Chars"
+    },
+    {
+      "uuid": "c26a1939-deb9-4df7-85c3-f505cdf89e8c",
+      "slug": "higher-order-functions",
+      "name": "Higher Order Functions"
     },
     {
       "uuid": "98809a4c-ca3e-4504-b723-aff13bfae850",

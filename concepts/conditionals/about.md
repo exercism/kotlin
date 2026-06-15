@@ -45,6 +45,13 @@ if (conditional1) {
 - Braces `{}` are optional, if there is only a single expression.
 - Both `else if` and `else` are optional, and there can be multiple `else if` blocks.
 
+The `if` expression can also be used to "choose" a value:
+
+```Kotlin
+val number = 100000
+val description = if (number > 100) "number is over 100" else "number is less than 100"
+// => description = "number is over 100"
+```
 
 ## Alternatives?
 
