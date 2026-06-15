@@ -82,6 +82,19 @@
         "status": "wip"
       },
       {
+        "slug": "tim-from-marketing",
+        "name": "tim-from-marketing",
+        "uuid": "1eb4da65-661a-43d8-ac46-9a50d9213e15",
+        "concepts": [
+          "nullability"
+        ],
+        "prerequisites": [
+          "conditionals",
+          "strings"
+        ],
+        "status": "wip"
+      },
+      {
         "slug": "vehicle-purchase",
         "name": "vehicle-purchase",
         "uuid": "4ffac784-73fc-4814-a24d-7515f0b025bd",
