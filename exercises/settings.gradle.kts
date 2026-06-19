@@ -1,6 +1,5 @@
 include(
     "concept:annalyns-infiltration",
-    "concept:cars-assemble",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
     "concept:secret-agent",
@@ -111,7 +110,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             when (requested.id.id) {
-                "org.jetbrains.kotlin.jvm" -> useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0")
+                "org.jetbrains.kotlin.jvm" -> useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.0")
             }
         }
     }

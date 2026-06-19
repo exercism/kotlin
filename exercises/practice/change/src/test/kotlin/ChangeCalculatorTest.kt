@@ -1,14 +1,9 @@
-import org.junit.Ignore
-import org.junit.Rule
-import org.junit.Test
-import org.junit.rules.ExpectedException
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
+import kotlin.test.Ignore
+import kotlin.test.Test
 
 class ChangeCalculatorTest {
-
-    @Rule
-    @JvmField
-    var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
     fun singleCoinChange() {
@@ -71,10 +66,9 @@ class ChangeCalculatorTest {
     fun errorTestingForChangeSmallerThanTheSmallestCoin() {
         val changeCalculator = ChangeCalculator(listOf(5, 10))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("The total 3 cannot be represented in the given currency.")
-
-        changeCalculator.computeMostEfficientChange(3)
+        assertFailsWith(IllegalArgumentException::class, "The total 3 cannot be represented in the given currency.") {
+            changeCalculator.computeMostEfficientChange(3)
+        }
     }
 
     @Ignore
@@ -82,10 +76,9 @@ class ChangeCalculatorTest {
     fun errorIfNoCombinationCanAddUpToTarget() {
         val changeCalculator = ChangeCalculator(listOf(5, 10))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("The total 94 cannot be represented in the given currency.")
-
-        changeCalculator.computeMostEfficientChange(94)
+        assertFailsWith(IllegalArgumentException::class, "The total 94 cannot be represented in the given currency.") {
+            changeCalculator.computeMostEfficientChange(94)
+        }
     }
 
     @Ignore
@@ -93,12 +86,10 @@ class ChangeCalculatorTest {
     fun cannotFindNegativeChangeValues() {
         val changeCalculator = ChangeCalculator(listOf(1, 2, 5))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Negative totals are not allowed.")
-
-        changeCalculator.computeMostEfficientChange(-5)
+        assertFailsWith(IllegalArgumentException::class, "Negative totals are not allowed.") {
+            changeCalculator.computeMostEfficientChange(-5)
+        }
     }
-
 }
 
 private inline fun <reified T> assertContainsExactly(actualList: List<T>, expectedValues: List<T>) {

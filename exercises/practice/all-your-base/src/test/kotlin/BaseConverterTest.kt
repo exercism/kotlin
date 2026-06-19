@@ -1,18 +1,9 @@
-import org.junit.Assert.assertArrayEquals
-import org.junit.Ignore
-import org.junit.Rule
-import org.junit.Test
-import org.junit.rules.ExpectedException
-import java.util.*
+import kotlin.test.assertContentEquals
+import kotlin.test.assertFailsWith
+import kotlin.test.Ignore
+import kotlin.test.Test
 
 class BaseConverterTest {
-
-    /*
-     * See https://github.com/junit-team/junit4/wiki/Rules for information on JUnit Rules in general and
-     * ExpectedExceptions in particular.
-     */
-    @Rule @JvmField
-    var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
     fun testSingleBitOneToDecimal() {
@@ -21,10 +12,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(1)
         val actualDigits = baseConverter.convertToBase(10)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -35,10 +26,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(5)
         val actualDigits = baseConverter.convertToBase(10)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -49,10 +40,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(1, 0, 1)
         val actualDigits = baseConverter.convertToBase(2)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -63,10 +54,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(4, 2)
         val actualDigits = baseConverter.convertToBase(10)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -77,10 +68,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(1, 0, 1, 0, 1, 0)
         val actualDigits = baseConverter.convertToBase(2)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -91,10 +82,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(2, 10)
         val actualDigits = baseConverter.convertToBase(16)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -105,10 +96,10 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(1, 1, 2, 0)
         val actualDigits = baseConverter.convertToBase(3)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
@@ -119,19 +110,18 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(6, 10, 45)
         val actualDigits = baseConverter.convertToBase(73)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
     @Test
     fun testEmptyDigits() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("You must supply at least one digit.")
-
-        BaseConverter(2, intArrayOf())
+        assertFailsWith(IllegalArgumentException::class, "You must supply at least one digit.") {
+            BaseConverter(2, intArrayOf())
+        }
     }
 
     @Ignore
@@ -142,73 +132,66 @@ class BaseConverterTest {
         val expectedDigits = intArrayOf(0)
         val actualDigits = baseConverter.convertToBase(2)
 
-        assertArrayEquals(
-            "Expected digits: ${Arrays.toString(expectedDigits)} but found digits: ${Arrays.toString(actualDigits)}",
+        assertContentEquals(
             expectedDigits,
-            actualDigits)
+            actualDigits,
+            "Expected digits: ${expectedDigits.contentToString()} but found digits: ${actualDigits.contentToString()}")
     }
 
     @Ignore
     @Test
     fun testMultipleZeros() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Digits may not contain leading zeros.")
-
-        BaseConverter(10, intArrayOf(0, 0, 0))
+        assertFailsWith(IllegalArgumentException::class, "Digits may not contain leading zeros.") {
+            BaseConverter(10, intArrayOf(0, 0, 0))
+        }
     }
 
     @Ignore
     @Test
     fun testLeadingZeros() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Digits may not contain leading zeros.")
-
-        BaseConverter(7, intArrayOf(0, 6, 0))
+        assertFailsWith(IllegalArgumentException::class, "Digits may not contain leading zeros.") {
+            BaseConverter(7, intArrayOf(0, 6, 0))
+        }
     }
 
     @Ignore
     @Test
     fun testFirstBaseIsOne() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(1, intArrayOf(0))
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            BaseConverter(1, intArrayOf(0))
+        }
     }
 
     @Ignore
     @Test
     fun testFirstBaseIsZero() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(0, intArrayOf())
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            BaseConverter(0, intArrayOf())
+        }
     }
 
     @Ignore
     @Test
     fun testFirstBaseIsNegative() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        BaseConverter(-2, intArrayOf(1))
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            BaseConverter(-2, intArrayOf(1))
+        }
     }
 
     @Ignore
     @Test
     fun testNegativeDigit() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Digits may not be negative.")
-
-        BaseConverter(2, intArrayOf(1, -1, 1, 0, 1, 0))
+        assertFailsWith(IllegalArgumentException::class, "Digits may not be negative.") {
+            BaseConverter(2, intArrayOf(1, -1, 1, 0, 1, 0))
+        }
     }
 
     @Ignore
     @Test
     fun testInvalidPositiveDigit() {
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("All digits must be strictly less than the base.")
-
-        BaseConverter(2, intArrayOf(1, 2, 1, 0, 1, 0))
+        assertFailsWith(IllegalArgumentException::class, "All digits must be strictly less than the base.") {
+            BaseConverter(2, intArrayOf(1, 2, 1, 0, 1, 0))
+        }
     }
 
     @Ignore
@@ -216,10 +199,9 @@ class BaseConverterTest {
     fun testSecondBaseIsOne() {
         val baseConverter = BaseConverter(2, intArrayOf(1, 0, 1, 0, 1, 0))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        baseConverter.convertToBase(1)
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            baseConverter.convertToBase(1)
+        }
     }
 
     @Ignore
@@ -227,10 +209,9 @@ class BaseConverterTest {
     fun testSecondBaseIsZero() {
         val baseConverter = BaseConverter(2, intArrayOf(1, 0, 1, 0, 1, 0))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        baseConverter.convertToBase(0)
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            baseConverter.convertToBase(0)
+        }
     }
 
     @Ignore
@@ -238,9 +219,8 @@ class BaseConverterTest {
     fun testSecondBaseIsNegative() {
         val baseConverter = BaseConverter(2, intArrayOf(1))
 
-        expectedException.expect(IllegalArgumentException::class.java)
-        expectedException.expectMessage("Bases must be at least 2.")
-
-        baseConverter.convertToBase(-7)
+        assertFailsWith(IllegalArgumentException::class, "Bases must be at least 2.") {
+            baseConverter.convertToBase(-7)
+        }
     }
 }

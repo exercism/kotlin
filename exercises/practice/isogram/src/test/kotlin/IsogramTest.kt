@@ -1,34 +1,90 @@
+import org.junit.Ignore
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.Parameterized
-import kotlin.test.assertEquals
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
 
-@RunWith(Parameterized::class)
-class IsogramTest(val input: String, val expectedOutput: Boolean) {
-
-    companion object {
-        @JvmStatic
-        @Parameterized.Parameters(name = "{index}: isogram({0}) = {1}")
-        fun data() = listOf(
-                arrayOf("", true),
-                arrayOf("isogram", true),
-                arrayOf("eleven", false),
-                arrayOf("zzyzx", false),
-                arrayOf("subdermatoglyphic", true),
-                arrayOf("Alphabet", false),
-                arrayOf("alphAbet", false),
-                arrayOf("thumbscrew-japingly", true),
-                arrayOf("thumbscrew-jappingly", false),
-                arrayOf("six-year-old", true),
-                arrayOf("Emily Jung Schwartzkopf", true),
-                arrayOf("accentor", false),
-                arrayOf("angola", false)
-        )
-    }
+class IsogramTest() {
 
     @Test
-    fun test() {
-        assertEquals(expectedOutput, Isogram.isIsogram(input))
+    fun `empty string`() {
+        assertTrue(Isogram.isIsogram(""))
     }
 
+    @Ignore
+    @Test
+    fun `isogram with only lower case letters`() {
+        assertTrue(Isogram.isIsogram("isogram"))
+    }
+
+    @Ignore
+    @Test
+    fun `word with one duplicated letter`() {
+        assertFalse(Isogram.isIsogram("eleven"))
+    }
+
+    @Ignore
+    @Test
+    fun `word with one duplicated letter from end of alphabet`() {
+        assertFalse(Isogram.isIsogram("zzyzx"))
+    }
+
+    @Ignore
+    @Test
+    fun `longest reported english isogram`() {
+        assertTrue(Isogram.isIsogram("subdermatoglyphic"))
+    }
+
+    @Ignore
+    @Test
+    fun `word with duplicated character in mixed case`() {
+        assertFalse(Isogram.isIsogram("Alphabet"))
+    }
+
+    @Ignore
+    @Test
+    fun `word with duplicated character in mixed case, lowercase first`() {
+        assertFalse(Isogram.isIsogram("alphAbet"))
+    }
+
+    @Ignore
+    @Test
+    fun `hypothetical isogrammic word with hyphen`() {
+        assertTrue(Isogram.isIsogram("thumbscrew-japingly"))
+    }
+
+    @Ignore
+    @Test
+    fun `hypothetical word with duplicated character following hyphen`() {
+        assertFalse(Isogram.isIsogram("thumbscrew-jappingly"))
+    }
+
+    @Ignore
+    @Test
+    fun `isogram with duplicated hyphen`() {
+        assertTrue(Isogram.isIsogram("six-year-old"))
+    }
+
+    @Ignore
+    @Test
+    fun `made-up name that is an isogram`() {
+        assertTrue(Isogram.isIsogram("Emily Jung Schwartzkopf"))
+    }
+
+    @Ignore
+    @Test
+    fun `duplicated character in the middle`() {
+        assertFalse(Isogram.isIsogram("accentor"))
+    }
+
+    @Ignore
+    @Test
+    fun `same first and last characters`() {
+        assertFalse(Isogram.isIsogram("angola"))
+    }
+
+    @Ignore
+    @Test
+    fun `word with duplicated character and with two hyphens`() {
+        assertFalse(Isogram.isIsogram("up-to-date"))
+    }
 }

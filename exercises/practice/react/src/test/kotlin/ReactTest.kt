@@ -195,7 +195,7 @@ class ReactAdderTest(val input: Input, val expected: Expected) {
 
         @JvmStatic
         @Parameterized.Parameters(name = "{index}: {0} = {1}")
-        fun data() = listOf(
+        fun data() : List<Array<Any>> = listOf(
                 arrayOf(Input(a=false, b=false, carryIn=false), Expected(carryOut=false, sum=false)),
                 arrayOf(Input(a=false, b=false, carryIn=true),  Expected(carryOut=false, sum=true)),
                 arrayOf(Input(a=false, b=true,  carryIn=false), Expected(carryOut=false, sum=true)),
