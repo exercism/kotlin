@@ -127,6 +127,15 @@ class SublistTest {
 
     @Ignore
     @Test
+    fun testFirstListMissingAdditionalDigitsFromSecondListAreUnequal() {
+        assertEquals(
+                Relationship.UNEQUAL,
+                listOf(1, 2).relationshipTo(listOf(1, 22))
+        )
+    }
+
+    @Ignore
+    @Test
     fun testThatListOrderingIsAccountedFor() {
         assertEquals(
                 Relationship.UNEQUAL,
