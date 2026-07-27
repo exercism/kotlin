@@ -91,4 +91,11 @@ class TransposeTest {
         assertEquals(expected, Transpose.transpose(lines))
     }
 
+    @Ignore
+    @Test
+    fun `jagged triangle`() {
+        val lines = listOf("11", "2", "3333", "444", "555555", "66666")
+        val expected = listOf("123456", "1 3456", "  3456", "  3 56", "    56", "    5")
+        assertEquals(expected, Transpose.transpose(lines))
+    }
 }
