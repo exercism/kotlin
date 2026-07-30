@@ -72,6 +72,12 @@ class SeriesTest {
 
     @Ignore
     @Test(expected = IllegalArgumentException::class)
+    fun sliceLengthIsWayTooLarge() {
+        Series.slices(42, "12345")
+    }
+
+    @Ignore
+    @Test(expected = IllegalArgumentException::class)
     fun sliceLengthCannotBeZero() {
         Series.slices(0, "123")
     }
