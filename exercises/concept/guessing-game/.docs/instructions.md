@@ -6,7 +6,7 @@ To help your friend, you respond differently depending on how close the guess wa
 These are the rules for the different replies:
 
 - If the guess is `42`: "Correct"
-- If the guess is `41` or `43` and there have been less than : "So close"
+- If the guess is `41` or `43` and there have been no more than 5 guesses : "So close"
 - If the guess is less than `41`: "Too low"
 - If the guess is greater than `43`: "Too high"
 

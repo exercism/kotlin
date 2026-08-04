@@ -1,7 +1,7 @@
 # Introduction
 
 Kotlin's `when` is a conditional expression for choosing among several options.
-It is similar to `switch` in Java, but more flexible than a chain of `if` ... `else if` ... `else`.
+It is similar to `switch` in Java, and more flexible than a chain of `if` ... `else if` ... `else`.
 
 Like `if`, `when` can also be used as an expression that produces a value.
 
@@ -21,8 +21,65 @@ val type = when (animal) {
 ```
 
 - Each branch is written as `pattern -> result`.
-- Branches are tried from to bottom until a match is found. Only the first branch runs.
+- Branches are tried from top to bottom until a match is found.
+  Only the first branch runs.
 - Use `else` for any value not listed above (similar to the final `else` in an `if` chain).
+
+This is similar to [pattern matching][pattern-matching].
+The `pattern` can be a value to match, or use `is` to match by type:
+
+```kotlin
+fun typeText(subject: Any): String {
+    return when(subject) {
+        is Animal -> "Animal"
+        is Fruit -> "Fruit"
+        is String -> "Text"
+        else -> "Unknown"
+    }
+}
+```
+
+or use `in` to check if it is contained in a range, collection, string or anything else with a `contains` method:
+
+```kotlin
+fun describe(number: Int, position: String) {
+    // Range
+    when(number) {
+        in 1..10 -> println("From 1 to 10")
+        in 11..20 -> println("From 11 to 20")
+    }
+
+    // Collection
+    when(number) {
+        in listOf(2, 4, 6) -> println("small even")
+        in listOf(3, 5, 7) -> println("small odd")
+    }
+
+    // String
+    when(position) {
+        in "center middle" -> println("inner")
+        in "left right boundary" -> println("outer")
+    }
+}
+```
+
+~~~exercism/note
+You can also use `in` with other objects by defining the `contains` [operator extension function][kotlin-operator-overloading].
+For example, using it with [Regex][kotlin-regex]:
+
+```kotlin
+operator fun Regex.contains(text: CharSequence): Boolean = this.matches(text)
+
+fun replace(input: String) {
+    return when(input) {
+        in Regex("""ani*""") -> println("animal")
+        in Regex("""fru.*""") -> println("fruit")
+        in Regex("""num.*""") -> println("number")
+        else -> println("unknown")
+    }
+}
+```
+~~~
 
 ## Guard conditions
 
@@ -84,3 +141,7 @@ fun label(n: Int): String = when (n) {
     else -> "other"
 }
 ```
+
+[kotlin-operator-overloading]: https://kotlinlang.org/docs/operator-overloading.html
+[kotlin-regex]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/
+[pattern-matching]: https://en.wikipedia.org/wiki/Pattern_matching

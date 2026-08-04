@@ -1,11 +1,13 @@
 # Introduction
 
+## When
+
 Kotlin's `when` is a conditional expression for choosing among several options.
-It is similar to `switch` in Java, but more flexible than a chain of `if` ... `else if` ... `else`.
+It is similar to `switch` in Java, and more flexible than a chain of `if` ... `else if` ... `else`.
 
 Like `if`, `when` can also be used as an expression that produces a value.
 
-## Matching a value
+### Matching a value
 
 Give `when` a value to match in parentheses.
 Each branch compares that value until one matches:
@@ -21,10 +23,49 @@ val type = when (animal) {
 ```
 
 - Each branch is written as `pattern -> result`.
-- Branches are tried from to bottom until a match is found. Only the first branch runs.
+- Branches are tried from top to bottom until a match is found.
+  Only the first branch runs.
 - Use `else` for any value not listed above (similar to the final `else` in an `if` chain).
 
-## Guard conditions
+This is similar to [pattern matching][pattern-matching].
+The `pattern` can be a value to match, or use `is` to match by type:
+
+```kotlin
+fun typeText(subject: Any): String {
+    return when(subject) {
+        is Animal -> "Animal"
+        is Fruit -> "Fruit"
+        is String -> "Text"
+        else -> "Unknown"
+    }
+}
+```
+
+or use `in` to check if it is contained in a range, collection, string or anything else with a `contains` method:
+
+```kotlin
+fun describe(number: Int, position: String) {
+    // Range
+    when(number) {
+        in 1..10 -> println("From 1 to 10")
+        in 11..20 -> println("From 11 to 20")
+    }
+
+    // Collection
+    when(number) {
+        in listOf(2, 4, 6) -> println("small even")
+        in listOf(3, 5, 7) -> println("small odd")
+    }
+
+    // String
+    when(position) {
+        in "center middle" -> println("inner")
+        in "left right boundary" -> println("outer")
+    }
+}
+```
+
+### Guard conditions
 
 When matching a value, additional conditions can be placed in an `if` after the pattern.
 These conditions are called guard conditions.
@@ -53,7 +94,7 @@ val description = when (x) {
 ```
 
 
-## Matching conditions
+### Matching conditions
 
 Alternatively, the value can be omitted and boolean conditions can be placed on each branch:
 
@@ -70,7 +111,7 @@ val description = when {
 
 Again, branches are checked from top to bottom and only the first branch whose condition is `true` runs.
 
-## Using `when` as an expression
+### Using `when` as an expression
 
 When `when` is used for its result (assigned to a variable, returned from a function, and so on), every possible case must be covered.
 
@@ -84,3 +125,5 @@ fun label(n: Int): String = when (n) {
     else -> "other"
 }
 ```
+
+[pattern-matching]: https://en.wikipedia.org/wiki/Pattern_matching
