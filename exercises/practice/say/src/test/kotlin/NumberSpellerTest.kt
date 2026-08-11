@@ -25,11 +25,27 @@ class NumberSpellerTest {
 
     @Ignore
     @Test
+    fun `30 as thirty`() = 30.shouldSoundLike("thirty")
+
+    @Ignore
+    @Test
+    fun `99 as ninety-nine`() = 99.shouldSoundLike("ninety-nine")
+
+    @Ignore
+    @Test
     fun `100 as one hundred`() = 100.shouldSoundLike("one hundred")
 
     @Ignore
     @Test
     fun `123 as one hundred twenty-three`() = 123.shouldSoundLike("one hundred twenty-three")
+
+    @Ignore
+    @Test
+    fun `200 as two hundred`() = 200.shouldSoundLike("two hundred")
+
+    @Ignore
+    @Test
+    fun `999 as nine hundred ninety-nine`() = 999.shouldSoundLike("nine hundred ninety-nine")
 
     @Ignore
     @Test
