@@ -28,6 +28,18 @@ class ReverseStringTest {
 
     @Ignore
     @Test
+    fun `wide characters`() = assertEquals("猫子", reverse("子猫"))
+
+    @Ignore
+    @Test
+    fun `grapheme clusters with pre-combined form`() = assertEquals("dnatsnehctsrüW", reverse("Würstchenstand"))
+
+    @Ignore
+    @Test
+    fun `grapheme clusters`() = assertEquals("มรกแรปโนยขีเผู้", reverse("ผู้เขียนโปรแกรม"))
+
+    @Ignore
+    @Test
     fun `apply twice`() {
         val input = "input"
         assertEquals(input, reverse(reverse(input)))
