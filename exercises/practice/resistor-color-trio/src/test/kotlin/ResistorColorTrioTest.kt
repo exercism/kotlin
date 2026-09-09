@@ -27,4 +27,24 @@ class ResistorColorTrioTest {
     @Ignore
     @Test
     fun `yellow violet violet`() = assertEquals("470 megaohms", ResistorColorTrio.text(YELLOW, VIOLET, VIOLET))
+
+    @Ignore
+    @Test
+    fun `blue and violet and blue`() = assertEquals("67 megaohms", ResistorColorTrio.text(BLUE, VIOLET, BLUE))
+
+    @Ignore
+    @Test
+    fun `minimum possible value`() = assertEquals("0 ohms", ResistorColorTrio.text(BLACK, BLACK, BLACK))
+
+    @Ignore
+    @Test
+    fun `maximum possible value`() = assertEquals("99 gigaohms", ResistorColorTrio.text(WHITE, WHITE, WHITE))
+
+    @Ignore
+    @Test
+    fun `first two colors make an invalid octal number`() = assertEquals("8 ohms", ResistorColorTrio.text(BLACK, GREY, BLACK))
+
+    @Ignore
+    @Test
+    fun `ignore extra colors`() = assertEquals("650 kiloohms", ResistorColorTrio.text(BLUE, GREEN, YELLOW, ORANGE))
 }
