@@ -17,10 +17,17 @@ class ResistorColorDuoTest {
 
     @Ignore
     @Test
+    fun `white and red`() = assertEquals(92, ResistorColorDuo.value(Color.WHITE, Color.RED))
+
+    @Ignore
+    @Test
     fun `orange and orange`() = assertEquals(33, ResistorColorDuo.value(Color.ORANGE, Color.ORANGE))
 
     @Ignore
     @Test
     fun `ignore additional colors`() = assertEquals(51, ResistorColorDuo.value(Color.GREEN, Color.BROWN, Color.ORANGE))
 
+    @Ignore
+    @Test
+    fun `black and brown, one-digit`() = assertEquals(1, ResistorColorDuo.value(Color.BLACK, Color.BROWN))
 }
