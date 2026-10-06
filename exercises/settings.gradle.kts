@@ -1,5 +1,6 @@
 include(
     "concept:annalyns-infiltration",
+    "concept:guessing-game",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
     "concept:secret-agent",
