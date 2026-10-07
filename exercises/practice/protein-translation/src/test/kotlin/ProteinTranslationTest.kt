@@ -55,10 +55,8 @@ class ProteinTranslationTest {
 
     @Ignore
     @Test
-    fun `Non-existing codon can't translate`() {
-        assertFailsWith<IllegalArgumentException>("Invalid codon") {
-            translate("AAA")
-        }
+    fun `Sequence of two non-STOP codons does not translate to a STOP codon`() {
+        assertEquals(listOf("Methionine", "Methionine"), translate("AUGAUG"))
     }
 
     @Ignore
@@ -91,13 +89,13 @@ class ParameterizedProteinTranslationTest(private val protein: String, private v
         @Parameterized.Parameters
         fun data(): Collection<Array<Any>> {
             return listOf(
-                    arrayOf("Methionine", listOf("AUG")),
-                    arrayOf("Phenylalanine", listOf("UUU", "UUC")),
-                    arrayOf("Leucine", listOf("UUA", "UUG")),
-                    arrayOf("Serine", listOf("UCU", "UCC", "UCA", "UCG")),
-                    arrayOf("Tyrosine", listOf("UAU", "UAC")),
-                    arrayOf("Cysteine", listOf("UGU", "UGC")),
-                    arrayOf("Tryptophan", listOf("UGG"))
+                arrayOf("Methionine", listOf("AUG")),
+                arrayOf("Phenylalanine", listOf("UUU", "UUC")),
+                arrayOf("Leucine", listOf("UUA", "UUG")),
+                arrayOf("Serine", listOf("UCU", "UCC", "UCA", "UCG")),
+                arrayOf("Tyrosine", listOf("UAU", "UAC")),
+                arrayOf("Cysteine", listOf("UGU", "UGC")),
+                arrayOf("Tryptophan", listOf("UGG"))
             )
         }
     }
