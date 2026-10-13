@@ -46,13 +46,13 @@ class PhoneNumberTest {
     @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun `invalid - letters`() {
-        PhoneNumber("123-abc-7890")
+        PhoneNumber("523-abc-7890")
     }
 
     @Ignore
     @Test(expected = IllegalArgumentException::class)
     fun `invalid - punctuations`() {
-        PhoneNumber("123-@:!-7890")
+        PhoneNumber("523-@:!-7890")
     }
 
     @Ignore
@@ -105,4 +105,5 @@ class PhoneNumberTest {
     }
 }
 
-private fun assertNumberEquals(input: String, expectation: String) = assertEquals(expectation, PhoneNumber(input).number)
+private fun assertNumberEquals(input: String, expectation: String) =
+    assertEquals(expectation, PhoneNumber(input).number)
