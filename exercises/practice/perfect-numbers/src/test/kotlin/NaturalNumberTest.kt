@@ -42,6 +42,12 @@ class NaturalNumberTest {
 
     @Ignore
     @Test
+    fun perfectSquareAbundantNumberIsClassifiedCorrectly() {
+        assertEquals(Classification.ABUNDANT, classify(196))
+    }
+
+    @Ignore
+    @Test
     fun smallestPrimeDeficientNumberIsClassifiedCorrectly() {
         assertEquals(Classification.DEFICIENT, classify(2))
     }
