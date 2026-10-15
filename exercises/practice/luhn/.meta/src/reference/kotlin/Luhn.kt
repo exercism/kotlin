@@ -1,29 +1,19 @@
 object Luhn {
+    fun isValid(number: String): Boolean {
+        val digits = number.replace(" ", "")
+        if (digits.length < 2 || digits.any { it !in '0'..'9' }) return false
 
-    fun isValid(candidate: String): Boolean =
-            isValidCandidate(candidate) && checksum(number(candidate)) == 0
+        val checksum = digits
+            .reversed()
+            .withIndex()
+            .sumOf { (index, char) ->
+                val digit = char.digitToInt()
+                if (index % 2 == 1) doubleDigit(digit) else digit
+            }
 
-    private fun isValidCandidate(candidate: String): Boolean =
-            candidate.filter(Char::isDigit).length > 1 &&
-            candidate.all { it.isDigit() || Character.isSpaceChar(it) }
-
-    private fun number(candidate: String) = candidate.filter(Char::isDigit).toLong()
-
-    private fun checksum(number: Long) = addends(number).sum() % 10
-
-    private fun addends(number: Long): List<Int> = digits(number).withIndex().reversed()
-            .map { if (isOdd(it.index)) dbl(it.value) else it.value }
-
-    private fun digits(n: Long): List<Int> = when (n) {
-        0L -> emptyList()
-        else -> listOf((n % 10).toInt()) + digits(n / 10)
+        return checksum % 10 == 0
     }
 
-    private fun dbl(n: Int): Int {
-        val dbled = n * 2
-        return if (dbled > 9) dbled - 9 else dbled
-    }
-
-    private fun isOdd(i: Int) = i % 2 == 1
-
+    private fun doubleDigit(digit: Int): Int =
+        (digit * 2).let { if (it > 9) it - 9 else it }
 }

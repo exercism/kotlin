@@ -34,6 +34,14 @@ class LuhnTest {
 
     @Ignore
     @Test
+    fun `invalid - long number with an even remainder`() = assertInvalid("1 2345 6789 1234 5678 9012")
+
+    @Ignore
+    @Test
+    fun `invalid long number with a remainder divisible by 5`() = assertInvalid("1 2345 6789 1234 5678 9013")
+
+    @Ignore
+    @Test
     fun `valid - even amount of digits`() = assertValid("095 245 88")
 
     @Ignore
@@ -64,6 +72,15 @@ class LuhnTest {
     @Test
     fun `valid - input digit 9`() = assertValid("091")
 
+    /**
+     * Designed to prevent converting input to a single number
+     * as this approach can risk an overflow
+     */
+    @Ignore
+    @Test
+    fun `valid - very long input`() =
+        assertValid("9999999999 9999999999 9999999999 9999999999")
+
     @Ignore
     @Test
     fun `valid | valid luhn with an odd number of digits and non zero first digit`() = assertValid("109")
@@ -85,6 +102,11 @@ class LuhnTest {
     @Ignore
     @Test
     fun `invalid - ascii value for non-doubled non-digit at the start`() = assertInvalid(":9")
+
+    @Ignore
+    @Test
+    fun `non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed`() =
+        assertInvalid("59%59")
 }
 
 private fun assertValid(value: String) = assertTrue(Luhn.isValid(value))
