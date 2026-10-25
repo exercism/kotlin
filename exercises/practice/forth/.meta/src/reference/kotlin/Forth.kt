@@ -59,7 +59,7 @@ class Forth {
         lines.forEach { line ->
             evaluateLine(line.uppercase())
         }
-        return stack.reversed()
+        return stack.reversed().toList()
     }
 
     private fun evaluateLine(line: String) {

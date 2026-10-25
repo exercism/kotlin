@@ -10,7 +10,7 @@ class HexadecimalTest(val input: String, val expectedOutput: Int) {
     companion object {
         @JvmStatic
         @Parameterized.Parameters(name = "{index}: binary({0})={1}")
-        fun data() = listOf(
+        fun data() : Collection<Array<Any>> = listOf(
                 arrayOf("1", 1),
                 arrayOf("c", 12),
                 arrayOf("10", 16),

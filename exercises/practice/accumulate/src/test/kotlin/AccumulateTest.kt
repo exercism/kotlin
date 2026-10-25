@@ -25,7 +25,7 @@ class AccumulateTest {
     fun accumulateUpperCases() {
         val input = listOf("hello", "world")
         val expectedOutput = listOf("HELLO", "WORLD")
-        assertEquals(expectedOutput, Accumulate.accumulate(input, { it.toUpperCase() }))
+        assertEquals(expectedOutput, Accumulate.accumulate(input, { it.uppercase() }))
     }
 
     @Ignore

@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/TimFromMarketing.kt"
+    ],
+    "test": [
+      "src/test/kotlin/TimFromMarketingTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/TimFromMarketing.kt"
+    ]
+  },
+  "forked_from": [
+    "java/tim-from-marketing"
+  ],
+  "blurb": "Learn about handling nulls in Kotlin by printing name badges."
+}

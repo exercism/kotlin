@@ -13,7 +13,7 @@ fun updateTemplate() {
         import org.gradle.api.tasks.testing.logging.TestExceptionFormat
         
         plugins {
-            kotlin("jvm")
+            kotlin("jvm") version "2.4.0"
         }
         
         repositories {
@@ -21,10 +21,7 @@ fun updateTemplate() {
         }
         
         dependencies {
-            implementation(kotlin("stdlib-jdk8"))
-            
-            testImplementation("junit:junit:${versions.junit4}")
-            testImplementation(kotlin("test-junit"))
+            testImplementation(kotlin("test"))
         }
         
         tasks.withType<Test> {
@@ -39,20 +36,6 @@ fun updateTemplate() {
 
     File("_template").resolve("settings.gradle.kts").writeText(
         """
-        pluginManagement {
-            repositories {
-                mavenCentral()
-                gradlePluginPortal()
-            }
-            resolutionStrategy {
-                eachPlugin {
-                    when (requested.id.id) {
-                        "org.jetbrains.kotlin.jvm" -> useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}")
-                    }
-                }
-            }
-        }
-
         """.trimIndent()
     )
 }

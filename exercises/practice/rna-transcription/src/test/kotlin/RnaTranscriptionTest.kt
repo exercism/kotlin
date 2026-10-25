@@ -6,8 +6,8 @@ class RnaTranscriptionTest {
     @Test
     fun `empty RNA` ()= assertEquals("", transcribeToRna(""))
 
-    @Test
     @Ignore
+    @Test
     fun `RNA complement of cytosine is guanine`() = assertEquals("G", transcribeToRna("C"))
 
     @Ignore

@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/main/kotlin/VehiclePurchase.kt"
+    ],
+    "test": [
+      "src/test/kotlin/VehiclePurchaseTest.kt"
+    ],
+    "exemplar": [
+      ".meta/src/reference/kotlin/VehiclePurchase.kt"
+    ]
+  },
+  "forked_from": [
+    "go/vehicle-purchase"
+  ],
+  "blurb": "Learn about comparison and conditionals while preparing for your next vehicle purchase"
+}

@@ -1,0 +1,7 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "contributors": [],
+  "blurb": "Functions are first class citizens in Kotlin and can be assigned to variables or passed to other functions."
+}

@@ -1,32 +1,71 @@
-import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.Parameterized
 import kotlin.test.assertEquals
+import kotlin.test.Ignore
+import kotlin.test.Test
 
-@RunWith(Parameterized::class)
-class ScrabbleScoreTest(val input: String, val expectedOutput: Int) {
-
-    companion object {
-        @JvmStatic
-        @Parameterized.Parameters(name = "{index}: scoreWord({0})={1}")
-        fun data() = listOf(
-                arrayOf("a", 1),
-                arrayOf("A", 1),
-                arrayOf("f", 4),
-                arrayOf("at", 2),
-                arrayOf("zoo", 12),
-                arrayOf("street", 6),
-                arrayOf("quirky", 22),
-                arrayOf("OxyphenButazone", 41),
-                arrayOf("pinata", 8),
-                arrayOf("", 0),
-                arrayOf("abcdefghijklmnopqrstuvwxyz", 87)
-        )
-    }
+class ScrabbleScoreTest() {
 
     @Test
-    fun test() {
-        assertEquals(expectedOutput, ScrabbleScore.scoreWord(input))
+    fun `lowercase letter`() {
+        assertEquals(1, ScrabbleScore.scoreWord("a"))
     }
 
+    @Ignore
+    @Test
+    fun `uppercase letter`() {
+        assertEquals(1, ScrabbleScore.scoreWord("A"))
+    }
+
+    @Ignore
+    @Test
+    fun `valuable letter`() {
+        assertEquals(4, ScrabbleScore.scoreWord("f"))
+    }
+
+    @Ignore
+    @Test
+    fun `short word`() {
+        assertEquals(2, ScrabbleScore.scoreWord("at"))
+    }
+
+    @Ignore
+    @Test
+    fun `short, valuable word`() {
+        assertEquals(12, ScrabbleScore.scoreWord("zoo"))
+    }
+
+    @Ignore
+    @Test
+    fun `medium word`() {
+        assertEquals(6, ScrabbleScore.scoreWord("street"))
+    }
+
+    @Ignore
+    @Test
+    fun `medium, valuable word`() {
+        assertEquals(22, ScrabbleScore.scoreWord("quirky"))
+    }
+
+    @Ignore
+    @Test
+    fun `long, mixed-case word`() {
+        assertEquals(41, ScrabbleScore.scoreWord("OxyphenButazone"))
+    }
+
+    @Ignore
+    @Test
+    fun `english-like word`() {
+        assertEquals(8, ScrabbleScore.scoreWord("pinata"))
+    }
+
+    @Ignore
+    @Test
+    fun `empty input`() {
+        assertEquals(0, ScrabbleScore.scoreWord(""))
+    }
+
+    @Ignore
+    @Test
+    fun `entire alphabet available`() {
+        assertEquals(87, ScrabbleScore.scoreWord("abcdefghijklmnopqrstuvwxyz"))
+    }
 }

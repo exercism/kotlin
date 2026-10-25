@@ -1,14 +1,8 @@
-import org.junit.Ignore
-import org.junit.Rule
-import org.junit.Test
-import org.junit.rules.ExpectedException
 import kotlin.test.assertEquals
+import kotlin.test.Ignore
+import kotlin.test.Test
 
 class CollatzCalculatorTest {
-
-    @Rule
-    @JvmField
-    var expectedException: ExpectedException = ExpectedException.none()
 
     @Test
     fun `zero steps for 1`() = assertStepsEqual(1, 0)

@@ -27,13 +27,13 @@ assert_installed() {
 clean() {
     local build_dir="$1"
     echo ">>> clean(build_dir=\"${build_dir}\")"
-    
+
     # empty, absolute path, or parent reference are considered dangerous to rm -rf against.
     if [[ "${build_dir}" == "" || ${build_dir} =~ ^/ || ${build_dir} =~ \.\. ]] ; then
         echo "Value for build_dir looks dangerous.  Aborting."
         exit 1
     fi
-    
+
     local build_path=$( pwd )/${build_dir}
     if [[ -d "${build_path}" ]] ; then
         echo "Cleaning journey script build output directory (${build_path})."
@@ -57,7 +57,7 @@ solve_exercise() {
     mkdir -p ${exercism_exercises_dir}/${TRACK}
     cp -R -H ${track_root}/exercises/${exercise_type}/${exercise} ${exercism_exercises_dir}/${TRACK}/${exercise}
     cp -R -H ${track_root}/exercises/${exercise_type}/${exercise}/.meta/src/reference/${TRACK}/* ${exercism_exercises_dir}/${TRACK}/${exercise}/src/main/${TRACK}/
-    
+
     pushd ${exercism_exercises_dir}/${TRACK}/${exercise}
     # Check that tests compile before we strip @Ignore annotations
     "$EXECPATH"/gradlew compileTestJava
@@ -76,7 +76,7 @@ solve_exercise() {
 solve_all_exercises() {
     local exercism_exercises_dir="$1"
     echo ">>> solve_all_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\")"
-    
+
     local track_root=$( pwd )
     local concept_exercises=`jq -r '.exercises.concept[].slug' config.json | sort | xargs`
     local practice_exercises=`jq -r '.exercises.practice[].slug' config.json | sort | xargs`
@@ -92,9 +92,9 @@ solve_all_exercises() {
         echo "=================================================="
         echo "${current_exercise_number} of ${total_exercises} -- ${exercise}"
         echo "=================================================="
-        
+
         solve_exercise "${exercise}" "concept"
-        
+
         current_exercise_number=$((current_exercise_number + 1))
     done
 
@@ -103,9 +103,9 @@ solve_all_exercises() {
         echo "=================================================="
         echo "${current_exercise_number} of ${total_exercises} -- ${exercise}"
         echo "=================================================="
-        
+
         solve_exercise "${exercise}" "practice"
-        
+
         current_exercise_number=$((current_exercise_number + 1))
     done
     popd
@@ -116,31 +116,31 @@ solve_single_exercise() {
     local exercise_to_solve="$2"
     local exercise_type="$3"
     echo ">>> solve_single_exercises(exercism_exercises_dir=\"${exercism_exercises_dir}\", exercise_to_solve=\"$exercise_to_solve\")"
-    
+
     local track_root=$( pwd )
     local tempfile="${TMPDIR:-/tmp}/journey-test.sh-unignore_all_tests.txt"
-    
+
     mkdir -p ${exercism_exercises_dir}
     pushd ${exercism_exercises_dir}
-    
+
     solve_exercise "${exercise_to_solve}" "${exercise_type}"
-    
+
     popd
 }
 
 main() {
     # all functions assume current working directory is repository root.
     cd "${SCRIPTPATH}/.."
-    
+
     local track_root=$( pwd )
     local build_dir="build"
     local build_path="${track_root}/${build_dir}"
-    
+
     local exercism_home="${build_path}/exercism"
-    
+
     # fail fast if required binaries are not installed.
     assert_installed "jq"
-    
+
     clean "${build_dir}"
     
     if [[ $EXERCISES_TO_SOLVE == "" ]]; then
