@@ -82,6 +82,18 @@
         "status": "wip"
       },
       {
+        "slug": "secrets",
+        "name": "secrets",
+        "uuid": "eeb45ce0-2caa-4283-b374-f086a9627da2",
+        "concepts": [
+          "bitwise-operations"
+        ],
+        "prerequisites": [
+          "numbers"
+        ],
+        "status":"wip"
+      },
+      {
         "slug": "tim-from-marketing",
         "name": "tim-from-marketing",
         "uuid": "1eb4da65-661a-43d8-ac46-9a50d9213e15",

@@ -2,6 +2,7 @@ include(
     "concept:annalyns-infiltration",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
+    "concept:secrets",
     "concept:secret-agent",
     "concept:tim-from-marketing",
     "concept:vehicle-purchase",
