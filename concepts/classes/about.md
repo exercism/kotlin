@@ -89,7 +89,7 @@ class Car constructor(var color: String = "red", val year : Int = 2025) {
 
 ## Functions
 
-Functions can also be defined in the class body.
+Functions can be defined in the class body.
 For example:
 
 ```kotlin
@@ -106,7 +106,7 @@ Properties and functions can be either `private`, `public`, `internal` or `prote
 
 - `private` can be accessed only within the class
 - `protected` can be accessed by things within the class, as well as any subclasses
-- `internal` can be accessed by things within the same module
+- `internal` can be accessed by things within the same [module][kotlin-modules]
 - `public` can be accessed by other components using the class
 
 For example:
@@ -136,5 +136,6 @@ class Car {
 }
 ```
 
+[kotlin-modules]: https://kotlinlang.org/spec/packages-and-imports.html#modules
 [primary-constructors]: https://kotlinlang.org/docs/classes.html#primary-constructor
 [secondary-constructors]: https://kotlinlang.org/docs/classes.html#secondary-constructors

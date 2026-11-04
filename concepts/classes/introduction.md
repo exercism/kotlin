@@ -89,7 +89,7 @@ class Car constructor(var color: String = "red", val year : Int = 2025) {
 
 ## Functions
 
-Functions can also be defined in the class body.
+Functions can be defined in the class body.
 For example:
 
 ```kotlin
