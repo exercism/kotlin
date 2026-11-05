@@ -1,5 +1,6 @@
 include(
     "concept:annalyns-infiltration",
+    "concept:johannes-juice-maker",
     "concept:log-levels",
     "concept:lucians-luscious-lasagna",
     "concept:secrets",
