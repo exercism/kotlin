@@ -1,0 +1,12 @@
+fun mostCommonWord(text: String): String {
+    val counts = mutableMapOf<String, Int>()
+    var best = ""
+    for (word in text.lowercase().split(" ")) {
+        val count = counts.getOrDefault(word, 0) + 1
+        counts[word] = count
+        if (count > counts.getOrDefault(best, 0)) {
+            best = word
+        }
+    }
+    return "\"$best\" appears ${counts[best]} times"
+}
