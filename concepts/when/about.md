@@ -142,6 +142,4 @@ fun label(n: Int): String = when (n) {
 }
 ```
 
-[kotlin-operator-overloading]: https://kotlinlang.org/docs/operator-overloading.html
-[kotlin-regex]: https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/
 [pattern-matching]: https://en.wikipedia.org/wiki/Pattern_matching
