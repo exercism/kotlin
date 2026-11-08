@@ -53,7 +53,7 @@ class Car(var color : String = "red", val year : Int = 2025) {
 ```
 
 ~~~~exercism/note
-Kotlin allows the class to be defined with a body if it contains only properties - no need for curly braces  `{}`:
+Kotlin allows the class to be defined without a body if it contains only properties - no need for curly braces  `{}`:
 
 ```kotlin
 class Car (var color : String = "red", val year : Int = 2025)
