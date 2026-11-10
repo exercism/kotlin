@@ -13,6 +13,15 @@ class CryptoSquareTest {
 
     @Ignore
     @Test
+    fun `normalization results in empty plaintext`() {
+        val plaintext = "... --- ..."
+        val expectedOutput = ""
+        assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
+
+    }
+
+    @Ignore
+    @Test
     fun `letters are lower cased during encryption`() {
         val plaintext = "A"
         val expectedOutput = "a"
@@ -53,7 +62,7 @@ class CryptoSquareTest {
 
     @Ignore
     @Test
-    fun `fifty four character plaintext results in seven chunks with trailing spaces`() {
+    fun `fifty four character plaintext results in eight chunks with trailing spaces`() {
         val plaintext = "If man was meant to stay on the ground, god would have given us roots."
         val expectedOutput = "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
         assertEquals(expectedOutput, CryptoSquare.ciphertext(plaintext))
